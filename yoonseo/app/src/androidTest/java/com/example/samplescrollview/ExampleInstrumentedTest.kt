@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.samplescrollview
 
 import androidx.test.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("com.example.myapplication", appContext.packageName)
+        assertEquals("com.example.samplescrollview", appContext.packageName)
     }
 }
