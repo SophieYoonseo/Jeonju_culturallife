@@ -6,7 +6,7 @@
 :book: 
 ### 전주공공데이터 api를 파싱한
 👦 👧 👩 👨 👶 👵 👴 👱
-### 전주시민 남녀 노소를 위한 앱  
+### 전주시민 남녀 노소및 전주에 온  위한 앱  
 
 ## 사용 api
 - 문화 체험 정보 서비스 요청url:(http://openapi.jeonju.go.kr/rest/experience/getExperienceView?authApiKey=인증키&dataSid=56810) 포맷 json+xml(잘되는거 확인 완료)
