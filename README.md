@@ -9,8 +9,8 @@
 ### 전주시민 남녀 노소를 위한 앱  
 
 ## 사용 api
-- 문화 체험 정보 서비스 요청url:(http://openapi.jeonju.go.kr/rest/experience/getExperienceView?authApiKey=인증키&dataSid=56810) 포맷 json+xml
-- 전주시 공연문화정보 서비스 요청url:(http://openapi.jeonju.go.kr:8080/openapi/jeonju/jevent/list.do?serviceKey=인증키&요청변수=값) 포맷xml 이거 되시는분 단톡방에 카톡으로좀 
+- 문화 체험 정보 서비스 요청url:(http://openapi.jeonju.go.kr/rest/experience/getExperienceView?authApiKey=인증키&dataSid=56810) 포맷 json+xml(잘되는거 확인 완료)
+- 전주시 공연문화정보 서비스 요청url:(http://openapi.jeonju.go.kr:8080/openapi/jeonju/jevent/list.do?serviceKey=인증키&요청변수=값) 포맷xml 이거 저희꺼 승인 안되어서 담당자꺼 api key 사용할거임 이거사용하면댐( api key= HwDkrxThsRamrAG0QdQwSVUHGmyXFPzp4ABuuy%2FFAIma6rfR%2FEKnMZFwdQSrP7PK0QUMWngHWtn6wCehryD1rQ%3D%3D)
 
 - 문화공간 정보 서비스 요청url(http://openapi.jeonju.go.kr/rest/culture/getCultureList?authApiKey=인증키&dataValue=%EC%A0%95%EC%9D%8D%EA%B3%A0%ED%83%9D) 포맷 json+xml (잘되는거 확인 완료)
 - 거리투어 여행지명 검색 서비스 요청url(http://openapi.jeonju.go.kr/rest/tourstreet/getTourstreetList?authApiKey=인증키&dataValue=%EB%8F%99%EB%AC%B8) 포맷 json+xml (이것도 승인안해준듯 요청 url 응답안옴)
