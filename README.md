@@ -22,4 +22,5 @@
 - 전즈 음식 정보 서비스 요청 url(http://openapi.jeonju.go.kr/rest/jeonjufood/getFoodImgList?authApiKey=인증키&foodUid=ff8080813703462a013711b5bd4104cf) 포맷 json+xml  (잘되는거 확인 완료)
 - 농기계 수리업소 현황 요청 url( http://openapi.jeonju.go.kr/rest/nongsuriservice/getSuri?ServiceKey=인증키요청변수&numOfRows=10&pageNo=1 ) 
 포맷 xml (잘되는거 확인 완료)
+- 공원정보검색서비스, 자동심장충격기 현황정보서비스, 바이전주상품 정보서비스, 착한가격모범업소정보현황은 2019-08-12신청해서 대기중
 - api key는 strigs.xml에담아서 gitignore처리해주세요  
