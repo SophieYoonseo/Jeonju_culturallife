@@ -20,4 +20,6 @@
 - 전국 전기차 충전소 정보 서비스 요청url(http://openapi.kepco.co.kr/service/EvInfoServiceV2/getEvSearchList?addr=%EC%A0%84%EB%A0%A5%EB%A1%9C&pageNo=1&numOfRows=10&ServiceKey=서비스키) 포맷 xml 전기차 충전 apikey는 예외적으로 ro%2FXNFjTiuaWfUUOn939KiFkMvs0z915H%2BkR0Te9JF0NPfG4EjF9sAxR2%2B4%2FcqOzu9XlvQaZYyG0F4PniGNdsw%3D%3D  저희껀 승인안나서 긁어옴 
 - 대기오염정보 조회 서비스 요청url(http://openapi.airkorea.or.kr/openapi/services/rest/MsrstnInfoInqireSvc/getNearbyMsrstnList?tmX=244148.546388&tmY=412423.75772&ServiceKey=서비스키) 포맷 xml  (개인적으로 이거쓰고싶은데 승인요청을 안받아줌.. 자동승인이라고 써있으면서 )
 - 전즈 음식 정보 서비스 요청 url(http://openapi.jeonju.go.kr/rest/jeonjufood/getFoodImgList?authApiKey=인증키&foodUid=ff8080813703462a013711b5bd4104cf) 포맷 json+xml  (잘되는거 확인 완료)
+- 농기계 수리업소 현황 요청 url( http://openapi.jeonju.go.kr/rest/nongsuriservice/getSuri?ServiceKey=인증키요청변수&numOfRows=10&pageNo=1 ) 
+포맷 xml (잘되는거 확인 완료)
 - api key는 strigs.xml에담아서 gitignore처리해주세요  
