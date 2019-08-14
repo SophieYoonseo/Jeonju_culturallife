@@ -37,7 +37,7 @@
 - 미세먼지
 - 가로 스크롤 : 카테고리별로 정보를 눈에 잘 보이게 구성하겠다.
 
-
+### 패키지명 통일 kr.go.csejeonju2019
 
 ## 사용 api
 - 문화 체험 정보 서비스 요청url:(http://openapi.jeonju.go.kr/rest/experience/getExperienceView?authApiKey=인증키&dataSid=56810) 포맷 json+xml(잘되는거 확인 완료)
