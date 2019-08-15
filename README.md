@@ -44,7 +44,7 @@
 # 주의 해야할 사항들 :
 - googlemap 사용시에도 gradle 최신버젼 쓰지말고 이버젼을써야 제컴퓨터에선 지도가 표출됨 예를들어 16.0.0으로 변경시 google logo만뜸. (써야하는 버젼 사진 첨부 ) 
 
-![gogglemap](./map.jpg)
+![gogglemap](./map.JPG)
 
 
 
