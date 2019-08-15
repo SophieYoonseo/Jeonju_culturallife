@@ -39,6 +39,15 @@
 
 ### 패키지명 통일 kr.go.csejeonju2019
 
+
+
+# 주의 해야할 사항들 :
+- googlemap 사용시에도 gradle 최신버젼 쓰지말고 이버젼을써야 제컴퓨터에선 지도가 표출됨 예를들어 16.0.0으로 변경시 google logo만뜸. (써야하는 버젼 사진 첨부 ) 
+
+![gogglemap](./map.jpg)
+
+
+
 ## 사용 api
 - 문화 체험 정보 서비스 요청url:(http://openapi.jeonju.go.kr/rest/experience/getExperienceView?authApiKey=인증키&dataSid=56810) 포맷 json+xml(잘되는거 확인 완료)
 - 전주시 공연문화정보 서비스 요청url:(http://openapi.jeonju.go.kr:8080/openapi/jeonju/jevent/list.do?serviceKey=인증키&요청변수=값) 포맷xml 이거 저희꺼 승인 안되어서 담당자꺼 api key 사용할거임 이거사용하면댐( api key= HwDkrxThsRamrAG0QdQwSVUHGmyXFPzp4ABuuy%2FFAIma6rfR%2FEKnMZFwdQSrP7PK0QUMWngHWtn6wCehryD1rQ%3D%3D)
