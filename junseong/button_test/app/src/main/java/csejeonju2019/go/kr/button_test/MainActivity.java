@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ImageButton button = (ImageButton) findViewById(R.id.button); /*페이지 전환버튼*/
+        ImageButton button2 = (ImageButton) findViewById(R.id.button2); /*페이지 전환버튼*/
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -29,9 +30,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
 
-            public void onclicked1(View v){
-                Intent intent=new Intent(getApplicationContext(),mapactivity.class);
-                startActivity(intent);
+            public void onclicked2(View v){
+                Intent intent=new Intent(MainActivity.this,currentactivity.class);
+                startActivity(intent);;
             }
         });
 
