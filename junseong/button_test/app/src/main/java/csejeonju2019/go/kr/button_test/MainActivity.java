@@ -21,13 +21,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button button = (Button) findViewById(R.id.button); /*페이지 전환버튼*/
-
-        button.setOnClickListener(new View.OnClickListener() {
+        button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), mapactivity.class);
+                Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(intent);
+            }
+
+            public void onclicked1(View v){
+                Intent intent=new Intent(getApplicationContext(),mapactivity.class);
                 startActivity(intent);
             }
         });
+
     }
 }
