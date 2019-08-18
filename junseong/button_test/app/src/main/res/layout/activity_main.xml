@@ -5,14 +5,14 @@
     android:orientation="vertical" >
 
 
-    <Button
+    <ImageButton
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onclicked1"
         app:srcCompat="@drawable/lo" />
 
-    <Button
+    <ImageButton
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
