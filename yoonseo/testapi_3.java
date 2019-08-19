@@ -1,3 +1,7 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.DocumentBuilder;
 import org.w3c.dom.Document;
@@ -18,7 +22,7 @@ public class PM10Get {
 	// HTTP GET request
 	private void sendGet() throws Exception {
 
-		string url = "http://openapi.jeonju.go.kr/rest/experience/getExperienceList?authApiKey=ro%2FXNFjTiuaWfUUOn939KiFkMvs0z915H%2BkR0Te9JF0NPfG4EjF9sAxR2%2B4%2FcqOzu9XlvQaZYyG0F4PniGNdsw%3D%3D&dataValue=%EC%98%88%EB%8B%A4%EC%9B%90";
+		string url = "http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getCtprvnMesureLIst?itemCode=PM10&dataGubun=DAILY&searchCondition=MONTH&pageNo=1&numOfRows=10&ServiceKey=ro%2FXNFjTiuaWfUUOn939KiFkMvs0z915H%2BkR0Te9JF0NPfG4EjF9sAxR2%2B4%2FcqOzu9XlvQaZYyG0F4PniGNdsw%3D%3D";
 		Node seoul = null;
 
 		URL obj = new URL(url);
@@ -39,4 +43,27 @@ public class PM10Get {
 		}
 		in. close();
 
+		// print result
+		try {
+			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+
+			FileOutputStream output = new FileOutputStream("./PM10");
+			output.write(response.toString().getBytes());
+			output.close();
+
+			Document doc = dBuilder.parse("./PM10");
+			doc.getDocumentElement().normalize();
+
+			Element body = (Element) doc.getElementsByTagName("body").item(0);
+			Element items = (Element) body.getElementsByTagName("items").item(0);
+			Element item = (Element) items.getElementsByTagName("item").item(0);
+			seoul = item.getElementsByTagName("seoul").item(0);
+	
+			System.out.println(seoul.getNodeName());
+			System.out.println(seoul.getChildNodes().item(0).getNodeValue());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 }
