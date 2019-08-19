@@ -1,5 +1,5 @@
 package csejeonju2019.go.kr.insta;
-
+import android.support.v4.app.Fragment;
 import android.support.annotation.NonNull;
 import android.support.design.internal.BottomNavigationItemView;
 import android.support.design.widget.BottomNavigationView;
