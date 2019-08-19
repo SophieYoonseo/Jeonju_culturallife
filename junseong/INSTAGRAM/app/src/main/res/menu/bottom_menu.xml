@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_airplane"
+        android:enabled="true"
+        android:icon="@drawable/ic_radio_black_24dp"
+        android:title="라디오"/>
+
+    <item
+        android:id="@+id/action_star"
+        android:enabled="true"
+        android:icon="@drawable/ic_star_border_black_24dp"
+        android:title="별"/>
+
+    <item
+        android:id="@+id/station"
+        android:enabled="true"
+        android:icon="@drawable/ic_transfer_within_a_station_black_24dp"
+        android:title="사람"/>
+
+    <item
+        android:id="@+id/black"
+        android:enabled="true"
+        android:icon="@drawable/ic_looks_5_black_24dp"
+        android:title="숫자 5"/>
+
+    <item
+        android:id="@+id/nature"
+        android:enabled="true"
+        android:icon="@drawable/ic_nature_people_black_24dp"
+        android:title="공"/>
+
+</menu>
