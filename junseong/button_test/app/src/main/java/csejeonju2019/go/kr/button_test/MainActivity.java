@@ -29,12 +29,16 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent=new Intent(MainActivity.this,mapactivity.class);
                 startActivity(intent);
             }
-
-            public void onclicked2(View v){
-                Intent intent=new Intent(MainActivity.this,currentactivity.class);
-                startActivity(intent);;
             }
-        });
+        );
+        button2.setOnClickListener(new View.OnClickListener(){
+                                      @Override
+                                      public void onClick(View v) {
+                                          Intent intent=new Intent(MainActivity.this,currentactivity.class);
+                                          startActivity(intent);
+                                      }
+                                  }
+        );
 
     }
 }
