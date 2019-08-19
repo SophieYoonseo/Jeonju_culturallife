@@ -13,6 +13,7 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.RelativeLayout;
@@ -25,7 +26,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 
-public class currentactivity extends FragmentActivity implements OnMapReadyCallback {
+public class currentactivity extends AppCompatActivity implements OnMapReadyCallback {
 
     //GoogleMap 객체
     GoogleMap googleMap;

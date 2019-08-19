@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "csejeonju2019.go.kr.goglemaptest"
+        applicationId "csejeonju2019.go.kr.insta"
         minSdkVersion 15
         targetSdkVersion 28
         versionCode 1
