@@ -13,11 +13,11 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class Frag2 extends Fragment implements OnMapReadyCallback
+public class Frag1 extends Fragment implements OnMapReadyCallback
 {
     private MapView mapView = null;
 
-    public Frag2()
+    public Frag1()
     {
         // required
     }
@@ -31,7 +31,7 @@ public class Frag2 extends Fragment implements OnMapReadyCallback
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View layout = inflater.inflate(R.layout.frag2, container, false);
+        View layout = inflater.inflate(R.layout.frag1, container, false);
 
         mapView = (MapView)layout.findViewById(R.id.map);
         mapView.getMapAsync(this);
@@ -95,11 +95,11 @@ public class Frag2 extends Fragment implements OnMapReadyCallback
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        LatLng jeonju = new LatLng(35.846925, 127.129456);
+        LatLng jeonju = new LatLng(35.824167, 127.147958);
         MarkerOptions markerOptions = new MarkerOptions();
         markerOptions.position(jeonju);
-        markerOptions.title("전북대학교");
-        markerOptions.snippet("전북의 하바드");
+        markerOptions.title("전주");
+        markerOptions.snippet("문화와 공연의 도시 전주");
         googleMap.addMarker(markerOptions);
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(jeonju,16));//16배 줌가능
         googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(jeonju,16));//지도 시작시 애니메이션 효과
