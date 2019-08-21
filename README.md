@@ -6,12 +6,13 @@
 
 
 #### 개발 시 주의해야할 사항들 :
-- google map 사용 시 gradle 최신버전을 쓰지 말고 이 버전을 써야 지도가 표출됨.
- 예를 들어 16.0.0으로 변경 시 google logo만 뜸. (써야하는 버전 사진 첨부 )
- 
-![gogglemap](./Etc/map.JPG)
+- google map 사용 시 gradle 최신버전을 쓰지 말기(logo만뜰수있음)
+- implementation 'com.android.support:design:28.0.0' (하단바 라이브러리사용)
+- implementation 'com.google.android.gms:play-services-maps:16.1.0'(구글지도)
+- implementation 'com.google.android.gms:play-services-location:16.0.0'(구글지도)
+![gogglemap](./Etc/design.JPG)
 
-- java code,및 xml 따로 만들어서 등록 시 activity manifest에 등록하기 
+
 
  
 
