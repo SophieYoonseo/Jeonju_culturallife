@@ -1,0 +1,95 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/key_color_white"
+    android:id="@+id/wrapper">
+    <!-- 로그인 -->
+
+
+
+    <!-- 전체 / 간격 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_45dp"
+        android:paddingRight="@dimen/dimen_45dp"
+        android:background="@color/key_color_dark"
+        >
+
+
+        <!-- # 상단 앱 이미지, 글 -->
+        <LinearLayout
+            android:id="@+id/wrapper_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="65dp"
+            >
+
+            <!-- 이미지 시작 -->
+            <LinearLayout
+                android:id="@+id/box_img_app_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_app_icon"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@mipmap/ic_launcher"
+                    android:gravity="center"
+                    /><!-- 이미지 -->
+            </LinearLayout>
+            <!-- 이미지 끝 -->
+
+
+            <!-- 텍스트 -->
+            <LinearLayout
+                android:id="@+id/box_txt_ggagga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="15dp">
+
+
+            </LinearLayout>
+            <!-- 텍스트 끝-->
+
+        </LinearLayout>
+        <!-- # 상단 앱 이미지, 글 -->
+
+        <LinearLayout
+            android:id="@+id/box_btn_logins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/btn_margin_bottom">
+
+            <!--카카오 로그인 버튼 -->
+            <Button
+                android:id="@+id/btn_login_naver"
+                fontPath="fonts/barun_gothic_bold.ttf.mp3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height"
+                android:height="50dp"
+                android:background="@drawable/style_btn_green_naver"
+                android:gravity="center"
+                android:onClick="naverlogin"
+                android:text="@string/login_naver"
+                android:textColor="@color/key_color_white"
+                android:textSize="@dimen/font_large"
+                android:textStyle="bold"
+                android:visibility="visible" />
+            <!-- 카카오 로그인 버튼 -->
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
