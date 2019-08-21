@@ -37,6 +37,16 @@
 - 미세먼지
 - 가로 스크롤 : 카테고리별로 정보를 눈에 잘 보이게 구성하겠다.
 
+### 패키지명 통일 kr.go.csejeonju2019
+
+
+
+# 개발시 주의 해야할 사항들 :
+- googlemap 사용시에도 gradle 최신버젼 쓰지말고 이버젼을써야 제컴퓨터에선 지도가 표출됨 예를들어 16.0.0으로 변경시 google logo만뜸. (써야하는 버젼 사진 첨부 ) 
+
+![gogglemap](./Etc/map.JPG)
+
+- java code,및 xml따로만들어서 등록시 activity manifest에 등록하기 
 
 
 ## 사용 api
