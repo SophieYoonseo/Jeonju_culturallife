@@ -10,7 +10,7 @@
         android:id="@+id/bottomNavi"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:itemIconTint="#000000"
+        app:itemIconTint="#FF0000"
         app:itemTextColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
