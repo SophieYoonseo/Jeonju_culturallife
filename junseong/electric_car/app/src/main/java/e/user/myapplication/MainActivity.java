@@ -69,7 +69,7 @@ public class MainActivity extends Activity {
 
         StringBuffer buffer=new StringBuffer();
 
-        String str= edit.getText().toString();//EditText에 작성된 Text얻어오기
+        String str= "전주시";//전주시로 설정
         String location = URLEncoder.encode(str);//한글의 경우 인식이 안되기에 utf-8 방식으로 encoding     //지역 검색 위한 변수
 
 
