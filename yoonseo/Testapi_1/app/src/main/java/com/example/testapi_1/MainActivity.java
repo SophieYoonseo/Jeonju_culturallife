@@ -49,7 +49,7 @@ public class MainActivity extends Activity {
             while (parserEvent != XmlPullParser.END_DOCUMENT){
                 switch(parserEvent){
                     case XmlPullParser.START_TAG://parser가 시작 태그를 만나면 실행
-                        /*
+
                         if(parser.getName().equals("resultCode")){ //title 만나면 내용을 받을수 있게 하자
                             resultCode = true;
                         }
@@ -68,7 +68,6 @@ public class MainActivity extends Activity {
                         if(parser.getName().equals("totalCount")){ //mapy 만나면 내용을 받을수 있게 하자
                             totalCount = true;
                         }
-                        */
                         if(parser.getName().equals("addr")){ //mapy 만나면 내용을 받을수 있게 하자
                             addr = true;
                         }
@@ -139,7 +138,7 @@ public class MainActivity extends Activity {
                         break;
 
                     case XmlPullParser.TEXT://parser가 내용에 접근했을때
-                        /*
+
                         if(resultCode){ //isTitle이 true일 때 태그의 내용을 저장.
                             s_resultCode = parser.getText();
                             resultCode = false;
@@ -164,7 +163,7 @@ public class MainActivity extends Activity {
                             s_totalCount = parser.getText();
                             totalCount = false;
                         }
-                        */
+
                         if(addr){ //isMapy이 true일 때 태그의 내용을 저장.
                             s_addr = parser.getText();
                             addr = false;
@@ -177,15 +176,15 @@ public class MainActivity extends Activity {
                             s_boardSid = parser.getText();
                             boardSid = false;
                         }
-                        //if(cultureSpNm){ //isMapy이 true일 때 태그의 내용을 저장.
-                        //    s_cultureSpNm = parser.getText();
-                        //    cultureSpNm = false;
-                       // }
+                        if(cultureSpNm){ //isMapy이 true일 때 태그의 내용을 저장.
+                            s_cultureSpNm = parser.getText();
+                           cultureSpNm = false;
+                        }
                         if(dataContent){ //isMapy이 true일 때 태그의 내용을 저장.
                             s_dataContent = parser.getText();
                             dataContent = false;
                         }
-                        /*
+
                         if(dataSid){ //isTitle이 true일 때 태그의 내용을 저장.
                             s_dataSid = parser.getText();
                             dataSid = false;
@@ -250,10 +249,10 @@ public class MainActivity extends Activity {
                             s_charge = parser.getText();
                             charge = false;
                         }
-                        */
+
                         break;
                     case XmlPullParser.END_TAG:
-                        if(parser.getName().equals("list")){
+                        if(parser.getName().equals("data")){
                             status1.setText(status1.getText()+
                                     "결과코드 : "+ s_resultCode + "\n 결과메시지: "+ s_resultMsg +"\n 쿼리 페이지 시작점 : " + s_pageIndex//+"\n 페이지 크기 : " + s_pageSize +  "\n 시작 페이지 : " + s_startPage + "\n 전체 결과 수 : " + s_totalCount
                                     +"\n 데이터 번호 : " + s_dataSid + "\n 게시판 번호 : " + s_boardSid + "\n 장소 : " + s_dataTitle
@@ -266,6 +265,7 @@ public class MainActivity extends Activity {
                                     +"\n 등록일 : " + s_regDt + "\n 첨부파일 수 : " + s_fileCnt + "\n 체험비용 : " + s_charge
                                     +"\n ------------------------------------------------------------------------------------"
                                     + "\n"
+
                             );
                             indata = false;
                         }
