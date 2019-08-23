@@ -3,31 +3,31 @@
     <item
         android:id="@+id/action_airplane"
         android:enabled="true"
-        android:icon="@drawable/ic_place_black_24dp"
-        android:title="전주시청 위치"/>
+        android:icon="@drawable/ic_home_page"
+        android:title="홈 화면"/>
 
     <item
         android:id="@+id/action_star"
         android:enabled="true"
-        android:icon="@drawable/ic_cake_black_24dp"
-        android:title="행사장 위치"/>
+        android:icon="@drawable/ic_magnifying_glass"
+        android:title="검색"/>
 
     <item
         android:id="@+id/station"
         android:enabled="true"
-        android:icon="@drawable/ic_transfer_within_a_station_black_24dp"
-        android:title="사람"/>
+        android:icon="@drawable/ic_add"
+        android:title="업로드"/>
 
     <item
         android:id="@+id/black"
         android:enabled="true"
-        android:icon="@drawable/ic_looks_5_black_24dp"
-        android:title="숫자 5"/>
+        android:icon="@drawable/ic_valentines_heart"
+        android:title="하트!"/>
 
     <item
         android:id="@+id/nature"
         android:enabled="true"
-        android:icon="@drawable/ic_nature_people_black_24dp"
-        android:title="공"/>
+        android:icon="@drawable/ic_users_group"
+        android:title="사람들"/>
 
 </menu>
