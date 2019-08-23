@@ -5,7 +5,8 @@
 ### 패키지명 통일 kr.go.csejeonju2019
 
 
-#### 개발 시 주의해야할 사항들 :
+#### 개발 시 추가해야하는 라입러리  :
+##### 이모든건 module:app에서 일어납니다 
 - google map 사용 시 gradle 최신버전을 쓰지 말기(logo만뜰수있음)
 - implementation 'com.android.support:design:28.0.0' (하단바 라이브러리사용)
 - implementation 'com.google.android.gms:play-services-maps:16.1.0'(구글지도)
