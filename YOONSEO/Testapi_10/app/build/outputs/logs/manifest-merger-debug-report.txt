@@ -1,0 +1,158 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml:2:1-23:12
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\8516d8956c2326590dd1230e7269ec84\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\6618bd4308433e03bed46781661aaf46\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\c2195d2dd7b401392044252776a322c7\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\14bb0f5821e1dc2e378b077eab951671\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\68f1793c24d8d77d70b2a515dc8962fc\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\c30b69ce67e395b96208e91abd6073ec\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\055a9b7d402eb84bc07291f783de1f4c\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\7f855203f0cd31fb4d812c0ca34c55f2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\ddbb13bc0b0161e45a8b5729048c3a28\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\c308f39153341fab5231ed2f2d8c4285\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\4fb3380c8c4c35cd12f487fd67e8fee9\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\e12b0083c2cc4130b1a4c792c2ecffd9\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\32bd12b59a9020fada984ae5679c694a\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\83ceb67a24be1b2a8ddb57fd5366dbb7\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\f0de531f26cbbed99c7a79db571aa249\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.1] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\822c6fb2b360e8efdc8bff03e9554671\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\a657b6f73442cabd8f4e48f3cb1dfc4a\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\c98d54ce29ccd33cc730bca415b5dcb4\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\0de9a1fc44f512fb318659ff1a27d341\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\25bbceea6ca9c34dd74026ef6a9bd506\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\a6e016e7bc081532d2b23a1f4553eef5\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\cbf1b40ff4ff4b34af5463cdd7d0326d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\f6d90ca9879bae47d02020c6e96b34c5\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\c81949b3af4990ef5aa00d542f9ada3f\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\7359330360f0155a8755f9490726bcd7\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\eedb7b1239221b1c5fab8c89476a3310\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\553f3f80b7195f027363a57b243455fd\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml:2:1-23:12
+	package
+		ADDED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml:3:5-37
+		INJECTED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml
+		ADDED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml:2:1-23:12
+		INJECTED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml
+		ADDED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml:2:1-23:12
+		INJECTED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml:5:5-68
+	android:name
+		ADDED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml:5:22-66
+application
+ADDED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml:7:5-21:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\6618bd4308433e03bed46781661aaf46\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\6618bd4308433e03bed46781661aaf46\AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.0.1] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\822c6fb2b360e8efdc8bff03e9554671\AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.1] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\822c6fb2b360e8efdc8bff03e9554671\AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\a657b6f73442cabd8f4e48f3cb1dfc4a\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\a657b6f73442cabd8f4e48f3cb1dfc4a\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.1] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\822c6fb2b360e8efdc8bff03e9554671\AndroidManifest.xml:22:18-86
+	android:supportsRtl
+		ADDED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml:10:9-41
+	android:roundIcon
+		ADDED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml:11:9-54
+	android:icon
+		ADDED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml:8:9-35
+	android:theme
+		ADDED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml:13:9-40
+activity#com.example.testapi_10.MainActivity
+ADDED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml:14:9-20:20
+	android:name
+		ADDED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml:14:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml:15:13-19:29
+action#android.intent.action.MAIN
+ADDED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml:16:17-69
+	android:name
+		ADDED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml:16:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml:18:17-77
+	android:name
+		ADDED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml:18:27-74
+uses-sdk
+INJECTED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml
+INJECTED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\8516d8956c2326590dd1230e7269ec84\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\8516d8956c2326590dd1230e7269ec84\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\6618bd4308433e03bed46781661aaf46\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\6618bd4308433e03bed46781661aaf46\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\c2195d2dd7b401392044252776a322c7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\c2195d2dd7b401392044252776a322c7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\14bb0f5821e1dc2e378b077eab951671\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\14bb0f5821e1dc2e378b077eab951671\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\68f1793c24d8d77d70b2a515dc8962fc\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\68f1793c24d8d77d70b2a515dc8962fc\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\c30b69ce67e395b96208e91abd6073ec\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\c30b69ce67e395b96208e91abd6073ec\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\055a9b7d402eb84bc07291f783de1f4c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\055a9b7d402eb84bc07291f783de1f4c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\7f855203f0cd31fb4d812c0ca34c55f2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\7f855203f0cd31fb4d812c0ca34c55f2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\ddbb13bc0b0161e45a8b5729048c3a28\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\ddbb13bc0b0161e45a8b5729048c3a28\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\c308f39153341fab5231ed2f2d8c4285\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\c308f39153341fab5231ed2f2d8c4285\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\4fb3380c8c4c35cd12f487fd67e8fee9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\4fb3380c8c4c35cd12f487fd67e8fee9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\e12b0083c2cc4130b1a4c792c2ecffd9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\e12b0083c2cc4130b1a4c792c2ecffd9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\32bd12b59a9020fada984ae5679c694a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\32bd12b59a9020fada984ae5679c694a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\83ceb67a24be1b2a8ddb57fd5366dbb7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\83ceb67a24be1b2a8ddb57fd5366dbb7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\f0de531f26cbbed99c7a79db571aa249\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\f0de531f26cbbed99c7a79db571aa249\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\822c6fb2b360e8efdc8bff03e9554671\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\822c6fb2b360e8efdc8bff03e9554671\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\a657b6f73442cabd8f4e48f3cb1dfc4a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\a657b6f73442cabd8f4e48f3cb1dfc4a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\c98d54ce29ccd33cc730bca415b5dcb4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\c98d54ce29ccd33cc730bca415b5dcb4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\0de9a1fc44f512fb318659ff1a27d341\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\0de9a1fc44f512fb318659ff1a27d341\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\25bbceea6ca9c34dd74026ef6a9bd506\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\25bbceea6ca9c34dd74026ef6a9bd506\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\a6e016e7bc081532d2b23a1f4553eef5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\a6e016e7bc081532d2b23a1f4553eef5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\cbf1b40ff4ff4b34af5463cdd7d0326d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\cbf1b40ff4ff4b34af5463cdd7d0326d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\f6d90ca9879bae47d02020c6e96b34c5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\f6d90ca9879bae47d02020c6e96b34c5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\c81949b3af4990ef5aa00d542f9ada3f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\c81949b3af4990ef5aa00d542f9ada3f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\7359330360f0155a8755f9490726bcd7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\7359330360f0155a8755f9490726bcd7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\eedb7b1239221b1c5fab8c89476a3310\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\eedb7b1239221b1c5fab8c89476a3310\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\553f3f80b7195f027363a57b243455fd\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\jbnu\.gradle\caches\transforms-2\files-2.1\553f3f80b7195f027363a57b243455fd\AndroidManifest.xml:20:5-44
+INJECTED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml
+INJECTED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml
+		ADDED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml
+		ADDED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Jeonju_culturalLife\Jeonju_culturallife\YOONSEO\Testapi_10\app\src\main\AndroidManifest.xml
