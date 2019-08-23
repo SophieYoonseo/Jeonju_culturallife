@@ -100,43 +100,43 @@ public class MainActivity extends AppCompatActivity {
                             buffer.append("\n"); // 줄바꿈 문자 추가
                         }
                         else if(tag.equals("dataContent")){
-                            buffer.append("정보 : ");
-                            xpp.next();
-                            buffer.append(xpp.getText());
-                            buffer.append("\n");
-                        }
-                        else if(tag.equals("dataTitle")){
-                            buffer.append("이름 :");
-                            xpp.next();
-                            buffer.append(xpp.getText());
-                            buffer.append("\n");
-                        }
-                        else if(tag.equals("experName")){
-                            buffer.append("experName :");
-                            xpp.next();
-                            buffer.append(xpp.getText());
-                            buffer.append("\n");
-                        }
-                        else if(tag.equals("homepage")){
-                            buffer.append("충전기 상태 코드 :");
-                            xpp.next();
+                                buffer.append("정보 : ");
+                                xpp.next();
+                                buffer.append(xpp.getText());
+                                buffer.append("\n");
+                            }
+                            else if(tag.equals("dataTitle")){
+                                buffer.append("이름 :");
+                                xpp.next();
+                                buffer.append(xpp.getText());
+                                buffer.append("\n");
+                            }
+                            else if(tag.equals("experName")){
+                                buffer.append("experName :");
+                                xpp.next();
+                                buffer.append(xpp.getText());
+                                buffer.append("\n");
+                            }
+                            else if(tag.equals("homepage")){
+                                buffer.append("홈페이지 :");
+                                xpp.next();
                             buffer.append(xpp.getText());//
                             buffer.append("\n");
                         }
                         else if(tag.equals("reqTime")){
-                            buffer.append("충전 방식 :");
+                            buffer.append("요청 시간 :");
                             xpp.next();
                             buffer.append(xpp.getText());
                             buffer.append("\n");
                         }
                         else if(tag.equals("tel")){
-                            buffer.append("충전소 ID :");
+                            buffer.append("전화번호 :");
                             xpp.next();
                             buffer.append(xpp.getText());
                             buffer.append("\n");
                         }
                         else if(tag.equals("zipcode")) {
-                            buffer.append("충전소 명칭 :");
+                            buffer.append("우편번호 :");
                             xpp.next();
                             buffer.append(xpp.getText());
                             buffer.append("\n");
