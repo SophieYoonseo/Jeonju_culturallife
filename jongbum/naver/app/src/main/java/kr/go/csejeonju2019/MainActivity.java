@@ -1,5 +1,6 @@
 package kr.go.csejeonju2019;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
@@ -15,7 +16,9 @@ import com.nhn.android.naverlogin.OAuthLoginHandler;
 import com.nhn.android.naverlogin.ui.view.OAuthLoginButton;
 import static com.nhn.android.naverlogin.OAuthLogin.mOAuthLoginHandler;
 
+
 public class MainActivity extends AppCompatActivity {
+    public static final int REQUEST_CODE_MENU = 101;
     OAuthLogin mOAuthLoginModule;
     OAuthLoginButton mOAuthLoginButton;
     Context mContext;
@@ -29,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 String tokenType = mOAuthLoginModule.getTokenType(mContext);
                 //Toast.makeText(getApplicationContext(), accessToken, Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(getApplicationContext(), AfterActivity.class);
-                startActivity(intent);
+                startActivityForResult(intent, REQUEST_CODE_MENU);
 
             } else {
                 String errorCode = mOAuthLoginModule.getLastErrorCode(mContext).getCode();
@@ -39,6 +42,20 @@ public class MainActivity extends AppCompatActivity {
             }
         };
     };
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if(requestCode == REQUEST_CODE_MENU) {
+            Toast.makeText(getApplicationContext(), "afterActivitiy 결과코드 :" + resultCode, Toast.LENGTH_LONG).show();
+            if(resultCode == RESULT_OK) {
+                String name = data.getExtras().getString("name");
+                Toast.makeText(getApplicationContext(), "응답으로 전달된 name : "+ name, Toast.LENGTH_LONG).show();
+            }
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
