@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
     OAuthLogin mOAuthLoginModule;
     OAuthLoginButton mOAuthLoginButton;
     Context mContext;
-    LinearLayout container;
     private OAuthLoginHandler mOAuthLoginHandler = new OAuthLoginHandler() {
         @Override
         public void run(boolean success) {
@@ -28,8 +27,9 @@ public class MainActivity extends AppCompatActivity {
                 String refreshToken = mOAuthLoginModule.getRefreshToken(mContext);
                 long expiresAt = mOAuthLoginModule.getExpiresAt(mContext);
                 String tokenType = mOAuthLoginModule.getTokenType(mContext);
-                Toast.makeText(getApplicationContext(), accessToken, Toast.LENGTH_LONG).show();
-                //startActivity(new Intent(getApplicationContext(), ))
+                //Toast.makeText(getApplicationContext(), accessToken, Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(getApplicationContext(), AfterActivity.class);
+                startActivity(intent);
 
             } else {
                 String errorCode = mOAuthLoginModule.getLastErrorCode(mContext).getCode();
@@ -58,9 +58,9 @@ public class MainActivity extends AppCompatActivity {
         //mOAuthLoginButton.setBgResourceId(R.drawable.img_loginbtn_usercustom);
         //mOAuthLoginModule.startOauthLoginActivity(this, mOAuthLoginHandler);
     }
-    public void onStop(){
+    public void onDestroy(){
         mOAuthLoginModule.logout(mContext);
-        Toast.makeText(this, "로그아웃되었습니다", Toast.LENGTH_LONG).show();
-        super.onStop();
+        Toast.makeText(MainActivity.this, "로그아웃되었습니다", Toast.LENGTH_LONG).show();
+        super.onDestroy();
     }
 }
