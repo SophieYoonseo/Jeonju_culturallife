@@ -38,10 +38,13 @@ public class Frag1 extends Fragment
             @Override
             public void onClick(View v) {
                 i=1-i;
-                if(i==0)
+                if(i==0){
                     imageView.setImageResource(R.drawable.slide2);
-                else
+                }
+                else{
                     imageView.setImageResource(R.drawable.slide3);
+                }
+
             }
         });
 

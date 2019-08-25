@@ -36,6 +36,7 @@
 
             <ImageView
 
+                android:id="@+id/imageview1"
                 android:layout_width="289dp"
                 android:layout_height="249dp"
                 android:gravity="center"
