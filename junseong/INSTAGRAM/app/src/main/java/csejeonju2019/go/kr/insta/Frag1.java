@@ -14,22 +14,31 @@ import android.view.ViewGroup;
 
 
 
-public class Frag1 extends Fragment
-{
+public class Frag1 extends Fragment {
 
-    public Frag1(){
 
-    }
+    private View view;
     ViewPager viewPager;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
     }
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v=inflater.inflate(R.layout.frag1,container,false);
-        viewPager=v.findViewById(R.id.viewPager);
+        view =inflater.inflate(R.layout.frag1,container,false);
+        return view;
+    }
 
-        return viewPager;
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        viewPager=(ViewPager) view.findViewById(R.id.viewPager);
+
+        ViewPagerAdapter viewPagerAdapter=new ViewPagerAdapter();
+
+        viewPager.setAdapter(viewPagerAdapter);
     }
 }
 
