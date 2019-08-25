@@ -1,6 +1,7 @@
 package csejeonju2019.go.kr.insta;
 
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -43,6 +44,7 @@ public class FirstFragment extends Fragment  {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_first, container, false);
         ImageButton button=(ImageButton)view.findViewById(R.id.button);
+         imageView=(ImageView)view.findViewById(R.id.imageView);
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
