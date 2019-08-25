@@ -1,44 +1,45 @@
 package csejeonju2019.go.kr.insta;
 
-
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapView;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 
+public class Frag1 extends Fragment
+{
+    private MapView mapView = null;
 
+    public Frag1()
+    {
+        // required
+    }
 
-public class Frag1 extends Fragment {
-
-
-    private View view;
-    ViewPager viewPager;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-    }
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view =inflater.inflate(R.layout.frag1,container,false);
-        return view;
     }
 
+    @Nullable
     @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View layout = inflater.inflate(R.layout.fragment_first, container, false);
 
-        viewPager=(ViewPager) view.findViewById(R.id.viewPager);
 
-        ViewPagerAdapter viewPagerAdapter=new ViewPagerAdapter();
-
-        viewPager.setAdapter(viewPagerAdapter);
+        return layout;
     }
+
+
+
 }
+
+
 
