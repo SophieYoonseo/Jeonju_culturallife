@@ -38,12 +38,16 @@ public class Frag2 extends Fragment implements OnMapReadyCallback
         Button button=(Button)layout.findViewById(R.id.button3);
         mapView = (MapView)layout.findViewById(R.id.map);
         mapView.getMapAsync(this);
+        final String sharedlink="www.naver";
+        final String mysubject="해당 페이지를 공유합니다";
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_SEND);
                 intent.setType("text/plain");
+                intent.putExtra(Intent.EXTRA_SUBJECT,mysubject);
+                intent.putExtra(Intent.EXTRA_SUBJECT,sharedlink);
 
 
                 Intent chooser = Intent.createChooser(intent, "공유");
