@@ -6,47 +6,7 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd810c7a-4fd0-4b17-ac63-4699a4798186" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/app/src/androidTest/java/com/example/testapi_11/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/app/src/main/java/com/example/testapi_11/MainActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/app/src/test/java/com/example/testapi_11/ExampleUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Testapi_11/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="bd810c7a-4fd0-4b17-ac63-4699a4798186" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/" />

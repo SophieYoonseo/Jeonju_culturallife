@@ -2,6 +2,7 @@ package com.example.testapi_11;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -46,6 +47,9 @@ private class GetXMLTask extends AsyncTask<String, Void, Document> {
             Toast.makeText(getBaseContext(), "Parsing Error", Toast.LENGTH_SHORT).show();
         }
         return doc;
+    }
+
+    private Context getBaseContext() {
     }
 
     @Override
