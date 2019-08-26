@@ -1,7 +1,6 @@
 package com.example.testapi_10;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -16,7 +15,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.URL;
 import java.net.URLEncoder;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
     EditText editText;
     TextView textView;
     String data;
@@ -61,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
     String getData() throws UnsupportedEncodingException {
         StringBuffer buffer = new StringBuffer();
         String str =  editText.getText().toString();
-        String location = URLEncoder.encode(str, "UTF-8");
+        String location = URLEncoder.encode(str);
 
         String queryUrl="http://openapi.jeonju.go.kr/rest/experience/getExperienceList?"
                 +"authApiKey=ro%2FXNFjTiuaWfUUOn939KiFkMvs0z915H%2BkR0Te9JF0NPfG4EjF9sAxR2%2B4%2FcqOzu9XlvQaZYyG0F4PniGNdsw%3D%3D"
