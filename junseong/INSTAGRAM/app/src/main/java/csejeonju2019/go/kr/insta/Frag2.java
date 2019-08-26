@@ -1,11 +1,14 @@
 package csejeonju2019.go.kr.insta;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
@@ -32,10 +35,21 @@ public class Frag2 extends Fragment implements OnMapReadyCallback
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View layout = inflater.inflate(R.layout.frag2, container, false);
-
+        Button button=(Button)layout.findViewById(R.id.button3);
         mapView = (MapView)layout.findViewById(R.id.map);
         mapView.getMapAsync(this);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_SEND);
+                intent.setType("text/plain");
 
+
+                Intent chooser = Intent.createChooser(intent, "공유");
+                startActivity(chooser);
+            }
+        });
         return layout;
     }
 
