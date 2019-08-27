@@ -19,8 +19,8 @@
 
     <FrameLayout
         android:id="@+id/main_frame"
-        android:layout_width="409dp"
-        android:layout_height="648dp"
+        android:layout_width="414dp"
+        android:layout_height="647dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavi"
         app:layout_constraintEnd_toEndOf="parent"

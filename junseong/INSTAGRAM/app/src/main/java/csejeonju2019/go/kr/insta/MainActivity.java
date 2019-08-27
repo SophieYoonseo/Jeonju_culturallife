@@ -9,6 +9,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private BottomNavigationView bottomNavigationView;//바텀 네비게이션 뷰 (하단바)
@@ -63,22 +64,27 @@ public class MainActivity extends AppCompatActivity {
             case 0:
                 ft.replace(R.id.main_frame,frag1);
                 ft.commit();//저장
+                Toast.makeText(this, "첫번째화면", Toast.LENGTH_SHORT).show();
                 break;
             case 1:
                 ft.replace(R.id.main_frame,frag2);
                 ft.commit();
+                Toast.makeText(this, "두번째화면", Toast.LENGTH_SHORT).show();
                 break;
             case 2:
                 ft.replace(R.id.main_frame,frag3);
                 ft.commit();
+                Toast.makeText(this, "세번째화면", Toast.LENGTH_SHORT).show();
                 break;
             case 3:
                 ft.replace(R.id.main_frame,frag4);
                 ft.commit();
+                Toast.makeText(this, "네번째화면", Toast.LENGTH_SHORT).show();
                 break;
             case 4:
                 ft.replace(R.id.main_frame,frag5);
                 ft.commit();
+                Toast.makeText(this, "다섯번째화면", Toast.LENGTH_SHORT).show();
                 break;
         }
     }
