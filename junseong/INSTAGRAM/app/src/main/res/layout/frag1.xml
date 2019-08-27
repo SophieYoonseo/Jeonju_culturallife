@@ -8,6 +8,7 @@
     android:layout_height="match_parent">
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     <android.support.constraint.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="wrap_content"
@@ -24,10 +25,17 @@
         android:layout_height="100dp"
         android:layout_gravity="center">
 >>>>>>> parent of cfaf3b0... 화면밖으로 레이아웃이 나가던것을 수정
+=======
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center">
+>>>>>>> parent of cfaf3b0... 화면밖으로 레이아웃이 나가던것을 수정
 
 
         <TextView
             android:id="@+id/editText"
+<<<<<<< HEAD
 <<<<<<< HEAD
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -62,6 +70,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/constraintLayout">
 =======
+            />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+>>>>>>> parent of cfaf3b0... 화면밖으로 레이아웃이 나가던것을 수정
+=======
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="    현재 진행중인 축제들"
+            android:textColor="@color/colorAccent"
+            android:textAlignment="center"
+            android:textSize="25sp"
             />
     </LinearLayout>
 
