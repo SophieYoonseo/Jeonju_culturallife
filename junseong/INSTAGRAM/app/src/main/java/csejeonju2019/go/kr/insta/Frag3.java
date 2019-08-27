@@ -18,10 +18,7 @@ public class Frag3 extends Fragment implements OnMapReadyCallback
 {
     private MapView mapView = null;
 
-    public Frag3()
-    {
-        // required
-    }
+
 
 
     @Override
