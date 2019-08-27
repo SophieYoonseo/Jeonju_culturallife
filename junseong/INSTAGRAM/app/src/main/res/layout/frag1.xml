@@ -1,38 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <LinearLayout
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:layout_gravity="center">
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout"
+        app:layout_constraintTop_toTopOf="parent">
 
 
         <TextView
             android:id="@+id/editText"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
+            android:layout_width="254dp"
+            android:layout_height="69dp"
             android:layout_gravity="center"
-            android:text="    현재 진행중인 축제들"
-            android:textColor="@color/colorAccent"
+            android:text="현재 진행중인 축제들"
             android:textAlignment="center"
+            android:textColor="@color/colorAccent"
             android:textSize="25sp"
-            />
-    </LinearLayout>
+            app:layout_constraintBaseline_toBaselineOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </android.support.constraint.ConstraintLayout>
 
     <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="399dp"
+        android:layout_marginTop="132dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout">
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
+            android:layout_height="match_parent">
 
             <ImageView
 
@@ -46,23 +57,22 @@
                 android:id="@+id/button"
                 android:layout_width="130dp"
                 android:layout_height="match_parent"
+                android:background="@color/dark_grey"
                 android:gravity="center"
                 android:src="@drawable/ic_magnifying_glass"
-                android:background="@color/dark_grey"
                 android:text="다른축제 확인 " />
         </TableRow>
 
 
-
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <TextView
                 android:id="@+id/textView2"
@@ -78,4 +88,4 @@
     </TableLayout>
 
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
