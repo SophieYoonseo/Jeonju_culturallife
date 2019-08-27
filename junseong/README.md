@@ -1,6 +1,6 @@
 ## 김준성 진행상황
 - indicator_again이란 프로젝트명으로 viewpager indicator완성 (손가락 swipe로 화면이전환댐)
-- 로딩화면에 컬러를넣은 텍스트를 넣고 home화면 간단하게만 디자인완료
+- main frame 은 width:398, height :629 로 설정해놓음 따라서 fragment설정시 이에따른 비례식을 세워서결정할것
 - 🌱insta를 메인프로젝트로 진행중 하단바및 fragment완성
 - 메인프로젝트인 insta의 두번째 fragment에 공유하기 버튼과 그에따른 공유하기 기능 추가
 ![frag2ing](./frag2ing.JPG)
