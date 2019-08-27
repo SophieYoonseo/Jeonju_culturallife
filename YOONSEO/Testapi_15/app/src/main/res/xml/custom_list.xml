@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<custom_list>
+
+    <custom value="축제"></custom>
+    <custom value="공연"></custom>
+    <custom value="전시"></custom>
+    <custom value="영화"></custom>
+    <custom value="도움말"></custom>
+
+</custom_list>
