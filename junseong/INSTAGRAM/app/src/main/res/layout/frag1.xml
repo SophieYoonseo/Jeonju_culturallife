@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
+<<<<<<< HEAD
     <android.support.constraint.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="wrap_content"
@@ -16,10 +18,17 @@
         android:layout_marginTop="68dp"
         app:layout_constraintStart_toStartOf="@+id/tableLayout"
         app:layout_constraintTop_toTopOf="parent">
+=======
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center">
+>>>>>>> parent of cfaf3b0... 화면밖으로 레이아웃이 나가던것을 수정
 
 
         <TextView
             android:id="@+id/editText"
+<<<<<<< HEAD
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -27,8 +36,16 @@
             android:layout_marginLeft="8dp"
             android:text="현재 진행중인 축제들"
             android:textAlignment="center"
+=======
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="    현재 진행중인 축제들"
+>>>>>>> parent of cfaf3b0... 화면밖으로 레이아웃이 나가던것을 수정
             android:textColor="@color/colorAccent"
+            android:textAlignment="center"
             android:textSize="25sp"
+<<<<<<< HEAD
             app:layout_constraintBaseline_toBaselineOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
@@ -44,10 +61,19 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/constraintLayout">
+=======
+            />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+>>>>>>> parent of cfaf3b0... 화면밖으로 레이아웃이 나가던것을 수정
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            >
 
             <ImageView
 
@@ -61,22 +87,23 @@
                 android:id="@+id/button"
                 android:layout_width="130dp"
                 android:layout_height="match_parent"
-                android:background="@color/dark_grey"
                 android:gravity="center"
                 android:src="@drawable/ic_magnifying_glass"
+                android:background="@color/dark_grey"
                 android:text="다른축제 확인 " />
         </TableRow>
 
 
+
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent" >
 
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent" >
 
             <TextView
                 android:id="@+id/textView2"
@@ -92,4 +119,4 @@
     </TableLayout>
 
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
