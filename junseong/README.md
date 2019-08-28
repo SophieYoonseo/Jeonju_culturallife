@@ -12,7 +12,7 @@
 ![melo](./g.gif)
 
 
-#### 전주 공공데이터 데이터셋 
+#### 전주 공공데이터 데이터셋 (문화체험 정보 서비스 목록)
 - http://openapi.jeonju.go.kr/user/apimng/dataset/view.jeonju?searchCondition=REG_TITLE&postSearch=&searchRegGroup=&apiRegSid=69&regType=SHEET&menuCd=DOM_000000701001000000&pageIndex=4
 
 ###  😰어려운점..
