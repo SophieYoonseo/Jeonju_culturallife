@@ -3,6 +3,10 @@ package csejeonju2019.go.kr.insta;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,8 +23,15 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class Frag1 extends Fragment
 {
     int i=0;
-    ImageView imageView=null;
-
+    ViewPager viewPager;
+    private FirstFragment fragment1;
+    private SecondFragment fragment2;
+    private ThirdFragment fragment3;
+    public Frag1(){
+       FirstFragment fragment1;
+   SecondFragment fragment2;
+       ThirdFragment fragment3;
+    }
 
 
     @Override
@@ -33,22 +44,12 @@ public class Frag1 extends Fragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.frag1, container, false);
-        ImageButton button=(ImageButton)view.findViewById(R.id.button);
-        imageView=(ImageView)view.findViewById(R.id.imageView);
-        button.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                i=1-i;
-                if(i==0){
-                    imageView.setImageResource(R.drawable.slide2);
-                }
-                else{
-                    imageView.setImageResource(R.drawable.slide3);
-                }
-
-            }
-        });
-
+        fragment1=new FirstFragment();
+        fragment2=new SecondFragment();
+        fragment3=new ThirdFragment();
+        viewPager=(ViewPager)view.findViewById(R.id.viewPager);
+        viewPager.setAdapter(new PagerAdapter(getActivity().getSupportFragmentManager()));
+        viewPager.setCurrentItem(0);
         return view;
     }
 
@@ -93,7 +94,25 @@ public class Frag1 extends Fragment
         super.onDestroy();
 
     }
+    private class PagerAdapter extends FragmentPagerAdapter{
+        public PagerAdapter(FragmentManager fm){
+            super(fm);
+        }
+        public Fragment getItem(int position){
+            if(position==0)
+            {
+                return fragment1;
+            }else if(position==1){
+                return fragment2;
+            }else{
+                return fragment3;
+            }
+        }
+        public int getCount(){
+            return 3;
+        }
 
+    }
 
 
 
