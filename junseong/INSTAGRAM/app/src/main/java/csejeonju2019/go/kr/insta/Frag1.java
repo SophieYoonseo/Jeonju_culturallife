@@ -46,7 +46,7 @@ public class Frag1 extends Fragment
         fragment2=new SecondFragment();
         fragment3=new ThirdFragment();
         viewPager=(ViewPager)view.findViewById(R.id.viewPager);
-        viewPager.setAdapter(new PagerAdapter(getActivity().getSupportFragmentManager()));
+        viewPager.setAdapter(new PagerAdapter(getChildFragmentManager()));
         viewPager.setCurrentItem(0);
         return view;
     }
@@ -95,6 +95,7 @@ public class Frag1 extends Fragment
     private class PagerAdapter extends FragmentPagerAdapter{
         public PagerAdapter(FragmentManager fm){
             super(fm);
+            getItem(0);
         }
         public Fragment getItem(int position){
             if(position==0)
