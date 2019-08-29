@@ -1,18 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewPager"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></androidx.viewpager.widget.ViewPager>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center">
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="    현재 진행중인 축제들"
+            android:textColor="@color/colorAccent"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+
+                android:id="@+id/imageView"
+                android:layout_width="248dp"
+                android:layout_height="249dp"
+                android:gravity="center"
+                app:srcCompat="@drawable/slide1" />
+
+            <ImageButton
+                android:id="@+id/button"
+                android:layout_width="10dp"
+                android:layout_height="82dp"
+                android:layout_marginVertical="100dp"
+                android:layout_marginLeft="40dp"
+                app:srcCompat="@drawable/ic_magnifying_glass" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="22dp">
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="진행중인 축제      "
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="                더보기"
+                android:textAlignment="inherit"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="288dp"
+            android:layout_height="120dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="228dp"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/button_quick1"
+                    android:layout_width="0dp"
+                    android:layout_height="92dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_marginRight="60dp"
+                    app:layout_constraintEnd_toStartOf="@+id/imageButton7"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_nature_people_black_24dp" />
+
+                <ImageButton
+                    android:id="@+id/imageButton7"
+                    android:layout_width="0dp"
+                    android:layout_height="92dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginEnd="31dp"
+                    android:layout_marginRight="31dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/button_quick1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_flash_on_black_24dp" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="162dp"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/imageButton8"
+                    android:layout_width="73dp"
+                    android:layout_height="87dp"
+                    app:srcCompat="@drawable/ic_cake_black_24dp"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="32dp" />
+            </android.support.constraint.ConstraintLayout>
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>
