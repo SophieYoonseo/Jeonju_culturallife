@@ -3,6 +3,7 @@ package csejeonju2019.go.kr.insta;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,14 +19,16 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class Frag1 extends Fragment
 {
-    int i=0;
-    ImageView imageView=null;
+    ViewPager viewPager;
+
+
 
 
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        View
     }
 
     @Nullable
@@ -33,21 +36,7 @@ public class Frag1 extends Fragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.frag1, container, false);
-        ImageButton button=(ImageButton)view.findViewById(R.id.button);
-        imageView=(ImageView)view.findViewById(R.id.imageView);
-        button.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                i=1-i;
-                if(i==0){
-                    imageView.setImageResource(R.drawable.slide2);
-                }
-                else{
-                    imageView.setImageResource(R.drawable.slide3);
-                }
 
-            }
-        });
 
         return view;
     }
