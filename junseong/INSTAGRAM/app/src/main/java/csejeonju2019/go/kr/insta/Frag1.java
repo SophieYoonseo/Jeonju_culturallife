@@ -28,9 +28,7 @@ public class Frag1 extends Fragment
     private SecondFragment fragment2;
     private ThirdFragment fragment3;
     public Frag1(){
-       FirstFragment fragment1;
-   SecondFragment fragment2;
-       ThirdFragment fragment3;
+
     }
 
 
@@ -104,7 +102,7 @@ public class Frag1 extends Fragment
                 return fragment1;
             }else if(position==1){
                 return fragment2;
-            }else{
+            }else {
                 return fragment3;
             }
         }

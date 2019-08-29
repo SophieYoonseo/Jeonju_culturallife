@@ -31,7 +31,9 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()){
                     case R.id.action_airplane:
+                        frag1=new Frag1();
                         setFrag(0);
+                        break;
                     case R.id.action_star:
                         setFrag(1);
                         break;
@@ -61,22 +63,27 @@ public class MainActivity extends AppCompatActivity {
         ft=fm.beginTransaction();
         switch (n){
             case 0:
+                frag1=new Frag1();
                 ft.replace(R.id.main_frame,frag1);
                ft.commit();
                 break;
             case 1:
+                frag2=new Frag2();
                 ft.replace(R.id.main_frame,frag2);
                 ft.commit();
                 break;
             case 2:
+                frag3=new Frag3();
                 ft.replace(R.id.main_frame,frag3);
                 ft.commit();
                 break;
             case 3:
+                frag4=new Frag4();
                 ft.replace(R.id.main_frame,frag4);
                 ft.commit();
                 break;
             case 4:
+                frag5=new Frag5();
                 ft.replace(R.id.main_frame,frag5);
                 ft.commit();
                 break;
