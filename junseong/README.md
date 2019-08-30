@@ -14,6 +14,8 @@
 
 
 ###  😰어려운점..
-   - 아직은없음
+   - 1. dataset에있는것을 mainitem과 subitem으로 노가다로 추가할경우 이를 버튼으로 어떻게 해야할지
+   - 2. listview를 fragment안에넣어야되는데 이를 activity 클래스만들어서 버튼클릭시 나오게뇌피셜을굴렷는데 실행이안되는상황발생. 
+   - 3. fragment와 activity주고받음이 log를통해선되고 오류또한없는데 창이표시안되는문제 
 
 
