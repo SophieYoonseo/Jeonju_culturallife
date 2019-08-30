@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private Frag3 frag3;
     private Frag4 frag4;
     private Frag5 frag5;
+    private culture_experience culture_experience;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
