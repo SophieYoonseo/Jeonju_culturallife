@@ -1,0 +1,226 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml:2:1-28:12
+MERGED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:2:1-43:12
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\81d647fe6952714565d46433746613a5\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\10a3c5dcfdb56cb4c0d0167e97aa1df7\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\1bad5faf44464ac7f9c6a4ce8fd961af\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\1648402893dae6890abdb616ce15e0b2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\c8528317aa24df783ed96512a86d198d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\a9f75b4796104ee5d1af42e056a4d179\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\4d49ad1f112f5c0a90e65ac62e2d3b67\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\fbea9ff2427576342885e053ce58ebe2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\3e51757a470f443d321d4104bdabd473\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\dd55ab96596e25c1e651cad414391b83\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\e49df625b61d3bf2cbb72ac39795df83\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\771f15c57ea79771efc7421a0b291cf2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\2a1ed68add37f54db490c1024599f4c9\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\f7e626b88df6c6a3bbc4db64ea0f96d9\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\0925344ab1e18f35ce45b8f4388bf7d7\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\817ecfffc91eb4ce34182d7935b00c32\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\27de723c762b5d529590ea15a28be3ec\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\56ca41edbd06bbedde04fa49c383fd74\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.1] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\682808ead489949481208ede11e9aa37\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\3470ee9279b8a83aa5efe6f9f0cc9e72\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\8e3f41c433a41307fa2be24e14126d7a\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\8d35c224bfeda12ab7afb67d9a67ac39\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\f8b6431911b84ecd54946958f3189421\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\71011d5457a84998411b66f1100c84b4\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\1df91e612599fa0e2b0b2ccbf6886d4d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\0e63e34c619199094de3c8b7d3757d10\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\f34ee7217364ab9dd63f0a48afba7424\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\248d689783f6a46b19d0c33bf5804d85\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\6efde92fecb9f7db29a6822ed76a7d88\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\f13f52a9420d0ffc4a5f48ab15cd2128\AndroidManifest.xml:17:1-22:12
+INJECTED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml:2:1-28:12
+	package
+		ADDED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml:3:5-48
+		INJECTED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml
+		ADDED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml:2:1-28:12
+		INJECTED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml
+		ADDED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml:2:1-28:12
+		INJECTED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml:4:5-67
+MERGED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:14:5-67
+MERGED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:14:5-67
+	android:name
+		ADDED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml:4:22-64
+application
+ADDED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml:6:5-26:19
+MERGED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:16:5-41:19
+MERGED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:16:5-41:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\10a3c5dcfdb56cb4c0d0167e97aa1df7\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\10a3c5dcfdb56cb4c0d0167e97aa1df7\AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.0.1] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\682808ead489949481208ede11e9aa37\AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.1] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\682808ead489949481208ede11e9aa37\AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\3470ee9279b8a83aa5efe6f9f0cc9e72\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\3470ee9279b8a83aa5efe6f9f0cc9e72\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.1] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\682808ead489949481208ede11e9aa37\AndroidManifest.xml:22:18-86
+	android:supportsRtl
+		ADDED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml:10:9-41
+	android:roundIcon
+		ADDED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml:11:9-54
+	android:icon
+		ADDED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml:8:9-35
+	android:theme
+		ADDED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml:13:9-40
+activity#csejeonju2019.go.kr.myapplication.MainActivity
+ADDED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml:18:9-24:20
+	android:name
+		ADDED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml:18:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml:19:13-23:29
+action#android.intent.action.MAIN
+ADDED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml:20:17-69
+	android:name
+		ADDED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml:20:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml:22:17-77
+	android:name
+		ADDED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml:22:27-74
+uses-sdk
+INJECTED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml
+INJECTED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml
+MERGED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:8:5-11:52
+MERGED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:8:5-11:52
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\81d647fe6952714565d46433746613a5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\81d647fe6952714565d46433746613a5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\10a3c5dcfdb56cb4c0d0167e97aa1df7\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\10a3c5dcfdb56cb4c0d0167e97aa1df7\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\1bad5faf44464ac7f9c6a4ce8fd961af\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\1bad5faf44464ac7f9c6a4ce8fd961af\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\1648402893dae6890abdb616ce15e0b2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\1648402893dae6890abdb616ce15e0b2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\c8528317aa24df783ed96512a86d198d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\c8528317aa24df783ed96512a86d198d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\a9f75b4796104ee5d1af42e056a4d179\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\a9f75b4796104ee5d1af42e056a4d179\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\4d49ad1f112f5c0a90e65ac62e2d3b67\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\4d49ad1f112f5c0a90e65ac62e2d3b67\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\fbea9ff2427576342885e053ce58ebe2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\fbea9ff2427576342885e053ce58ebe2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\3e51757a470f443d321d4104bdabd473\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\3e51757a470f443d321d4104bdabd473\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\dd55ab96596e25c1e651cad414391b83\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\dd55ab96596e25c1e651cad414391b83\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\e49df625b61d3bf2cbb72ac39795df83\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\e49df625b61d3bf2cbb72ac39795df83\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\771f15c57ea79771efc7421a0b291cf2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\771f15c57ea79771efc7421a0b291cf2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\2a1ed68add37f54db490c1024599f4c9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\2a1ed68add37f54db490c1024599f4c9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\f7e626b88df6c6a3bbc4db64ea0f96d9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\f7e626b88df6c6a3bbc4db64ea0f96d9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\0925344ab1e18f35ce45b8f4388bf7d7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\0925344ab1e18f35ce45b8f4388bf7d7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\817ecfffc91eb4ce34182d7935b00c32\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\817ecfffc91eb4ce34182d7935b00c32\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\27de723c762b5d529590ea15a28be3ec\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\27de723c762b5d529590ea15a28be3ec\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\56ca41edbd06bbedde04fa49c383fd74\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\56ca41edbd06bbedde04fa49c383fd74\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\682808ead489949481208ede11e9aa37\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\682808ead489949481208ede11e9aa37\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\3470ee9279b8a83aa5efe6f9f0cc9e72\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\3470ee9279b8a83aa5efe6f9f0cc9e72\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\8e3f41c433a41307fa2be24e14126d7a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\8e3f41c433a41307fa2be24e14126d7a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\8d35c224bfeda12ab7afb67d9a67ac39\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\8d35c224bfeda12ab7afb67d9a67ac39\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\f8b6431911b84ecd54946958f3189421\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\f8b6431911b84ecd54946958f3189421\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\71011d5457a84998411b66f1100c84b4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\71011d5457a84998411b66f1100c84b4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\1df91e612599fa0e2b0b2ccbf6886d4d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\1df91e612599fa0e2b0b2ccbf6886d4d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\0e63e34c619199094de3c8b7d3757d10\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\0e63e34c619199094de3c8b7d3757d10\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\f34ee7217364ab9dd63f0a48afba7424\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\f34ee7217364ab9dd63f0a48afba7424\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\248d689783f6a46b19d0c33bf5804d85\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\248d689783f6a46b19d0c33bf5804d85\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\6efde92fecb9f7db29a6822ed76a7d88\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\6efde92fecb9f7db29a6822ed76a7d88\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\f13f52a9420d0ffc4a5f48ab15cd2128\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\f13f52a9420d0ffc4a5f48ab15cd2128\AndroidManifest.xml:20:5-44
+INJECTED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml
+INJECTED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:11:9-49
+	android:targetSdkVersion
+		INJECTED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml
+		ADDED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml
+		ADDED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Github\Jeonju_culturallife\junseong\test_naver\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:13:22-76
+activity#com.nhn.android.naverlogin.ui.OAuthLoginActivity
+ADDED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:17:9-19:67
+	android:theme
+		ADDED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:19:13-64
+	android:name
+		ADDED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:18:13-76
+activity#com.nhn.android.naverlogin.ui.OAuthLoginInAppBrowserActivity
+ADDED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:20:9-23:47
+	android:label
+		ADDED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:23:13-44
+	android:configChanges
+		ADDED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:22:13-59
+	android:name
+		ADDED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:21:13-88
+activity#com.nhn.android.naverlogin.ui.OAuthCustomTabActivity
+ADDED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:24:9-40:20
+	android:launchMode
+		ADDED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:27:13-44
+	android:configChanges
+		ADDED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:26:13-59
+	android:theme
+		ADDED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:28:13-72
+	android:name
+		ADDED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:25:13-80
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:authorize+data:path:/+data:scheme:naver3rdpartylogin
+ADDED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:29:13-39:29
+action#android.intent.action.VIEW
+ADDED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:30:17-69
+	android:name
+		ADDED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:30:25-66
+category#android.intent.category.DEFAULT
+ADDED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:32:17-76
+	android:name
+		ADDED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:32:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:33:17-78
+	android:name
+		ADDED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:33:27-75
+data
+ADDED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:35:17-38:59
+	android:path
+		ADDED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:37:21-37
+	android:host
+		ADDED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:36:21-45
+	android:scheme
+		ADDED from [com.naver.nid:naveridlogin-android-sdk:4.2.5] C:\Users\danie\.gradle\caches\transforms-2\files-2.1\13607e1494dda8aae9b7c438565538c8\AndroidManifest.xml:38:21-56
