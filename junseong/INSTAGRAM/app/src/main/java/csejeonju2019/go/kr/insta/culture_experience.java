@@ -25,7 +25,7 @@ public class culture_experience extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         View view=inflater.inflate(R.layout.activity_culture_experience,container,false);
 
-        String[] menuItems={"천우희1",
+        String[] menuItems={"한지산업지원센터",
                 "천우희2",
                 "천우희3"
         };
