@@ -1,11 +1,13 @@
 package csejeonju2019.go.kr.insta;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -33,10 +35,27 @@ public class Frag3 extends Fragment implements OnMapReadyCallback
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View layout = inflater.inflate(R.layout.frag3, container, false);
-
+        Button button=(Button)layout.findViewById(R.id.button_share);
         mapView = (MapView)layout.findViewById(R.id.map);
         mapView.getMapAsync(this);
+        button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                String mySharedLink = "https://github.com/SophieYoonseo/Jeonju_culturallife/tree/master/junseong";
+                String mySubject = "오픈소스로 초대합니덩.";
 
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_SEND);
+                intent.setType("text/plain");
+                intent.putExtra(Intent.EXTRA_SUBJECT, mySubject);
+                intent.putExtra(Intent.EXTRA_TEXT, mySharedLink);
+
+                startActivity(Intent.createChooser(intent, "공유합니다."));
+
+
+
+            }
+        });
         return layout;
     }
 
@@ -96,11 +115,11 @@ public class Frag3 extends Fragment implements OnMapReadyCallback
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        LatLng jeonju = new LatLng(35.953354, 126.958502);
+        LatLng jeonju = new LatLng(35.846925, 127.129456);
         MarkerOptions markerOptions = new MarkerOptions();
         markerOptions.position(jeonju);
-        markerOptions.title("익산");
-        markerOptions.snippet("보석과 준성의도시 익산");
+        markerOptions.title("전북대학교");
+        markerOptions.snippet("전북의 하바드");
         googleMap.addMarker(markerOptions);
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(jeonju,16));//16배 줌가능
         googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(jeonju,16));//지도 시작시 애니메이션 효과
@@ -108,3 +127,6 @@ public class Frag3 extends Fragment implements OnMapReadyCallback
     }
 
 }
+
+
+
