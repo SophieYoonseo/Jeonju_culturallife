@@ -9,8 +9,8 @@
 
     <ImageButton
         android:id="@+id/culture_space"
-        android:layout_width="128dp"
-        android:layout_height="0dp"
+        android:layout_width="137dp"
+        android:layout_height="169dp"
         android:layout_marginStart="148dp"
         android:layout_marginLeft="148dp"
         android:layout_marginTop="100dp"
@@ -22,8 +22,8 @@
 
     <ImageButton
         android:id="@+id/cultural_experience"
-        android:layout_width="137dp"
-        android:layout_height="0dp"
+        android:layout_width="146dp"
+        android:layout_height="212dp"
         android:layout_marginBottom="284dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

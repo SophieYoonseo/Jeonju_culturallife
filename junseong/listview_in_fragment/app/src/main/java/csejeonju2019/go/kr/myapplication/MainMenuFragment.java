@@ -1,5 +1,6 @@
 package csejeonju2019.go.kr.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,6 +34,8 @@ public class MainMenuFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 if(i==0){
+                    Intent intent=new Intent(getActivity(),otheractivity.class);
+                    startActivity(intent);
                     Toast.makeText(getActivity(),"천우희1선택",Toast.LENGTH_SHORT).show();
                 }else if(i==1){
                     Toast.makeText(getActivity(),"천우희2선택",Toast.LENGTH_SHORT).show();
