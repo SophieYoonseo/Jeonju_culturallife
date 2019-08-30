@@ -14,8 +14,10 @@
 
 
 ###  😰어려운점..
-   - 1. dataset에있는것을 mainitem과 subitem으로 노가다로 추가할경우 이를 버튼으로 어떻게 해야할지
-   - 2. listview를 fragment안에넣어야되는데 이를 activity 클래스만들어서 버튼클릭시 나오게뇌피셜을굴렷는데 실행이안되는상황발생. 
-   - 3. fragment와 activity주고받음이 log를통해선되고 오류또한없는데 창이표시안되는문제 
+   ## 1. dataset에있는것을 mainitem과 subitem으로 노가다로 추가할경우 이를 버튼으로 어떻게 해야할지
+   ## 2. listview를 fragment안에넣어야되는데 이를 activity 클래스만들어서 버튼클릭시 나오게뇌피셜을굴렷는데 실행이안되는상황발생. 
+   ## 3. fragment와 activity통신이 log를통해선되고 오류또한없는데 창이표시안되는문제
+   ## 4. listview in fragment를 기본 testapp에서는 클릭리스너도 달아서 성공하였으나 기존앱과 합치는데에있어서 문제.
+   
 
 
