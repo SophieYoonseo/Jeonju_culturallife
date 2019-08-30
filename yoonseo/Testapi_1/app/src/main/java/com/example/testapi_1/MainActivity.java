@@ -24,7 +24,7 @@ public class MainActivity extends Activity {
         boolean dataSid = false, dataTitle = false, expCommente = false, experName = false, fileCnt = false;
         boolean homepage = false, lowCost = false, maxCost = false, memberCnt = false, posx = false, posy = false;
         boolean regDt = false, reqTime = false, tel = false, zipcode = false, charge = false;
-        boolean indata = false;
+        boolean inlist = false;
 
         String s_resultCode = null, s_resultMsg = null, s_pageIndex = null, s_pageSize = null, s_startPage = null, s_totalCount = null;
         String s_addr = null, s_addrDtl = null, s_boardSid = null, s_cultureSpNm = null, s_dataContent = null;
@@ -35,8 +35,9 @@ public class MainActivity extends Activity {
 
         try{
             URL url = new URL("http://openapi.jeonju.go.kr/rest/experience/getExperienceList?" +
-                    "+authApiKey=ro%2FXNFjTiuaWfUUOn939KiFkMvs0z915H%2BkR0Te9JF0NPfG4EjF9sAxR2%2B4%2FcqOzu9XlvQaZYyG0F4PniGNdsw%3D%3D" +
-                    "&dataValue=%EC%98%88%EB%8B%A4%EC%9B%90"); //검색 URL부분
+                    "serviceKey=ro%2FXNFjTiuaWfUUOn939KiFkMvs0z915H%2BkR0Te9JF0NPfG4EjF9sAxR2%2B4%2FcqOzu9XlvQaZYyG0F4PniGNdsw%3D%3D");//+
+                    //"authApiKey=ro%2FXNFjTiuaWfUUOn939KiFkMvs0z915H%2BkR0Te9JF0NPfG4EjF9sAxR2%2B4%2FcqOzu9XlvQaZYyG0F4PniGNdsw%3D%3D");// +
+                    //"&dataValue=%EC%98%88%EB%8B%A4%EC%9B%90"); //검색 URL부분
 
             XmlPullParserFactory parserCreator = XmlPullParserFactory.newInstance();
             XmlPullParser parser = parserCreator.newPullParser();
@@ -252,7 +253,7 @@ public class MainActivity extends Activity {
 
                         break;
                     case XmlPullParser.END_TAG:
-                        if(parser.getName().equals("data")){
+                        if(parser.getName().equals("list")){
                             status1.setText(status1.getText()+
                                     "결과코드 : "+ s_resultCode + "\n 결과메시지: "+ s_resultMsg +"\n 쿼리 페이지 시작점 : " + s_pageIndex//+"\n 페이지 크기 : " + s_pageSize +  "\n 시작 페이지 : " + s_startPage + "\n 전체 결과 수 : " + s_totalCount
                                     +"\n 데이터 번호 : " + s_dataSid + "\n 게시판 번호 : " + s_boardSid + "\n 장소 : " + s_dataTitle
@@ -267,7 +268,7 @@ public class MainActivity extends Activity {
                                     + "\n"
 
                             );
-                            indata = false;
+                            inlist = false;
                         }
                         break;
                 }
