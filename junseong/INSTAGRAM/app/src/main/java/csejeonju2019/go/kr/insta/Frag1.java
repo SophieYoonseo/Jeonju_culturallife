@@ -11,9 +11,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.pm10.library.CircleIndicator;
+
 
 public class Frag1 extends Fragment
 {
+
+
     int i=0;
     ViewPager viewPager;
     private FirstFragment fragment1;
@@ -34,12 +38,15 @@ public class Frag1 extends Fragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.frag1, container, false);
+
         fragment1=new FirstFragment();
         fragment2=new SecondFragment();
         fragment3=new ThirdFragment();
         viewPager=(ViewPager)view.findViewById(R.id.viewPager);
         viewPager.setAdapter(new PagerAdapter(getChildFragmentManager()));
         viewPager.setCurrentItem(0);
+        CircleIndicator circleIndicator=(CircleIndicator)view.findViewById(R.id.circle_indicator);
+        circleIndicator.setupWithViewPager(viewPager);
         return view;
     }
 
