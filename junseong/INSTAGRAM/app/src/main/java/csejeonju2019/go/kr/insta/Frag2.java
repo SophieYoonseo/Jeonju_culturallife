@@ -1,11 +1,17 @@
 package csejeonju2019.go.kr.insta;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ListView;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -14,9 +20,9 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class Frag2 extends Fragment implements OnMapReadyCallback
+public class Frag2 extends Fragment
 {
-    private MapView mapView = null;
+
 
     public Frag2()
     {
@@ -33,9 +39,29 @@ public class Frag2 extends Fragment implements OnMapReadyCallback
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View layout = inflater.inflate(R.layout.frag2, container, false);
+        ImageButton button1=(ImageButton)layout.findViewById(R.id.culture_space);
+        ImageButton button2=(ImageButton)layout.findViewById(R.id.cultural_experience);
+        button1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
 
-        mapView = (MapView)layout.findViewById(R.id.map);
-        mapView.getMapAsync(this);
+                //문화공간 리스트출력
+            Intent intent =new Intent(getActivity(),culture_experience.class);
+            startActivity(intent);
+
+
+            }
+        });
+        button1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+
+
+            //문화체험 리스트 출력
+
+            }
+        });
+
 
         return layout;
     }
@@ -43,68 +69,48 @@ public class Frag2 extends Fragment implements OnMapReadyCallback
     @Override
     public void onStart() {
         super.onStart();
-        mapView.onStart();
+
     }
 
     @Override
     public void onStop() {
         super.onStop();
-        mapView.onStop();
+
     }
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        mapView.onSaveInstanceState(outState);
+
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        mapView.onResume();
+
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        mapView.onPause();
+
     }
 
     @Override
     public void onLowMemory() {
         super.onLowMemory();
-        mapView.onLowMemory();
+
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
-        mapView.onLowMemory();
-    }
-
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-
-        //액티비티가 처음 생성될 때 실행되는 함수
-
-        if(mapView != null)
-        {
-            mapView.onCreate(savedInstanceState);
-        }
-    }
-
-    @Override
-    public void onMapReady(GoogleMap googleMap) {
-        LatLng jeonju = new LatLng(35.953354, 126.958502);
-        MarkerOptions markerOptions = new MarkerOptions();
-        markerOptions.position(jeonju);
-        markerOptions.title("익산");
-        markerOptions.snippet("보석과 준성의도시 익산");
-        googleMap.addMarker(markerOptions);
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(jeonju,16));//16배 줌가능
-        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(jeonju,16));//지도 시작시 애니메이션 효과
 
     }
+
+
+
+
+
 
 }
