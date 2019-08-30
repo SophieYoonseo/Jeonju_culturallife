@@ -19,5 +19,6 @@
 
 ## 2019.08.30 / API 파싱 작업 합류(SophieYoonseo & Jongbum)
 #### 기존 SophieYoonseo의 TestAPI1 프로젝트(문화체험API)의 오류 디버깅
+오류 해결 및 공연문화정보API로 변경 완료(testAPI_JB 프로젝트 파일)
 
-오류 해결 및 공연문화정보API로 수정 예정
+리스트뷰 추가 예정
