@@ -9,6 +9,11 @@
 ![view](./ing.gif)
 
 
+- DB_INSTA 라는 폴더명에 회원가입및 FIREBASE연동 그리고 DB활성화 
+
+![FIEEBASE](./firebase.jpg)
+
+
 
 
 #### 전주 공공데이터 데이터셋 (문화체험 정보 서비스 목록)
