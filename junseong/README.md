@@ -20,9 +20,7 @@
 
 
 ###  😰어려운점..
-   ## 1. dataset에있는것을 mainitem과 subitem으로 노가다로 추가할경우 이를 버튼으로 어떻게 해야할지
-   ## 2. listview in fragment를 기본 testapp에서는 클릭리스너도 달아서 성공하였으나 기존앱과 합치는데에있어서 문제.
-   ## 3. 구상에있어서 문제점 어떻게 주고받을지 mainacvity에서는 다섯개의 fragment를 만들고 외부 액티비티에서 fragment를 더만들지 
+   ## 1. 구상에있어서 문제점 어떻게 주고받을지 mainacvity에서는 다섯개의 fragment를 만들고 외부 액티비티에서 fragment를 더만들지 
    ![1착상](./trouble.JPG)
 
 
