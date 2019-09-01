@@ -21,4 +21,4 @@
 #### 기존 SophieYoonseo의 TestAPI1 프로젝트(문화체험API)의 오류 디버깅
 오류 해결 및 공연문화정보API로 변경 완료(testAPI_JB 프로젝트 파일)
 
-리스트뷰, 세부사항 액티비티 추가 성공[![status](https://img.shields.io/badge/status-developing-yellow)]
+리스트뷰, 세부사항 액티비티 추가 성공[![status](https://img.shields.io/badge/status-developing-green)]
