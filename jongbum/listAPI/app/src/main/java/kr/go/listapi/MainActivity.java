@@ -25,24 +25,29 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        // 네트워크 API 지연으로 인한 ANR(Android not Responding) 방지
         StrictMode.enableDefaults();
+        // 공연 정보 객체, 리스트
         PerformanceShowItem item = new PerformanceShowItem();
         Items = new ArrayList<String>();
         try{
+            //API 접근 키
             URL mURL = new URL("http://openapi.jeonju.go.kr/rest/event/getEventList?"
                     +"authApiKey=DDVHRPFFICXVXQQ");
-
+            //XML 파싱을 위한 XmlPullParser 이용
             XmlPullParserFactory parserCreator = XmlPullParserFactory.newInstance();
             XmlPullParser parser = parserCreator.newPullParser();
 
             parser.setInput(mURL.openStream(), null);
 
             int parserEvent = parser.getEventType();
+            //XML 태그 확인
+            //END_DOCUMENT = 1, END_TAG = 3, START_DOCUMENT = 0, START_TAG = 2, TEXT = 4
             while(parserEvent != XmlPullParser.END_DOCUMENT) {
                 //if(parser.getName().equals(""))
                 switch (parserEvent) {
                     case XmlPullParser.START_TAG:
+                        // 최하단 태그 존재 여부 확인
                         if(parser.getName().equals("indexNum")) item.inIndexNum = true;
                         if(parser.getName().equals("startDay")) item.inStartDay = true;
                         if(parser.getName().equals("endDay")) item.inEndDay = true;
@@ -68,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                         if(parser.getName().equals("posy")) item.inPosy = true;
                         if(parser.getName().equals("address")) item.inAddress = true;
                         if(parser.getName().equals("message")) {
-                            // AlertDialog 메시지 발생
+                            // AlertDialog(오류) 메시지 발생
                             AlertDialog.Builder alert = new AlertDialog.Builder(this);
                             alert.setPositiveButton("확인", new DialogInterface.OnClickListener() {
                                 @Override
@@ -79,9 +84,10 @@ public class MainActivity extends AppCompatActivity {
                             alert.setMessage("파싱 에러");
                             alert.show();
                         }
-
                         break;
+
                     case XmlPullParser.TEXT:
+                        //태그 내의 데이터 저장
                         if(item.inIndexNum) item.indexNum = parser.getText();
                         if(item.inStartDay) item.startDay = parser.getText();
                         if(item.inEndDay) item.endDay = parser.getText();
@@ -108,13 +114,16 @@ public class MainActivity extends AppCompatActivity {
                         if(item.inAddress) item.address = parser.getText();
                         item.clear();
                         break;
+
                     case XmlPullParser.END_TAG:
                         if(parser.getName().equals("list")) {
-                            // list태그 만날경우
+                            // "<list> </list>" 만날경우 실행
+                            // 리스트 형태로 추가, 추후 데이터 필요 시 이용가능
                             Items.add(item.subject);
                         }
                         break;
                 }
+                // 다음 API 데이터 호출
                 parserEvent = parser.next();
             }
         }
@@ -130,8 +139,7 @@ public class MainActivity extends AppCompatActivity {
             alert.setMessage("파싱 에러");
             alert.show();
         }
-
-
+        //리스트뷰 구현을 위한 ArrayAdapter 이용
         adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, Items);
 
         ListView listView = (ListView) findViewById(R.id.result);
@@ -139,9 +147,11 @@ public class MainActivity extends AppCompatActivity {
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
+            //ListViewItem 선택 시 이벤트
+            //현재 해당 리스트 아이템 삭제로 구현
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                //Toast.makeText(MainActivity.this, (String)adapterView.getItemAtPosition(i), Toast.LENGTH_LONG).show();
                 Items.remove(i);
+                //데이터 삭제, 추가, 변경 시 항상 adapter.notifyDataSetChanged()호출로 displaydata 최신화
                 adapter.notifyDataSetChanged();
             }
         });

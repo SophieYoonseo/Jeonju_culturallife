@@ -18,10 +18,10 @@ public class PerformanceShowItem {
         inMainImg = inCategory = inAge = inPosx = inPosy = inAddress = false;
         inPlace = inAdmfee = inSubject = inContent = inMngNm = false;
 
-        indexNum = startDay =  endDay = ETime = url = sponSor = mngCo = null;
+        /*indexNum = startDay =  endDay = ETime = url = sponSor = mngCo = null;
         place = admfee = subject = content= mngNm = orgNm = mngTel = null;
         mngEmail = regDate = attidx = fileCnt = mainImg = category = age = null;
-        posx = posy = address = null;
+        posx = posy = address = null;*/
     }
 
     @Override
