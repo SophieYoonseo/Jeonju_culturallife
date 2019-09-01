@@ -1,6 +1,8 @@
 package kr.go.listapi;
 
-public class PerformanceShowItem {
+import java.io.Serializable;
+
+public class PerformanceShowItem implements Serializable {
     Boolean inIndexNum = false, inStartDay = false, inEndDay = false, inETime = false, inUrl = false, inSponSor = false;
     Boolean inMngCo = false, inPlace = false, inAdmfee = false, inSubject = false, inContent = false, inMngNm  = false;
     Boolean inOrgNm = false, inMngTel = false, inMngEmail = false, inRegDate = false, inAttidx = false, inFileCnt = false;
@@ -27,5 +29,31 @@ public class PerformanceShowItem {
     @Override
     public String toString() {
         return subject;
+    }
+
+    public String showDetail() {
+        return "행사 제목 : " + subject +
+                "\n데이터 번호 : " + indexNum +
+                "\n행사 시작일 : " + startDay +
+                "\n행사 종료일 : " + endDay +
+                "\n세부시간 : " + ETime +
+                "\n관련 사이트 : " + url +
+                "\n주최 : " + sponSor +
+                "\n주관 : " + mngCo +
+                "\n장소 : " + place +
+                "\n비용 : " + admfee +
+                "\n행사내용 : " + content +
+                "\n주관부서 : " + mngNm +
+                "\n부서이름 : " + orgNm +
+                "\n주관부서연락처 : " + mngTel + " / " + mngEmail +
+                "\n등록일 : " + regDate +
+                "\n첨부파일번호 : " + attidx +
+                "\n첨부파일수 : " + fileCnt +
+                "\n대표이미지 : " + mainImg +
+                "\n분류 : " + category +
+                "\n연령층" + age +
+                "\n공연장소 경도 : " + posx +
+                "\n공연장소 위도 : " + posy +
+                "\n공연장소 지번주소 : " + address;
     }
 }

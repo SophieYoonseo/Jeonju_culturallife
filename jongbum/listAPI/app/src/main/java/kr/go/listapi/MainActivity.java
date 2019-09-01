@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.view.View;
@@ -19,7 +20,7 @@ import java.net.URL;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    ArrayList<String> Items;
+    ArrayList<PerformanceShowItem> Items;
     ArrayAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         StrictMode.enableDefaults();
         // 공연 정보 객체, 리스트
         PerformanceShowItem item = new PerformanceShowItem();
-        Items = new ArrayList<String>();
+        Items = new ArrayList<PerformanceShowItem>();
         try{
             //API 접근 키
             URL mURL = new URL("http://openapi.jeonju.go.kr/rest/event/getEventList?"
@@ -119,7 +120,8 @@ public class MainActivity extends AppCompatActivity {
                         if(parser.getName().equals("list")) {
                             // "<list> </list>" 만날경우 실행
                             // 리스트 형태로 추가, 추후 데이터 필요 시 이용가능
-                            Items.add(item.subject);
+                            Items.add(item);
+                            item = new PerformanceShowItem();
                         }
                         break;
                 }
@@ -148,9 +150,12 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             //ListViewItem 선택 시 이벤트
-            //현재 해당 리스트 아이템 삭제로 구현
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Items.remove(i);
+                //EventDetail Activity 실행
+                Intent intent = new Intent(getApplicationContext(), EventDetail.class);
+                //세부사항을 Intent.extra로 EventDetail Activity로 전달
+                intent.putExtra("activity", Items.get(i));
+                startActivity(intent);
                 //데이터 삭제, 추가, 변경 시 항상 adapter.notifyDataSetChanged()호출로 displaydata 최신화
                 adapter.notifyDataSetChanged();
             }
