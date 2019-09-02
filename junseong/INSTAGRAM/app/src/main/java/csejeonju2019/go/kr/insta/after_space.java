@@ -16,8 +16,9 @@ public class after_space extends AppCompatActivity
     public double space_loc1;
     public double space_loc2;
     private GoogleMap mMap;
-
-
+    public String space_telephone;
+    public String space_title;
+    public String space_classification;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +26,7 @@ public class after_space extends AppCompatActivity
         setContentView(R.layout.after_space);
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.map);
+                .findFragmentById(R.id.map2);
         mapFragment.getMapAsync(this);
     }
 
@@ -34,17 +35,19 @@ public class after_space extends AppCompatActivity
 
         space_loc1 = Frag5.location1;
         space_loc2 = Frag5.location2;
+        space_title=Frag5.title;
+        space_classification=Frag5.Facility_classification;
         mMap = googleMap;
 
-        LatLng SEOUL = new LatLng(space_loc1, space_loc2);
+        LatLng JJ = new LatLng(space_loc1, space_loc2);
 
         MarkerOptions markerOptions = new MarkerOptions();
-        markerOptions.position(SEOUL);
-        markerOptions.title("서울");
-        markerOptions.snippet("한국의 수도");
+        markerOptions.position(JJ);
+        markerOptions.title(space_title);
+        markerOptions.snippet(space_classification);
         mMap.addMarker(markerOptions);
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(SEOUL, 16));//16배 줌가능
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(SEOUL, 16));//지도 시작시 애니메이션 효과
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(JJ, 16));//16배 줌가능
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(JJ, 16));//지도 시작시 애니메이션 효과
 
 
     }
