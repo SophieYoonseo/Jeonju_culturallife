@@ -265,7 +265,6 @@ public class MainActivity extends Activity {
                                     +"\n 등록일 : " + s_regDt + "\n 첨부파일 수 : " + s_fileCnt + "\n 체험비용 : " + s_charge
                                     +"\n ------------------------------------------------------------------------------------"
                                     + "\n"
-
                             );
                             inlist = false;
                         }
