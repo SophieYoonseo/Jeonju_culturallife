@@ -6,50 +6,31 @@
     android:layout_height="match_parent"
     android:background="#000000">
 
-    <!-- Activity에서는 fragment로 구현해야되지만
-    Fragment로 구현하기위해서는 MapView를 사용해야함-->
 
-    <Button
-        android:id="@+id/button_share"
-        android:layout_width="127dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="324dp"
-        android:text="공유하기!"
-        app:layout_constraintBottom_toTopOf="@+id/map"
-        app:layout_constraintStart_toStartOf="@+id/map"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="392dp"
-        android:layout_height="267dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginBottom="6dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/map"
-        app:layout_constraintEnd_toEndOf="parent"
+    <ImageButton
+        android:id="@+id/culture_space"
+        android:layout_width="137dp"
+        android:layout_height="169dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="106dp"
+        app:layout_constraintBottom_toTopOf="@+id/cultural_experience"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_find_replace_black_24dp" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="DADAGGAGAAFAADAFAFSFA" />
-    </LinearLayout>
-
-    <com.google.android.gms.maps.MapView
-        android:id="@+id/map"
-        android:name="com.google.android.gms.maps.MapFragment"
-        android:layout_width="392dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="38dp"
+    <ImageButton
+        android:id="@+id/cultural_experience"
+        android:layout_width="146dp"
+        android:layout_height="212dp"
+        android:layout_marginBottom="284dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_share" />
-
+        app:layout_constraintTop_toBottomOf="@+id/culture_space"
+        app:srcCompat="@drawable/ic_looks_5_black_24dp" />
 </android.support.constraint.ConstraintLayout>
 
 

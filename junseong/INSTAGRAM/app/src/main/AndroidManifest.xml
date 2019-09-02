@@ -3,6 +3,7 @@
     package="csejeonju2019.go.kr.insta">
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -14,6 +15,7 @@
             android:name=".SplashActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:label="@string/app_name" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,9 +23,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" ></activity>
+        <activity android:name=".after_experience"></activity>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCYE_2SxAXlxLTI4xpx3Gk8PKN2xa0M5ts"/>
+
     </application>
 
 </manifest>
