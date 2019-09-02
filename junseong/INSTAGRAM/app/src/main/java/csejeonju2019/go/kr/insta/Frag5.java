@@ -17,6 +17,7 @@ import android.widget.Toast;
 public class Frag5 extends Fragment{
     public static double location1;
     public static double location2;
+    public static String telephone;
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         View view=inflater.inflate(R.layout.frag5,container,false);
 
@@ -112,14 +113,25 @@ public class Frag5 extends Fragment{
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 if(i==0){
+                    telephone="063-228-6485";
                     location2=127.14828209999996;
                     location1=35.8206769;
                     Intent intent=new Intent(getActivity(),after_experience.class);
                     startActivity(intent);
                     Toast.makeText(getActivity(),"전주 역사박물관 선택",Toast.LENGTH_SHORT).show();
                 }else if(i==1){
+                    telephone="063-282-7074";
+                    location1=35.8173553;
+                    location2=127.1531146;
+
+                    Intent intent=new Intent(getActivity(),after_experience.class);
+                    startActivity(intent);
                     Toast.makeText(getActivity(),"천우희2선택",Toast.LENGTH_SHORT).show();
                 }else if(i==2){
+                    location1=35.8374606;
+                    location2=	127.15665899999999;
+                    Intent intent=new Intent(getActivity(),after_experience.class);
+                    startActivity(intent);
                     Toast.makeText(getActivity(),"천우희3선택",Toast.LENGTH_SHORT).show();
                 }
             }

@@ -10,13 +10,11 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-import java.util.Map;
-
-public class after_experience extends AppCompatActivity
+public class after_space extends AppCompatActivity
         implements OnMapReadyCallback {
 
-    public  double loc1;
-    public  double loc2;
+    public double space_loc1;
+    public double space_loc2;
     private GoogleMap mMap;
 
 
@@ -24,7 +22,7 @@ public class after_experience extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.after_experience);
+        setContentView(R.layout.after_space);
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -34,22 +32,20 @@ public class after_experience extends AppCompatActivity
     @Override
     public void onMapReady(final GoogleMap googleMap) {
 
-        loc1=Frag5.location1;
-        loc2=Frag5.location2;
+        space_loc1 = Frag5.location1;
+        space_loc2 = Frag5.location2;
         mMap = googleMap;
 
-        LatLng SEOUL = new LatLng(loc1, loc2);
+        LatLng SEOUL = new LatLng(space_loc1, space_loc2);
 
         MarkerOptions markerOptions = new MarkerOptions();
         markerOptions.position(SEOUL);
         markerOptions.title("서울");
         markerOptions.snippet("한국의 수도");
         mMap.addMarker(markerOptions);
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(SEOUL,16));//16배 줌가능
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(SEOUL,16));//지도 시작시 애니메이션 효과
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(SEOUL, 16));//16배 줌가능
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(SEOUL, 16));//지도 시작시 애니메이션 효과
 
 
     }
-
 }
-
