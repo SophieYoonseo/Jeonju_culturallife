@@ -5,7 +5,7 @@
 - home fragment가 다시호출되어 oncreateview를 호출할때 viewpager가 가끔사라지는문제를 child process같은 개념으로 해결 
 - 현재까지 구현한 모든기능및디자인 (공유하기 기능 url은 구글마켓등록하면 그거로할예정)
 - 사진fragment이동간 indicator가 현재 위치를 표시하게끔 구현
--  
+- 현재 frag5의 리스트는 문화공간리스트임 ㅇㅇㅇㅇ 
 ![view](./ing.gif)
 
 
