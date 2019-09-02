@@ -18,6 +18,9 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class Frag3 extends Fragment implements OnMapReadyCallback
 {
+    public double loc1,loc2;
+
+
     private MapView mapView = null;
 
     public Frag3()
