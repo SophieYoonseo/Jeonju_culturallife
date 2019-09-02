@@ -6,6 +6,7 @@
 
 
     <ListView
+        android:layout_marginTop="15dp"
         android:id="@+id/mainmenu"
         android:layout_width="401dp"
         android:layout_height="709dp"
