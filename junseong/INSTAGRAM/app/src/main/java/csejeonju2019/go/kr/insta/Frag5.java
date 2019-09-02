@@ -112,8 +112,8 @@ public class Frag5 extends Fragment{
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 if(i==0){
-                    location1=127.14828209999996;
-                    location2=35.8206769;
+                    location2=127.14828209999996;
+                    location1=35.8206769;
                     Intent intent=new Intent(getActivity(),after_experience.class);
                     startActivity(intent);
                     Toast.makeText(getActivity(),"전주 역사박물관 선택",Toast.LENGTH_SHORT).show();
