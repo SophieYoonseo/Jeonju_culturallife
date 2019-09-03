@@ -18,54 +18,57 @@
         android:textSize="25sp" />
 
     <android.support.v4.view.ViewPager
+        android:layout_marginTop="10dp"
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="140dp"
         />
 
     <com.pm10.library.CircleIndicator
-        android:layout_marginLeft="180dp"
+        android:layout_marginLeft="190dp"
         android:layout_marginTop="10dp"
         android:id="@+id/circle_indicator"
         android:layout_width="match_parent"
         android:layout_height="86dp"
         app:p_defaultColor="@color/gray"
-        app:p_gap="4dp"
-        app:p_radius="4dp"
+        app:p_gap="2dp"
+        app:p_radius="2dp"
         app:p_selectedColor="@color/white"
         app:p_strokeColor="@color/white"
         app:p_strokeWidth="1dp" />
     <android.support.v4.view.ViewPager
+        android:layout_marginTop="10dp"
         android:id="@+id/viewPager2"
         android:layout_width="match_parent"
         android:layout_height="140dp"
         />
     <com.pm10.library.CircleIndicator
-        android:layout_marginLeft="180dp"
+        android:layout_marginLeft="190dp"
         android:layout_marginTop="10dp"
         android:id="@+id/circle_indicator2"
         android:layout_width="match_parent"
         android:layout_height="86dp"
         app:p_defaultColor="@color/gray"
-        app:p_gap="4dp"
-        app:p_radius="4dp"
+        app:p_gap="2dp"
+        app:p_radius="2dp"
         app:p_selectedColor="@color/white"
         app:p_strokeColor="@color/white"
         app:p_strokeWidth="1dp" />
     <android.support.v4.view.ViewPager
+        android:layout_marginTop="10dp"
         android:id="@+id/viewPager3"
         android:layout_width="match_parent"
         android:layout_height="140dp"
         />
     <com.pm10.library.CircleIndicator
-        android:layout_marginLeft="180dp"
+        android:layout_marginLeft="190dp"
         android:layout_marginTop="10dp"
         android:id="@+id/circle_indicator3"
         android:layout_width="match_parent"
         android:layout_height="86dp"
         app:p_defaultColor="@color/gray"
-        app:p_gap="4dp"
-        app:p_radius="4dp"
+        app:p_gap="2dp"
+        app:p_radius="2dp"
         app:p_selectedColor="@color/white"
         app:p_strokeColor="@color/white"
         app:p_strokeWidth="1dp" />
