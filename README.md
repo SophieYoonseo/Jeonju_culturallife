@@ -2,7 +2,8 @@
 ## BY. 김윤서, 김준성, 장진성, 정종범
 
 ## 주의 사항: 
- 항상 매우 귀찮더라도 push하기전에 fetch후 pull부터 합시당! 
+ ### 항상 매우 귀찮더라도 push하기전에 fetch후 pull부터 합시당! 
+ 
  전주시 공연 문화 정보 서비스 api는 DDVHRPFFICXVXQQ  
 
 ### 패키지명 통일 kr.go.csejeonju2019
