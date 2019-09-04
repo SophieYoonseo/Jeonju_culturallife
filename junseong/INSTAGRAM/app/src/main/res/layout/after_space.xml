@@ -8,7 +8,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="223dp">
+        android:layout_height="294dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -23,29 +23,17 @@
         </LinearLayout>
     </ScrollView>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
-
-            <fragment
-                android:id="@+id/map2"
-                android:name="com.google.android.gms.maps.SupportMapFragment"
-                android:layout_width="match_parent"
-                android:layout_height="508dp"
-                tools:context=".MapsActivity" />
-        </LinearLayout>
-    </ScrollView>
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="219dp"
+        android:layout_height="368dp"
         android:orientation="vertical">
 
+        <fragment
+            android:id="@+id/map2"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="424dp"
+            android:layout_height="508dp"
+            tools:context=".MapsActivity" />
     </LinearLayout>
 
     <TextView
