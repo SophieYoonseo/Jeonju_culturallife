@@ -11,7 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:textSize="20dp" />
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/peach"
+        />
 
     <ScrollView
         android:layout_width="match_parent"

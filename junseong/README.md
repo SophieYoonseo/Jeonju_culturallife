@@ -5,8 +5,8 @@
 - home fragment가 다시호출되어 oncreateview를 호출할때 viewpager가 가끔사라지는문제를 child process같은 개념으로 해결 
 - 현재까지 구현한 모든기능및디자인 (공유하기 기능 url은 구글마켓등록하면 그거로할예정)
 - 사진fragment이동간 indicator가 현재 위치를 표시하게끔 구현
-- 현재 frag5의 리스트는 문화공간리스트임 ㅇㅇㅇㅇ 
-![view](./ing.gif)
+ - 현재 frag5의 리스트는 문화공간리스트임 ㅇㅇㅇㅇ  
+![view](./now_iam.gif)
 
 
 - DB_INSTA 라는 폴더명에 회원가입및 FIREBASE연동 그리고 DB활성화 
@@ -25,7 +25,7 @@
 
 
 ###  😰어려운점..
-   ## 1. 구상에있어서 문제점 어떻게 주고받을지 mainacvity에서는 다섯개의 fragment를 만들고 외부 액티비티에서 fragment를 더만들지 
+   ## spinner로할경우 공연정보는 체크할때마다 파싱이됨. 고로 매우느려짐 이를 어떻게 해결해야할지 
    ![1착상](./trouble.JPG)
 
 
