@@ -10,7 +10,7 @@ public class EventDetail extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_deatil);
+        setContentView(R.layout.activity_detail);
 
         //Intent Extra Value 가져오기
         Intent intent = getIntent();

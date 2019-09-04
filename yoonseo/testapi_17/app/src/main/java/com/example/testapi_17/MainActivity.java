@@ -28,14 +28,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         // 네트워크 API 지연으로 인한 ANR(Android not Responding) 방지
         StrictMode.enableDefaults();
-        // 공연 정보 객체, 리스트
+        // 문화체험 정보 객체, 리스트
         PerformanceShowItem item = new PerformanceShowItem();
         Items = new ArrayList<PerformanceShowItem>();
         try{
             //API 접근 키
-            URL mURL = new URL("http://openapi.jeonju.go.kr/rest/culture/getCultureList?"
-                    +"authApiKey=YNGTTnoLiX5TZaA3SymVR2TWBf8s6IIJ7m409txUdqOwAKnjE7uF7YrbaHr2uHA48FrBGLSPpcVuaclAz03xuQ%3D%3D"
-            +"&dataValue=%EC%A0%95%EC%9D%8D%EA%B3%A0%ED%83%9D");
+            URL mURL = new URL("http://openapi.jeonju.go.kr/rest/experience/getExperienceList?" +
+                    "authApiKey=ro%2FXNFjTiuaWfUUOn939KiFkMvs0z915H%2BkR0Te9JF0NPfG4EjF9sAxR2%2B4%2FcqOzu9XlvQaZYyG0F4PniGNdsw%3D%3D");
             //XML 파싱을 위한 XmlPullParser 이용
             XmlPullParserFactory parserCreator = XmlPullParserFactory.newInstance();
             XmlPullParser parser = parserCreator.newPullParser();
