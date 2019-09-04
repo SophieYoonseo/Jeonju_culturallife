@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         // 네트워크 API 지연으로 인한 ANR(Android not Responding) 방지
         StrictMode.enableDefaults();
-        // 문화체험 정보 객체, 리스트
+        // 문화공간 정보 객체, 리스트
         PerformanceShowItem item = new PerformanceShowItem();
         Items = new ArrayList<PerformanceShowItem>();
         try{
