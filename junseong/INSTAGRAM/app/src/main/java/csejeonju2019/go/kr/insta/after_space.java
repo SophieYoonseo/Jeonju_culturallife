@@ -2,6 +2,7 @@ package csejeonju2019.go.kr.insta;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -12,17 +13,21 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class after_space extends AppCompatActivity
         implements OnMapReadyCallback {
-
+    public String exp;//설명 임 이거
     public double space_loc1;
     public double space_loc2;
     private GoogleMap mMap;
     public String space_telephone;
     public String space_title;
     public String space_classification;
+    public String testtest;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        exp=Frag5.explain;
+        testtest="123";
+        TextView text2=(TextView)findViewById(R.id.textView2);
+        text2.setText(testtest);
         setContentView(R.layout.after_space);
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()

@@ -2,6 +2,7 @@ package csejeonju2019.go.kr.insta;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -17,13 +18,14 @@ public class after_experience extends AppCompatActivity
 
     public  double loc1;
     public  double loc2;
+    public String exp;//설명
     private GoogleMap mMap;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        exp=Frag5.explain;
         setContentView(R.layout.after_experience);
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
@@ -36,6 +38,7 @@ public class after_experience extends AppCompatActivity
 
         loc1=Frag5.location1;
         loc2=Frag5.location2;
+
         mMap = googleMap;
 
         LatLng SEOUL = new LatLng(loc1, loc2);
