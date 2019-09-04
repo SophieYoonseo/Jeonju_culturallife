@@ -19,10 +19,18 @@ public class Frag1 extends Fragment
 
 
     int i=0;
-    ViewPager viewPager;
+    ViewPager viewPager1;
+    ViewPager viewPager2;
+    ViewPager viewPager3;
     private FirstFragment fragment1;
     private SecondFragment fragment2;
     private ThirdFragment fragment3;
+    private SecondOneFragment fragment2_1;
+    private SecondTwoFragment fragment2_2;
+    private SecondThreeFragment fragment2_3;
+    private  ThirdOneFragment fragment3_1;
+    private ThirdTwoFragment fragment3_2;
+    private ThirdThreeFragment fragment3_3;
     public Frag1(){
 
     }
@@ -42,11 +50,27 @@ public class Frag1 extends Fragment
         fragment1=new FirstFragment();
         fragment2=new SecondFragment();
         fragment3=new ThirdFragment();
-        viewPager=(ViewPager)view.findViewById(R.id.viewPager);
-        viewPager.setAdapter(new PagerAdapter(getChildFragmentManager()));
-        viewPager.setCurrentItem(0);
-        CircleIndicator circleIndicator=(CircleIndicator)view.findViewById(R.id.circle_indicator);
-        circleIndicator.setupWithViewPager(viewPager);
+        fragment2_1=new SecondOneFragment();
+        fragment2_2=new SecondTwoFragment();
+        fragment2_3=new SecondThreeFragment();
+        fragment3_1=new ThirdOneFragment();
+        fragment3_2=new ThirdTwoFragment();
+        fragment3_3=new ThirdThreeFragment();
+        viewPager1=(ViewPager)view.findViewById(R.id.viewPager);
+        viewPager2=(ViewPager)view.findViewById(R.id.viewPager2);
+        viewPager3=(ViewPager)view.findViewById(R.id.viewPager3);
+        viewPager2.setAdapter(new PagerAdapter2(getChildFragmentManager()));
+        viewPager2.setCurrentItem(0);
+        viewPager3.setAdapter(new PagerAdapter3(getChildFragmentManager()));
+        viewPager3.setCurrentItem(0);
+        viewPager1.setAdapter(new PagerAdapter(getChildFragmentManager()));
+        viewPager1.setCurrentItem(0);
+        CircleIndicator circleIndicator1=(CircleIndicator)view.findViewById(R.id.circle_indicator);
+        circleIndicator1.setupWithViewPager(viewPager1);
+        CircleIndicator circleIndicator2=(CircleIndicator)view.findViewById(R.id.circle_indicator2);
+        circleIndicator2.setupWithViewPager(viewPager2);
+        CircleIndicator circleIndicator3=(CircleIndicator)view.findViewById(R.id.circle_indicator3);
+        circleIndicator3.setupWithViewPager(viewPager3);
         return view;
     }
 
@@ -104,6 +128,46 @@ public class Frag1 extends Fragment
                 return fragment2;
             }else {
                 return fragment3;
+            }
+        }
+        public int getCount(){
+            return 3;
+        }
+
+    }
+    private class PagerAdapter2 extends FragmentPagerAdapter{
+        public PagerAdapter2(FragmentManager fm){
+            super(fm);
+            getItem(0);
+        }
+        public Fragment getItem(int position){
+            if(position==0)
+            {
+                return fragment2_1;
+            }else if(position==1){
+                return fragment2_2;
+            }else {
+                return fragment2_3;
+            }
+        }
+        public int getCount(){
+            return 3;
+        }
+
+    }
+    private class PagerAdapter3 extends FragmentPagerAdapter{
+        public PagerAdapter3(FragmentManager fm){
+            super(fm);
+            getItem(0);
+        }
+        public Fragment getItem(int position){
+            if(position==0)
+            {
+                return fragment3_1;
+            }else if(position==1){
+                return fragment3_2;
+            }else {
+                return fragment3_3;
             }
         }
         public int getCount(){
