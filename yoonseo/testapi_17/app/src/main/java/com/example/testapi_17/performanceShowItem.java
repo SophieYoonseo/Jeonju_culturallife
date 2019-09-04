@@ -17,7 +17,7 @@ public class PerformanceShowItem implements Serializable {
 
     @Override
     public String toString() {
-        return dataTitle;
+       return dataTitle;
     }
 
     public String showDetail() {

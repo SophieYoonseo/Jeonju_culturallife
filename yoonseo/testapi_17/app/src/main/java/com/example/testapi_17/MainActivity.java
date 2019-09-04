@@ -58,8 +58,8 @@ public class MainActivity extends AppCompatActivity {
                         if(parser.getName().equals("posx")) item.inPosx = true;
                         if(parser.getName().equals("posy")) item.inPosy = true;
                         if(parser.getName().equals("tel")) item.inTel = true;
-                        if(parser.getName().equals("userHomepage")) item.inUserHomepage = true;
-                        if(parser.getName().equals("zipCode")) item.inZipCode = true;
+                        if(parser.getName().equals("homepage")) item.inUserHomepage = true;
+                        if(parser.getName().equals("zipcode")) item.inZipCode = true;
 
                         if(parser.getName().equals("message")) {
                             // AlertDialog(오류) 메시지 발생
