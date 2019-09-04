@@ -27,10 +27,16 @@ public class after_space extends AppCompatActivity
         exp=Frag5.explain;
         setContentView(R.layout.after_space);//순서주의주의
         testtest=Frag5.explain;
+
+        space_loc1 = Frag5.location1;
+        space_loc2 = Frag5.location2;
+        space_title=Frag5.title;
+        space_classification=Frag5.Facility_classification;
+
         TextView text2=(TextView)findViewById(R.id.textView2);
         text2.setText(testtest);
-
-
+        TextView text3=(TextView)findViewById(R.id.textView3);
+        text3.setText(space_title);
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map2);
         mapFragment.getMapAsync(this);
@@ -39,10 +45,7 @@ public class after_space extends AppCompatActivity
     @Override
     public void onMapReady(final GoogleMap googleMap) {
 
-        space_loc1 = Frag5.location1;
-        space_loc2 = Frag5.location2;
-        space_title=Frag5.title;
-        space_classification=Frag5.Facility_classification;
+
         mMap = googleMap;
 
         LatLng JJ = new LatLng(space_loc1, space_loc2);
