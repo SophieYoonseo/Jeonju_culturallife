@@ -25,10 +25,11 @@ public class after_space extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         exp=Frag5.explain;
-        testtest="123";
+        setContentView(R.layout.after_space);//순서주의주의
+        testtest=Frag5.explain;
         TextView text2=(TextView)findViewById(R.id.textView2);
         text2.setText(testtest);
-        setContentView(R.layout.after_space);
+
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map2);
