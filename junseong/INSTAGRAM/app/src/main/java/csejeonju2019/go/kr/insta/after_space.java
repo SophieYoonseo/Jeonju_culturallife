@@ -24,14 +24,14 @@ public class after_space extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        exp=Frag5.explain;
+        exp=Frag2.explain;
         setContentView(R.layout.after_space);//순서주의주의
-        testtest=Frag5.explain;
+        testtest=Frag2.explain;
 
-        space_loc1 = Frag5.location1;
-        space_loc2 = Frag5.location2;
-        space_title=Frag5.title;
-        space_classification=Frag5.Facility_classification;
+        space_loc1 = Frag2.location1;
+        space_loc2 = Frag2.location2;
+        space_title=Frag2.title;
+        space_classification=Frag2.Facility_classification;
 
         TextView text2=(TextView)findViewById(R.id.textView2);
         text2.setText(testtest);

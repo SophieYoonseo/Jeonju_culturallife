@@ -12,7 +12,13 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.SimpleAdapter;
 import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class Frag2 extends Fragment{
     public static double location1;
@@ -21,8 +27,10 @@ public class Frag2 extends Fragment{
     public static String title;
     public static String explain;
     public static String Facility_classification;
+    private ListView lv_shifts;
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        View view=inflater.inflate(R.layout.frag5,container,false);
+        View view=inflater.inflate(R.layout.frag2,container,false);
+
 
         String[] menuItems={"전주역사박물관",
                 "공예공방촌1단지(꽃숙이)",
@@ -106,11 +114,16 @@ public class Frag2 extends Fragment{
                 //79개
         };
 
+
+
         ListView listView=(ListView)view.findViewById(R.id.mainmenu);
 
         ArrayAdapter<String> listViewAdapter=new ArrayAdapter<String>(
                 getActivity(),android.R.layout.simple_expandable_list_item_1,menuItems
+
         );
+
+
         listView.setAdapter(listViewAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
