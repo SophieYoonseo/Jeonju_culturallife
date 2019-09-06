@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/jeonju3"
+    android:background="@drawable/back1"
     tools:context=".MainActivity">
 
     <FrameLayout
         android:id="@+id/main_frame"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="100dp"
+        android:layout_width="398dp"
+        android:layout_height="629dp"
+
 
         app:layout_constraintBottom_toTopOf="@+id/bottomNavi"
         app:layout_constraintEnd_toEndOf="parent"
