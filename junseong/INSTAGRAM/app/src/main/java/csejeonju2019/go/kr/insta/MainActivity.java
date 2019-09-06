@@ -20,7 +20,9 @@ public class MainActivity extends AppCompatActivity {
     private Frag3 frag3;
     private Frag4 frag4;
     private Frag5 frag5;
-    private culture_experience culture_experience;
+    private  FirstFragment fragment1;
+    private space_list_frag space_list_frag;
+    public culture_experience experience;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         setFrag(0);//첫화면지정
     }
     //프레그먼트 교체실행
-    private void setFrag(int n){
+    public void setFrag(int n){
         fm=getSupportFragmentManager();
         ft=fm.beginTransaction();
         switch (n){
@@ -90,5 +92,15 @@ public class MainActivity extends AppCompatActivity {
                 ft.commit();
                 break;
         }
+    }
+    public void setFrag2(int n) {
+        fm = getSupportFragmentManager();
+        ft = fm.beginTransaction();
+        if(n==1){
+            space_list_frag=new space_list_frag();
+            ft.replace(R.id.main_frame,space_list_frag);
+            ft.commit();
+        }
+
     }
 }

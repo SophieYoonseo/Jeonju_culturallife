@@ -4,13 +4,36 @@
     android:layout_height="match_parent"
     android:layout_marginBottom="50dp">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <ListView
-        android:layout_marginTop="15dp"
-        android:id="@+id/frag5menu"
-        android:layout_width="401dp"
-        android:layout_height="709dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="50dp"/>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
+            <Button
+                android:id="@+id/button_space"
+                android:layout_width="match_parent"
+                android:layout_height="278dp"
+                android:background="@drawable/culture_space"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button_experience"
+                android:layout_width="match_parent"
+                android:layout_height="278dp"
+                android:background="@drawable/hanbok"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button_festival"
+                android:layout_width="match_parent"
+                android:layout_height="278dp"
+                android:background="@drawable/balloons"
+                android:text="Button" />
+        </LinearLayout>
+    </ScrollView>
 </FrameLayout>
