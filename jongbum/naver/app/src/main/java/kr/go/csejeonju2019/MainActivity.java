@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 String tokenType = mOAuthLoginModule.getTokenType(mContext);
                 //Toast.makeText(getApplicationContext(), accessToken, Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(getApplicationContext(), AfterActivity.class);
+                intent.putExtra("ACCESS", accessToken);
                 startActivityForResult(intent, REQUEST_CODE_MENU);
 
             } else {
@@ -51,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(mContext, "errorCode:" + errorCode
                         + ", errorDesc:" + errorDesc, Toast.LENGTH_SHORT).show();
             }
-        };
+        }
     };
 
     private void handleSignInResult(Task<GoogleSignInAccount> completedTask) {

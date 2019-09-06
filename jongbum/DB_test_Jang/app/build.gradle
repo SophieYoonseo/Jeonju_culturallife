@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 29
@@ -31,5 +30,15 @@ dependencies {
 
     // add SDKs for desired Firebase products
     // https://firebase.google.com/docs/android/setup#available-libraries
+    implementation 'com.google.firebase:firebase-database:18.0.1'
+
+
+    //Naver Social Login dependencies
+    implementation 'com.android.support:appcompat-v7:25.3.1'
+    implementation 'com.android.support:support-core-utils:25.3.1'
+    implementation 'com.android.support:customtabs:25.3.1'
+    implementation 'com.android.support:support-v4:25.3.1'
+    implementation ('com.naver.nid:naveridlogin-android-sdk:4.2.5')
 
 }
+apply plugin: 'com.google.gms.google-services'

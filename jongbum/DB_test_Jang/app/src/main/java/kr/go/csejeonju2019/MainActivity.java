@@ -3,6 +3,7 @@ package kr.go.csejeonju2019;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -16,22 +17,71 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+
 import com.google.firebase.auth.FirebaseUser;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.nhn.android.naverlogin.OAuthLogin;
+import com.nhn.android.naverlogin.ui.view.OAuthLoginButton;
+import com.nhn.android.naverlogin.OAuthLoginHandler;
+
+import static com.nhn.android.naverlogin.OAuthLogin.mOAuthLoginHandler;
+
 
 public class MainActivity extends AppCompatActivity {
 
     public EditText emailId,password;
     Button btnSignUp;
     TextView tvSignIn;
-    FirebaseAuth mFirebaseAuth;
+    //FirebaseAuth mFirebaseAuth;
+    OAuthLogin mOAuthLoginModule;
+    OAuthLoginButton mOAuthLoginButton;
+    Context mContext;
+    //FirebaseDatabase database = FirebaseDatabase.getInstance();
+    //DatabaseReference myRef = database.getReference();
 
+    private OAuthLoginHandler mOAuthLoginHandler = new OAuthLoginHandler() {
+        @Override
+        public void run(boolean success) {
+            if (success) {
+                String accessToken = mOAuthLoginModule.getAccessToken(mContext);
+                String refreshToken = mOAuthLoginModule.getRefreshToken(mContext);
+                long expiresAt = mOAuthLoginModule.getExpiresAt(mContext);
+                String tokenType = mOAuthLoginModule.getTokenType(mContext);
+                //성공시 처리
+
+
+            } else {
+                String errorCode = mOAuthLoginModule.getLastErrorCode(mContext).getCode();
+                String errorDesc = mOAuthLoginModule.getLastErrorDesc(mContext);
+                Toast.makeText(mContext, "errorCode:" + errorCode
+                        + ", errorDesc:" + errorDesc, Toast.LENGTH_SHORT).show();
+            }
+        }
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mFirebaseAuth = FirebaseAuth.getInstance();
-        emailId = findViewById(R.id.editText);
+        //Naver Social Login
+        mOAuthLoginModule = OAuthLogin.getInstance();
+        mOAuthLoginModule.init(
+                MainActivity.this
+                ,"0PSGjaLXb_f6WljImx1S"
+                ,"7mzm8tggH6"
+                ,"cseJeonju2019"
+                //,OAUTH_CALLBACK_INTENT
+                // SDK 4.1.4 버전부터는 OAUTH_CALLBACK_INTENT변수를 사용하지 않습니다.
+        );
+        mOAuthLoginButton = (OAuthLoginButton) findViewById(R.id.buttonOAuthLoginImg);
+        mOAuthLoginButton.setOAuthLoginHandler(mOAuthLoginHandler);
+
+
+        //Firebase
+        //mFirebaseAuth = FirebaseAuth.getInstance();
+        /*emailId = findViewById(R.id.editText);
         password = findViewById(R.id.editText2);
         btnSignUp = findViewById(R.id.button);
         tvSignIn = findViewById(R.id.textView);
@@ -85,7 +135,14 @@ public class MainActivity extends AppCompatActivity {
                 Intent i = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(i);
             }
-        });
+        });*/
 
     }
+    public void onDestroy(){
+        mOAuthLoginModule.logout(mContext);
+        //mGoogleSignInClient.signOut();
+        Toast.makeText(MainActivity.this, "로그아웃되었습니다", Toast.LENGTH_LONG).show();
+        super.onDestroy();
+    }
+
 }
