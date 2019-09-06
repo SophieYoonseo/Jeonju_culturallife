@@ -19,7 +19,8 @@
 #### 전주 공공데이터 데이터셋 (문화체험 정보 서비스 목록)
 - http://openapi.jeonju.go.kr/user/apimng/dataset/view.jeonju?searchCondition=REG_TITLE&postSearch=&searchRegGroup=&apiRegSid=69&regType=SHEET&menuCd=DOM_000000701001000000&pageIndex=4
 
-
+### Android Asset Studio
+- https://romannurik.github.io/AndroidAssetStudio/index.html
 
 
 
@@ -31,8 +32,6 @@
 
 
 
-### 어려운점이 해결되고 진행해야할 방향
-   - 이 위에 어려운점이 해결될경우 이제 list click에서 정보를받아 표시하는 layout만들고 그에따른 함수와클래스 구현하여 맵뷰등 전화번호 연동을할것임
-   
+
 
 
