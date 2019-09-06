@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:outlineSpotShadowColor="@color/design_default_color_primary"
-    android:background="@color/white"
+    android:background="@color/common_google_signin_btn_text_dark_disabled"
     android:layout_height="match_parent">
 
 
