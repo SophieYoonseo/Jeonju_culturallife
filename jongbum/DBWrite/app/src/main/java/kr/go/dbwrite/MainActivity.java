@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    private void handleSignInResult(Task<GoogleSignInAccount> completedTask) {
+    private void handleSignInResult(@org.jetbrains.annotations.NotNull Task<GoogleSignInAccount> completedTask) {
         try {
             GoogleSignInAccount account = completedTask.getResult(ApiException.class);
 
@@ -77,8 +77,7 @@ public class MainActivity extends AppCompatActivity {
                 String personEmail = acct.getEmail();
                 String personId = acct.getId();
                 Uri personPhoto = acct.getPhotoUrl();
-                //Toast.makeText(this, personId, Toast.LENGTH_LONG).show();
-                //StartActivityForResult(new Intent(getApplicationContext(), AfterActivity.class), REQUEST_CODE_MENU);
+
                 databaseReference.child("Account").child("AccessToken").push().setValue(personEmail);
                 Date mDate = new Date(System.currentTimeMillis());
                 databaseReference.child("Account").child("AccessTime").push().setValue((new SimpleDateFormat("yyyy-MM-dd hh:mm:ss")).format(mDate));
