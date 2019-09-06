@@ -21,8 +21,9 @@ public class MainActivity extends AppCompatActivity {
     private Frag4 frag4;
     private Frag5 frag5;
     private  FirstFragment fragment1;
-    private space_list_frag space_list_frag;
-    public culture_experience experience;
+    private space_list_frag space_list_frag;//문화공간
+    public experience_list_frag experience;//문화체험
+    public Show_list_frag show;//공연
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,7 +100,16 @@ public class MainActivity extends AppCompatActivity {
         if(n==1){
             space_list_frag=new space_list_frag();
             ft.replace(R.id.main_frame,space_list_frag);
-            ft.commit();
+            ft.commit();//믄화공간
+        }
+        else if(n==2){
+            experience=new experience_list_frag();
+            ft.replace(R.id.main_frame,experience);
+            ft.commit();//믄화체험
+        } else if(n==3){
+            show=new Show_list_frag();
+            ft.replace(R.id.main_frame,show);
+            ft.commit();//공연정보
         }
 
     }
