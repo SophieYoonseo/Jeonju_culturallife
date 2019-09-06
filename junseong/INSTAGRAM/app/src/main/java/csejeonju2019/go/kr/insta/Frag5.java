@@ -29,17 +29,26 @@ public  class Frag5 extends Fragment{
         space.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MainActivity mainActivity=(MainActivity) getActivity();
-                mainActivity.setFrag2(1);//문화공간
+                Intent intent=new Intent(getActivity(),space_list_acitivty.class);
+                startActivity(intent);
+
             }
         });
        experience.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               MainActivity mainActivity=(MainActivity) getActivity();
-               mainActivity.setFrag2(1);//문화공간
+               Intent intent=new Intent(getActivity(),space_list_acitivty.class);
+               startActivity(intent);
            }
        });
+        festival.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(),space_list_acitivty.class);
+                startActivity(intent);
+            }
+        });
+
 
         return view;
     }

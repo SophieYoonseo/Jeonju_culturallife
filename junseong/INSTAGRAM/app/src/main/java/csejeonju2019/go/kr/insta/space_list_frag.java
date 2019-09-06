@@ -22,121 +22,121 @@ import java.util.Map;
 
 public class space_list_frag extends Fragment{
     public static double location1;
-    public static double location2;
-    public static String telephone;
-    public static String title;
-    public static String explain;
-    public static String Facility_classification;
-    private ListView lv_shifts;
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        View view=inflater.inflate(R.layout.space_list,container,false);
+                    public static double location2;
+                    public static String telephone;
+                    public static String title;
+                    public static String explain;
+                    public static String Facility_classification;
+                    private ListView lv_shifts;
+                    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
+                        View view=inflater.inflate(R.layout.space_list,container,false);
 
 
-        String[] menuItems={"전주역사박물관",
-                "공예공방촌1단지(꽃숙이)",
-                "인후문화의집",
-                "전주자연생태관",
-                "목우헌",
-                "전라북도 교육문화회관",
-                "우아 문화의집",
-                "전주대학교어린이영어도서관",
-                "전주완산시립도서관",
-                "바이전주관",
-                "한옥생활체험관",
-                "전통술박물관",
-                "전주시청소년상담복지센터(YWCA)",
-                "전주삼천도서관",
-                "덕진 청소년 수련방,놀이마당",
-                "동학혁명기념관",
-                "국립무형유산원",
-                "한지관",
-                "전주 목판서화 체험관",
-                "전북예술회관",
-                "창작극회.창작소극장",
-                "전주부채문화관",
-                "완판본 문화관",
-                "전주 덕진예술회관",
-                "청소년문화광장",
-                "한국소리문화의전당",
-                "한방문화센터",
-                "전주한지박물관",
-                "전주서신도서관",
-                "전주인후도서관",
-                "전주금암도서관",
-                "승광재",
-                "삼천 문화의 집",
-                "한옥마을 아트홀",
-                "전주시 청소년 문화의 집",
-                "장현식고택",
-                "완산 청소년 문화의 집",
-                "전주공예품전시관",
-                "고전번역교육원",
-                "정읍고택",
-                "태조어진 박물관",
-                "한지산업지원센터",
-                "천년전주명품ONN",
-                "전주책마루어린이도서관",
-                "전북대학교 삼성문화회관",
-                "전주자수민속박물관",
-                "전주한벽문화관",
-                "국립전주박물관",
-                "여명 카메라 박물관",
-                "전주소리문화관",
-                "전주전통한지원",
-                "전주전통문화연수원",
-                "전주동헌",
-                "진북문화의 집",
-                "솔내청소년수련관",
-                "임실 진참봉 고택",
-                "혼불문학공원",
-                "전주송천도서관",
-                "강암서예관",
-                "덕진동 청소년문화의 집",
-                "교동미술관",
-                "효자문화의집",
-                "최명희문학관",
-                "강암서예관",
-                "전주시청소년자유센터",
-                "리빙콘텐츠DIT센터",
-                "김치문화관",
-                "전주시민놀이터",
-                "한옥마을역사관",
-                "팔복예술공장",
-                "전주미술관",
-                "우진문화공간",
-                "전주효자도서관",
-                "한옥마을선비문화관",
-                "전주건지도서관",
-                "전주쪽구름도서관",
-                "전주아중도서관",
-                "한국전통문화전당",
-                "전주평화도서관"
-                //79개
-        };
+                        String[] menuItems={"전주역사박물관",
+                                "공예공방촌1단지(꽃숙이)",
+                                "인후문화의집",
+                                "전주자연생태관",
+                                "목우헌",
+                                "전라북도 교육문화회관",
+                                "우아 문화의집",
+                                "전주대학교어린이영어도서관",
+                                "전주완산시립도서관",
+                                "바이전주관",
+                                "한옥생활체험관",
+                                "전통술박물관",
+                                "전주시청소년상담복지센터(YWCA)",
+                                "전주삼천도서관",
+                                "덕진 청소년 수련방,놀이마당",
+                                "동학혁명기념관",
+                                "국립무형유산원",
+                                "한지관",
+                                "전주 목판서화 체험관",
+                                "전북예술회관",
+                                "창작극회.창작소극장",
+                                "전주부채문화관",
+                                "완판본 문화관",
+                                "전주 덕진예술회관",
+                                "청소년문화광장",
+                                "한국소리문화의전당",
+                                "한방문화센터",
+                                "전주한지박물관",
+                                "전주서신도서관",
+                                "전주인후도서관",
+                                "전주금암도서관",
+                                "승광재",
+                                "삼천 문화의 집",
+                                "한옥마을 아트홀",
+                                "전주시 청소년 문화의 집",
+                                "장현식고택",
+                                "완산 청소년 문화의 집",
+                                "전주공예품전시관",
+                                "고전번역교육원",
+                                "정읍고택",
+                                "태조어진 박물관",
+                                "한지산업지원센터",
+                                "천년전주명품ONN",
+                                "전주책마루어린이도서관",
+                                "전북대학교 삼성문화회관",
+                                "전주자수민속박물관",
+                                "전주한벽문화관",
+                                "국립전주박물관",
+                                "여명 카메라 박물관",
+                                "전주소리문화관",
+                                "전주전통한지원",
+                                "전주전통문화연수원",
+                                "전주동헌",
+                                "진북문화의 집",
+                                "솔내청소년수련관",
+                                "임실 진참봉 고택",
+                                "혼불문학공원",
+                                "전주송천도서관",
+                                "강암서예관",
+                                "덕진동 청소년문화의 집",
+                                "교동미술관",
+                                "효자문화의집",
+                                "최명희문학관",
+                                "강암서예관",
+                                "전주시청소년자유센터",
+                                "리빙콘텐츠DIT센터",
+                                "김치문화관",
+                                "전주시민놀이터",
+                                "한옥마을역사관",
+                                "팔복예술공장",
+                                "전주미술관",
+                                "우진문화공간",
+                                "전주효자도서관",
+                                "한옥마을선비문화관",
+                                "전주건지도서관",
+                                "전주쪽구름도서관",
+                                "전주아중도서관",
+                                "한국전통문화전당",
+                                "전주평화도서관"
+                                //79개
+                        };
 
 
 
-        ListView listView=(ListView)view.findViewById(R.id.space_listitem);
+                        ListView listView=(ListView)view.findViewById(R.id.space_listitem);
 
-        ArrayAdapter<String> listViewAdapter=new ArrayAdapter<String>(
-                getActivity(),android.R.layout.simple_expandable_list_item_1,menuItems
+                        ArrayAdapter<String> listViewAdapter=new ArrayAdapter<String>(
+                                getActivity(),android.R.layout.simple_expandable_list_item_1,menuItems
 
-        );
+                        );
 
 
-        listView.setAdapter(listViewAdapter);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                if(i==0){
-                    title="전주 역사박물관";
-                    explain="전주와 전주 사람들에 대한 이야기를 하는 지역사 박물관이다. ○ 박물관 연혁     - 2002. 5.24 전주역사박물관 개관(동학농민혁명기념사업회)     - 2005. 4.20 제2기 전주역사박물관 출범(전주문화사랑회)     - 2006. 12. 5 전주시 민간위탁 문화시설 운영평가 ‘우수시설선정’ 수상 ○ 단체관람안내     단체관람은 예약에 관계없이 박물관 앞에 먼저 정열한 순서에 따릅니다.     오전 10~12시 사이 단체관람객이 많으므로 상당시간을 기다려야 합니다.     입장하기 전 현관에서 단체관람 일지를 꼭 기재해 주시기 바랍니다.     학생들의 단체관람시 인솔교사가 반드시 동행해야 합니다. ○ 시설안내     - 5층 조선시대 전주의 역사를 한눈에 볼 수 있는 깐깐한 전주이야기     - 4층 동학농민혁명 관련 전시공간     - 3층 전주의 역사 문화와 관련된 주제별 기획전시 공간     - 2층 故김철순씨 기증민화를 볼 수 있는 공간     - 1층 구석기시대에서 고려시대 전주의 역사를 한눈에 볼 수 있는 깐깐한 전주이야기     - b1층 녹두관은 초청 강연 및 역사문화 강좌 청소년 문화공연 영상매체 상영 공간입니다.     - b2층 수장고는 유물의 분류ㆍ정리ㆍ보존처리ㆍ관리 공간입니다.";
-                    telephone="063-228-6485";
-                    location2=127.14828209999996;
-                    location1=35.8206769;
-                    Facility_classification="관람시설";
-                    Intent intent=new Intent(getActivity(),after_space.class);
-                    startActivity(intent);
+                        listView.setAdapter(listViewAdapter);
+                        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                            @Override
+                            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                                if(i==0){
+                                    title="전주 역사박물관";
+                                    explain="전주와 전주 사람들에 대한 이야기를 하는 지역사 박물관이다. ○ 박물관 연혁     - 2002. 5.24 전주역사박물관 개관(동학농민혁명기념사업회)     - 2005. 4.20 제2기 전주역사박물관 출범(전주문화사랑회)     - 2006. 12. 5 전주시 민간위탁 문화시설 운영평가 ‘우수시설선정’ 수상 ○ 단체관람안내     단체관람은 예약에 관계없이 박물관 앞에 먼저 정열한 순서에 따릅니다.     오전 10~12시 사이 단체관람객이 많으므로 상당시간을 기다려야 합니다.     입장하기 전 현관에서 단체관람 일지를 꼭 기재해 주시기 바랍니다.     학생들의 단체관람시 인솔교사가 반드시 동행해야 합니다. ○ 시설안내     - 5층 조선시대 전주의 역사를 한눈에 볼 수 있는 깐깐한 전주이야기     - 4층 동학농민혁명 관련 전시공간     - 3층 전주의 역사 문화와 관련된 주제별 기획전시 공간     - 2층 故김철순씨 기증민화를 볼 수 있는 공간     - 1층 구석기시대에서 고려시대 전주의 역사를 한눈에 볼 수 있는 깐깐한 전주이야기     - b1층 녹두관은 초청 강연 및 역사문화 강좌 청소년 문화공연 영상매체 상영 공간입니다.     - b2층 수장고는 유물의 분류ㆍ정리ㆍ보존처리ㆍ관리 공간입니다.";
+                                    telephone="063-228-6485";
+                                    location2=127.14828209999996;
+                                    location1=35.8206769;
+                                    Facility_classification="관람시설";
+                                    Intent intent=new Intent(getActivity(),after_space.class);
+                                    startActivity(intent);
                     Toast.makeText(getActivity(),title,Toast.LENGTH_SHORT).show();
                 }else if(i==1){
                     telephone="063-282-7074";

@@ -25,6 +25,7 @@
         <activity android:name=".MainActivity" ></activity>
         <activity android:name=".after_experience"></activity>
         <activity android:name=".after_space"></activity>
+        <activity android:name=".space_list_acitivty"></activity>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCYE_2SxAXlxLTI4xpx3Gk8PKN2xa0M5ts"/>
