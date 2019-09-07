@@ -5,8 +5,7 @@
 - home fragment가 다시호출되어 oncreateview를 호출할때 viewpager가 가끔사라지는문제를 child process같은 개념으로 해결 
 - 현재까지 구현한 모든기능및디자인 (공유하기 기능 url은 구글마켓등록하면 그거로할예정)
 - 사진fragment이동간 indicator가 현재 위치를 표시하게끔 구현
- - 현재 frag5의 리스트는 문화공간리스트임 ㅇㅇㅇㅇ  
- - 문화공간 리스트 space_list_activity호출 , 문화체험은 experience_list_activity  다들 mainactivity로 하니까 클래스이름 너무헷갈리넴 
+ - 문화공간 리스트 space_list_activity호출 , 문화체험은 experience_list_activity  공연show_list 지정문화재 jijung_cultural 
  
 ![view](./now_iam.gif)
 
@@ -15,7 +14,7 @@
 
 ![FIEEBASE](./firebase.JPG)
 
-## 사용한 공공데이터 목록
+## 사용한 공공데이터 목록 ( for 제출 서류 ) 
 - 지정문화재 검색 서비스 목록
 - 문화공간 정보 서비스 목록
 - 문화체험 정보 서비스 목록
@@ -27,7 +26,8 @@
 
    ![1착상](./trouble.JPG)
 
-
+## 앞으로해야할일  
+- 이동경로와 fragment로부터 액티비티 이동등 기능구현 해놓음 이제 이 이미지버튼을 카드뷰로 꾸미기하고 list클릭시 넘어가는 activity꾸며야하고  
 
 
 
