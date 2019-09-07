@@ -15,19 +15,16 @@
 
 ![FIEEBASE](./firebase.JPG)
 
-
-
-
-#### 전주 공공데이터 데이터셋 (문화체험 정보 서비스 목록)
-- http://openapi.jeonju.go.kr/user/apimng/dataset/view.jeonju?searchCondition=REG_TITLE&postSearch=&searchRegGroup=&apiRegSid=69&regType=SHEET&menuCd=DOM_000000701001000000&pageIndex=4
+## 사용한 공공데이터 목록
+- 지정문화재 검색 서비스 목록
+- 문화공간 정보 서비스 목록
+- 문화체험 정보 서비스 목록
+- 전주시 공연행사 신규 서비스
 
 ### Android Asset Studio
 - https://romannurik.github.io/AndroidAssetStudio/index.html
 
 
-
-
-###  😰어려운점..
    ![1착상](./trouble.JPG)
 
 
