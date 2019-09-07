@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 
-public class EventDetail extends AppCompatActivity {
+public class EventDetail extends AppCompatActivity {//////문화체험
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

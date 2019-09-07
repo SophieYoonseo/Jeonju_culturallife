@@ -26,6 +26,7 @@ public  class Frag5 extends Fragment{
         Button space=(Button)view.findViewById(R.id.button_space);
         Button experience=(Button)view.findViewById(R.id.button_experience);
         Button festival=(Button)view.findViewById(R.id.button_festival);
+        Button moonhwa=(Button)view.findViewById(R.id.button_moonhwa);
         space.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,6 +46,13 @@ public  class Frag5 extends Fragment{
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getActivity(),show_list_activity.class);////공연
+                startActivity(intent);
+            }
+        });
+        moonhwa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(),jijung_cultural_property_list_activity.class);////지정문화재
                 startActivity(intent);
             }
         });

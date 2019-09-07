@@ -34,6 +34,13 @@
                 android:layout_height="278dp"
                 android:background="@drawable/balloons"
                 android:text="Button" />
+
+            <Button
+                android:id="@+id/button_moonhwa"
+                android:layout_width="match_parent"
+                android:layout_height="278dp"
+                android:background="@drawable/jeonju2"
+                android:text="Button" />
         </LinearLayout>
     </ScrollView>
 </FrameLayout>
