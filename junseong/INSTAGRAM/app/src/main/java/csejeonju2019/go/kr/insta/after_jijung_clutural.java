@@ -24,6 +24,7 @@ public class after_jijung_clutural extends AppCompatActivity
     public String testtest;
     public String number;//지정일자
     public String address; //상세주소
+    public String detail;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,15 +37,18 @@ public class after_jijung_clutural extends AppCompatActivity
         space_loc2 = jijung_cultural_property_list_activity.location2;
         space_title=jijung_cultural_property_list_activity.title;
         number=jijung_cultural_property_list_activity.designated_number;
+        detail=jijung_cultural_property_list_activity.detail_explain;
         //space_classification=space_list_acitivty.Facility_classification;
         TextView text5=(TextView)findViewById(R.id.jijung_day);
-        text5.setText("문화재 지정 일자:"+day);
+        text5.setText("문화재 지정 일자 : "+day);
         TextView text2=(TextView)findViewById(R.id.jijung_explain);
         text2.setText("상세주소 : "+address);
         TextView text3=(TextView)findViewById(R.id.jijung_title);
         text3.setText(space_title);
         TextView text10=(TextView)findViewById(R.id.jijung_number);
         text10.setText("지정번호 : "+number);
+        TextView text9=(TextView)findViewById(R.id.jijung_display);
+        text9.setText("설명 : " +detail);
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map2);
         mapFragment.getMapAsync(this);
