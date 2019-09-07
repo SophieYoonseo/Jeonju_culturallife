@@ -29,6 +29,7 @@
         <activity android:name=".experience_list_activitiy"></activity>
         <activity android:name=".show_list_activity"></activity>
         <activity android:name=".EventDetail"></activity>
+        <activity android:name=".EventDetail_show"></activity>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCYE_2SxAXlxLTI4xpx3Gk8PKN2xa0M5ts"/>

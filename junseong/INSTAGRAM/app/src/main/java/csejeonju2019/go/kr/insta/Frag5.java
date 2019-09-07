@@ -29,7 +29,7 @@ public  class Frag5 extends Fragment{
         space.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getActivity(),space_list_acitivty.class);
+                Intent intent=new Intent(getActivity(),space_list_acitivty.class);//문화공간
                 startActivity(intent);
 
             }
@@ -37,14 +37,14 @@ public  class Frag5 extends Fragment{
        experience.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               Intent intent=new Intent(getActivity(),experience_list_activitiy.class);
+               Intent intent=new Intent(getActivity(),experience_list_activitiy.class);//문화체험
                startActivity(intent);
            }
        });
         festival.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getActivity(),space_list_acitivty.class);
+                Intent intent=new Intent(getActivity(),show_list_activity.class);////공연
                 startActivity(intent);
             }
         });
