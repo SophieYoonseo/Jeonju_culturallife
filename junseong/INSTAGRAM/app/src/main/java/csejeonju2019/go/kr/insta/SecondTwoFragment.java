@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 public class SecondTwoFragment  extends Fragment {
     // Store instance variables
@@ -24,7 +25,8 @@ public class SecondTwoFragment  extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.secondtwo_fragment, container, false);
-        view.setOnClickListener(new View.OnClickListener() {
+        ImageView second_two=(ImageView)view.findViewById(R.id.Secondtwo);
+        second_two.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse("https://namu.wiki/w/%EB%A9%9C%EB%A1%9C%EA%B0%80%20%EC%B2%B4%EC%A7%88"));

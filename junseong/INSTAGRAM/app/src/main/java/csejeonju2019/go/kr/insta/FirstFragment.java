@@ -26,7 +26,8 @@ public class FirstFragment extends Fragment  {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_first, container, false);
-        view.setOnClickListener(new View.OnClickListener() {
+        ImageView image1=(ImageView)view.findViewById(R.id.imageView2);
+        image1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=YBEUXfT7_48"));
