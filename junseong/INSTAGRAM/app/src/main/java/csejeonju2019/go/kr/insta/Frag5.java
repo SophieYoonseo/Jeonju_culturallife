@@ -37,7 +37,7 @@ public  class Frag5 extends Fragment{
        experience.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               Intent intent=new Intent(getActivity(),space_list_acitivty.class);
+               Intent intent=new Intent(getActivity(),experience_list_activitiy.class);
                startActivity(intent);
            }
        });
