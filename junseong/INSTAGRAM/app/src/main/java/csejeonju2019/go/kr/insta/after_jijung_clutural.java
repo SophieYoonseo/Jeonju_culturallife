@@ -40,11 +40,11 @@ public class after_jijung_clutural extends AppCompatActivity
         TextView text5=(TextView)findViewById(R.id.jijung_day);
         text5.setText("문화재 지정 일자:"+day);
         TextView text2=(TextView)findViewById(R.id.jijung_explain);
-        text2.setText("상세주소:"+address);
+        text2.setText("상세주소 : "+address);
         TextView text3=(TextView)findViewById(R.id.jijung_title);
         text3.setText(space_title);
         TextView text10=(TextView)findViewById(R.id.jijung_number);
-        text10.setText("지정번호:"+number);
+        text10.setText("지정번호 : "+number);
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map2);
         mapFragment.getMapAsync(this);
