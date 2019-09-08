@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,8 +17,11 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public  class Frag5 extends Fragment{
+import java.util.ArrayList;
+import java.util.List;
 
+public  class Frag5 extends Fragment{
+    /*
     private Frag2 frag2;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -59,5 +64,28 @@ public  class Frag5 extends Fragment{
 
 
         return view;
+    }
+    */
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.frag5, container, false);
+        RecyclerView recyclerView=(RecyclerView)view.findViewById(R.id.recyclerview);
+        LinearLayoutManager layoutManager=new LinearLayoutManager(getActivity());
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(layoutManager);
+
+        List<Recycler_item> items=new ArrayList<>();
+        Recycler_item[] item=new Recycler_item[5];
+        item[0]=new Recycler_item(R.drawable.slide1,"#1");
+        item[1]=new Recycler_item(R.drawable.slide2,"#2");
+        item[2]=new Recycler_item(R.drawable.slide3,"#3");
+        //item[3]=new Recycler_item(R.drawable.d,"#4");
+        //item[4]=new Recycler_item(R.drawable.e,"#5");
+
+        for(int i=0;i<3;i++) items.add(item[i]);
+
+        recyclerView.setAdapter(new RecyclerAdapter(getActivity(),items,R.layout.frag5));
+    return view;
+
     }
 }
