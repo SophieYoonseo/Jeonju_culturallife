@@ -85,7 +85,8 @@ public  class Frag5 extends Fragment{
         for(int i=0;i<3;i++) items.add(item[i]);
 
         recyclerView.setAdapter(new RecyclerAdapter(getActivity(),items,R.layout.frag5));
-    return view;
+
+        return view;
 
     }
 }
