@@ -76,13 +76,13 @@ public  class Frag5 extends Fragment{
 
         List<Recycler_item> items=new ArrayList<>();
         Recycler_item[] item=new Recycler_item[5];
-        item[0]=new Recycler_item(R.drawable.slide1,"#1");
-        item[1]=new Recycler_item(R.drawable.slide2,"#2");
-        item[2]=new Recycler_item(R.drawable.slide3,"#3");
-        //item[3]=new Recycler_item(R.drawable.d,"#4");
+        item[0]=new Recycler_item(R.drawable.slide1,"공연행사 정보");
+        item[1]=new Recycler_item(R.drawable.slide2,"문화공간 정보");
+        item[2]=new Recycler_item(R.drawable.slide3,"문화체험 정보");
+        item[3]=new Recycler_item(R.drawable.jeonju,"지정문화재 정보");
         //item[4]=new Recycler_item(R.drawable.e,"#5");
 
-        for(int i=0;i<3;i++) items.add(item[i]);
+        for(int i=0;i<4;i++) items.add(item[i]);
 
         recyclerView.setAdapter(new RecyclerAdapter(getActivity(),items,R.layout.frag5));
 
