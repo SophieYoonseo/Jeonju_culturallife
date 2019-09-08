@@ -7,7 +7,7 @@
 - 사진fragment이동간 indicator가 현재 위치를 표시하게끔 구현
  - 문화공간 리스트 space_list_activity호출 , 문화체험은 experience_list_activity  공연show_list 지정문화재 jijung_cultural 
  
-![view](./now_iam.gif)
+![view](./ing.gif)
 
 
 - DB_INSTA 라는 폴더명에 회원가입및 FIREBASE연동 그리고 DB활성화 
