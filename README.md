@@ -16,7 +16,7 @@
 - implementation 'com.google.android.gms:play-services-maps:16.1.0'(구글지도)
 - implementation 'com.google.android.gms:play-services-location:16.0.0'(구글지도)
 - implementation 'me.relex:circleindicator:1.2.2'(광고같은녀석 )
-![gogglemap](./Etc/capture.JPG)
+![gogglemap](./Etc/depen.JPG)
 
 
 
