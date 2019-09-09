@@ -145,7 +145,7 @@ public class Frag1 extends Fragment
             }
         }
         public int getCount(){
-            return 3;
+            return 3; 
         }
 
     }
