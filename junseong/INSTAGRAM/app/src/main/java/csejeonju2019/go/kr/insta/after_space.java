@@ -13,7 +13,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class after_space extends AppCompatActivity
         implements OnMapReadyCallback {
-    public String exp;//설명 임 이거
+    public String exp;  //설명 임 이거
     public double space_loc1;
     public double space_loc2;
     private GoogleMap mMap;
@@ -25,7 +25,7 @@ public class after_space extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         exp=space_list_acitivty.explain;
-        setContentView(R.layout.after_space);//순서주의주의
+        setContentView(R.layout.after_space);   //순서주의주의
         testtest=space_list_acitivty.explain;
 
         space_loc1 = space_list_acitivty.location1;

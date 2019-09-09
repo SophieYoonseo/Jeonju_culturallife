@@ -21,16 +21,15 @@ public class after_jijung_clutural extends AppCompatActivity
     public String space_telephone;
     public String space_title;//문화재명
     public String space_classification;
-    public String testtest;
     public String number;//지정일자
     public String address; //상세주소
     public String detail;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //exp=space_list_acitivty.explain;
-        setContentView(R.layout.after_jijung_culture);//순서주의주의
-        //testtest=jijung_cultural_property_list_activity.explain;
+
+        setContentView(R.layout.after_jijung_culture);  //순서주의주의
+
         day=jijung_cultural_property_list_activity.designated_day;
         address=jijung_cultural_property_list_activity.detail_address;
         space_loc1 = jijung_cultural_property_list_activity.location1;
@@ -65,7 +64,6 @@ public class after_jijung_clutural extends AppCompatActivity
         MarkerOptions markerOptions = new MarkerOptions();
         markerOptions.position(JJ);
         markerOptions.title(space_title);
-        //markerOptions.snippet(space_classification);
         mMap.addMarker(markerOptions);
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(JJ, 16));//16배 줌가능
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(JJ, 16));//지도 시작시 애니메이션 효과
