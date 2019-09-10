@@ -22,7 +22,7 @@ public class festival_list_activity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cultural_heritage);
+        setContentView(R.layout.activity_festival);
         String[] festivalName = {
                 "전주 한지 문화 축제",
                 "전주 세계소리축제",

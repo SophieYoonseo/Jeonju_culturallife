@@ -35,6 +35,7 @@
         <activity android:name=".Hyangji_Cultural_Heritage_list_activity"></activity>
         <activity android:name=".after_hyangi_cultural"></activity>
         <activity android:name=".festival_list_activity"></activity>
+        <activity android:name=".after_jeonju_festival"></activity>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCYE_2SxAXlxLTI4xpx3Gk8PKN2xa0M5ts"/>
