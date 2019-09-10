@@ -52,7 +52,7 @@ public class after_hyangi_cultural extends AppCompatActivity
         text9.setText("내용 : " +detail);
         ImageView imageView=(ImageView)findViewById(R.id.hyangi_image);
         TextView text12=(TextView)findViewById(R.id.hyangi_explain);
-        text12.setText(exp);
+        text12.setText("설명 : "+ exp);
         if(space_title=="만경대 암각서")
         {
             imageView.setImageResource(R.drawable.amkak);
