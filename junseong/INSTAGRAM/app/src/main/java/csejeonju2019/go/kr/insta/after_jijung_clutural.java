@@ -48,6 +48,8 @@ public class after_jijung_clutural extends AppCompatActivity
         text10.setText("지정번호 : "+number);
         TextView text9=(TextView)findViewById(R.id.jijung_display);
         text9.setText("설명 : " +detail);
+        TextView text13=(TextView)findViewById(R.id.hyangi_explain);
+        text13.setText(exp);
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map2);
         mapFragment.getMapAsync(this);

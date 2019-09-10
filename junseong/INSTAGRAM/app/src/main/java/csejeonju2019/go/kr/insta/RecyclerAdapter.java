@@ -61,6 +61,10 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
                 {
                     Intent intent=new Intent(context,jijung_cultural_property_list_activity.class);
                     context.startActivity(intent);
+                }else if(item.getTitle()=="향토문화유산 정보")
+                {
+                    Intent intent=new Intent(context,Hyangji_Cultural_Heritage_list_activity.class);
+                    context.startActivity(intent);
                 }
 
                 Toast.makeText(context,item.getTitle(),Toast.LENGTH_SHORT).show();

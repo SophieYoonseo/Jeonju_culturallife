@@ -1,0 +1,97 @@
+package csejeonju2019.go.kr.insta;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
+
+public class after_hyangi_cultural extends AppCompatActivity
+        implements OnMapReadyCallback {
+    public String exp;//설명 임 이거
+    public double space_loc1;//주소
+    public double space_loc2;//주소
+    public String day;//지정일자
+    private GoogleMap mMap;
+    public String space_telephone;
+    public String space_title;//문화재명
+    public String space_classification;
+    public String number;//지정일자
+    public String address; //상세주소
+    public String detail;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        setContentView(R.layout.after_hyangi_cultural_heritage);  //순서주의주의
+
+        //day=Hyangji_Cultural_Heritage_list_activity.designated_day;
+        address=Hyangji_Cultural_Heritage_list_activity.address;
+        space_loc1 = Hyangji_Cultural_Heritage_list_activity.location1;
+        space_loc2 = Hyangji_Cultural_Heritage_list_activity.location2;
+        space_title=Hyangji_Cultural_Heritage_list_activity.title;
+        exp=Hyangji_Cultural_Heritage_list_activity.explain;
+        //number=Hyangji_Cultural_Heritage_list_activity.designated_number;
+        detail=Hyangji_Cultural_Heritage_list_activity.content;
+        //space_classification=space_list_acitivty.Facility_classification;
+        //TextView text5=(TextView)findViewById(R.id.jijung_day);
+        //text5.setText("문화재 지정 일자 : "+day);
+        TextView text2=(TextView)findViewById(R.id.hyangi_address);
+        text2.setText("상세주소 : "+address);
+        TextView text3=(TextView)findViewById(R.id.hyangi_title);
+        text3.setText(space_title);
+        //TextView text10=(TextView)findViewById(R.id.jijung_number);
+       // text10.setText("지정번호 : "+number);
+        TextView text9=(TextView)findViewById(R.id.hyangi_content);
+        text9.setText("내용 : " +detail);
+        ImageView imageView=(ImageView)findViewById(R.id.hyangi_image);
+        TextView text12=(TextView)findViewById(R.id.hyangi_explain);
+        text12.setText(exp);
+        if(space_title=="만경대 암각서")
+        {
+            imageView.setImageResource(R.drawable.amkak);
+        }
+        else if(space_title=="남고진 사적비")
+        {
+            imageView.setImageResource(R.drawable.namgo);
+        } else if(space_title=="박진 효자비")
+        {
+            imageView.setImageResource(R.drawable.parkjin);
+        }
+        else if(space_title=="전주류씨 시사재")
+        {
+            imageView.setImageResource(R.drawable.sisa);
+        }
+        else if(space_title=="전북대 석불입상")
+        {
+            imageView.setImageResource(R.drawable.seokbul);
+        }
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+                .findFragmentById(R.id.map2);
+        mapFragment.getMapAsync(this);
+    }
+
+    @Override
+    public void onMapReady(final GoogleMap googleMap) {
+
+
+        mMap = googleMap;
+
+        LatLng JJ = new LatLng(space_loc1, space_loc2);
+
+        MarkerOptions markerOptions = new MarkerOptions();
+        markerOptions.position(JJ);
+        markerOptions.title(space_title);
+        mMap.addMarker(markerOptions);
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(JJ, 16));//16배 줌가능
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(JJ, 16));//지도 시작시 애니메이션 효과
+
+
+    }
+}

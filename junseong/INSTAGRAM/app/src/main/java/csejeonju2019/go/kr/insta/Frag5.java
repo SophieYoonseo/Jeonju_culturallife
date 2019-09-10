@@ -80,9 +80,9 @@ public  class Frag5 extends Fragment{
         item[1]=new Recycler_item(R.drawable.space1,"문화공간 정보");
         item[2]=new Recycler_item(R.drawable.experience,"문화체험 정보");
         item[3]=new Recycler_item(R.drawable.jeonju,"지정문화재 정보");
-        //item[4]=new Recycler_item(R.drawable.e,"#5");
+        item[4]=new Recycler_item(R.drawable.yousan,"향토문화유산 정보");
 
-        for(int i=0;i<4;i++) items.add(item[i]);
+        for(int i=0;i<5;i++) items.add(item[i]);
 
         recyclerView.setAdapter(new RecyclerAdapter(getActivity(),items,R.layout.frag5));
 
