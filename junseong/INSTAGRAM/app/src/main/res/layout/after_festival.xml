@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".after_hyangi_cultural" >
+    tools:context=".after_jeonju_festival" >
 
     <TextView
         android:id="@+id/festival_title"
@@ -16,11 +16,7 @@
         android:textSize="30dp"
         android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/hyangi_image"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        app:srcCompat="@drawable/amkak" />
+
 
     <ScrollView
         android:layout_width="match_parent"
