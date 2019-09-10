@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".after_jijung_clutural" >
+    tools:context=".after_hyangi_cultural" >
 
     <TextView
         android:id="@+id/hyangi_title"
