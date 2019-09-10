@@ -19,12 +19,12 @@
     <ImageView
         android:id="@+id/hyangi_image"
         android:layout_width="match_parent"
-        android:layout_height="193dp"
+        android:layout_height="100dp"
         app:srcCompat="@drawable/amkak" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="213dp">
+        android:layout_height="150dp">
 
 
         <LinearLayout
@@ -39,14 +39,6 @@
                 android:layout_height="wrap_content"
                 android:text="TextView"
                 android:textSize="15dp" />
-
-            <!--
-            <TextView
-                android:id="@+id/jijung_number"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
-                    -->
             <TextView
                 android:id="@+id/hyangi_explain"
                 android:layout_width="match_parent"
@@ -66,14 +58,15 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="253dp"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <fragment
             android:id="@+id/map2"
             android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
-            android:layout_height="184dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
             tools:context=".MapsActivity" />
     </LinearLayout>
 
