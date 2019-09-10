@@ -1,21 +1,12 @@
 package csejeonju2019.go.kr.insta;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -76,13 +67,14 @@ public  class Frag5 extends Fragment{
 
         List<Recycler_item> items=new ArrayList<>();
         Recycler_item[] item=new Recycler_item[5];
-        item[0]=new Recycler_item(R.drawable.festival1,"공연행사 정보");
+        item[0]=new Recycler_item(R.drawable.show,"공연행사 정보");
         item[1]=new Recycler_item(R.drawable.space1,"문화공간 정보");
         item[2]=new Recycler_item(R.drawable.experience,"문화체험 정보");
         item[3]=new Recycler_item(R.drawable.jeonju,"지정문화재 정보");
         item[4]=new Recycler_item(R.drawable.yousan,"향토문화유산 정보");
+        item[5]=new Recycler_item(R.drawable.festival, "전주축제 정보");
 
-        for(int i=0;i<5;i++) items.add(item[i]);
+        for(int i=0;i<6;i++) items.add(item[i]);
 
         recyclerView.setAdapter(new RecyclerAdapter(getActivity(),items,R.layout.frag5));
 

@@ -65,6 +65,10 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
                 {
                     Intent intent=new Intent(context,Hyangji_Cultural_Heritage_list_activity.class);
                     context.startActivity(intent);
+                }else if(item.getTitle()=="전주축제 정보")
+                {
+                    Intent intent=new Intent(context,festival_list_activity.class);
+                    context.startActivity(intent);
                 }
 
                 Toast.makeText(context,item.getTitle(),Toast.LENGTH_SHORT).show();
