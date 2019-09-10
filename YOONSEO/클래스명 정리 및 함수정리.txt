@@ -1,0 +1,8 @@
+클래스명 정리
+frag1~frag : 하단바
+
+
+commit()
+getSupportFragmentManager() : Activity 내에서 FragmentManager에 접근하기 위해 사용.
+fragment는 transaction을 통해 add, remove, replace등을 할 수 있다.
+beginTransaction을 호출하고 replace를 add를 호출할 수 있다.
