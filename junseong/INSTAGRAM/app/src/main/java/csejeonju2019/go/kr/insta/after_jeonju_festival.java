@@ -38,7 +38,7 @@ public class after_jeonju_festival extends AppCompatActivity implements OnMapRea
 
 
         TextView text20=(TextView)findViewById(R.id.festival_title);
-        text20.setText("축제명 : "+f_title);
+        text20.setText(f_title);
         TextView text21=(TextView)findViewById(R.id.festival_date);
         text21.setText("축제 일시 : "+f_date);
         TextView text2=(TextView)findViewById(R.id.festival_address);
