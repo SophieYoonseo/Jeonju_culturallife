@@ -14,6 +14,11 @@
 
 ![FIEEBASE](./firebase.JPG)
 
+
+## code merge and design detail
+- 9월9일 ~ sophieyoonseo 합류 instagram 앱에 문화체험, 공연정보 xmlpullparser 합침.
+- cardview 축제정보 +및 레이아웃 배치조정 
+
 ## 사용한 공공데이터 목록 ( for 제출 서류 ) 
 - 지정문화재 검색 서비스 목록
 - 문화공간 정보 서비스 목록
