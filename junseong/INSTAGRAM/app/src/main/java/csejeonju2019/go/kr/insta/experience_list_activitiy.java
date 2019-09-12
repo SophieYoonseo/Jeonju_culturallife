@@ -23,7 +23,7 @@ import java.util.ArrayList;
 
 public class experience_list_activitiy extends AppCompatActivity {
     ArrayList<PerformanceShowItem> Items;
-    ArrayAdapter adapter;
+    ArrayAdapter adapter;  //에고;; 까먹어서 
 
     public static String exp_title;
     public static double location1;
