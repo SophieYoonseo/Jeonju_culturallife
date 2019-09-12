@@ -23,6 +23,9 @@ import java.util.ArrayList;
 public class experience_list_activitiy extends AppCompatActivity {
     ArrayList<PerformanceShowItem> Items;
     ArrayAdapter adapter;
+    public static String exp_title;
+    public static double location1;
+    public static double location2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,7 +57,9 @@ public class experience_list_activitiy extends AppCompatActivity {
                         if(parser.getName().equals("addrDtl")) item.inAddrDtl = true;
                         if(parser.getName().equals("dataContent")) item.inDataContent = true;
                         if(parser.getName().equals("dataSid")) item.inDataSid = true;
-                        if(parser.getName().equals("dataTitle")) item.inDataTitle = true;
+                        if(parser.getName().equals("dataTitle")){
+                            item.inDataTitle = true;
+                        }
                         if(parser.getName().equals("fileCnt")) item.inFileCnt = true;
                         if(parser.getName().equals("posx")) item.inPosx = true;
                         if(parser.getName().equals("posy")) item.inPosy = true;
@@ -82,10 +87,19 @@ public class experience_list_activitiy extends AppCompatActivity {
                         if(item.inAddrDtl) item.addrDtl = parser.getText();
                         if(item.inDataContent) item.dataContent = parser.getText();
                         if(item.inDataSid) item.dataSid = parser.getText();
-                        if(item.inDataTitle) item.dataTitle = parser.getText();
+                        if(item.inDataTitle){
+                            item.dataTitle = parser.getText();
+                            exp_title=item.dataTitle;
+                        }
                         if(item.inFileCnt) item.fileCnt = parser.getText();
-                        if(item.inPosx) item.posx = parser.getText();
-                        if(item.inPosy) item.posy = parser.getText();
+                        if(item.inPosx){
+                            item.posx = parser.getText();
+                            location1=Double.parseDouble(item.posx);//double 로 string 을 바꿔버렷
+                        }
+                        if(item.inPosy){
+                            item.posy = parser.getText();
+                            location2=Double.parseDouble(item.posy); //마찬가지로 string to double
+                        }
                         if(item.inTel) item.tel = parser.getText();
                         if(item.inUserHomepage) item.userHomepage = parser.getText();
                         if(item.inZipCode) item.zipCode = parser.getText();
