@@ -1,5 +1,6 @@
 package csejeonju2019.go.kr.insta;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -19,9 +20,33 @@ public class space_list_acitivty extends AppCompatActivity {
         public static String explain;
         public static String Facility_classification;
         private ListView lv_shifts;
+        ProgressDialog progressDlg;
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activty_culture_space);
+        progressDlg = new ProgressDialog(this);
+        progressDlg.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+        //progressDlg.setIndeterminate(true);
+        progressDlg.setTitle("결과를 읽어오는중입니다.....");
+        progressDlg.setCancelable(true);
+        progressDlg.setMax(100);
+        progressDlg.setProgress(0);
+        progressDlg.show();
+        new Thread(){
+            public void run() {
+                for(int i=0;i<=100;i++) {
+                    progressDlg.setProgress(i);
+                    if(i==100)
+                        progressDlg.dismiss();
+                    try {
+                        Thread.sleep(100);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+                progressDlg.dismiss();
+            }
+        }.start();
 
     String[] menuItems={"전주역사박물관",
                     "공예공방촌1단지(꽃숙이)",

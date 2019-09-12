@@ -4,7 +4,17 @@
     android:outlineSpotShadowColor="@color/design_default_color_primary"
     android:background="@color/common_google_signin_btn_text_dark_disabled"
     android:layout_height="match_parent">
+    <ProgressBar
+        android:id="@+id/progressBar4"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="315dp"
+        android:layout_height="236dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
 
+        android:layout_marginBottom="10dp"
+        android:visibility="invisible" />
 
     <ListView
         android:id="@+id/mainmenu_space"
