@@ -1,5 +1,6 @@
 package csejeonju2019.go.kr.insta;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -16,10 +17,33 @@ public class Hyangji_Cultural_Heritage_list_activity extends AppCompatActivity {
     public static double location1; //위도
     public static double location2; //경도
     public static String explain; //설명 맨
-
+    ProgressDialog progressDlg;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cultural_heritage);
+        progressDlg = new ProgressDialog(this);
+        progressDlg.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+        //progressDlg.setIndeterminate(true);
+        progressDlg.setTitle("결과를 읽어오는중입니다.....");
+        progressDlg.setCancelable(true);
+        progressDlg.setMax(100);
+        progressDlg.setProgress(0);
+        progressDlg.show();
+        new Thread(){
+            public void run() {
+                for(int i=0;i<=100;i++) {
+                    progressDlg.setProgress(i);
+                    if(i==100)
+                        progressDlg.dismiss();
+                    try {
+                        Thread.sleep(100);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+                progressDlg.dismiss();
+            }
+        }.start();
         String[] hyangji = {
                 "만경대 암각서",
                 "남고진 사적비",

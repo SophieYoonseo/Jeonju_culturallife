@@ -4,11 +4,23 @@
     android:layout_height="match_parent">
 
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="379dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:visibility="invisible"
+        android:layout_height="327dp" />
+
     <ListView
         android:id="@+id/mainmenu_experience"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center_horizontal"
-        />
+        android:layout_gravity="center_horizontal">
+
+    </ListView>
 
 </FrameLayout>

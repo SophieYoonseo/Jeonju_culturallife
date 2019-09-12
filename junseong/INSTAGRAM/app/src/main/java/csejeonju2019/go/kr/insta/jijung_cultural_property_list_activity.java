@@ -1,5 +1,6 @@
 package csejeonju2019.go.kr.insta;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -15,12 +16,35 @@ public class jijung_cultural_property_list_activity extends AppCompatActivity {
     public static String designated_day;
     public static String detail_address;
     public static String detail_explain;
-
+    ProgressDialog progressDlg;
     public static double location1;
     public static double location2;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.acitivity_jijung_culture);
+        progressDlg = new ProgressDialog(this);
+        progressDlg.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+        //progressDlg.setIndeterminate(true);
+        progressDlg.setTitle("결과를 읽어오는중입니다.....");
+        progressDlg.setCancelable(true);
+        progressDlg.setMax(100);
+        progressDlg.setProgress(0);
+        progressDlg.show();
+        new Thread(){
+            public void run() {
+                for(int i=0;i<=100;i++) {
+                    progressDlg.setProgress(i);
+                    if(i==100)
+                        progressDlg.dismiss();
+                    try {
+                        Thread.sleep(100);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+                progressDlg.dismiss();
+            }
+        }.start();
         String[] jijungculture= {"남고사지",
                 "지행당",
                 "전주부 지도",

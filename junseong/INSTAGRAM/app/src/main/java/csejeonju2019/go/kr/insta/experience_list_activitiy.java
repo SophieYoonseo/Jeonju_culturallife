@@ -2,6 +2,7 @@ package csejeonju2019.go.kr.insta;
 
 
 
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -23,16 +24,44 @@ import java.util.ArrayList;
 public class experience_list_activitiy extends AppCompatActivity {
     ArrayList<PerformanceShowItem> Items;
     ArrayAdapter adapter;
+
     public static String exp_title;
     public static double location1;
     public static double location2;
     public static String posx_double;
     public static String posy_double;
+    ProgressDialog progressDlg;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_culture_experience);
         // 네트워크 API 지연으로 인한 ANR(Android not Responding) 방지
+        progressDlg = new ProgressDialog(this);
+        progressDlg.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+        //progressDlg.setIndeterminate(true);
+        progressDlg.setTitle("결과를 읽어오는중입니다.....");
+        progressDlg.setCancelable(true);
+        progressDlg.setMax(100);
+        progressDlg.setProgress(0);
+        progressDlg.show();
+        new Thread(){
+            public void run() {
+                for(int i=0;i<=100;i++) {
+                    progressDlg.setProgress(i);
+                    if(i==100)
+                        progressDlg.dismiss();
+                    try {
+                        Thread.sleep(100);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+                progressDlg.dismiss();
+            }
+        }.start();
+
+
+
         StrictMode.enableDefaults();
         // 문화체험 정보 객체, 리스트
         PerformanceShowItem item = new PerformanceShowItem();

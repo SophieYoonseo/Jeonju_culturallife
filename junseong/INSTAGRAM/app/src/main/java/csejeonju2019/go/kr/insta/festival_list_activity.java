@@ -1,5 +1,6 @@
 package csejeonju2019.go.kr.insta;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -19,10 +20,33 @@ public class festival_list_activity extends AppCompatActivity {
     public static String date;  //날짜
     public static String tel;   //연락처
     public static String explain; //설명
-
+    ProgressDialog progressDlg;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_festival);
+        progressDlg = new ProgressDialog(this);
+        progressDlg.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+        //progressDlg.setIndeterminate(true);
+        progressDlg.setTitle("결과를 읽어오는중입니다.....");
+        progressDlg.setCancelable(true);
+        progressDlg.setMax(100);
+        progressDlg.setProgress(0);
+        progressDlg.show();
+        new Thread(){
+            public void run() {
+                for(int i=0;i<=100;i++) {
+                    progressDlg.setProgress(i);
+                    if(i==100)
+                        progressDlg.dismiss();
+                    try {
+                        Thread.sleep(100);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+                progressDlg.dismiss();
+            }
+        }.start();
         String[] festivalName = {
                 "전주 한지 문화 축제",
                 "전주 세계소리축제",
