@@ -1,7 +1,11 @@
 package csejeonju2019.go.kr.insta;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -35,7 +39,22 @@ public class after_jeonju_festival extends AppCompatActivity implements OnMapRea
         f_homepage=festival_list_activity.homepage;
         f_date=festival_list_activity.date;
         f_explain=festival_list_activity.explain;
+        Button festivalshare=(Button)findViewById(R.id.festival_share);
+        festivalshare.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                String mySharedLink = f_explain;
+                String mySubject = "관련 내용을 공유합니다.";
 
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_SEND);
+                intent.setType("text/plain");
+                intent.putExtra(Intent.EXTRA_SUBJECT, mySubject);
+                intent.putExtra(Intent.EXTRA_TEXT, mySharedLink);
+
+                startActivity(Intent.createChooser(intent, "공유합니다."));
+            }
+        });
 
         TextView text20=(TextView)findViewById(R.id.festival_title);
         text20.setText(f_title);
@@ -45,11 +64,17 @@ public class after_jeonju_festival extends AppCompatActivity implements OnMapRea
         text2.setText("상세주소 : "+ f_address);
         TextView text3=(TextView)findViewById(R.id.festival_explain);
         text3.setText("설명 : "+ f_explain);
-        TextView text10=(TextView)findViewById(R.id.festival_homepage);
-        text10.setText("홈페이지 : "+ f_homepage);
-        TextView text9=(TextView)findViewById(R.id.festival_tel);
-        text9.setText("연락처 : " + f_telephone);
-
+       // TextView text10=(TextView)findViewById(R.id.festival_homepage);
+        //text10.setText("홈페이지 : "+ f_homepage);
+        //TextView text9=(TextView)findViewById(R.id.festival_tel);
+        //text9.setText("연락처 : " + f_telephone);   축제관련전화번호 다 null이길래 주석처리로없앰
+        Button buttonpage=(Button)findViewById(R.id.button_festival_page);
+        buttonpage.setOnClickListener(new Button.OnClickListener(){
+            public void onClick(View view){
+                Intent homepage=new Intent(Intent.ACTION_VIEW, Uri.parse(f_homepage));
+                startActivity(homepage);
+            }
+        });
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map2);
         mapFragment.getMapAsync(this);
