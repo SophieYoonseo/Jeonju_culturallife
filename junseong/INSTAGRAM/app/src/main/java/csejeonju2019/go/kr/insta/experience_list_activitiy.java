@@ -26,6 +26,8 @@ public class experience_list_activitiy extends AppCompatActivity {
     public static String exp_title;
     public static double location1;
     public static double location2;
+    public static String posx_double;
+    public static String posy_double;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -94,11 +96,13 @@ public class experience_list_activitiy extends AppCompatActivity {
                         if(item.inFileCnt) item.fileCnt = parser.getText();
                         if(item.inPosx){
                             item.posx = parser.getText();
-                            location1=Double.parseDouble(item.posx);//double 로 string 을 바꿔버렷
+                            posx_double=item.posx;
+                            //location1=Double.parseDouble(item.posx);//double 로 string 을 바꿔버렷
                         }
                         if(item.inPosy){
                             item.posy = parser.getText();
-                            location2=Double.parseDouble(item.posy); //마찬가지로 string to double
+                            //location2=Double.parseDouble(item.posy); //마찬가지로 string to double
+                            posy_double=item.posy;
                         }
                         if(item.inTel) item.tel = parser.getText();
                         if(item.inUserHomepage) item.userHomepage = parser.getText();

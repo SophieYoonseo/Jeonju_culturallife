@@ -9,6 +9,7 @@ import android.widget.TextView;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -16,9 +17,9 @@ import org.w3c.dom.Text;
 
 
 public class EventDetail extends AppCompatActivity  implements OnMapReadyCallback {//////문화체험
-  
-    double loc1;
-    double loc2;
+
+   public double loc1;
+   public  double loc2;
     private GoogleMap mMap;
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,16 +32,18 @@ public class EventDetail extends AppCompatActivity  implements OnMapReadyCallbac
         PerformanceShowItem item = (PerformanceShowItem)intent.getSerializableExtra("activity");
         //출력
         result.setText(item.showDetail());
-
+        loc1=Double.parseDouble(experience_list_activitiy.posx_double);
+        loc2=Double.parseDouble(experience_list_activitiy.posy_double);
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+                .findFragmentById(R.id.map2);
+        mapFragment.getMapAsync(this);
     }
     public void onMapReady(final GoogleMap googleMap) {
-
-        loc1=experience_list_activitiy.location1;
-        loc2=experience_list_activitiy.location2;
-
+        loc1=Double.parseDouble(experience_list_activitiy.posx_double);
+        loc2=Double.parseDouble(experience_list_activitiy.posy_double);
         mMap = googleMap;
-
-        LatLng SEOUL = new LatLng(loc1, loc2);
+        LatLng SEOUL = new LatLng(loc2, loc1);
+       // LatLng SEOUL = new LatLng(35.844226, 127.129396);
 
         MarkerOptions markerOptions = new MarkerOptions();
         markerOptions.position(SEOUL);
