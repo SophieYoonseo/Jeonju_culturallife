@@ -38,7 +38,6 @@ import static com.nhn.android.naverlogin.OAuthLogin.mOAuthLoginHandler;
 public class MainActivity extends AppCompatActivity {
     private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
     private DatabaseReference databaseReference = firebaseDatabase.getReference();
-    private List<Account> accountList;
     OAuthLogin mOAuthLoginModule;
     OAuthLoginButton mOAuthLoginButton;
     Context mContext;
@@ -54,10 +53,9 @@ public class MainActivity extends AppCompatActivity {
                 long expiresAt = mOAuthLoginModule.getExpiresAt(mContext);
                 String tokenType = mOAuthLoginModule.getTokenType(mContext);
                 //성공시 처리
-                databaseReference.child("Account").child("AccessToken").push().setValue(accessToken);
                 Date mDate = new Date(System.currentTimeMillis());
-                databaseReference.child("Account").child("AccessTime").push().setValue((new SimpleDateFormat("yyyy-MM-dd hh:mm:ss")).format(mDate));
-                databaseReference.child("Account").child("LoginType").push().setValue("Naver");
+                Account naverAccount = new Account(accessToken, (new SimpleDateFormat("yyyy-MM-dd hh:mm:ss")).format(mDate), "Naver");
+                databaseReference.push().setValue(naverAccount);
 
             } else {
                 String errorCode = mOAuthLoginModule.getLastErrorCode(mContext).getCode();
@@ -85,10 +83,14 @@ public class MainActivity extends AppCompatActivity {
                 String personId = acct.getId();
                 Uri personPhoto = acct.getPhotoUrl();
 
-                databaseReference.child("Account").child("AccessToken").push().setValue(personEmail);
                 Date mDate = new Date(System.currentTimeMillis());
-                databaseReference.child("Account").child("AccessTime").push().setValue((new SimpleDateFormat("yyyy-MM-dd hh:mm:ss")).format(mDate));
-                databaseReference.child("Account").child("LoginType").push().setValue("Google");
+                Account googleAccount = new Account(personEmail, (new SimpleDateFormat("yyyy-MM-dd hh:mm:ss")).format(mDate),"Google");
+                try{
+                    databaseReference.push().setValue(googleAccount);
+                }
+                catch (Exception e) {
+                    Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG).show();
+                }
             }
         } catch (ApiException e) {
             // The ApiException status code indicates the detailed failure reason.
@@ -137,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
         );
         mOAuthLoginButton = (OAuthLoginButton) findViewById(R.id.buttonOAuthLoginImg);
         mOAuthLoginButton.setOAuthLoginHandler(mOAuthLoginHandler);
-        databaseReference.addChildEventListener(childEventListener);
+        //databaseReference.addChildEventListener(childEventListener);
     }
     public void onDestroy(){
         mOAuthLoginModule.logout(mContext);
@@ -153,34 +155,6 @@ public class MainActivity extends AppCompatActivity {
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
             handleSignInResult(task);
         }
-
     }
 
-    private ChildEventListener childEventListener = new ChildEventListener() {
-        @Override
-        public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-            //accountList.add();
-            dataSnapshot.getValue(AccountList.class);
-        }
-
-        @Override
-        public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-
-        }
-
-        @Override
-        public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
-
-        }
-
-        @Override
-        public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-
-        }
-
-        @Override
-        public void onCancelled(@NonNull DatabaseError databaseError) {
-
-        }
-    };
 }
