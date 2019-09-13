@@ -1,5 +1,6 @@
 package kr.go.dbwrite;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,6 +20,9 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.nhn.android.naverlogin.OAuthLogin;
@@ -27,18 +31,19 @@ import com.nhn.android.naverlogin.ui.view.OAuthLoginButton;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 import static com.nhn.android.naverlogin.OAuthLogin.mOAuthLoginHandler;
 
 public class MainActivity extends AppCompatActivity {
     private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
     private DatabaseReference databaseReference = firebaseDatabase.getReference();
-    private Button btn;
+    private List<Account> accountList;
     OAuthLogin mOAuthLoginModule;
     OAuthLoginButton mOAuthLoginButton;
     Context mContext;
     GoogleSignInClient mGoogleSignInClient;
-    SignInButton signInButton;
+
     public static final int REQUEST_CODE_MENU = 101, RC_SIGN_IN = 100;
     private OAuthLoginHandler mOAuthLoginHandler = new OAuthLoginHandler() {
         @Override
@@ -52,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 databaseReference.child("Account").child("AccessToken").push().setValue(accessToken);
                 Date mDate = new Date(System.currentTimeMillis());
                 databaseReference.child("Account").child("AccessTime").push().setValue((new SimpleDateFormat("yyyy-MM-dd hh:mm:ss")).format(mDate));
+                databaseReference.child("Account").child("LoginType").push().setValue("Naver");
 
             } else {
                 String errorCode = mOAuthLoginModule.getLastErrorCode(mContext).getCode();
@@ -62,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+    //Google SignIn after activity
     private void handleSignInResult(@org.jetbrains.annotations.NotNull Task<GoogleSignInAccount> completedTask) {
         try {
             GoogleSignInAccount account = completedTask.getResult(ApiException.class);
@@ -81,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
                 databaseReference.child("Account").child("AccessToken").push().setValue(personEmail);
                 Date mDate = new Date(System.currentTimeMillis());
                 databaseReference.child("Account").child("AccessTime").push().setValue((new SimpleDateFormat("yyyy-MM-dd hh:mm:ss")).format(mDate));
+                databaseReference.child("Account").child("LoginType").push().setValue("Google");
             }
         } catch (ApiException e) {
             // The ApiException status code indicates the detailed failure reason.
@@ -129,6 +137,7 @@ public class MainActivity extends AppCompatActivity {
         );
         mOAuthLoginButton = (OAuthLoginButton) findViewById(R.id.buttonOAuthLoginImg);
         mOAuthLoginButton.setOAuthLoginHandler(mOAuthLoginHandler);
+        databaseReference.addChildEventListener(childEventListener);
     }
     public void onDestroy(){
         mOAuthLoginModule.logout(mContext);
@@ -146,4 +155,32 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
+    private ChildEventListener childEventListener = new ChildEventListener() {
+        @Override
+        public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+            //accountList.add();
+            dataSnapshot.getValue(AccountList.class);
+        }
+
+        @Override
+        public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+        }
+
+        @Override
+        public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
+
+        }
+
+        @Override
+        public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+        }
+
+        @Override
+        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+        }
+    };
 }
