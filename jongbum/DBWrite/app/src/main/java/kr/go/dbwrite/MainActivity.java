@@ -31,7 +31,9 @@ import com.nhn.android.naverlogin.ui.view.OAuthLoginButton;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import static com.nhn.android.naverlogin.OAuthLogin.mOAuthLoginHandler;
 
@@ -43,21 +45,19 @@ public class MainActivity extends AppCompatActivity {
     Context mContext;
     GoogleSignInClient mGoogleSignInClient;
 
+    // onActivityResult에서 종료된 Activity 구분에 필요한 상수
     public static final int REQUEST_CODE_MENU = 101, RC_SIGN_IN = 100;
+    // Naver 로그인 핸들러
     private OAuthLoginHandler mOAuthLoginHandler = new OAuthLoginHandler() {
         @Override
         public void run(boolean success) {
+            //Naver 로그인 성공
             if (success) {
                 String accessToken = mOAuthLoginModule.getAccessToken(mContext);
-                String refreshToken = mOAuthLoginModule.getRefreshToken(mContext);
-                long expiresAt = mOAuthLoginModule.getExpiresAt(mContext);
-                String tokenType = mOAuthLoginModule.getTokenType(mContext);
-                //성공시 처리
-                Date mDate = new Date(System.currentTimeMillis());
-                Account naverAccount = new Account(accessToken, (new SimpleDateFormat("yyyy-MM-dd hh:mm:ss")).format(mDate), "Naver");
-                databaseReference.push().setValue(naverAccount);
-
-            } else {
+                writeAccountInfo(accessToken, "Naver");
+            }
+            //Naver 로그인 실패
+            else {
                 String errorCode = mOAuthLoginModule.getLastErrorCode(mContext).getCode();
                 String errorDesc = mOAuthLoginModule.getLastErrorDesc(mContext);
                 Toast.makeText(mContext, "errorCode:" + errorCode
@@ -66,7 +66,20 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    //Google SignIn after activity
+    private void writeAccountInfo(String token, String type) {
+        String key = databaseReference.child("accounts").push().getKey();
+        Date mDate = new Date(System.currentTimeMillis());
+        String timestamp = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(mDate); //로그인 시간
+        Account account = new Account(token, timestamp, type);
+        Map<String, Object> accValues = account.toMap();
+
+        Map<String, Object> childUpdates = new HashMap<>();
+        childUpdates.put("/accounts/" + key, accValues);
+        //childUpdates.put("/user-posts/" + token + "/" + key, accValues);
+        databaseReference.updateChildren(childUpdates);
+    }
+
+    //구글 로그인 이후 핸들러
     private void handleSignInResult(@org.jetbrains.annotations.NotNull Task<GoogleSignInAccount> completedTask) {
         try {
             GoogleSignInAccount account = completedTask.getResult(ApiException.class);
@@ -76,21 +89,8 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Google Login Successful!", Toast.LENGTH_LONG).show();
             GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
             if (acct != null) {
-                String personName = acct.getDisplayName();
-                String personGivenName = acct.getGivenName();
-                String personFamilyName = acct.getFamilyName();
                 String personEmail = acct.getEmail();
-                String personId = acct.getId();
-                Uri personPhoto = acct.getPhotoUrl();
-
-                Date mDate = new Date(System.currentTimeMillis());
-                Account googleAccount = new Account(personEmail, (new SimpleDateFormat("yyyy-MM-dd hh:mm:ss")).format(mDate),"Google");
-                try{
-                    databaseReference.push().setValue(googleAccount);
-                }
-                catch (Exception e) {
-                    Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG).show();
-                }
+                writeAccountInfo(personEmail, "Google");
             }
         } catch (ApiException e) {
             // The ApiException status code indicates the detailed failure reason.
@@ -106,14 +106,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //구글 로그인 초기화
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
                 .build();
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
-        GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
         SignInButton signInButton = findViewById(R.id.sign_in_button);
         signInButton.setSize(SignInButton.SIZE_WIDE);
-        findViewById(R.id.sign_in_button).setOnClickListener(new View.OnClickListener() {
+        //구글 로그인 버튼 리스너
+        signInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 switch (v.getId()) {
@@ -128,6 +129,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        //네이버 로그인 초기화
         mOAuthLoginModule = OAuthLogin.getInstance();
         mOAuthLoginModule.init(
                 MainActivity.this
@@ -143,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void onDestroy(){
         mOAuthLoginModule.logout(mContext);
-        //mGoogleSignInClient.signOut();
+        mGoogleSignInClient.signOut();
         super.onDestroy();
     }
 
