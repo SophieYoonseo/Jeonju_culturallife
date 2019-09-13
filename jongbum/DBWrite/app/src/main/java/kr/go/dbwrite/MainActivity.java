@@ -25,6 +25,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.nhn.android.naverlogin.OAuthLogin;
 import com.nhn.android.naverlogin.OAuthLoginHandler;
 import com.nhn.android.naverlogin.ui.view.OAuthLoginButton;
@@ -85,7 +86,6 @@ public class MainActivity extends AppCompatActivity {
             GoogleSignInAccount account = completedTask.getResult(ApiException.class);
 
             // Signed in successfully, show authenticated UI.
-            //updateUI(account);
             Toast.makeText(this, "Google Login Successful!", Toast.LENGTH_LONG).show();
             GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
             if (acct != null) {
@@ -96,7 +96,6 @@ public class MainActivity extends AppCompatActivity {
             // The ApiException status code indicates the detailed failure reason.
             // Please refer to the GoogleSignInStatusCodes class reference for more information.
             Log.w("TAG", "signInResult:failed code=" + e.getStatusCode());
-            //updateUI(null);
             Toast.makeText(this, "Google Login Fail!", Toast.LENGTH_LONG).show();
         }
     }
@@ -142,8 +141,26 @@ public class MainActivity extends AppCompatActivity {
         );
         mOAuthLoginButton = (OAuthLoginButton) findViewById(R.id.buttonOAuthLoginImg);
         mOAuthLoginButton.setOAuthLoginHandler(mOAuthLoginHandler);
-        //databaseReference.addChildEventListener(childEventListener);
     }
+
+    public void onStart() {
+        super.onStart();
+        ValueEventListener accListener = new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                Account account = dataSnapshot.getValue(Account.class);
+                Toast.makeText(getApplicationContext(), account.AccessToken, Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        };
+        //추후 진행 예정 위치
+        //databaseReference.addValueEventListener(accListener);
+    }
+
     public void onDestroy(){
         mOAuthLoginModule.logout(mContext);
         mGoogleSignInClient.signOut();
