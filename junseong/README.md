@@ -1,4 +1,4 @@
-## ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `프로젝트 진행상황` (2019.09.09 sophieyoonseo합류   --->>> 메인프로젝트인 INSTAGRAM폴더위치 JUNSEONG 에서 공통으로 옮김)
+## ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `프로젝트 진행상황` (2019.09.09 sophieyoonseo합류  세부디자인시작    --->>> 메인프로젝트인 INSTAGRAM폴더위치 JUNSEONG 에서 공통으로 옮김)
  - main frame 은 width:398, height :629 로 설정해놓음 따라서 fragment설정시 이에따른 비례식을 세워서결정할것 (이점은 수정할사항 레이아웃 머리좋은사람이)
 - 🌱INSTAGRAM를 메인프로젝트로 진행중 하단바및 fragment완성
 - viewpager를 fragment에 달기성공(인터넷등에는 같이 연동만있지 fragment안에 viewpager넣는건없었음 뇌피셜로 adpater를 같은 클래스안에넣어서 이를 imageview만나타낼것이니 리턴값을두자 했더니 해결 ! )
