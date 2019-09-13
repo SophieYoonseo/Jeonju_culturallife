@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "814097901357",
+    "firebase_url": "https://dbtest-452aa.firebaseio.com",
+    "project_id": "dbtest-452aa",
+    "storage_bucket": "dbtest-452aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814097901357:android:c0e30b5ba75e2c78",
+        "android_client_info": {
+          "package_name": "csejeonju2019.go.kr.insta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "814097901357-rbptklqv5ppqbgfhcbjasl93q7pci1m8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBE5LkMzhszKFssxYBT5oi_bXqq36Qjcl8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "814097901357-rbptklqv5ppqbgfhcbjasl93q7pci1m8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

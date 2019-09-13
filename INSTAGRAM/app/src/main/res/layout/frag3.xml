@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="#000000">
 
+<<<<<<< HEAD:INSTAGRAM/app/src/main/res/layout/frag3.xml
     <Button
         android:id="@+id/button_share"
         android:layout_width="310dp"
@@ -16,12 +17,55 @@
         app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintHorizontal_bias="0.158"
+=======
+    <!-- Activity에서는 fragment로 구현해야되지만
+    Fragment로 구현하기위해서는 MapView를 사용해야함-->
+
+    <Button
+        android:id="@+id/button_share"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="324dp"
+        android:text="공유하기!"
+        app:layout_constraintBottom_toTopOf="@+id/map"
+        app:layout_constraintStart_toStartOf="@+id/map"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="392dp"
+        android:layout_height="267dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="6dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="parent"
+>>>>>>> parent of 2342228... 삭제 고로 이프로젝트는 오류가댐 (코드는 정상):junseong/INSTAGRAM/app/src/main/res/layout/frag3.xml
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
+<<<<<<< HEAD:INSTAGRAM/app/src/main/res/layout/frag3.xml
     </Button>
+=======
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DADAGGAGAAFAADAFAFSFA" />
+    </LinearLayout>
+>>>>>>> parent of 2342228... 삭제 고로 이프로젝트는 오류가댐 (코드는 정상):junseong/INSTAGRAM/app/src/main/res/layout/frag3.xml
 
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="392dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_share" />
 
 </FrameLayout>
 
