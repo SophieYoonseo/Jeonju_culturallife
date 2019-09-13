@@ -6,6 +6,7 @@
 - 현재까지 구현한 모든기능및디자인 (공유하기 기능 url은 구글마켓등록하면 그거로할예정)
 - 사진fragment이동간 indicator가 현재 위치를 표시하게끔 구현
  - 문화공간 리스트 space_list_activity호출 , 문화체험은 experience_list_activity  공연show_list 지정문화재 jijung_cultural 향토는 hyangji 전주지역축제는 festival_list_activity
+ - 파싱간 progressbar thread 추가 (09-13)
  
 ![view](./ing.gif)
 
