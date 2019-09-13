@@ -3,14 +3,14 @@
     "project_number": "72721536543",
     "firebase_url": "https://myfirstfirebase-c4705.firebaseio.com",
     "project_id": "myfirstfirebase-c4705",
-    "storage_bucket": "csejeonju2019.go.kr.insta"
+    "storage_bucket": "myfirstfirebase-c4705.appspot.com"
   },
   "client": [
     {
       "client_info": {
         "mobilesdk_app_id": "1:72721536543:android:8d3e426fbddbee7ad3672a",
         "android_client_info": {
-          "package_name": "csejeonju2019.go.kr.insta"
+          "package_name": "com.google.firebase.quickstart.database"
         }
       },
       "oauth_client": [
