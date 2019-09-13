@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:876326595721:android:3c96d2bfeef6451b",
         "android_client_info": {
-          "package_name": "csejeonju2019.go.kr.myapplication"
+          "package_name": "csejeonju2019.go.kr.insta"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "876326595721-bd9mmtt6fie7rppheq3muv2kk1t1rgt9.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "csejeonju2019.go.kr.myapplication",
+            "package_name": "csejeonju2019.go.kr.insta",
             "certificate_hash": "0ea3ebd58e323f22c2c0fa8efad543c678862f7f"
           }
         },
