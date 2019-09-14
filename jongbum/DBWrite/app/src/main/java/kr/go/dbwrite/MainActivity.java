@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -30,6 +31,8 @@ import com.nhn.android.naverlogin.OAuthLogin;
 import com.nhn.android.naverlogin.OAuthLoginHandler;
 import com.nhn.android.naverlogin.ui.view.OAuthLoginButton;
 
+import org.w3c.dom.Text;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
@@ -41,6 +44,8 @@ import static com.nhn.android.naverlogin.OAuthLogin.mOAuthLoginHandler;
 public class MainActivity extends AppCompatActivity {
     private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
     private DatabaseReference databaseReference = firebaseDatabase.getReference();
+    Account Laccount;
+    TextView textView;
     OAuthLogin mOAuthLoginModule;
     OAuthLoginButton mOAuthLoginButton;
     Context mContext;
@@ -91,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
             if (acct != null) {
                 String personEmail = acct.getEmail();
                 writeAccountInfo(personEmail, "Google");
+                textView.setText(Laccount.AccessToken);
             }
         } catch (ApiException e) {
             // The ApiException status code indicates the detailed failure reason.
@@ -141,6 +147,8 @@ public class MainActivity extends AppCompatActivity {
         );
         mOAuthLoginButton = (OAuthLoginButton) findViewById(R.id.buttonOAuthLoginImg);
         mOAuthLoginButton.setOAuthLoginHandler(mOAuthLoginHandler);
+
+        textView = (TextView)findViewById(R.id.txt_db);
     }
 
     public void onStart() {
@@ -148,8 +156,7 @@ public class MainActivity extends AppCompatActivity {
         ValueEventListener accListener = new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                Account account = dataSnapshot.getValue(Account.class);
-                Toast.makeText(getApplicationContext(), account.AccessToken, Toast.LENGTH_LONG).show();
+                Laccount = dataSnapshot.getValue(Account.class);
             }
 
             @Override
@@ -158,7 +165,8 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         //추후 진행 예정 위치
-        //databaseReference.addValueEventListener(accListener);
+        databaseReference.addValueEventListener(accListener);
+
     }
 
     public void onDestroy(){
