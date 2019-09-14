@@ -3,12 +3,24 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/show_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        style="bold"
+        android:text="TextView" />
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="339dp">
+
         <TextView
+            android:id="@+id/result_show"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/result"/>
+            android:layout_height="wrap_content" />
     </ScrollView>
+
 </LinearLayout>

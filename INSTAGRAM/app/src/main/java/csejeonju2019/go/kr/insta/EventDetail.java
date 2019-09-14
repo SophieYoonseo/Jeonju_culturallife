@@ -17,36 +17,39 @@ import org.w3c.dom.Text;
 
 
 public class EventDetail extends AppCompatActivity  implements OnMapReadyCallback {//////문화체험
-
-   public double loc1;
-   public  double loc2;
+   public static String exp_title;
+   public static String loc1;
+   public static String loc2;
+   public double loc1_double;
+   public double loc2_double;
     private GoogleMap mMap;
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_experience_detail);
         TextView title=(TextView)findViewById(R.id.experience_title);
-        title.setText(experience_list_activitiy.exp_title);
+        title.setText(exp_title);
         //Intent Extra Value 가져오기
         Intent intent = getIntent();
         TextView result = (TextView)findViewById(R.id.result);
         PerformanceShowItem item = (PerformanceShowItem)intent.getSerializableExtra("activity");
         //출력
         result.setText(item.showDetail());
-        loc1=Double.parseDouble(experience_list_activitiy.posx_double);
-        loc2=Double.parseDouble(experience_list_activitiy.posy_double);
+
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map2);
         mapFragment.getMapAsync(this);
     }
     public void onMapReady(final GoogleMap googleMap) {
-        loc1=Double.parseDouble(experience_list_activitiy.posx_double);
-        loc2=Double.parseDouble(experience_list_activitiy.posy_double);
+       loc1_double=Double.parseDouble(loc1);
+       loc2_double = Double.parseDouble(loc2);
         mMap = googleMap;
-        LatLng SEOUL = new LatLng(loc2, loc1);
-       // LatLng SEOUL = new LatLng(35.844226, 127.129396);
+        LatLng SEOUL = new LatLng(loc2_double, loc1_double);
+
 
         MarkerOptions markerOptions = new MarkerOptions();
         markerOptions.position(SEOUL);
+        markerOptions.title(exp_title);
+
         mMap.addMarker(markerOptions);
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(SEOUL,16));//16배 줌가능
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(SEOUL,16));//지도 시작시 애니메이션 효과

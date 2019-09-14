@@ -178,6 +178,9 @@ public class experience_list_activitiy extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), EventDetail.class);
                 //세부사항을 Intent.extra로 EventDetail Activity로 전달
                 intent.putExtra("activity", Items.get(i));
+                EventDetail.exp_title=Items.get(i).dataTitle;
+                EventDetail.loc1=Items.get(i).posx;
+                EventDetail.loc2=Items.get(i).posy;
                 startActivity(intent);
                 //데이터 삭제, 추가, 변경 시 항상 adapter.notifyDataSetChanged()호출로 displaydata 최신화
                 adapter.notifyDataSetChanged();

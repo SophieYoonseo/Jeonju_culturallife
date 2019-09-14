@@ -178,6 +178,9 @@ public class show_list_activity extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(),EventDetail_show.class);
                 //세부사항을 Intent.extra로 EventDetail Activity로 전달
                 intent.putExtra("activity", Items.get(i));
+                EventDetail_show.show_loc1=Items.get(i).posx;
+                EventDetail_show.show_loc2=Items.get(i).posy;
+                EventDetail_show.show_title=Items.get(i).subject;
                 startActivity(intent);
                 //데이터 삭제, 추가, 변경 시 항상 adapter.notifyDataSetChanged()호출로 displaydata 최신화
                 adapter.notifyDataSetChanged();
