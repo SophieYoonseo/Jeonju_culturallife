@@ -42,8 +42,12 @@ import java.util.Map;
 import static com.nhn.android.naverlogin.OAuthLogin.mOAuthLoginHandler;
 
 public class MainActivity extends AppCompatActivity {
-    private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
-    private DatabaseReference databaseReference = firebaseDatabase.getReference();
+
+    //0914 MrJang modified 'private' -> 'public'
+    public FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+    public DatabaseReference databaseReference = firebaseDatabase.getReference();
+
+
     Account Laccount;
     TextView textView;
     OAuthLogin mOAuthLoginModule;

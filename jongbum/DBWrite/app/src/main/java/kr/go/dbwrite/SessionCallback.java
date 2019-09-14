@@ -1,9 +1,10 @@
 package kr.go.dbwrite;
-//0914 MrJang Kakako Callback(return the results with informations after login)
-
 
 import android.util.Log;
+import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.kakao.auth.ISessionCallback;
 import com.kakao.network.ErrorResult;
 import com.kakao.usermgmt.UserManagement;
@@ -12,6 +13,7 @@ import com.kakao.usermgmt.response.model.User;
 import com.kakao.usermgmt.response.model.UserProfile;
 import com.kakao.util.exception.KakaoException;
 
+//0914 MrJang Kakako Callback create! (return the results with informations after login)
 public class SessionCallback implements ISessionCallback
 {
     //로그인에 성공한 상태
@@ -31,7 +33,6 @@ public class SessionCallback implements ISessionCallback
     //사용자 정보 요청
     public void requestMe()
     {
-
         //사용자 정보 요청 결과에 대한 Callback
         UserManagement.getInstance().requestMe(new MeResponseCallback()
         {

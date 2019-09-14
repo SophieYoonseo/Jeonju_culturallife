@@ -1,6 +1,6 @@
 package kr.go.dbwrite;
 
-//0913 MrJang KaKao Create!!
+
 
 import android.app.Application;
 import android.content.Intent;
@@ -9,6 +9,8 @@ import com.kakao.auth.KakaoSDK;
 import com.kakao.usermgmt.UserManagement;
 import com.kakao.usermgmt.callback.LogoutResponseCallback;
 
+
+//0913 MrJang KaKao Create!!
 public class GlobalApplication extends Application {
 
     private static GlobalApplication instance;
