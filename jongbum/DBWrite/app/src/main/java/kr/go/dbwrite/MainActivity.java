@@ -72,7 +72,9 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    private void writeAccountInfo(String token, String type) {
+
+    //0914 MrJang modified the function type! "private->public"
+    public void writeAccountInfo(String token, String type) {
         String key = databaseReference.child("accounts").push().getKey();
         Date mDate = new Date(System.currentTimeMillis());
         String timestamp = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(mDate); //로그인 시간

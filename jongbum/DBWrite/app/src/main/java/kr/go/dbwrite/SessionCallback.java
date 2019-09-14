@@ -1,6 +1,7 @@
 package kr.go.dbwrite;
 //0914 MrJang Kakako Callback(return the results with informations after login)
 
+
 import android.util.Log;
 
 import com.kakao.auth.ISessionCallback;
@@ -67,6 +68,10 @@ public class SessionCallback implements ISessionCallback
                 Log.e("Profile :", thumnailPath+"");
                 Log.e("Profile :", UUID+"");
                 Log.e("Profile :", id+"");
+
+                //0914 Database Add with Informations!
+                MainActivity mMainActivity = new MainActivity();
+                mMainActivity.writeAccountInfo(email,"kakao");
             }
 
             //사용자 정보 요청 실패
