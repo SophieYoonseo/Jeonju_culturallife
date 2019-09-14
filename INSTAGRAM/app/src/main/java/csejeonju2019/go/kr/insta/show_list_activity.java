@@ -72,7 +72,7 @@ public class show_list_activity extends AppCompatActivity {
                 switch (parserEvent) {
                     case XmlPullParser.START_TAG:
                         // 최하단 태그 존재 여부 확인
-                        if(parser.getName().equals("indexNum")) item.inIndexNum = true;
+                       // if(parser.getName().equals("indexNum")) item.inIndexNum = true;
                         if(parser.getName().equals("startDay")) item.inStartDay = true;
                         if(parser.getName().equals("endDay")) item.inEndDay = true;
                         if(parser.getName().equals("ETime")) item.inETime = true;
@@ -112,7 +112,7 @@ public class show_list_activity extends AppCompatActivity {
 
                     case XmlPullParser.TEXT:
                         //태그 내의 데이터 저장
-                        if(item.inIndexNum) item.indexNum = parser.getText();
+                     //   if(item.inIndexNum) item.indexNum = parser.getText();
                         if(item.inStartDay) item.startDay = parser.getText();
                         if(item.inEndDay) item.endDay = parser.getText();
                         if(item.inETime) item.ETime = parser.getText();
@@ -174,12 +174,13 @@ public class show_list_activity extends AppCompatActivity {
             @Override
             //ListViewItem 선택 시 이벤트
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                //EventDetail Activity 실행
+                //EventDetail_show Activity 실행
                 Intent intent = new Intent(getApplicationContext(),EventDetail_show.class);
                 //세부사항을 Intent.extra로 EventDetail Activity로 전달
                 intent.putExtra("activity", Items.get(i));
-                EventDetail_show.show_loc1=Items.get(i).posx;
-                EventDetail_show.show_loc2=Items.get(i).posy;
+
+                //EventDetail_show.show_loc1=Items.get(i).posx; 공연정보는 위도경도표시안대넴
+                //EventDetail_show.show_loc2=Items.get(i).posy;
                 EventDetail_show.show_title=Items.get(i).subject;
                 startActivity(intent);
                 //데이터 삭제, 추가, 변경 시 항상 adapter.notifyDataSetChanged()호출로 displaydata 최신화
