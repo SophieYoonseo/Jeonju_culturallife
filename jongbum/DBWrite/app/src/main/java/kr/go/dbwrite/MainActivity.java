@@ -54,12 +54,12 @@ public class MainActivity extends AppCompatActivity {
     public FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
     public DatabaseReference databaseReference = firebaseDatabase.getReference();
 
-    String loggedToken;
-    TextView textView;
     OAuthLogin mOAuthLoginModule;
     OAuthLoginButton mOAuthLoginButton;
     Context mContext;
+    boolean firstLogin;
     GoogleSignInClient mGoogleSignInClient;
+    String key;
 
     // onActivityResult에서 종료된 Activity 구분에 필요한 상수
     public static final int REQUEST_CODE_MENU = 101, RC_SIGN_IN = 100;
@@ -84,18 +84,53 @@ public class MainActivity extends AppCompatActivity {
 
 
     //0914 MrJang modified the function type! "private->public"
-    public void writeAccountInfo(String token, String type) {
-        loggedToken = token;
-        String key = databaseReference.child("accounts").push().getKey();
+    public void writeAccountInfo(final String token, String type) {
+        key = databaseReference.child("accounts").push().getKey();
         Date mDate = new Date(System.currentTimeMillis());
-        String timestamp = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(mDate); //로그인 시간
+        final String timestamp = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(mDate); //로그인 시간
         Account account = new Account(token, timestamp, type);
         Map<String, Object> accValues = account.toMap();
+
+        DatabaseReference ref = firebaseDatabase.getReference().child("accounts");
+        ref.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+                firstLogin = true;
+                Account current = dataSnapshot.getValue(Account.class);
+                if(token.equals(current.AccessToken)) {
+                    //DatabaseReference updateRef = databaseReference.child("accounts");
+                    Toast.makeText(getApplicationContext(), "You've already logged in!\n" + token, Toast.LENGTH_LONG).show();
+                    firstLogin = false;
+                    //Map<String, Object> accountUpdates = new Account(token, timestamp, current.LoginType).toMap();
+                    //updateRef.updateChildrenAsync()
+                }
+            }
+
+            @Override
+            public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+            }
+
+            @Override
+            public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
 
         Map<String, Object> childUpdates = new HashMap<>();
         childUpdates.put("/accounts/" + key, accValues);
         //childUpdates.put("/user-posts/" + token + "/" + key, accValues);
-        databaseReference.updateChildren(childUpdates);
+        if(firstLogin) databaseReference.updateChildren(childUpdates);
     }
 
     //구글 로그인 이후 핸들러
@@ -160,45 +195,6 @@ public class MainActivity extends AppCompatActivity {
         );
         mOAuthLoginButton = (OAuthLoginButton) findViewById(R.id.buttonOAuthLoginImg);
         mOAuthLoginButton.setOAuthLoginHandler(mOAuthLoginHandler);
-    }
-
-
-    public void onStart() {
-        super.onStart();
-        DatabaseReference ref = firebaseDatabase.getReference().child("accounts");
-        ref.addChildEventListener(new ChildEventListener() {
-            @Override
-            public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-                //
-                if(loggedToken != null && loggedToken.equals(dataSnapshot.getValue(Account.class).AccessToken)) {
-                    Toast.makeText(getApplicationContext(), "You've already logged in!\n" + loggedToken, Toast.LENGTH_LONG).show();
-                    return;
-                }
-                else {
-                    Toast.makeText(getApplicationContext(), "Welcome!\n" + loggedToken, Toast.LENGTH_LONG).show();
-                }
-            }
-
-            @Override
-            public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-
-            }
-
-            @Override
-            public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
-
-            }
-
-            @Override
-            public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
     }
 
     public void onDestroy(){
