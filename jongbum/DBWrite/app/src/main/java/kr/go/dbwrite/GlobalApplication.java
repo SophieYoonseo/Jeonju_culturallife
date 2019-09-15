@@ -41,7 +41,6 @@ public class GlobalApplication extends Application {
         Session.getCurrentSession().checkAndImplicitOpen();
 
 
-
         /* 문제점 발견, but 해결못함
         UserManagement.requestLogout(new LogoutResponseCallback() {
             @Override

@@ -136,6 +136,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                 }
             }
+
             private void signIn() {
                 Intent signInIntent = mGoogleSignInClient.getSignInIntent();
                 startActivityForResult(signInIntent, RC_SIGN_IN);
@@ -147,39 +148,23 @@ public class MainActivity extends AppCompatActivity {
         mOAuthLoginModule = OAuthLogin.getInstance();
         mOAuthLoginModule.init(
                 MainActivity.this
-                ,"0PSGjaLXb_f6WljImx1S"
-                ,"7mzm8tggH6"
-                ,"cseJeonju2019"
+                , "0PSGjaLXb_f6WljImx1S"
+                , "7mzm8tggH6"
+                , "cseJeonju2019"
                 //,OAUTH_CALLBACK_INTENT
                 // SDK 4.1.4 버전부터는 OAUTH_CALLBACK_INTENT변수를 사용하지 않습니다.
         );
         mOAuthLoginButton = (OAuthLoginButton) findViewById(R.id.buttonOAuthLoginImg);
         mOAuthLoginButton.setOAuthLoginHandler(mOAuthLoginHandler);
 
-        textView = (TextView)findViewById(R.id.txt_db);
-
-
-
-
-<<<<<<< HEAD
-=======
-    public void kakaoLogin()
-    {
-        /*findViewById(R.id.btn_kakao_login).setOnClickListener(new View.OnClickListener(){
-            @Override
-            public  void mrjang_login()
-            {
-                //mrjang 일단 중도포기 ㅠㅠ 저녁에 와서 할게욤
-            }
-        });*/
->>>>>>> 67fdcc7ac1cc699b6f47c4098eba7035665edd3d
+        textView = (TextView) findViewById(R.id.txt_db);
     }
 
 
     public void onStart() {
         super.onStart();
         DatabaseReference ref = firebaseDatabase.getReference().child("accounts");
-        ref = ref.child(ref.g)
+        ref = ref.child(ref.getKey());
         ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -192,6 +177,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
 
     public void onDestroy(){
         mOAuthLoginModule.logout(mContext);
@@ -207,6 +193,6 @@ public class MainActivity extends AppCompatActivity {
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
             handleSignInResult(task);
         }
-    }
 
+    }
 }
