@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.pm10:indicator:1.0.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/indicator-1.0.2.aar/dbd359042a9fc49ab57a2a2bea01cce7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/indicator-1.0.2.aar/dbd359042a9fc49ab57a2a2bea01cce7/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.pm10/indicator/1.0.2/23ca8c802374bb83a2909161fab080802493d88a/indicator-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,6 +1,6 @@
 package kr.go.dbwrite;
 
-//0913 MrJang Kakao Create!!
+
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,6 +12,8 @@ import com.kakao.auth.ISessionConfig;
 import com.kakao.auth.KakaoAdapter;
 import com.kakao.usermgmt.UserManagement;
 
+
+//0913 MrJang Kakao Create!!
 public class KakaoSDKAdapter extends KakaoAdapter {
 
     // 로그인 시 사용 될, Session의 옵션 설정을 위한 인터페이스 입니다.

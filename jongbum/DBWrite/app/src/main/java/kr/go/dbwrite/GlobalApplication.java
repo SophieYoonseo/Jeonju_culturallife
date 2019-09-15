@@ -1,14 +1,20 @@
 package kr.go.dbwrite;
 
-//0913 MrJang KaKao Create!!
 
+
+import android.app.Activity;
 import android.app.Application;
 import android.content.Intent;
+import android.view.View;
+import android.widget.Toast;
 
 import com.kakao.auth.KakaoSDK;
+import com.kakao.auth.Session;
 import com.kakao.usermgmt.UserManagement;
 import com.kakao.usermgmt.callback.LogoutResponseCallback;
 
+
+//0913 MrJang KaKao Create!!
 public class GlobalApplication extends Application {
 
     private static GlobalApplication instance;
@@ -21,16 +27,18 @@ public class GlobalApplication extends Application {
         return instance;
     }
 
-
-
     @Override
-
     public void onCreate() {
         super.onCreate();
         instance = this;
 
         // Kakao Sdk 초기화
         KakaoSDK.init(new KakaoSDKAdapter());
+        Toast.makeText(GlobalApplication.this,"Hello World!",Toast.LENGTH_SHORT).show();
+
+        SessionCallback callback = new SessionCallback();
+        Session.getCurrentSession().addCallback(callback);
+        Session.getCurrentSession().checkAndImplicitOpen();
 
 
         /* 문제점 발견, but 해결못함
@@ -44,10 +52,11 @@ public class GlobalApplication extends Application {
 
     }
 
+
+
     @Override
     public void onTerminate() {
         super.onTerminate();
         instance = null;
     }
-
 }

@@ -28,6 +28,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.kakao.auth.KakaoSDK;
+import com.kakao.util.KakaoUtilService;
 import com.nhn.android.naverlogin.OAuthLogin;
 import com.nhn.android.naverlogin.OAuthLoginHandler;
 import com.nhn.android.naverlogin.ui.view.OAuthLoginButton;
@@ -43,8 +45,12 @@ import java.util.Map;
 import static com.nhn.android.naverlogin.OAuthLogin.mOAuthLoginHandler;
 
 public class MainActivity extends AppCompatActivity {
-    private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
-    private DatabaseReference databaseReference = firebaseDatabase.getReference();
+
+    //0914 MrJang modified 'private' -> 'public'
+    public FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+    public DatabaseReference databaseReference = firebaseDatabase.getReference();
+
+
     Account Laccount;
     TextView textView;
     OAuthLogin mOAuthLoginModule;
@@ -131,6 +137,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                 }
             }
+
             private void signIn() {
                 Intent signInIntent = mGoogleSignInClient.getSignInIntent();
                 startActivityForResult(signInIntent, RC_SIGN_IN);
@@ -142,21 +149,24 @@ public class MainActivity extends AppCompatActivity {
         mOAuthLoginModule = OAuthLogin.getInstance();
         mOAuthLoginModule.init(
                 MainActivity.this
-                ,"0PSGjaLXb_f6WljImx1S"
-                ,"7mzm8tggH6"
-                ,"cseJeonju2019"
+                , "0PSGjaLXb_f6WljImx1S"
+                , "7mzm8tggH6"
+                , "cseJeonju2019"
                 //,OAUTH_CALLBACK_INTENT
                 // SDK 4.1.4 버전부터는 OAUTH_CALLBACK_INTENT변수를 사용하지 않습니다.
         );
         mOAuthLoginButton = (OAuthLoginButton) findViewById(R.id.buttonOAuthLoginImg);
         mOAuthLoginButton.setOAuthLoginHandler(mOAuthLoginHandler);
 
-        textView = (TextView)findViewById(R.id.txt_db);
+        textView = (TextView) findViewById(R.id.txt_db);
     }
+
 
     public void onStart() {
         super.onStart();
-        ValueEventListener accListener = new ValueEventListener() {
+        DatabaseReference ref = firebaseDatabase.getReference().child("accounts");
+        ref = ref.child(ref.getKey());
+        ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 DatabaseReference ref = firebaseDatabase.getReference("accounts");
@@ -165,12 +175,9 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-
+                Toast.makeText(getApplicationContext(), "DB Read Failed! with " + databaseError.getMessage(), Toast.LENGTH_LONG).show();
             }
-        };
-        //추후 진행 예정 위치
-        databaseReference.addValueEventListener(accListener);
-
+        });
     }
 
     public void onDestroy(){
@@ -187,6 +194,6 @@ public class MainActivity extends AppCompatActivity {
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
             handleSignInResult(task);
         }
-    }
 
+    }
 }
