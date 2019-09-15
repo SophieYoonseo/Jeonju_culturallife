@@ -1,11 +1,13 @@
 package kr.go.dbwrite;
 
+import android.media.MediaSession2;
 import android.util.Log;
 import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.kakao.auth.ISessionCallback;
+import com.kakao.auth.Session;
 import com.kakao.network.ErrorResult;
 import com.kakao.usermgmt.UserManagement;
 import com.kakao.usermgmt.callback.MeResponseCallback;
@@ -16,6 +18,9 @@ import com.kakao.util.exception.KakaoException;
 //0914 MrJang Kakako Callback create! (return the results with informations after login)
 public class SessionCallback implements ISessionCallback
 {
+
+    static public String kakaoEmail;
+
     //로그인에 성공한 상태
     @Override
     public void onSessionOpened()
@@ -57,22 +62,23 @@ public class SessionCallback implements ISessionCallback
                 Log.e("SessionCallback::","onSuccess");
 
                 String nickname = userProfile.getNickname();
-                String email = userProfile.getEmail();
+                kakaoEmail = userProfile.getEmail();
                 String profileImagePath = userProfile.getProfileImagePath();
                 String thumnailPath = userProfile.getThumbnailImagePath();
                 String UUID = userProfile.getUUID();
                 long id = userProfile.getId();
 
                 Log.e("Profile :", nickname+"");
-                Log.e("Profile :", email+"");
+                Log.e("Profile :", kakaoEmail+"");
                 Log.e("Profile :", profileImagePath+"");
                 Log.e("Profile :", thumnailPath+"");
                 Log.e("Profile :", UUID+"");
                 Log.e("Profile :", id+"");
 
                 //0914 Database Add with Informations!
-                MainActivity mMainActivity = new MainActivity();
-                mMainActivity.writeAccountInfo(email,"kakao");
+
+
+
             }
 
             //사용자 정보 요청 실패
