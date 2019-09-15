@@ -1,0 +1,327 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:2:1-48:12
+MERGED from [com.android.support:design:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\7ad362f990dd269b225f9e836274a9e5\AndroidManifest.xml:17:1-24:12
+MERGED from [com.pm10:indicator:1.0.2] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\indicator-1.0.2.aar\dbd359042a9fc49ab57a2a2bea01cce7\AndroidManifest.xml:2:1-17:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\0e774b1a7806d65a6407f7e48d3997e3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\5ce285c565745412222c56a254d8daeb\AndroidManifest.xml:17:1-38:12
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-location-16.0.0.aar\bc91842886363ff42880de2efac80b9f\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\7ae402fc5e903c88db13614f0e062ff4\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-16.0.0.aar\8ab9e6a7d1ff856cb827d82d063a4409\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\d338406a098d5042a506321185c467c3\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\1405268fe53eecb435bc14de61767d58\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\ba73e53d7c1841125d0640b160a468d4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\c4716cc8133d044e45326bdeffef81d4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\ea28b9a084a731b233242f440005271b\AndroidManifest.xml:2:1-11:12
+MERGED from [me.relex:circleindicator:1.3.2] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\circleindicator-1.3.2.aar\4f88ffcb0f1f3d3ff579c3c5b3a52aa8\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\f48c7b3feca7a50d6179e737bd5dcba7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.makeramen:roundedimageview:2.3.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\roundedimageview-2.3.0.aar\c833bf93f2e581d0c9c8373c74396fa4\AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\7884f3c814dbe39ebfc0c40a83fa140f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\7d869ec1b7d9a1e5b958a313a9460cb1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\579578c907e3fff90f1d4cdd23765514\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\9b3dca24840a9f59b6408db1ddd093e6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\cee57002c6b8540ce0fec91089aa8af0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\54854a607b25493842839db894cedd0c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\8b0b51e38efd6b023a547846b86b5ef4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\8c4a78e9fb66ba65f6b35627ebbe7a1d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\af532e88cb16b95844c3f1d4096d4985\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\a599284de3e54f19a52859ac2029c2ed\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\6528ac404a283be57afe4da489842c9e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\17cabe6e847647ab1f937eb1997ea63c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\151bd080dc406ed51e7b46bd68cd6113\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\0e31b609de8d2abe78ee6eebaff9587e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\81d9e6fd555871e1a54a3382b6ee1bff\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\762fc76220787cb0e759fa230dd86c6e\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\d14783833ee322f16c23f2c52e076188\AndroidManifest.xml:17:1-25:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\79274affbd7f77f21c3f82d457a2a4c6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\bdbc164870f2518251ce5d8927d1f61b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\25c2cb02ab598bfd59571acbb61bb07f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\1979c8a32d1697b7556a00d9e41a87b9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\7b3c2d176a121cc83399e7f050b47c90\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\cd82a94eb24eed5f7410ae0772dd0e7e\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\27a5153a63f7ea8949e6fcf17baded92\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\6158cef7cc4aa5b1bd3fa712807af9a2\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\ca15b6a7be2e2223bb7fd8db0f1473da\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\7dd28884be75cb7291f5c227f1adc92b\AndroidManifest.xml:17:1-22:12
+INJECTED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:2:1-48:12
+	package
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:3:5-40
+		INJECTED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:2:1-48:12
+		INJECTED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:2:1-48:12
+		INJECTED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:4:5-66
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\5ce285c565745412222c56a254d8daeb\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\5ce285c565745412222c56a254d8daeb\AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:4:22-64
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:5:5-78
+	android:name
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:5:22-76
+application
+ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:7:5-46:19
+MERGED from [com.android.support:design:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\7ad362f990dd269b225f9e836274a9e5\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\7ad362f990dd269b225f9e836274a9e5\AndroidManifest.xml:22:5-20
+MERGED from [com.pm10:indicator:1.0.2] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\indicator-1.0.2.aar\dbd359042a9fc49ab57a2a2bea01cce7\AndroidManifest.xml:11:5-15:19
+MERGED from [com.pm10:indicator:1.0.2] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\indicator-1.0.2.aar\dbd359042a9fc49ab57a2a2bea01cce7\AndroidManifest.xml:11:5-15:19
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\5ce285c565745412222c56a254d8daeb\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\5ce285c565745412222c56a254d8daeb\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-location-16.0.0.aar\bc91842886363ff42880de2efac80b9f\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-location-16.0.0.aar\bc91842886363ff42880de2efac80b9f\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\7ae402fc5e903c88db13614f0e062ff4\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\7ae402fc5e903c88db13614f0e062ff4\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-16.0.0.aar\8ab9e6a7d1ff856cb827d82d063a4409\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-16.0.0.aar\8ab9e6a7d1ff856cb827d82d063a4409\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\d338406a098d5042a506321185c467c3\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\d338406a098d5042a506321185c467c3\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\1405268fe53eecb435bc14de61767d58\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\1405268fe53eecb435bc14de61767d58\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\ea28b9a084a731b233242f440005271b\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\ea28b9a084a731b233242f440005271b\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\762fc76220787cb0e759fa230dd86c6e\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\762fc76220787cb0e759fa230dd86c6e\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\d14783833ee322f16c23f2c52e076188\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\d14783833ee322f16c23f2c52e076188\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\762fc76220787cb0e759fa230dd86c6e\AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:10:9-41
+	android:roundIcon
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:11:9-54
+	android:largeHeap
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:14:9-33
+	android:icon
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:8:9-35
+	android:theme
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:13:9-59
+activity#csejeonju2019.go.kr.insta.SplashActivity
+ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:16:9-26:20
+	android:label
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:19:13-45
+	android:theme
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:18:13-71
+	android:name
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:17:13-43
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:21:13-25:29
+action#android.intent.action.MAIN
+ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:22:17-69
+	android:name
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:22:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:24:17-77
+	android:name
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:24:27-74
+activity#csejeonju2019.go.kr.insta.MainActivity
+ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:27:9-60
+	android:name
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:27:19-47
+activity#csejeonju2019.go.kr.insta.after_experience
+ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:28:9-63
+	android:name
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:28:19-51
+activity#csejeonju2019.go.kr.insta.after_space
+ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:29:9-58
+	android:name
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:29:19-46
+activity#csejeonju2019.go.kr.insta.space_list_acitivty
+ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:30:9-66
+	android:name
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:30:19-54
+activity#csejeonju2019.go.kr.insta.experience_list_activitiy
+ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:31:9-72
+	android:name
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:31:19-60
+activity#csejeonju2019.go.kr.insta.show_list_activity
+ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:32:9-65
+	android:name
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:32:19-53
+activity#csejeonju2019.go.kr.insta.EventDetail
+ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:33:9-58
+	android:name
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:33:19-46
+activity#csejeonju2019.go.kr.insta.EventDetail_show
+ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:34:9-63
+	android:name
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:34:19-51
+activity#csejeonju2019.go.kr.insta.jijung_cultural_property_list_activity
+ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:35:9-85
+	android:name
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:35:19-73
+activity#csejeonju2019.go.kr.insta.after_jijung_clutural
+ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:36:9-68
+	android:name
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:36:19-56
+activity#csejeonju2019.go.kr.insta.Hyangji_Cultural_Heritage_list_activity
+ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:37:9-86
+	android:name
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:37:19-74
+activity#csejeonju2019.go.kr.insta.after_hyangi_cultural
+ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:38:9-68
+	android:name
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:38:19-56
+activity#csejeonju2019.go.kr.insta.festival_list_activity
+ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:39:9-69
+	android:name
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:39:19-57
+activity#csejeonju2019.go.kr.insta.after_jeonju_festival
+ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:40:9-68
+	android:name
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:40:19-56
+activity#csejeonju2019.go.kr.insta.ProgressDialogActivity
+ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:41:9-69
+	android:name
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:41:19-57
+meta-data#com.google.android.geo.API_KEY
+ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:42:9-44:70
+	android:value
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:44:13-68
+	android:name
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml:43:13-58
+uses-sdk
+INJECTED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml
+INJECTED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\7ad362f990dd269b225f9e836274a9e5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\7ad362f990dd269b225f9e836274a9e5\AndroidManifest.xml:20:5-44
+MERGED from [com.pm10:indicator:1.0.2] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\indicator-1.0.2.aar\dbd359042a9fc49ab57a2a2bea01cce7\AndroidManifest.xml:7:5-9:41
+MERGED from [com.pm10:indicator:1.0.2] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\indicator-1.0.2.aar\dbd359042a9fc49ab57a2a2bea01cce7\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\0e774b1a7806d65a6407f7e48d3997e3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\0e774b1a7806d65a6407f7e48d3997e3\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\5ce285c565745412222c56a254d8daeb\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\5ce285c565745412222c56a254d8daeb\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-location-16.0.0.aar\bc91842886363ff42880de2efac80b9f\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-location-16.0.0.aar\bc91842886363ff42880de2efac80b9f\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\7ae402fc5e903c88db13614f0e062ff4\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\7ae402fc5e903c88db13614f0e062ff4\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-16.0.0.aar\8ab9e6a7d1ff856cb827d82d063a4409\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-16.0.0.aar\8ab9e6a7d1ff856cb827d82d063a4409\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\d338406a098d5042a506321185c467c3\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\d338406a098d5042a506321185c467c3\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\1405268fe53eecb435bc14de61767d58\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\1405268fe53eecb435bc14de61767d58\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\ba73e53d7c1841125d0640b160a468d4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\ba73e53d7c1841125d0640b160a468d4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\c4716cc8133d044e45326bdeffef81d4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\c4716cc8133d044e45326bdeffef81d4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\ea28b9a084a731b233242f440005271b\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\ea28b9a084a731b233242f440005271b\AndroidManifest.xml:5:5-7:41
+MERGED from [me.relex:circleindicator:1.3.2] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\circleindicator-1.3.2.aar\4f88ffcb0f1f3d3ff579c3c5b3a52aa8\AndroidManifest.xml:7:5-9:41
+MERGED from [me.relex:circleindicator:1.3.2] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\circleindicator-1.3.2.aar\4f88ffcb0f1f3d3ff579c3c5b3a52aa8\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\f48c7b3feca7a50d6179e737bd5dcba7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\f48c7b3feca7a50d6179e737bd5dcba7\AndroidManifest.xml:20:5-44
+MERGED from [com.makeramen:roundedimageview:2.3.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\roundedimageview-2.3.0.aar\c833bf93f2e581d0c9c8373c74396fa4\AndroidManifest.xml:7:5-43
+MERGED from [com.makeramen:roundedimageview:2.3.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\roundedimageview-2.3.0.aar\c833bf93f2e581d0c9c8373c74396fa4\AndroidManifest.xml:7:5-43
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\7884f3c814dbe39ebfc0c40a83fa140f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\7884f3c814dbe39ebfc0c40a83fa140f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\7d869ec1b7d9a1e5b958a313a9460cb1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\7d869ec1b7d9a1e5b958a313a9460cb1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\579578c907e3fff90f1d4cdd23765514\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\579578c907e3fff90f1d4cdd23765514\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\9b3dca24840a9f59b6408db1ddd093e6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\9b3dca24840a9f59b6408db1ddd093e6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\cee57002c6b8540ce0fec91089aa8af0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\cee57002c6b8540ce0fec91089aa8af0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\54854a607b25493842839db894cedd0c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\54854a607b25493842839db894cedd0c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\8b0b51e38efd6b023a547846b86b5ef4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\8b0b51e38efd6b023a547846b86b5ef4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\8c4a78e9fb66ba65f6b35627ebbe7a1d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\8c4a78e9fb66ba65f6b35627ebbe7a1d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\af532e88cb16b95844c3f1d4096d4985\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\af532e88cb16b95844c3f1d4096d4985\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\a599284de3e54f19a52859ac2029c2ed\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\a599284de3e54f19a52859ac2029c2ed\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\6528ac404a283be57afe4da489842c9e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\6528ac404a283be57afe4da489842c9e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\17cabe6e847647ab1f937eb1997ea63c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\17cabe6e847647ab1f937eb1997ea63c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\151bd080dc406ed51e7b46bd68cd6113\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\151bd080dc406ed51e7b46bd68cd6113\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\0e31b609de8d2abe78ee6eebaff9587e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\0e31b609de8d2abe78ee6eebaff9587e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\81d9e6fd555871e1a54a3382b6ee1bff\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\81d9e6fd555871e1a54a3382b6ee1bff\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\762fc76220787cb0e759fa230dd86c6e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\762fc76220787cb0e759fa230dd86c6e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\d14783833ee322f16c23f2c52e076188\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\d14783833ee322f16c23f2c52e076188\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\79274affbd7f77f21c3f82d457a2a4c6\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\79274affbd7f77f21c3f82d457a2a4c6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\bdbc164870f2518251ce5d8927d1f61b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\bdbc164870f2518251ce5d8927d1f61b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\25c2cb02ab598bfd59571acbb61bb07f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\25c2cb02ab598bfd59571acbb61bb07f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\1979c8a32d1697b7556a00d9e41a87b9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\1979c8a32d1697b7556a00d9e41a87b9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\7b3c2d176a121cc83399e7f050b47c90\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\7b3c2d176a121cc83399e7f050b47c90\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\cd82a94eb24eed5f7410ae0772dd0e7e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\cd82a94eb24eed5f7410ae0772dd0e7e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\27a5153a63f7ea8949e6fcf17baded92\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\27a5153a63f7ea8949e6fcf17baded92\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\6158cef7cc4aa5b1bd3fa712807af9a2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\6158cef7cc4aa5b1bd3fa712807af9a2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\ca15b6a7be2e2223bb7fd8db0f1473da\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\ca15b6a7be2e2223bb7fd8db0f1473da\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\7dd28884be75cb7291f5c227f1adc92b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\7dd28884be75cb7291f5c227f1adc92b\AndroidManifest.xml:20:5-44
+INJECTED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml
+INJECTED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml
+		ADDED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Github\Jeonju_culturallife\junseong\INSTAGRAM\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\5ce285c565745412222c56a254d8daeb\AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\5ce285c565745412222c56a254d8daeb\AndroidManifest.xml:23:22-76
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\5ce285c565745412222c56a254d8daeb\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\5ce285c565745412222c56a254d8daeb\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\5ce285c565745412222c56a254d8daeb\AndroidManifest.xml:28:9-32
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\5ce285c565745412222c56a254d8daeb\AndroidManifest.xml:33:9-35:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\5ce285c565745412222c56a254d8daeb\AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\5ce285c565745412222c56a254d8daeb\AndroidManifest.xml:34:13-50
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\7ae402fc5e903c88db13614f0e062ff4\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\7ae402fc5e903c88db13614f0e062ff4\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\7ae402fc5e903c88db13614f0e062ff4\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\7ae402fc5e903c88db13614f0e062ff4\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\1405268fe53eecb435bc14de61767d58\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\1405268fe53eecb435bc14de61767d58\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\daniel\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\1405268fe53eecb435bc14de61767d58\AndroidManifest.xml:24:13-58

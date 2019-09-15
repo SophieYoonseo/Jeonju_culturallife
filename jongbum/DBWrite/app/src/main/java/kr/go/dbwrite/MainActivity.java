@@ -161,12 +161,26 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+<<<<<<< HEAD
+=======
+    public void kakaoLogin()
+    {
+        /*findViewById(R.id.btn_kakao_login).setOnClickListener(new View.OnClickListener(){
+            @Override
+            public  void mrjang_login()
+            {
+                //mrjang 일단 중도포기 ㅠㅠ 저녁에 와서 할게욤
+            }
+        });*/
+>>>>>>> 67fdcc7ac1cc699b6f47c4098eba7035665edd3d
     }
 
 
     public void onStart() {
         super.onStart();
-        ValueEventListener accListener = new ValueEventListener() {
+        DatabaseReference ref = firebaseDatabase.getReference().child("accounts");
+        ref = ref.child(ref.g)
+        ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 Laccount = dataSnapshot.getValue(Account.class);
@@ -174,12 +188,9 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-
+                Toast.makeText(getApplicationContext(), "DB Read Failed! with " + databaseError.getMessage(), Toast.LENGTH_LONG).show();
             }
-        };
-        //추후 진행 예정 위치
-        databaseReference.addValueEventListener(accListener);
-
+        });
     }
 
     public void onDestroy(){
