@@ -28,6 +28,6 @@
         android:id="@+id/txt_db"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ready"/>
+        />
 
 </LinearLayout>

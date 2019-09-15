@@ -38,9 +38,13 @@ import com.nhn.android.naverlogin.ui.view.OAuthLoginButton;
 import org.w3c.dom.Text;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 import java.util.Map;
 
 import static com.kakao.auth.Session.getCurrentSession;
@@ -52,13 +56,12 @@ public class MainActivity extends AppCompatActivity {
     public FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
     public DatabaseReference databaseReference = firebaseDatabase.getReference();
 
-
-    Account Laccount;
-    TextView textView;
     OAuthLogin mOAuthLoginModule;
     OAuthLoginButton mOAuthLoginButton;
     Context mContext;
+    boolean firstLogin;
     GoogleSignInClient mGoogleSignInClient;
+    String key;
 
     private LoginButton btn_kakao_login;        //kakao 0915 mrJang
     private SessionCallback callback;           //kakao 0915 mrJang
@@ -89,19 +92,55 @@ public class MainActivity extends AppCompatActivity {
 
 
     //0914 MrJang modified the function type! "private->public"
-    public void writeAccountInfo(String token, String type) {
-        String key = databaseReference.child("accounts").push().getKey();
+    public void writeAccountInfo(final String token, String type) {
+        key = databaseReference.child("accounts").push().getKey();
         Date mDate = new Date(System.currentTimeMillis());
-        String timestamp = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(mDate); //로그인 시간
 
+        String timestamp = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(mDate); //로그인 시간
 
         Account account = new Account(token, timestamp, type);
         Map<String, Object> accValues = account.toMap();
 
+        DatabaseReference ref = firebaseDatabase.getReference().child("accounts");
+        ref.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+                firstLogin = true;
+                Account current = dataSnapshot.getValue(Account.class);
+                if(token.equals(current.AccessToken)) {
+                    //DatabaseReference updateRef = databaseReference.child("accounts");
+                    Toast.makeText(getApplicationContext(), "You've already logged in!\n" + token, Toast.LENGTH_LONG).show();
+                    firstLogin = false;
+                    //Map<String, Object> accountUpdates = new Account(token, timestamp, current.LoginType).toMap();
+                    //updateRef.updateChildrenAsync()
+                }
+            }
+
+            @Override
+            public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+            }
+
+            @Override
+            public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
         Map<String, Object> childUpdates = new HashMap<>();
         childUpdates.put("/accounts/" + key, accValues);
         //childUpdates.put("/user-posts/" + token + "/" + key, accValues);
-        databaseReference.updateChildren(childUpdates);
+        if(firstLogin) databaseReference.updateChildren(childUpdates);
     }
 
     //구글 로그인 이후 핸들러
@@ -115,7 +154,6 @@ public class MainActivity extends AppCompatActivity {
             if (acct != null) {
                 String personEmail = acct.getEmail();
                 writeAccountInfo(personEmail, "Google");
-                textView.setText(Laccount.AccessToken);
             }
         } catch (ApiException e) {
             // The ApiException status code indicates the detailed failure reason.
@@ -168,7 +206,7 @@ public class MainActivity extends AppCompatActivity {
         mOAuthLoginButton = (OAuthLoginButton) findViewById(R.id.buttonOAuthLoginImg);
         mOAuthLoginButton.setOAuthLoginHandler(mOAuthLoginHandler);
 
-        textView = (TextView) findViewById(R.id.txt_db);
+        //textView = (TextView) findViewById(R.id.txt_db);
 
 
 
