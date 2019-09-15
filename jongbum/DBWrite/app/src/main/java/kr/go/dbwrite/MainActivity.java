@@ -165,12 +165,10 @@ public class MainActivity extends AppCompatActivity {
     public void onStart() {
         super.onStart();
         DatabaseReference ref = firebaseDatabase.getReference().child("accounts");
-        ref = ref.child(ref.getKey());
         ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                DatabaseReference ref = firebaseDatabase.getReference("accounts");
-
+                Laccount = dataSnapshot.getValue(Account.class);
             }
 
             @Override
