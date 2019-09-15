@@ -8,7 +8,7 @@
  - 문화공간 리스트 space_list_activity호출 , 문화체험은 experience_list_activity  공연show_list 지정문화재 jijung_cultural 향토는 hyangji 전주지역축제는 festival_list_activity
  - 파싱간 progressbar thread 추가 (09-13)
  - Terminal        gradlew assembleDebug --info
-
+ - 각 카드뷰 클릭시 리스트 그 리스트 클릭시 activity 그 액티비티의 버튼(vector asset)클릭시 event들 구현 09-15(but 공연중 2019독서대전과 나루컬쳐 이두개만 홈페이지접속 클릭시 튕기는현상)
  
 ![view](./ing.gif)
 
@@ -36,9 +36,7 @@
    ![1착상](./trouble.JPG)
 
 ## 앞으로해야할일  
-- 이동경로와 fragment로부터 액티비티 이동 등 기능구현 해놓음. 이제 이 이미지버튼을 카드뷰로 꾸미기하고 list클릭시 넘어가는 activity꾸며야하고
-- dataset중 전화번호있는건 public static String 으로 받아넘긴후 전화버튼따로눌러서 parsing하기  
-- 디자인세부세부세부것들 꾸미기  
+- 디자인세부세부세부것들 꾸미기  및 기능아직 구현안한리스트들 기능구현하기 공유,페이지,전화 등등 
 
 
 
