@@ -37,9 +37,13 @@ import com.nhn.android.naverlogin.ui.view.OAuthLoginButton;
 import org.w3c.dom.Text;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 import java.util.Map;
 
 import static com.nhn.android.naverlogin.OAuthLogin.mOAuthLoginHandler;
@@ -50,8 +54,7 @@ public class MainActivity extends AppCompatActivity {
     public FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
     public DatabaseReference databaseReference = firebaseDatabase.getReference();
 
-
-    Account Laccount;
+    String loggedToken;
     TextView textView;
     OAuthLogin mOAuthLoginModule;
     OAuthLoginButton mOAuthLoginButton;
@@ -82,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
     //0914 MrJang modified the function type! "private->public"
     public void writeAccountInfo(String token, String type) {
+        loggedToken = token;
         String key = databaseReference.child("accounts").push().getKey();
         Date mDate = new Date(System.currentTimeMillis());
         String timestamp = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(mDate); //로그인 시간
@@ -105,7 +109,6 @@ public class MainActivity extends AppCompatActivity {
             if (acct != null) {
                 String personEmail = acct.getEmail();
                 writeAccountInfo(personEmail, "Google");
-                textView.setText(Laccount.AccessToken);
             }
         } catch (ApiException e) {
             // The ApiException status code indicates the detailed failure reason.
@@ -157,23 +160,43 @@ public class MainActivity extends AppCompatActivity {
         );
         mOAuthLoginButton = (OAuthLoginButton) findViewById(R.id.buttonOAuthLoginImg);
         mOAuthLoginButton.setOAuthLoginHandler(mOAuthLoginHandler);
-
-        textView = (TextView) findViewById(R.id.txt_db);
     }
 
 
     public void onStart() {
         super.onStart();
         DatabaseReference ref = firebaseDatabase.getReference().child("accounts");
-        ref.addValueEventListener(new ValueEventListener() {
+        ref.addChildEventListener(new ChildEventListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                Laccount = dataSnapshot.getValue(Account.class);
+            public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+                //
+                if(loggedToken != null && loggedToken.equals(dataSnapshot.getValue(Account.class).AccessToken)) {
+                    Toast.makeText(getApplicationContext(), "You've already logged in!\n" + loggedToken, Toast.LENGTH_LONG).show();
+                    return;
+                }
+                else {
+                    Toast.makeText(getApplicationContext(), "Welcome!\n" + loggedToken, Toast.LENGTH_LONG).show();
+                }
+            }
+
+            @Override
+            public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+            }
+
+            @Override
+            public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                Toast.makeText(getApplicationContext(), "DB Read Failed! with " + databaseError.getMessage(), Toast.LENGTH_LONG).show();
+
             }
         });
     }

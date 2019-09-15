@@ -34,7 +34,8 @@ public class GlobalApplication extends Application {
 
         // Kakao Sdk 초기화
         KakaoSDK.init(new KakaoSDKAdapter());
-        Toast.makeText(GlobalApplication.this,"Hello World!",Toast.LENGTH_SHORT).show();
+        //Toast 메세지 삭제(by. jjongbumee)
+        //Toast.makeText(GlobalApplication.this,"Hello World!",Toast.LENGTH_SHORT).show();
 
         SessionCallback callback = new SessionCallback();
         Session.getCurrentSession().addCallback(callback);
