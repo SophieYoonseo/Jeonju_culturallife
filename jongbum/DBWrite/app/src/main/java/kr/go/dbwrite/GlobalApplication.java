@@ -4,12 +4,15 @@ package kr.go.dbwrite;
 
 import android.app.Activity;
 import android.app.Application;
+import android.content.Context;
 import android.content.Intent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.kakao.auth.KakaoSDK;
 import com.kakao.auth.Session;
+import com.kakao.usermgmt.LoginButton;
 import com.kakao.usermgmt.UserManagement;
 import com.kakao.usermgmt.callback.LogoutResponseCallback;
 
@@ -50,7 +53,6 @@ public class GlobalApplication extends Application {
             }
         });
         */
-
     }
 
 

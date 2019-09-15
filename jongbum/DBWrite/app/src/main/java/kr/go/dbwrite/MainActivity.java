@@ -29,6 +29,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.kakao.auth.KakaoSDK;
+import com.kakao.usermgmt.LoginButton;
 import com.kakao.util.KakaoUtilService;
 import com.nhn.android.naverlogin.OAuthLogin;
 import com.nhn.android.naverlogin.OAuthLoginHandler;
@@ -46,6 +47,7 @@ import java.util.List;
 import java.util.ListIterator;
 import java.util.Map;
 
+import static com.kakao.auth.Session.getCurrentSession;
 import static com.nhn.android.naverlogin.OAuthLogin.mOAuthLoginHandler;
 
 public class MainActivity extends AppCompatActivity {
@@ -60,6 +62,12 @@ public class MainActivity extends AppCompatActivity {
     boolean firstLogin;
     GoogleSignInClient mGoogleSignInClient;
     String key;
+
+    private LoginButton btn_kakao_login;        //kakao 0915 mrJang
+    private SessionCallback callback;           //kakao 0915 mrJang
+
+
+
 
     // onActivityResult에서 종료된 Activity 구분에 필요한 상수
     public static final int REQUEST_CODE_MENU = 101, RC_SIGN_IN = 100;
@@ -87,7 +95,9 @@ public class MainActivity extends AppCompatActivity {
     public void writeAccountInfo(final String token, String type) {
         key = databaseReference.child("accounts").push().getKey();
         Date mDate = new Date(System.currentTimeMillis());
-        final String timestamp = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(mDate); //로그인 시간
+
+        String timestamp = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(mDate); //로그인 시간
+
         Account account = new Account(token, timestamp, type);
         Map<String, Object> accValues = account.toMap();
 
@@ -195,22 +205,61 @@ public class MainActivity extends AppCompatActivity {
         );
         mOAuthLoginButton = (OAuthLoginButton) findViewById(R.id.buttonOAuthLoginImg);
         mOAuthLoginButton.setOAuthLoginHandler(mOAuthLoginHandler);
+
+        //textView = (TextView) findViewById(R.id.txt_db);
+
+
+
+        //0915 MrJang : KAKAO LOGIN
+        KakaoSDK.init(new KakaoSDKAdapter());
+        btn_kakao_login = (LoginButton)findViewById(R.id.btn_kakao_login);
+        callback = new SessionCallback();
+        getCurrentSession().addCallback(callback);
+
+
+
     }
+
+
+    public void onStart() {
+        super.onStart();
+        DatabaseReference ref = firebaseDatabase.getReference().child("accounts");
+        ref = ref.child(ref.getKey());
+        ref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                DatabaseReference ref = firebaseDatabase.getReference("accounts");
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                Toast.makeText(getApplicationContext(), "DB Read Failed! with " + databaseError.getMessage(), Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+
 
     public void onDestroy(){
         mOAuthLoginModule.logout(mContext);
         mGoogleSignInClient.signOut();
         super.onDestroy();
+        getCurrentSession().removeCallback(callback);
     }
 
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+
+        //0915 MrJang KAKAO
+        if (getCurrentSession().handleActivityResult(requestCode, resultCode, data))
+            return;
+
         super.onActivityResult(requestCode, resultCode, data);
+
         if (requestCode == RC_SIGN_IN) {
             // The Task returned from this call is always completed, no need to attach
             // a listener.
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
             handleSignInResult(task);
         }
-
     }
 }

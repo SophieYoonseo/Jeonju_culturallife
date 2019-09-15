@@ -22,3 +22,8 @@
 오류 해결 및 공연문화정보API로 변경 완료(testAPI_JB 프로젝트 파일)
 
 리스트뷰, 세부사항 액티비티 추가 성공[![status](https://img.shields.io/badge/status-developed-green)]
+
+## 2019.09.09 / 로그인 정보 firebase RealTime DB 입력 성공
+## 2019.09.15 / 가입자 정보 읽어오기 및 기존 로그인 이력 확인
+### jongbumee branch
+구조적인 문제로 추가 수정이 필요함
