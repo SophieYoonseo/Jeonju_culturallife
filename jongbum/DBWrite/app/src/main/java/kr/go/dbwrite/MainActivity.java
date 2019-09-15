@@ -176,6 +176,9 @@ public class MainActivity extends AppCompatActivity {
         btn_kakao_login = (LoginButton)findViewById(R.id.btn_kakao_login);
         callback = new SessionCallback();
         getCurrentSession().addCallback(callback);
+
+
+
     }
 
 
