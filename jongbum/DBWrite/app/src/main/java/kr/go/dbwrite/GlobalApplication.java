@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.kakao.auth.KakaoSDK;
+import com.kakao.auth.Session;
 import com.kakao.usermgmt.UserManagement;
 import com.kakao.usermgmt.callback.LogoutResponseCallback;
 
@@ -31,15 +32,15 @@ public class GlobalApplication extends Application {
         super.onCreate();
         instance = this;
 
-        /* 0914 16:56 잠시 주석처리
         // Kakao Sdk 초기화
         KakaoSDK.init(new KakaoSDKAdapter());
-
         Toast.makeText(GlobalApplication.this,"Hello World!",Toast.LENGTH_SHORT).show();
 
-        kakaoLogin();
+        SessionCallback callback = new SessionCallback();
+        Session.getCurrentSession().addCallback(callback);
+        Session.getCurrentSession().checkAndImplicitOpen();
 
-         */
+
 
         /* 문제점 발견, but 해결못함
         UserManagement.requestLogout(new LogoutResponseCallback() {

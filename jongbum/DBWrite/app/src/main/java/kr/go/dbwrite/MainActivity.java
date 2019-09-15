@@ -28,6 +28,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.kakao.auth.KakaoSDK;
+import com.kakao.util.KakaoUtilService;
 import com.nhn.android.naverlogin.OAuthLogin;
 import com.nhn.android.naverlogin.OAuthLoginHandler;
 import com.nhn.android.naverlogin.ui.view.OAuthLoginButton;
@@ -159,23 +160,9 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        //0914 MrJang Kakao INIT
-        // Kakao Sdk 초기화
-        KakaoSDK.init(new KakaoSDKAdapter());
-        Toast.makeText(this,"Hello World!",Toast.LENGTH_SHORT).show();
-        kakaoLogin();
+
     }
 
-    public void kakaoLogin()
-    {
-        findViewById(R.id.btn_kakao_login).setOnClickListener(new View.OnClickListener(){
-            @Override
-            public  void mrjang_login()
-            {
-                //mrjang 일단 중도포기 ㅠㅠ 저녁에 와서 할게욤
-            }
-        });
-    }
 
     public void onStart() {
         super.onStart();
