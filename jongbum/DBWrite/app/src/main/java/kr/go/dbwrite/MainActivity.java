@@ -8,6 +8,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -158,7 +159,8 @@ public class MainActivity extends AppCompatActivity {
         ValueEventListener accListener = new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                Laccount = dataSnapshot.getValue(Account.class);
+                DatabaseReference ref = firebaseDatabase.getReference("accounts");
+
             }
 
             @Override
