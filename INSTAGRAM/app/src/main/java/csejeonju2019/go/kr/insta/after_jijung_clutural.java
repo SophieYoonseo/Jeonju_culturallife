@@ -12,7 +12,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 public class after_jijung_clutural extends AppCompatActivity
-        implements OnMapReadyCallback {
+        implements OnMapReadyCallback {//지정문화ㅏ재
     public String jijung_exp;//설명 임 이거
     public double space_loc1;//주소
     public double space_loc2;//주소

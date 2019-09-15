@@ -13,7 +13,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.Map;
 
-public class after_experience extends AppCompatActivity
+public class after_experience extends AppCompatActivity //이거 버리는 클래스임  문화체험은 EventDetail로 이동
         implements OnMapReadyCallback {
 
     public  double loc1;
