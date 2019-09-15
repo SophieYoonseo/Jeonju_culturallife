@@ -23,10 +23,10 @@ public class PerformanceShowItem implements Serializable {
     public String showDetail() {
         return //"시설명 : " + dataTitle +
                // "\n데이터 번호 : " + dataSid +
-                "\n기타 내용 : " + dataContent +
+                "\n상세 내용 : " + dataContent +
                // "\n시설 기본주소 : " + addr +
                 "\n시설 상세주소 : " +addr +" "+ addrDtl +
-                "\n전화번호 : " + tel +
+                "\n전화번호 : " + tel ;
                // "\n홈페이지 : " + userHomepage +
                // "\n첨부파일수 : " + fileCnt +
                 //"\n공연장소 경도 : " + posx +

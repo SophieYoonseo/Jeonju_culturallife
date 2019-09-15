@@ -7,10 +7,12 @@ import android.os.Bundle;
 import android.os.StrictMode;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.util.EventLog;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserFactory;
@@ -18,7 +20,7 @@ import org.xmlpull.v1.XmlPullParserFactory;
 import java.net.URL;
 import java.util.ArrayList;
 
-public class show_list_activity extends AppCompatActivity {
+public class show_list_activity extends AppCompatActivity {// 전주 공연
     ArrayList<PerformanceShowItem2> Items;
     ArrayAdapter adapter;
     ProgressDialog progressDlg;
@@ -178,10 +180,14 @@ public class show_list_activity extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(),EventDetail_show.class);
                 //세부사항을 Intent.extra로 EventDetail Activity로 전달
                 intent.putExtra("activity", Items.get(i));
-
+                EventDetail_show.show_title=Items.get(i).subject;
+                EventDetail_show.show_page=Items.get(i).url;
+                EventDetail_show.show_phonenum=Items.get(i).mngTel;
                 //EventDetail_show.show_loc1=Items.get(i).posx; 공연정보는 위도경도표시안대넴
                 //EventDetail_show.show_loc2=Items.get(i).posy;
-                EventDetail_show.show_title=Items.get(i).subject;
+                Toast.makeText(getApplicationContext(),EventDetail_show.show_title, Toast.LENGTH_SHORT).show();
+               // EventDetail_show.show_title=Items.get(i).subject;
+
                 startActivity(intent);
                 //데이터 삭제, 추가, 변경 시 항상 adapter.notifyDataSetChanged()호출로 displaydata 최신화
                 adapter.notifyDataSetChanged();

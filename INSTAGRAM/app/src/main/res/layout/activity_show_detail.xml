@@ -23,4 +23,24 @@
             android:layout_height="wrap_content" />
     </ScrollView>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/show_phonenum"
+            android:layout_width="138dp"
+            android:layout_height="87dp"
+            android:background="@drawable/ic_local_phone_black_24dp"
+            android:text="전화 걸기" />
+
+        <Button
+            android:id="@+id/show_url"
+            android:layout_width="138dp"
+            android:layout_height="87dp"
+            android:background="@drawable/ic_zoom_in_black_24dp"
+            android:text="관련 페이지" />
+    </LinearLayout>
+
 </LinearLayout>
