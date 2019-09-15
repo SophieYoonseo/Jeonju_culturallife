@@ -8,6 +8,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.kakao.auth.ISessionCallback;
 import com.kakao.auth.Session;
+import com.kakao.auth.authorization.accesstoken.AccessToken;
 import com.kakao.network.ErrorResult;
 import com.kakao.usermgmt.UserManagement;
 import com.kakao.usermgmt.callback.MeResponseCallback;
@@ -18,8 +19,6 @@ import com.kakao.util.exception.KakaoException;
 //0914 MrJang Kakako Callback create! (return the results with informations after login)
 public class SessionCallback implements ISessionCallback
 {
-
-    static public String kakaoEmail;
 
     //로그인에 성공한 상태
     @Override
@@ -62,23 +61,23 @@ public class SessionCallback implements ISessionCallback
                 Log.e("SessionCallback::","onSuccess");
 
                 String nickname = userProfile.getNickname();
-                kakaoEmail = userProfile.getEmail();
+                String email = userProfile.getEmail();
                 String profileImagePath = userProfile.getProfileImagePath();
                 String thumnailPath = userProfile.getThumbnailImagePath();
                 String UUID = userProfile.getUUID();
                 long id = userProfile.getId();
 
                 Log.e("Profile :", nickname+"");
-                Log.e("Profile :", kakaoEmail+"");
+                Log.e("Profile :", email+"");
                 Log.e("Profile :", profileImagePath+"");
                 Log.e("Profile :", thumnailPath+"");
                 Log.e("Profile :", UUID+"");
                 Log.e("Profile :", id+"");
 
                 //0914 Database Add with Informations!
-
-
-
+                MainActivity mMainActivity = new MainActivity();
+                mMainActivity.writeAccountInfo("1234","kakao");
+                //1234는 데이터베이스 잘 보내지나 임시 테스트.
             }
 
             //사용자 정보 요청 실패

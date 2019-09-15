@@ -29,6 +29,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.kakao.auth.KakaoSDK;
+import com.kakao.auth.Session;
 import com.kakao.usermgmt.LoginButton;
 import com.kakao.util.KakaoUtilService;
 import com.nhn.android.naverlogin.OAuthLogin;
@@ -208,18 +209,11 @@ public class MainActivity extends AppCompatActivity {
 
         //textView = (TextView) findViewById(R.id.txt_db);
 
-
-
         //0915 MrJang : KAKAO LOGIN
         KakaoSDK.init(new KakaoSDKAdapter());
-        btn_kakao_login = (LoginButton)findViewById(R.id.btn_kakao_login);
         callback = new SessionCallback();
-        getCurrentSession().addCallback(callback);
-
-
-
+        Session.getCurrentSession().addCallback(callback);
     }
-
 
     public void onStart() {
         super.onStart();
