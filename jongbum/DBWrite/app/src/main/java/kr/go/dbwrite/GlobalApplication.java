@@ -35,6 +35,7 @@ public class GlobalApplication extends Application {
         super.onCreate();
         instance = this;
 
+        /*
         // Kakao Sdk 초기화
         KakaoSDK.init(new KakaoSDKAdapter());
         //Toast 메세지 삭제(by. jjongbumee)
@@ -44,6 +45,8 @@ public class GlobalApplication extends Application {
         Session.getCurrentSession().addCallback(callback);
         Session.getCurrentSession().checkAndImplicitOpen();
 
+
+         */
 
         /* 문제점 발견, but 해결못함
         UserManagement.requestLogout(new LogoutResponseCallback() {

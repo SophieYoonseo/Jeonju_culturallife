@@ -4,10 +4,14 @@ import android.media.MediaSession2;
 import android.util.Log;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.kakao.auth.ISessionCallback;
 import com.kakao.auth.Session;
+import com.kakao.auth.authorization.accesstoken.AccessToken;
 import com.kakao.network.ErrorResult;
 import com.kakao.usermgmt.UserManagement;
 import com.kakao.usermgmt.callback.MeResponseCallback;
@@ -15,11 +19,13 @@ import com.kakao.usermgmt.response.model.User;
 import com.kakao.usermgmt.response.model.UserProfile;
 import com.kakao.util.exception.KakaoException;
 
+import java.util.HashMap;
+import java.util.Map;
+
 //0914 MrJang Kakako Callback create! (return the results with informations after login)
 public class SessionCallback implements ISessionCallback
 {
-
-    static public String kakaoEmail;
+    MainActivity mMainActivity;
 
     //로그인에 성공한 상태
     @Override
@@ -62,23 +68,22 @@ public class SessionCallback implements ISessionCallback
                 Log.e("SessionCallback::","onSuccess");
 
                 String nickname = userProfile.getNickname();
-                kakaoEmail = userProfile.getEmail();
+                String email = userProfile.getEmail();
                 String profileImagePath = userProfile.getProfileImagePath();
                 String thumnailPath = userProfile.getThumbnailImagePath();
                 String UUID = userProfile.getUUID();
                 long id = userProfile.getId();
 
                 Log.e("Profile :", nickname+"");
-                Log.e("Profile :", kakaoEmail+"");
+                Log.e("Profile :", email+"");
                 Log.e("Profile :", profileImagePath+"");
                 Log.e("Profile :", thumnailPath+"");
                 Log.e("Profile :", UUID+"");
                 Log.e("Profile :", id+"");
 
-                //0914 Database Add with Informations!
-
-
-
+                //0916 mrJang added!
+                mMainActivity = new MainActivity();
+                mMainActivity.callKakaoDatabase();
             }
 
             //사용자 정보 요청 실패
