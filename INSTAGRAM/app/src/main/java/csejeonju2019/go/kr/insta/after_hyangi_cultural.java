@@ -103,7 +103,7 @@ public class after_hyangi_cultural extends AppCompatActivity
     @Override
     public void onMapReady(final GoogleMap googleMap) {
 
-  
+
         mMap = googleMap;
 
         LatLng JJ = new LatLng(space_loc1, space_loc2);
