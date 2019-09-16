@@ -57,6 +57,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:layout_marginLeft="10dp"
             android:id="@+id/button_festival_page"
             android:layout_width="65dp"
             android:layout_height="65dp"
@@ -64,6 +65,7 @@
             android:text="관련 페이지" />
 
         <Button
+            android:layout_marginLeft="10dp"
             android:id="@+id/festival_share"
             android:layout_width="65dp"
             android:layout_height="65dp"

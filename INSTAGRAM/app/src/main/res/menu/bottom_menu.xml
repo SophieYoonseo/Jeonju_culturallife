@@ -2,21 +2,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/action_airplane"
-        android:enabled="true"
+
         android:icon="@drawable/ic_home_page"
         android:title="홈 화면"/>
 
     <item
         android:id="@+id/action_star"
-        android:enabled="true"
+
         android:icon="@drawable/ic_magnifying_glass"
         android:title="검색"/>
 
     <item
         android:id="@+id/station"
-        android:enabled="true"
-        android:icon="@drawable/ic_add"
-        android:title="업로드"/>
+
+        android:icon="@drawable/ic_contract"
+        android:title="글쓰기"/>
 
     <item
         android:id="@+id/black"
@@ -31,3 +31,5 @@
         android:title="사람들"/>
 
 </menu>
+
+<!--  android:enabled="true">
