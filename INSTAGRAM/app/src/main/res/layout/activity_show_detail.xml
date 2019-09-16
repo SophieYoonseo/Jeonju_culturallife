@@ -29,15 +29,22 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/show_share"
+            android:layout_width="130dp"
+            android:layout_height="87dp"
+            android:background="@drawable/ic_share_black_24dp"
+            android:text="공유하기" />
+
+        <Button
             android:id="@+id/show_phonenum"
-            android:layout_width="138dp"
+            android:layout_width="130dp"
             android:layout_height="87dp"
             android:background="@drawable/ic_local_phone_black_24dp"
             android:text="전화 걸기" />
 
         <Button
             android:id="@+id/show_url"
-            android:layout_width="138dp"
+            android:layout_width="130dp"
             android:layout_height="87dp"
             android:background="@drawable/ic_zoom_in_black_24dp"
             android:text="관련 페이지" />

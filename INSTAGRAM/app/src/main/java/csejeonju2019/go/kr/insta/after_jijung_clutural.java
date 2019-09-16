@@ -1,7 +1,10 @@
 package csejeonju2019.go.kr.insta;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -48,7 +51,23 @@ public class after_jijung_clutural extends AppCompatActivity
         text10.setText("지정번호 : "+number);
         TextView text9=(TextView)findViewById(R.id.jijung_display);
         text9.setText("설명 : " +detail);
+        Button share=(Button)findViewById(R.id.jijung_share);
+        final String abcd=space_title+address+number+detail;
+       share.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                String mySharedLink = abcd;
+                String mySubject = space_title+"내용을 공유합니다.";
 
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_SEND);
+                intent.setType("text/plain");
+                intent.putExtra(Intent.EXTRA_SUBJECT, mySubject);
+                intent.putExtra(Intent.EXTRA_TEXT, mySharedLink);
+
+                startActivity(Intent.createChooser(intent, "공유합니다."));
+            }
+        });
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map2);
         mapFragment.getMapAsync(this);

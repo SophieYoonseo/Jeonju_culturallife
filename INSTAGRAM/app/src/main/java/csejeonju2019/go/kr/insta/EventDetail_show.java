@@ -52,6 +52,7 @@ public class EventDetail_show extends AppCompatActivity  {   ///공연정보 (�
 
             }
         });
+
         //Intent Extra Value 가져오기
         Intent intent = getIntent();
         TextView result = (TextView)findViewById(R.id.result_show);
@@ -59,6 +60,23 @@ public class EventDetail_show extends AppCompatActivity  {   ///공연정보 (�
         PerformanceShowItem2 item = (PerformanceShowItem2)intent.getSerializableExtra("activity");
         //출력
         result.setText(item.showDetail());
+        Button festivalshare=(Button)findViewById(R.id.show_share);
+        final String abcd=result.getText().toString();
+        festivalshare.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                String mySharedLink = abcd;
+                String mySubject = show_title+"내용을 공유합니다.";
+
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_SEND);
+                intent.setType("text/plain");
+                intent.putExtra(Intent.EXTRA_SUBJECT, mySubject);
+                intent.putExtra(Intent.EXTRA_TEXT, mySharedLink);
+
+                startActivity(Intent.createChooser(intent, "공유합니다."));
+            }
+        });
     }
 
 }

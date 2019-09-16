@@ -45,7 +45,23 @@ public class EventDetail extends AppCompatActivity  implements OnMapReadyCallbac
         });
         //출력
         result.setText(item.showDetail());
+        Button share=(Button)findViewById(R.id.experience_share);
+        final String abcd=result.getText().toString();
+        share.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                String mySharedLink = abcd;
+                String mySubject = exp_title+"내용을 공유합니다.";
 
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_SEND);
+                intent.setType("text/plain");
+                intent.putExtra(Intent.EXTRA_SUBJECT, mySubject);
+                intent.putExtra(Intent.EXTRA_TEXT, mySharedLink);
+
+                startActivity(Intent.createChooser(intent, "공유합니다."));
+            }
+        });
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map2);
         mapFragment.getMapAsync(this);

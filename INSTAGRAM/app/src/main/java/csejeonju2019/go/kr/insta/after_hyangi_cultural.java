@@ -1,7 +1,10 @@
 package csejeonju2019.go.kr.insta;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -72,10 +75,30 @@ public class after_hyangi_cultural extends AppCompatActivity
         {
             imageView.setImageResource(R.drawable.seokbul);
         }
+        Button share=(Button)findViewById(R.id.hyangi_share);
+        final String abcd=detail+exp+address;
+        share.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                String mySharedLink = abcd;
+                String mySubject = space_title+"내용을 공유합니다.";
+
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_SEND);
+                intent.setType("text/plain");
+                intent.putExtra(Intent.EXTRA_SUBJECT, mySubject);
+                intent.putExtra(Intent.EXTRA_TEXT, mySharedLink);
+
+                startActivity(Intent.createChooser(intent, "공유합니다."));
+            }
+        });
+
+
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map2);
         mapFragment.getMapAsync(this);
     }
+
 
     @Override
     public void onMapReady(final GoogleMap googleMap) {
