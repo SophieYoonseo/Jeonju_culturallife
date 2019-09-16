@@ -25,10 +25,7 @@ import java.util.Map;
 //0914 MrJang Kakako Callback create! (return the results with informations after login)
 public class SessionCallback implements ISessionCallback
 {
-    public FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
-    public DatabaseReference databaseReference = firebaseDatabase.getReference();
-    String key;
-    boolean firstLogin;
+    MainActivity mMainActivity;
 
     //로그인에 성공한 상태
     @Override
@@ -75,8 +72,6 @@ public class SessionCallback implements ISessionCallback
                 String profileImagePath = userProfile.getProfileImagePath();
                 String thumnailPath = userProfile.getThumbnailImagePath();
                 String UUID = userProfile.getUUID();
-                String typeKakao = "Kakao";
-
                 long id = userProfile.getId();
 
                 Log.e("Profile :", nickname+"");
@@ -86,22 +81,9 @@ public class SessionCallback implements ISessionCallback
                 Log.e("Profile :", UUID+"");
                 Log.e("Profile :", id+"");
 
-                //0914 Database Add with Informations!
-                /*
-                MainActivity mMainActivity = new MainActivity();
-                mMainActivity.writeAccountInfo("1234","kakao");
-                //1234는 데이터베이스 잘 보내지나 임시 테스트.
-                 */
-
-                key = databaseReference.child("accounts").push().getKey();
-                Account account = new Account(email,typeKakao);
-                Map<String, Object> accValues = account.toMap();
-
-                Map<String, Object> childUpdates = new HashMap<>();
-                childUpdates.put("/accounts/" + key, accValues);
-                //childUpdates.put("/user-posts/" + token + "/" + key, accValues);
-                if(firstLogin) databaseReference.updateChildren(childUpdates);
-
+                //0916 mrJang added!
+                mMainActivity = new MainActivity();
+                mMainActivity.callKakaoDatabase();
             }
 
             //사용자 정보 요청 실패
