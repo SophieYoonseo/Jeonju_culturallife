@@ -42,7 +42,7 @@ public class Frag3 extends Fragment
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getActivity(),signup.class);
+                Intent intent=new Intent(getActivity(),MainActivity.class);
                 startActivity(intent);
             }
         });
