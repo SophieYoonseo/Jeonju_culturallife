@@ -13,7 +13,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.Map;
 
-public class after_experience extends AppCompatActivity
+public class after_experience extends AppCompatActivity //이거 버리는 클래스임  문화체험은 EventDetail로 이동
         implements OnMapReadyCallback {
 
     public  double loc1;
@@ -25,7 +25,7 @@ public class after_experience extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        exp=Frag2.explain;
+        exp=Frag5.explain;
         setContentView(R.layout.after_experience);
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
@@ -36,8 +36,8 @@ public class after_experience extends AppCompatActivity
     @Override
     public void onMapReady(final GoogleMap googleMap) {
 
-        loc1=Frag2.location1;
-        loc2=Frag2.location2;
+        loc1=Frag5.location1;
+        loc2=Frag5.location2;
 
         mMap = googleMap;
 

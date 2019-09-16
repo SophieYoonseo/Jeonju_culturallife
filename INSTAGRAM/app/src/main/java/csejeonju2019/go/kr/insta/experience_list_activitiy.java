@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.os.StrictMode;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.util.EventLog;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -177,10 +178,13 @@ public class experience_list_activitiy extends AppCompatActivity {
                 //EventDetail Activity 실행
                 Intent intent = new Intent(getApplicationContext(), EventDetail.class);
                 //세부사항을 Intent.extra로 EventDetail Activity로 전달
+
                 intent.putExtra("activity", Items.get(i));
                 EventDetail.exp_title=Items.get(i).dataTitle;
+                EventDetail.phone_num=Items.get(i).tel;
                 EventDetail.loc1=Items.get(i).posx;
                 EventDetail.loc2=Items.get(i).posy;
+                Toast.makeText(getApplicationContext(),EventDetail.exp_title, Toast.LENGTH_SHORT).show();
                 startActivity(intent);
                 //데이터 삭제, 추가, 변경 시 항상 adapter.notifyDataSetChanged()호출로 displaydata 최신화
                 adapter.notifyDataSetChanged();

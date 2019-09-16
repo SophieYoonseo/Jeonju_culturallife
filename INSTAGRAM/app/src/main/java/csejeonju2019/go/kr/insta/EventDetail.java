@@ -1,9 +1,12 @@
 package csejeonju2019.go.kr.insta;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -20,6 +23,7 @@ public class EventDetail extends AppCompatActivity  implements OnMapReadyCallbac
    public static String exp_title;
    public static String loc1;
    public static String loc2;
+   public static String phone_num;
    public double loc1_double;
    public double loc2_double;
     private GoogleMap mMap;
@@ -32,16 +36,39 @@ public class EventDetail extends AppCompatActivity  implements OnMapReadyCallbac
         Intent intent = getIntent();
         TextView result = (TextView)findViewById(R.id.result);
         PerformanceShowItem item = (PerformanceShowItem)intent.getSerializableExtra("activity");
+        Button phonebutton=(Button)findViewById(R.id.experience_phone_number);
+        phonebutton.setOnClickListener(new Button.OnClickListener(){
+            public void onClick(View view){
+                Intent phonecall=new Intent(Intent.ACTION_VIEW, Uri.parse("tel:"+phone_num));
+                startActivity(phonecall);
+            }
+        });
         //출력
         result.setText(item.showDetail());
+        Button share=(Button)findViewById(R.id.experience_share);
+        final String abcd=result.getText().toString();
+        share.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                String mySharedLink = abcd;
+                String mySubject = exp_title+"내용을 공유합니다.";
 
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_SEND);
+                intent.setType("text/plain");
+                intent.putExtra(Intent.EXTRA_SUBJECT, mySubject);
+                intent.putExtra(Intent.EXTRA_TEXT, mySharedLink);
+
+                startActivity(Intent.createChooser(intent, "공유합니다."));
+            }
+        });
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map2);
         mapFragment.getMapAsync(this);
     }
     public void onMapReady(final GoogleMap googleMap) {
        loc1_double=Double.parseDouble(loc1);
-       loc2_double = Double.parseDouble(loc2);
+       loc2_double = Double.parseDouble(loc2); //스트링을 더블로
         mMap = googleMap;
         LatLng SEOUL = new LatLng(loc2_double, loc1_double);
 

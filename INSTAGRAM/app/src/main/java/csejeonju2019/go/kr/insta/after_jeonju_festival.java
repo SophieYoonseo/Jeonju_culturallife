@@ -44,7 +44,7 @@ public class after_jeonju_festival extends AppCompatActivity implements OnMapRea
             @Override
             public void onClick(View v) {
                 String mySharedLink = f_explain;
-                String mySubject = "관련 내용을 공유합니다.";
+                String mySubject = f_title+"내용을 공유합니다.";
 
                 Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_SEND);
@@ -67,7 +67,7 @@ public class after_jeonju_festival extends AppCompatActivity implements OnMapRea
        // TextView text10=(TextView)findViewById(R.id.festival_homepage);
         //text10.setText("홈페이지 : "+ f_homepage);
         //TextView text9=(TextView)findViewById(R.id.festival_tel);
-        //text9.setText("연락처 : " + f_telephone);   축제관련전화번호 다 null이길래 주석처리로없앰
+        //text9.setText("연락처 : " + f_telephone);   축제관련전화번호 다 null이길래 주석처리로없앰(굿)
         Button buttonpage=(Button)findViewById(R.id.button_festival_page);
         buttonpage.setOnClickListener(new Button.OnClickListener(){
             public void onClick(View view){

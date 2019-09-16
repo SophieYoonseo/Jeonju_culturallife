@@ -32,14 +32,14 @@ public class PerformanceShowItem2 implements Serializable {
     }
 
     public String showDetail() {
-        return "행사 제목 : " + subject +
+        return ///"행사 제목 : " + subject +
                // "\n데이터 번호 : " + indexNum +
                 "\n행사 시작일 : " + startDay +
                 "\n행사 종료일 : " + endDay +
                 "\n세부시간 : " + ETime +
                 "\n관련 사이트 : " + url +
-                "\n주최 : " + sponSor +
-                "\n주관 : " + mngCo +
+                //"\n주최 : " + sponSor +
+                //"\n주관 : " + mngCo +
                 "\n장소 : " + place +
                 "\n비용 : " + admfee +
                 "\n행사내용 : " + content +
@@ -51,9 +51,9 @@ public class PerformanceShowItem2 implements Serializable {
                // "\n첨부파일수 : " + fileCnt +
                // "\n대표이미지 : " + mainImg +
                // "\n분류 : " + category +
-                "\n연령층" + age +
-                "\n공연장소 경도 : " + posx +
-                "\n공연장소 위도 : " + posy +
-                "\n공연장소 지번주소 : " + address;
+                "\n연령층: " + age ;
+                //"\n공연장소 경도 : " + posx +
+                //"\n공연장소 위도 : " + posy +
+                //"\n공연장소 지번주소 : " + address;
     }
 }
