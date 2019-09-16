@@ -20,16 +20,15 @@
 
     <item
         android:id="@+id/black"
-        android:enabled="true"
+
         android:icon="@drawable/ic_valentines_heart"
         android:title="하트!"/>
 
     <item
         android:id="@+id/nature"
-        android:enabled="true"
+
         android:icon="@drawable/ic_users_group"
         android:title="사람들"/>
 
 </menu>
 
-<!--  android:enabled="true">
