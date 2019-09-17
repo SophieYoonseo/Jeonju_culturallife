@@ -183,6 +183,13 @@ public class show_list_activity extends AppCompatActivity {// 전주 공연
                 EventDetail_show.show_title=Items.get(i).subject;
                 EventDetail_show.show_page=Items.get(i).url;
                 EventDetail_show.show_phonenum=Items.get(i).mngTel;
+                EventDetail_show.booseoname=Items.get(i).orgNm;
+                EventDetail_show.startday=Items.get(i).startDay;
+                EventDetail_show.endday=Items.get(i).endDay;
+                EventDetail_show.detail_time=Items.get(i).ETime;
+                EventDetail_show.show_age=Items.get(i).age;
+                EventDetail_show.show_money=Items.get(i).admfee;
+                EventDetail_show.show_place=Items.get(i).place;
                 //EventDetail_show.show_loc1=Items.get(i).posx; 공연정보는 위도경도표시안대넴
                 //EventDetail_show.show_loc2=Items.get(i).posy;
                 Toast.makeText(getApplicationContext(),EventDetail_show.show_title, Toast.LENGTH_SHORT).show();
