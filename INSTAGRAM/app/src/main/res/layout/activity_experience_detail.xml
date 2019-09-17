@@ -17,23 +17,79 @@
         android:layout_width="match_parent"
         android:layout_height="276dp">
 
-        <TextView
-            android:id="@+id/result"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:text="상세주소 :" />
+
+                <TextView
+                    android:id="@+id/exp_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="abcd" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="전화번호: " />
+
+                <TextView
+                    android:id="@+id/exp_phone_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="전화번호 들어갈칸" />
+
+                <Button
+                    android:id="@+id/experience_phone_number"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+
+                    android:background="@drawable/ic_telephone"
+                    android:text="전화 걸기" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/result"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="result" />
+            </LinearLayout>
+
+        </LinearLayout>
     </ScrollView>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-
-        <Button
-            android:background="@drawable/ic_telephone"
-            android:id="@+id/experience_phone_number"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:text="전화 걸기" />
 
         <Button
             android:id="@+id/experience_share"
@@ -45,14 +101,14 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="373dp"
         android:orientation="vertical">
 
         <fragment
             android:id="@+id/map2"
             android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
-            android:layout_height="388dp"
+            android:layout_height="360dp"
             android:layout_marginBottom="20dp" />
     </LinearLayout>
 

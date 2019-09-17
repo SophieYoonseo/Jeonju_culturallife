@@ -184,6 +184,7 @@ public class experience_list_activitiy extends AppCompatActivity {
                 EventDetail.phone_num=Items.get(i).tel;
                 EventDetail.loc1=Items.get(i).posx;
                 EventDetail.loc2=Items.get(i).posy;
+                EventDetail.exp_detail_address=Items.get(i).addr+Items.get(i).addrDtl;
                 Toast.makeText(getApplicationContext(),EventDetail.exp_title, Toast.LENGTH_SHORT).show();
                 startActivity(intent);
                 //데이터 삭제, 추가, 변경 시 항상 adapter.notifyDataSetChanged()호출로 displaydata 최신화

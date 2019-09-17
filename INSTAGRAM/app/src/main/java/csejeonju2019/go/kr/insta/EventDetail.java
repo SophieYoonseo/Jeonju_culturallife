@@ -24,6 +24,7 @@ public class EventDetail extends AppCompatActivity  implements OnMapReadyCallbac
    public static String loc1;
    public static String loc2;
    public static String phone_num;
+   public static String exp_detail_address;
    public double loc1_double;
    public double loc2_double;
     private GoogleMap mMap;
@@ -35,6 +36,10 @@ public class EventDetail extends AppCompatActivity  implements OnMapReadyCallbac
         //Intent Extra Value 가져오기
         Intent intent = getIntent();
         TextView result = (TextView)findViewById(R.id.result);
+        TextView textphone=(TextView) findViewById(R.id.exp_phone_num);
+        textphone.setText(phone_num);
+        TextView textaddress=(TextView)findViewById(R.id.exp_address);
+        textaddress.setText(exp_detail_address);
         PerformanceShowItem item = (PerformanceShowItem)intent.getSerializableExtra("activity");
         Button phonebutton=(Button)findViewById(R.id.experience_phone_number);
         phonebutton.setOnClickListener(new Button.OnClickListener(){
