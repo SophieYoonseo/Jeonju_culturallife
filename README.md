@@ -1,4 +1,4 @@
-## 전주 공공데이터 api를 파싱한 전주시민 및 관광객들을 위한 앱 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/fastlane/fastlane/blob/master/LICENSE)
+## 전주 공공데이터 api를 파싱한 전주시민 및 관광객들을 위한 앱 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/SophieYoonseo/Jeonju_culturallife/blob/master/LICENSE.md)
 ## BY. 김윤서, 김준성, 장진성, 정종범
 
 ## 주의 사항: 
@@ -25,7 +25,7 @@ minSdk = 16
 ![gogglemap](./Etc/depen.JPG)
 
 
-This project is licensed under the terms of the MIT license. See the ![LICENSE](https://github.com/SophieYoonseo/Jeonju_culturallife/blob/master/LICENSE.md) file.
+This project is licensed under the terms of the MIT license. See the ![LICENSE](LICENSE.md) file.
 
  
 
