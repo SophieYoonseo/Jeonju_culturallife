@@ -27,7 +27,7 @@ minSdk = 16
 
 
 
-[LICENSE](LICENSE)
+[LICENSE](https://github.com/SophieYoonseo/Jeonju_culturallife/blob/master/LICENSE.md)
  
 
 
