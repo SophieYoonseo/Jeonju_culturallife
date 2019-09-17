@@ -23,7 +23,7 @@ public class PerformanceShowItem implements Serializable { //문화체험
     public String showDetail() {
         return //"시설명 : " + dataTitle +
                // "\n데이터 번호 : " + dataSid +
-                "\n상세 내용 : " + dataContent ;
+                "\n" + dataContent ;
                // "\n시설 기본주소 : " + addr +
                // "\n시설 상세주소 : " +addr +" "+ addrDtl +
                // "\n전화번호 : " + tel ;

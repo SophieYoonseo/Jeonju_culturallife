@@ -40,6 +40,8 @@ public class EventDetail extends AppCompatActivity  implements OnMapReadyCallbac
         textphone.setText(phone_num);
         PerformanceShowItem item = (PerformanceShowItem)intent.getSerializableExtra("activity");
         Button phonebutton=(Button)findViewById(R.id.experience_phone_number);
+        TextView exp_Address=(TextView)findViewById(R.id.exp_address);
+        exp_Address.setText(exp_detail_address);
         phonebutton.setOnClickListener(new Button.OnClickListener(){
             public void onClick(View view){
                 Intent phonecall=new Intent(Intent.ACTION_VIEW, Uri.parse("tel:"+phone_num));
