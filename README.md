@@ -37,7 +37,7 @@
  ### 항상 매우 귀찮더라도 push하기전에 fetch후 pull부터 합시당! 
    
 
-### 패키지명 통일 kr.go.csejeonju2019
+### 패키지명 통일 csejeonju2019.go.kr
 
 minSdk = 16
 ## 굳이 private 이 아닌 public으로 진행하는이유 
