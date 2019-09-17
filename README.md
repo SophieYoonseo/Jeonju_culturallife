@@ -1,4 +1,4 @@
-## 전주 공공데이터 api를 파싱한 전주시민 및 관광객들을 위한 앱
+## 전주 공공데이터 api를 파싱한 전주시민 및 관광객들을 위한 앱 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/fastlane/fastlane/blob/master/LICENSE)
 ## BY. 김윤서, 김준성, 장진성, 정종범
 
 ## 주의 사항: 
