@@ -1,6 +1,38 @@
-## 전주 공공데이터 api를 파싱한 전주시민 및 관광객들을 위한 앱 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/SophieYoonseo/Jeonju_culturallife/blob/master/LICENSE.md)
-## BY. 김윤서, 김준성, 장진성, 정종범
-
+## 전주 공공데이터 api를 파싱한 전주시민 및 관광객들을 위한 문화생활 앱 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/SophieYoonseo/Jeonju_culturallife/blob/master/LICENSE.md)
+## Our team member
+<table id='team'>
+ <tr>
+  <td id='김윤서'>
+   <a href = 'https://github.com/SophieYoonseo'>
+    <img src='https://github.com/SophieYoonseo.png?size=420'>
+   </a>
+   <h4 align='center'><a href = 'https://github.com/SophieYoonseo'>김윤서</a>
+   </h4>
+  </td>
+  <td id='김준성'>
+   <a href = 'https://github.com/saechimdaeki'>
+    <img src='https://github.com/saechimdaeki.png?size=420'>
+   </a>
+   <h4 align='center'><a href = 'https://github.com/saechimdaeki'>김준성</a>
+   </h4>
+  </td>
+  <td id='장진성'>
+   <a href = 'https://github.com/ijin1322'>
+    <img src='https://github.com/ijin1322.png?size=10'>
+   </a>
+   <h4 align='center'><a href = 'https://github.com/ijin1322'>장진성</a>
+   </h4>
+  </td>
+  <td id='정종범'>
+   <a href = 'https://github.com/jjongbumeee'>
+    <img src='https://github.com/jjongbumeee.png?size=10'>
+   </a>
+   <h4 align='center'><a href = 'https://github.com/jjongbumeee'>정종범</a>
+   </h4>
+  </td>
+ </tr>
+</table>
+ 
 ## 주의 사항: 
  ### 항상 매우 귀찮더라도 push하기전에 fetch후 pull부터 합시당! 
    
