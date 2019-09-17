@@ -28,18 +28,18 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
-                    android:layout_weight="8"
-                    android:text="행사 시작일 :" />
+                    android:layout_weight="1"
+                    android:text="행사 시작일 : " />
 
                 <TextView
                     android:id="@+id/show_startday"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:text=" 시작 날짜 " />
+                    android:layout_weight="1"
+                    android:text="시작 날짜" />
 
             </LinearLayout>
 
@@ -51,14 +51,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="3"
-                    android:text="행사 종료일 :" />
+                    android:layout_weight="1"
+                    android:text="행사 종료일 : " />
 
                 <TextView
                     android:id="@+id/show_endday"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="6"
+                    android:layout_weight="1"
                     android:text="행사 종료날짜" />
 
 
@@ -73,7 +73,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="세부시간: " />
+                    android:text="세부시간 : " />
 
                 <TextView
                     android:id="@+id/show_sebutime"
@@ -91,7 +91,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="부서 이름: " />
+                    android:text="부서 이름 :   " />
 
                 <TextView
                     android:id="@+id/show_buseoname"
@@ -109,7 +109,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="연령층: " />
+                    android:text="연령층 : " />
 
                 <TextView
                     android:id="@+id/show_age"
@@ -127,7 +127,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="주관부서 연락처: " />
+                    android:text="주관부서 연락처 : " />
 
                 <TextView
                     android:id="@+id/show_phonenumber"
@@ -145,7 +145,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="비용: " />
+                    android:text="비용 : " />
 
                 <TextView
                     android:id="@+id/show_price"
@@ -163,7 +163,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="장소: " />
+                    android:text="장소 : " />
 
                 <TextView
                     android:id="@+id/show_place"
@@ -183,7 +183,7 @@
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
 
-                    android:text="행사 내용:" />
+                    android:text="행사 내용 : " />
 
                 <TextView
                     android:id="@+id/result_show"
@@ -200,28 +200,28 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="30dp"
         android:gravity="right"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/show_share"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:background="@drawable/ic_share"
              />
 
         <Button
             android:id="@+id/show_phonenum"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:background="@drawable/ic_telephone"
              />
 
         <Button
             android:id="@+id/show_url"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:background="@drawable/ic_www"
              />
 
