@@ -43,7 +43,7 @@ public class show_list_activity extends AppCompatActivity {// 전주 공연
                     if(i==100)
                         progressDlg.dismiss();
                     try {
-                        Thread.sleep(100);
+                        Thread.sleep(20);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
