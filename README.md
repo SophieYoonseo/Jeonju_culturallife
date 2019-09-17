@@ -25,8 +25,8 @@ minSdk = 16
 ![gogglemap](./Etc/depen.JPG)
 
 
-This project is licensed under the terms of the MIT license. See the ![LICENSE] file.
-(https://github.com/SophieYoonseo/Jeonju_culturallife/blob/master/LICENSE.md)
+This project is licensed under the terms of the MIT license. See the ![LICENSE](https://github.com/SophieYoonseo/Jeonju_culturallife/blob/master/LICENSE.md) file.
+
  
 
 
