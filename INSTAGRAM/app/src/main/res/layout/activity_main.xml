@@ -18,14 +18,15 @@
         app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.347">
+        >
 
     </FrameLayout>
 
     <android.support.design.widget.BottomNavigationView
+        android:layout_marginTop="30dp"
         android:id="@+id/bottomNavi"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:layout_gravity="bottom"
         android:fitsSystemWindows="true"
         app:itemIconTint="#000000"

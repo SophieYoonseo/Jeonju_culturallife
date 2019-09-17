@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
     <item
+
         android:id="@+id/action_airplane"
 
         android:icon="@drawable/ic_home_page"
@@ -18,11 +20,7 @@
         android:icon="@drawable/ic_contract"
         android:title="글쓰기"/>
 
-    <item
-        android:id="@+id/black"
 
-        android:icon="@drawable/ic_valentines_heart"
-        android:title="하트!"/>
 
     <item
         android:id="@+id/nature"
