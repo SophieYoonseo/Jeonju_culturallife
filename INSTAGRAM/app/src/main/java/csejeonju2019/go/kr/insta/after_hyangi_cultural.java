@@ -2,11 +2,14 @@ package csejeonju2019.go.kr.insta;
 
 import android.content.Intent;
 import android.os.Bundle;
+
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -17,6 +20,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class after_hyangi_cultural extends AppCompatActivity
         implements OnMapReadyCallback {
+//import android.support.v7.app.AppCompatActivity;
     public String exp;//설명 임 이거
     public double space_loc1;//주소
     public double space_loc2;//주소

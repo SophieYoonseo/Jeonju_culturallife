@@ -24,9 +24,9 @@ public class EventDetail extends AppCompatActivity  implements OnMapReadyCallbac
    public static String loc1;
    public static String loc2;
    public static String phone_num;
-   public static String exp_detail_address;
    public double loc1_double;
    public double loc2_double;
+   public static String exp_detail_address;
     private GoogleMap mMap;
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,8 +38,6 @@ public class EventDetail extends AppCompatActivity  implements OnMapReadyCallbac
         TextView result = (TextView)findViewById(R.id.result);
         TextView textphone=(TextView) findViewById(R.id.exp_phone_num);
         textphone.setText(phone_num);
-        TextView textaddress=(TextView)findViewById(R.id.exp_address);
-        textaddress.setText(exp_detail_address);
         PerformanceShowItem item = (PerformanceShowItem)intent.getSerializableExtra("activity");
         Button phonebutton=(Button)findViewById(R.id.experience_phone_number);
         phonebutton.setOnClickListener(new Button.OnClickListener(){

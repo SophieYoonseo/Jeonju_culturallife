@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class festival_list_activity extends AppCompatActivity {
     public static String title; //축제명
-    public static String content; //내용
+    public static String content; //내용z
     public static String address; //주소
     public static double location1; //위도
     public static double location2; //경도
