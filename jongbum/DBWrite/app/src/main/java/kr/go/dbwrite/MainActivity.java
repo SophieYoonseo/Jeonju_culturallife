@@ -67,9 +67,6 @@ public class MainActivity extends AppCompatActivity {
     private LoginButton btn_kakao_login;        //kakao 0915 mrJang
     private SessionCallback callback;           //kakao 0915 mrJang
 
-
-
-
     // onActivityResult에서 종료된 Activity 구분에 필요한 상수
     public static final int REQUEST_CODE_MENU = 101, RC_SIGN_IN = 100;
     // Naver 로그인 핸들러
@@ -212,6 +209,7 @@ public class MainActivity extends AppCompatActivity {
         callback = new SessionCallback();
         Session.getCurrentSession().addCallback(callback);
         Session.getCurrentSession().checkAndImplicitOpen();
+
     }
 
     //0916 MrJang : KAKAO DATABASE FUNCTION!

@@ -1,26 +1,18 @@
 package kr.go.dbwrite;
 
-import android.media.MediaSession2;
+
 import android.util.Log;
-import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.kakao.auth.ISessionCallback;
-import com.kakao.auth.Session;
-import com.kakao.auth.authorization.accesstoken.AccessToken;
+
 import com.kakao.network.ErrorResult;
 import com.kakao.usermgmt.UserManagement;
 import com.kakao.usermgmt.callback.MeResponseCallback;
-import com.kakao.usermgmt.response.model.User;
+
 import com.kakao.usermgmt.response.model.UserProfile;
 import com.kakao.util.exception.KakaoException;
 
-import java.util.HashMap;
-import java.util.Map;
 
 //0914 MrJang Kakako Callback create! (return the results with informations after login)
 public class SessionCallback implements ISessionCallback
@@ -84,6 +76,7 @@ public class SessionCallback implements ISessionCallback
                 //0916 mrJang added!
                 mMainActivity = new MainActivity();
                 mMainActivity.callKakaoDatabase();
+                //mMainActivity.writeAccountInfo(email,"kakao");
             }
 
             //사용자 정보 요청 실패
