@@ -208,8 +208,6 @@ public class MainActivity extends AppCompatActivity {
 
         //textView = (TextView) findViewById(R.id.txt_db);
 
-
-
         //0915 MrJang : KAKAO LOGIN
         KakaoSDK.init(new KakaoSDKAdapter());
         btn_kakao_login = (LoginButton)findViewById(R.id.btn_kakao_login);
