@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
         ref.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-                /*
+
                 firstLogin = true;
                 Account current = dataSnapshot.getValue(Account.class);
                 if(token.equals(current.AccessToken)) {
@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
                     //Map<String, Object> accountUpdates = new Account(token, timestamp, current.LoginType).toMap();
                     //updateRef.updateChildrenAsync()
                 }
-                */
+
             }
 
             @Override
