@@ -1,4 +1,4 @@
-## 전주 공공데이터 api를 파싱한 전주시민 및 관광객들을 위한 문화생활 앱 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/SophieYoonseo/Jeonju_culturallife/blob/master/LICENSE.md)
+## 전주 공공데이터 api를 파싱한 전주시민 및 관광객들을 위한 앱 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/SophieYoonseo/Jeonju_culturallife/blob/master/LICENSE.md)
 ## Our team member
 <table id='team'>
  <tr>
