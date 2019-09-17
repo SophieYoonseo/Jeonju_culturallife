@@ -102,14 +102,12 @@ public class EventDetail_show extends AppCompatActivity  {   ///공연정보 (�
         mWebSettings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN); // 컨텐츠 사이즈 맞추기
         mWebSettings.setCacheMode(WebSettings.LOAD_NO_CACHE); // 브라우저 캐시 허용 여부
         mWebSettings.setDomStorageEnabled(true); // 로컬저장소 허용 여부
-        if(show_title=="졸탄쇼 위대한 쇼맨 -전주공연")
-        {
-            mWebView.loadUrl("https://www.youtube.com/results?search_query="+"졸탄쇼 위대한 쇼맨");
-        }
-        else
-        {
+        //int index=show_title.indexOf("-");
+        //String show_subtitle=show_title.substring(0,index);
+
+
             mWebView.loadUrl("https://www.youtube.com/results?search_query="+show_title); // 웹뷰에 표시할 웹사이트 주소, 웹뷰 시작
-        }
+
 
         festivalshare.setOnClickListener(new View.OnClickListener(){
             @Override
