@@ -205,7 +205,6 @@ public class MainActivity extends AppCompatActivity {
         mOAuthLoginButton = (OAuthLoginButton) findViewById(R.id.buttonOAuthLoginImg);
         mOAuthLoginButton.setOAuthLoginHandler(mOAuthLoginHandler);
 
-        // 0916 MrJang : Kakao Sdk 초기화
         KakaoSDK.init(new KakaoSDKAdapter());
         callback = new SessionCallback();
         Session.getCurrentSession().addCallback(callback);
