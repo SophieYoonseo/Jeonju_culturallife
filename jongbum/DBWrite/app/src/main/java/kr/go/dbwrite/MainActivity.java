@@ -113,7 +113,6 @@ public class MainActivity extends AppCompatActivity {
                     //Map<String, Object> accountUpdates = new Account(token, timestamp, current.LoginType).toMap();
                     //updateRef.updateChildrenAsync()
                 }
-
             }
 
             @Override
