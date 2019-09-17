@@ -77,7 +77,7 @@ public class SessionCallback implements ISessionCallback
                 //0916 mrJang added!
                 mMainActivity = new MainActivity();
                 //mMainActivity.callKakaoDatabase();
-                mMainActivity.writeAccountInfo(email,"kakao");
+                //mMainActivity.writeAccountInfo(email,"kakao");
 
             }
 

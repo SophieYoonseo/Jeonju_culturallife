@@ -1,7 +1,5 @@
 package kr.go.dbwrite;
 
-
-
 import android.content.Context;
 import android.content.Intent;
 
@@ -11,8 +9,6 @@ import com.kakao.auth.IApplicationConfig;
 import com.kakao.auth.ISessionConfig;
 import com.kakao.auth.KakaoAdapter;
 import com.kakao.usermgmt.UserManagement;
-
-
 //0913 MrJang Kakao Create!!
 public class KakaoSDKAdapter extends KakaoAdapter {
 
@@ -73,7 +69,4 @@ public class KakaoSDKAdapter extends KakaoAdapter {
             }
         };
     }
-
-
 }
-
