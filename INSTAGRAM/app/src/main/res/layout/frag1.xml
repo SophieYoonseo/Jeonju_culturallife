@@ -7,19 +7,19 @@
 
 
     <TextView
-        android:layout_marginLeft="100dp"
+        android:layout_gravity="center"
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="80dp"
 
-        android:text="현재 진행중인 축제들 "
-        android:textColor="@color/colorAccent"
+        android:text="현재 진행중인 축제들"
+        android:textColor="@color/for_icon"
         android:textSize="25sp" />
 
     <android.support.v4.view.ViewPager
         android:layout_marginTop="15dp"
-
+        android:layout_gravity="center"
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="400dp"
@@ -35,7 +35,7 @@
         app:p_defaultColor="@color/gray"
         app:p_gap="3dp"
         app:p_radius="3dp"
-        app:p_selectedColor="@color/white"
+        app:p_selectedColor="@color/colorChecked"
         app:p_strokeColor="@color/white"
         app:p_strokeWidth="1dp" />
     <!--
