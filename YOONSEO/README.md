@@ -1,4 +1,4 @@
-## 김윤서 진행상황
+## 김윤서 기록
 
 - 전주 공공데이터 api 파싱 완료! 디자인을 구체적으로 수정해나가는 중!
 
@@ -20,3 +20,6 @@
 ### 2019년 9월 3째주
 - BottomNavigationView, viewPager, circleIndicator 디자인(홈 화면)
 - 글씨크기 및 색감 조정
+
+## 현재 진행상황
+![view](./ing.gif)
