@@ -1,6 +1,7 @@
 package csejeonju2019.go.kr.insta;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import android.support.v7.app.AppCompatActivity;
@@ -16,8 +17,11 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import org.w3c.dom.Text;
+
 public class after_space extends AppCompatActivity
         implements OnMapReadyCallback {
+    public String space_phonenum;
     public String exp;  //설명 임 이거
     public double space_loc1;
     public double space_loc2;
@@ -33,16 +37,30 @@ public class after_space extends AppCompatActivity
         setContentView(R.layout.after_space);   //순서주의주의
         testtest=space_list_acitivty.explain;
 
-        space_loc1 = space_list_acitivty.location1;
-        space_loc2 = space_list_acitivty.location2;
-        space_title=space_list_acitivty.title;
-        space_classification=space_list_acitivty.Facility_classification;
-
-        TextView text2=(TextView)findViewById(R.id.textView2);
+        space_loc1 = space_list_acitivty.location1;//oooo
+        space_loc2 = space_list_acitivty.location2;//oooooo
+        space_title=space_list_acitivty.title;//ooooooo
+        space_classification=space_list_acitivty.Facility_classification; ///ooooo
+        space_phonenum=space_list_acitivty.telephone;
+        TextView text_space_number=(TextView)findViewById(R.id.space_number);
+        text_space_number.setText(space_phonenum);
+        TextView text2=(TextView)findViewById(R.id.space_explain);
         text2.setText(testtest);
         TextView text3=(TextView)findViewById(R.id.textView3);
         text3.setText(space_title);
+
+
+        Button buttonphone=(Button)findViewById(R.id.show_phonenum);
+        buttonphone.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v)
+            {
+                Intent phonecall=new Intent(Intent.ACTION_VIEW, Uri.parse("tel:"+space_phonenum));
+                startActivity(phonecall);
+            }
+        });
         Button share=(Button)findViewById(R.id.space_share);
+        TextView space_class=(TextView)findViewById(R.id.space_class);
+        space_class.setText(space_classification);
         share.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
