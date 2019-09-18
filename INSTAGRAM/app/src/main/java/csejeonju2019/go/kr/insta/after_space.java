@@ -48,9 +48,10 @@ public class after_space extends AppCompatActivity
         text2.setText(testtest);
         TextView text3=(TextView)findViewById(R.id.textView3);
         text3.setText(space_title);
+        TextView space_class=(TextView)findViewById(R.id.space_class);
+        space_class.setText(space_classification);
 
-
-        Button buttonphone=(Button)findViewById(R.id.show_phonenum);
+        Button buttonphone=(Button)findViewById(R.id.space_phonenum);
         buttonphone.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v)
             {
@@ -59,8 +60,7 @@ public class after_space extends AppCompatActivity
             }
         });
         Button share=(Button)findViewById(R.id.space_share);
-        TextView space_class=(TextView)findViewById(R.id.space_class);
-        space_class.setText(space_classification);
+
         share.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
