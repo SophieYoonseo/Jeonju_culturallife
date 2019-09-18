@@ -18,7 +18,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class after_hyangi_cultural extends AppCompatActivity
+public class after_hyangi_cultural extends AppCompatActivity  ///향토문화 세부 사항
         implements OnMapReadyCallback {
 //import android.support.v7.app.AppCompatActivity;
     public String exp;//설명 임 이거

@@ -10,7 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class Hyangji_Cultural_Heritage_list_activity extends AppCompatActivity {
+public class Hyangji_Cultural_Heritage_list_activity extends AppCompatActivity { //향토문화유산 클래스
     public static String title; //문화재명
     public static String content; //내용
     public static String address; //주소

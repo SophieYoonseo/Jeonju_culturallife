@@ -25,7 +25,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
+            <TextView
+                android:id="@+id/festival_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
 
             <TextView
                 android:id="@+id/festival_date"
@@ -41,11 +45,7 @@
                 android:text="TextView" />
 
 
-            <TextView
-                android:id="@+id/festival_address"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
+
 
 
         </LinearLayout>
@@ -53,25 +53,25 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="69dp"
+        android:layout_height="30dp"
+        android:gravity="right"
         android:orientation="horizontal">
 
         <Button
-            android:layout_marginLeft="10dp"
             android:id="@+id/button_festival_page"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
             android:background="@drawable/ic_www"
-            android:text="관련 페이지" />
+             />
 
         <Button
-            android:layout_marginLeft="10dp"
+
             android:id="@+id/festival_share"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
             android:background="@drawable/ic_share"
 
-            android:text="공유하기" />
+             />
     </LinearLayout>
 
     <LinearLayout
@@ -83,7 +83,7 @@
             android:id="@+id/map2"
             android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
-            android:layout_height="388dp"
+            android:layout_height="match_parent"
             android:layout_marginBottom="20dp"
             tools:context=".MapsActivity" />
     </LinearLayout>

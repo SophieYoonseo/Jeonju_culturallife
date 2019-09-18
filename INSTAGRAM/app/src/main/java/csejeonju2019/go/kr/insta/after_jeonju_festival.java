@@ -18,7 +18,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class after_jeonju_festival extends AppCompatActivity implements OnMapReadyCallback {
+public class after_jeonju_festival extends AppCompatActivity implements OnMapReadyCallback { //전주축제class
     public String f_title;  //타이틀명
     public double space_loc1;   //주소
     public double space_loc2;   //주소
