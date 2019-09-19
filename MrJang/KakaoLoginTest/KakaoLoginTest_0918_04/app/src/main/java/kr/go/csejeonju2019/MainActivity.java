@@ -5,11 +5,8 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.kakao.auth.AuthType;
 import com.kakao.auth.Session;
-
-
 import android.content.Context;
 
 
@@ -18,14 +15,11 @@ public class MainActivity extends AppCompatActivity {
     private Context mContext;
     private Button btn_custom_login;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mContext = getApplicationContext();
-
-
 
         btn_custom_login = (Button) findViewById(R.id.btn_custom_login);
 
@@ -40,15 +34,3 @@ public class MainActivity extends AppCompatActivity {
     }
 
 }
-
-
-/*
-
-
-
-
-public class LoginActivity extends AppCompatActivity
-
-
-
- */

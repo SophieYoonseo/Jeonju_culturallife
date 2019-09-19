@@ -2,15 +2,10 @@ package kr.go.dbwrite;
 
 
 import android.util.Log;
-import android.widget.Toast;
-
-
 import com.kakao.auth.ISessionCallback;
-
 import com.kakao.network.ErrorResult;
 import com.kakao.usermgmt.UserManagement;
 import com.kakao.usermgmt.callback.MeResponseCallback;
-
 import com.kakao.usermgmt.response.model.UserProfile;
 import com.kakao.util.exception.KakaoException;
 
@@ -77,7 +72,7 @@ public class SessionCallback implements ISessionCallback
                 //0916 mrJang added!
                 mMainActivity = new MainActivity();
                 //mMainActivity.callKakaoDatabase();
-                //mMainActivity.writeAccountInfo(email,"kakao");
+                mMainActivity.writeAccountInfo(email,"kakao");
 
             }
 

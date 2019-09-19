@@ -5,18 +5,18 @@ import com.kakao.auth.ISessionCallback;
 import com.kakao.network.ErrorResult;
 import com.kakao.usermgmt.UserManagement;
 import com.kakao.usermgmt.callback.MeResponseCallback;
+import com.kakao.usermgmt.callback.MeV2ResponseCallback;
 import com.kakao.usermgmt.response.model.UserProfile;
 import com.kakao.util.exception.KakaoException;
 
-
 public class SessionCallback implements ISessionCallback {
-    
+
     // 로그인에 성공한 상태
     @Override
     public void onSessionOpened() {
         requestMe();
     }
-    
+
     // 로그인에 실패한 상태
     @Override
     public void onSessionOpenFailed(KakaoException exception) {
@@ -44,7 +44,7 @@ public class SessionCallback implements ISessionCallback {
             @Override
             public void onSuccess(UserProfile userProfile) {
                 Log.e("SessionCallback :: ", "onSuccess");
-                
+
                 String nickname = userProfile.getNickname();
                 String email = userProfile.getEmail();
                 String profileImagePath = userProfile.getProfileImagePath();
@@ -59,7 +59,7 @@ public class SessionCallback implements ISessionCallback {
                 Log.e("Profile : ", UUID + "");
                 Log.e("Profile : ", id + "");
             }
-            
+
             // 사용자 정보 요청 실패
             @Override
             public void onFailure(ErrorResult errorResult) {
