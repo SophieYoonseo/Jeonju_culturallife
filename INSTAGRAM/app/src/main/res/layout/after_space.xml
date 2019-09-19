@@ -20,12 +20,10 @@
         android:layout_width="match_parent"
         android:layout_height="255dp">
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -35,18 +33,19 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
                     android:layout_weight="1"
-                    android:text="시설 구분 : " />
+                    android:text="시설 구분 : "
+                    android:textColor="@color/black"/>
 
                 <TextView
                     android:id="@+id/space_class"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="6"
-                    android:text="시설구분들어갈곳" />
-
+                    android:text="시설구분들어갈곳"
+                    android:textColor="@color/black"/>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -55,18 +54,19 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
                     android:layout_weight="1"
-                    android:text="전화번호 : " />
+                    android:text="전화번호 : "
+                    android:textColor="@color/black"/>
 
                 <TextView
                     android:id="@+id/space_number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="6"
-                    android:text="전화번호들어갈곳" />
-
+                    android:text="전화번호들어갈곳"
+                    android:textColor="@color/black"/>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -75,19 +75,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
                     android:layout_weight="1"
-                    android:text="설명 :  " />
+                    android:text="설명 :  "
+                    android:textColor="@color/black"/>
 
                 <TextView
                     android:id="@+id/space_explain"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="6"
-                    android:text="설명들어갈곳" />
-
+                    android:text="설명들어갈곳"
+                    android:textColor="@color/black"/>
             </LinearLayout>
+
         </LinearLayout>
+
     </ScrollView>
 
     <LinearLayout
@@ -100,20 +102,20 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:orientation="horizontal">
+
             <Button
                 android:id="@+id/space_share"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:background="@drawable/ic_share"
                 />
+
             <Button
                 android:id="@+id/space_phonenum"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:background="@drawable/ic_telephone"
                 />
-
-
         </LinearLayout>
 
         <fragment
@@ -125,6 +127,5 @@
             tools:context=".MapsActivity" />
 
     </LinearLayout>
-
 
 </LinearLayout>

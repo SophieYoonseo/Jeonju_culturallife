@@ -16,8 +16,8 @@
         android:layout_marginBottom="15dp"
         app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintEnd_toStartOf="parent"
-        app:layout_constraintHorizontal_bias="0.158"></Button>
-
+        app:layout_constraintHorizontal_bias="0.158">
+    </Button>
 
 </FrameLayout>
 

@@ -20,40 +20,41 @@
         android:layout_width="match_parent"
         android:layout_height="255dp">
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
 
             <TextView
                 android:id="@+id/jijung_explain"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="15dp"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/jijung_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/jijung_day"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/jijung_display"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
-
-
+                android:text="TextView"
+                android:textColor="@color/black"/>
         </LinearLayout>
+
     </ScrollView>
 
     <LinearLayout
@@ -83,6 +84,5 @@
             android:layout_marginBottom="20dp"
             tools:context=".MapsActivity" />
     </LinearLayout>
-
 
 </LinearLayout>

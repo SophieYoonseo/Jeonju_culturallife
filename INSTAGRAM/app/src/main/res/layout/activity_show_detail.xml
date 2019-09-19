@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/for_icon"
         android:textSize="20dp" />
 
     <ScrollView
@@ -30,17 +30,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
                     android:layout_weight="1"
-                    android:text="행사 시작일 : " />
+                    android:text="행사 시작일 : "
+                    android:textColor="@color/black"/>
 
                 <TextView
                     android:id="@+id/show_startday"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="시작 날짜" />
-
+                    android:text="시작 날짜"
+                    android:textColor="@color/black"/>
             </LinearLayout>
 
             <LinearLayout
@@ -52,18 +52,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="행사 종료일 : " />
+                    android:text="행사 종료일 : "
+                    android:textColor="@color/black"/>
 
                 <TextView
                     android:id="@+id/show_endday"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="행사 종료날짜" />
-
-
+                    android:text="행사 종료날짜"
+                    android:textColor="@color/black"/>
             </LinearLayout>
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -73,14 +72,15 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="세부시간 : " />
+                    android:text="세부시간 : "
+                    android:textColor="@color/black"/>
 
                 <TextView
                     android:id="@+id/show_sebutime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="세부시간 들어갈 곳 " />
-
+                    android:text="세부시간 들어갈 곳 "
+                    android:textColor="@color/black"/>
             </LinearLayout>
 
             <LinearLayout
@@ -91,14 +91,15 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="부서 이름 :   " />
+                    android:text="부서 이름 :   "
+                    android:textColor="@color/black"/>
 
                 <TextView
                     android:id="@+id/show_buseoname"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="부서이름 들어갈 곳 " />
-
+                    android:text="부서이름 들어갈 곳 "
+                    android:textColor="@color/black"/>
             </LinearLayout>
 
             <LinearLayout
@@ -109,14 +110,15 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="연령층 : " />
+                    android:text="연령층 : "
+                    android:textColor="@color/black"/>
 
                 <TextView
                     android:id="@+id/show_age"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="연령층 들어갈 곳 " />
-
+                    android:text="연령층 들어갈 곳 "
+                    android:textColor="@color/black"/>
             </LinearLayout>
 
             <LinearLayout
@@ -127,14 +129,15 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="주관부서 연락처 : " />
+                    android:text="주관부서 연락처 : "
+                    android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/show_phonenumber"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="주관부서 연락처 들어갈 곳 " />
-
+                    android:text="주관부서 연락처 들어갈 곳 "
+                    android:textColor="@color/black"/>
             </LinearLayout>
 
             <LinearLayout
@@ -145,13 +148,15 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="비용 : " />
+                    android:text="비용 : "
+                    android:textColor="@color/black"/>
 
                 <TextView
                     android:id="@+id/show_price"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="비용 들어갈 곳 " />
+                    android:text="비용 들어갈 곳 "
+                    android:textColor="@color/black"/>
 
             </LinearLayout>
 
@@ -163,13 +168,15 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="장소 : " />
+                    android:text="장소 : "
+                    android:textColor="@color/black"/>
 
                 <TextView
                     android:id="@+id/show_place"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="장소 들어갈 곳 " />
+                    android:text="장소 들어갈 곳 "
+                    android:textColor="@color/black"/>
 
             </LinearLayout>
 
@@ -182,15 +189,15 @@
                     android:id="@+id/textView4"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-
-                    android:text="행사 내용 : " />
+                    android:text="행사 내용 : "
+                    android:textColor="@color/black"/>
 
                 <TextView
                     android:id="@+id/result_show"
-
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="result" />
+                    android:text="result"
+                    android:textColor="@color/black"/>
 
             </LinearLayout>
 

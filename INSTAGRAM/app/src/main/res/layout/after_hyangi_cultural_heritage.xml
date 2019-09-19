@@ -26,30 +26,32 @@
         android:layout_width="match_parent"
         android:layout_height="150dp">
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
             <TextView
                 android:id="@+id/hyangi_address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/hyangi_content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView"
-                android:textSize="15dp" />
+                android:textSize="15dp"
+                android:textColor="@color/black"/>
+
             <TextView
                 android:id="@+id/hyangi_explain"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" /><![CDATA[
+                android:text="TextView"
+                android:textColor="@color/black"/><![CDATA[
             -->
 
 
@@ -64,12 +66,10 @@
         android:orientation="horizontal">
 
         <Button
-
             android:id="@+id/hyangi_share"
             android:layout_width="30dp"
             android:layout_height="match_parent"
-            android:background="@drawable/ic_share"
-             />
+            android:background="@drawable/ic_share" />
     </LinearLayout>
 
     <LinearLayout
@@ -85,6 +85,5 @@
             android:layout_marginBottom="20dp"
             tools:context=".MapsActivity" />
     </LinearLayout>
-
 
 </LinearLayout>

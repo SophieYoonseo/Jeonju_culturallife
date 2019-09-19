@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/for_icon"
         style="bold"
         android:text="TextView" />
 
@@ -30,16 +30,19 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
                     android:layout_weight="8"
-                    android:text="상세주소 :" />
+                    android:text="상세주소 :"
+                    android:textColor="@color/black"
+                    />
 
                 <TextView
                     android:id="@+id/exp_address"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="abcd" />
+                    android:text="abcd"
+                    android:textColor="@color/black"
+                    />
 
             </LinearLayout>
 
@@ -52,13 +55,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
-                    android:text="전화번호: " />
+                    android:text="전화번호: "
+                    android:textColor="@color/black"
+                    />
                 <TextView
                     android:id="@+id/exp_phone_num"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="6"
-                    android:text="전화번호 들어갈칸" />
+                    android:text="전화번호 들어갈칸"
+                    android:textColor="@color/black"
+                    />
 
 
             </LinearLayout>
@@ -72,15 +79,17 @@
                     android:id="@+id/textView4"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-
-                    android:text="상세 내용:" />
+                    android:text="상세 내용:"
+                    android:textColor="@color/black"
+                    />
 
                 <TextView
                     android:id="@+id/result"
-
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="result" />
+                    android:text="result"
+                    android:textColor="@color/black"
+                    />
 
             </LinearLayout>
 
