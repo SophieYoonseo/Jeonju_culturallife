@@ -1,7 +1,6 @@
 package kr.go.csejeonju2019;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,16 +20,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mContext = getApplicationContext();
 
-        btn_custom_login = (Button) findViewById(R.id.btn_custom_login);
-
-        btn_custom_login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Session session = Session.getCurrentSession();
-                session.addCallback(new SessionCallback());
-                session.open(AuthType.KAKAO_LOGIN_ALL, MainActivity.this);
-            }
-        });
+        Session session = Session.getCurrentSession();
+        session.addCallback(new SessionCallback());
+        session.open(AuthType.KAKAO_LOGIN_ALL, MainActivity.this);
+;
     }
 
 }
