@@ -18,7 +18,7 @@
   </td>
   <td id='장진성'>
    <a href = 'https://github.com/ijin1322'>
-    <img src='https://github.com/ijin1322.png?size=10'>
+    <img src='https://github.com/ijin1322.png?size=420'>
    </a>
    <h4 align='center'><a href = 'https://github.com/mrjang0303'>장진성</a>
    </h4>
