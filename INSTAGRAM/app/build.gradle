@@ -45,6 +45,7 @@ dependencies {
     implementation 'com.ssomai:android.scalablelayout:2.1.6'
     implementation 'com.github.ybq:Android-SpinKit:1.4.0'
     implementation 'com.tuyenmonkey:mkloader:1.4.0'
+
 }
 apply plugin: 'com.google.gms.google-services'
 com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true

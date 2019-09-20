@@ -61,7 +61,7 @@ public class jijung_cultural_property_list_activity extends AppCompatActivity {
                 progressDlg.dismiss();
             }
         }.start();
-        
+
         String[] jijungculture= {"남고사지",
                 "지행당",
                 "전주부 지도",
