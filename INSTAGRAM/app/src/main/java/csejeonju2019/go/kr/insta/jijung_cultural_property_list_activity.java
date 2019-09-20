@@ -8,7 +8,11 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.Toast;
+
+import com.github.ybq.android.spinkit.sprite.Sprite;
+import com.github.ybq.android.spinkit.style.DoubleBounce;
 
 public class jijung_cultural_property_list_activity extends AppCompatActivity {
     public static String title;
@@ -22,6 +26,18 @@ public class jijung_cultural_property_list_activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.acitivity_jijung_culture);
+
+        /*
+        ProgressBar progressBar = (ProgressBar)findViewById(R.id.spin_kit);
+        Sprite doubleBounce = new DoubleBounce();
+        progressBar.setIndeterminateDrawable(doubleBounce);
+        doubleBounce.start();
+       */
+
+
+        //이거슨 주황원
+
+
         progressDlg = new ProgressDialog(this);
         progressDlg.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
         //progressDlg.setIndeterminate(true);
@@ -45,6 +61,7 @@ public class jijung_cultural_property_list_activity extends AppCompatActivity {
                 progressDlg.dismiss();
             }
         }.start();
+        
         String[] jijungculture= {"남고사지",
                 "지행당",
                 "전주부 지도",
