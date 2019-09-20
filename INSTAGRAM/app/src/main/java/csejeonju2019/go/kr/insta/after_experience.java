@@ -2,9 +2,7 @@ package csejeonju2019.go.kr.insta;
 
 import android.os.Bundle;
 
-import android.support.v7.app.AppCompatActivity;
-import android.widget.TextView;
-
+import androidx.appcompat.app.AppCompatActivity;
 
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -13,8 +11,6 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-
-import java.util.Map;
 
 public class after_experience extends AppCompatActivity //이거 버리는 클래스임  문화체험은 EventDetail로 이동
         implements OnMapReadyCallback {
