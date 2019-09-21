@@ -15,6 +15,7 @@
 - 일단 목표로 했던 세부사항들 완료(09-18) 이제 추천코스 시작할예정 
 - dependency 충돌을 막기위해 androidx로 refactoring 
 - 각 리스트 클릭시나오는 activity 디자인 추가 + 축제전화번호 이벤트추가+ 추천코스 기능디자인전부구현 디자인과의 연동은 private adpater class로 동작 ( 더이쁘게 세부디자인 및 클릭이벤트는 해야할사항)(09-21)
+- 추천코스 디자인 및 각각의 이벤트마다 adapter 구현및 부착 (viewpager + googleapi mMap.addPolyline(new PolylineOptions().add(loc,loc2).width(5).color(Color.rand));)이용 ) 
 
 
 ## 눈으로보는 현재구현내용 (클릭시 이벤트는 하나하나하면 길어서 생략) 
