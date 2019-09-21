@@ -41,6 +41,6 @@ public class culture_space extends Fragment {
         });
         return view;
     }
-    
+
      */
 }

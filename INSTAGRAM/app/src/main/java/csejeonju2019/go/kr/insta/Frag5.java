@@ -25,7 +25,7 @@ public  class Frag5 extends Fragment{
         listView = (ListView)view.findViewById(R.id.listView);
 
         ArrayList<String> items = new ArrayList<>();
-        items.add("Seoul");
+        items.add("한옥마을 단숨에 보는 코스(1~2시간)");
         items.add("Busan");
         items.add("Daegu");
         items.add("Jeju");
@@ -54,10 +54,14 @@ public  class Frag5 extends Fragment{
 
             // ImageView 인스턴스
             ImageView imageView = (ImageView)v.findViewById(R.id.imageView);
-
+            TextView subitem=(TextView)v.findViewById(R.id.subtext);
             // 리스트뷰의 아이템에 이미지를 변경한다.
-            if("Seoul".equals(items.get(position)))
-                imageView.setImageResource(R.drawable.back1);
+            if("한옥마을 단숨에 보는 코스(1~2시간)".equals(items.get(position)))
+            {
+                imageView.setImageResource(R.drawable.hanokcourse);
+                subitem.setText("전동성당 → 경기전 → 교동미술관 → 최명희문학관 → 부채문화관 → 은행로 → 태조로 사거리 → 오목대");
+            }
+
             else if("Busan".equals(items.get(position)))
                 imageView.setImageResource(R.drawable.balloons);
             else if("Daegu".equals(items.get(position)))
