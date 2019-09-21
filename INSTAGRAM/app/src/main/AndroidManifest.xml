@@ -41,6 +41,9 @@
         <activity android:name=".after_jeonju_festival"></activity>
         <activity android:name=".ProgressDialogActivity"></activity>
         <activity android:name=".signup"></activity>
+        <activity android:name=".recommend1hanok"></activity>
+        <activity android:name=".recommend2golmok"></activity>
+        <activity android:name=".recommend3sanchak"></activity>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCYE_2SxAXlxLTI4xpx3Gk8PKN2xa0M5ts"/>
