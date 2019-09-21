@@ -105,7 +105,7 @@ public class recommend1hanok extends AppCompatActivity
         mMap.addPolyline(new PolylineOptions().add(taezo,ohmok).width(5).color(Color.GREEN));
         BitmapDrawable bitmapdraw=(BitmapDrawable)getResources().getDrawable(R.drawable.mappin_saram);
         Bitmap b=bitmapdraw.getBitmap();
-        Bitmap smallMarker = Bitmap.createScaledBitmap(b, 60, 60, false);
+        Bitmap smallMarker = Bitmap.createScaledBitmap(b, 75, 75, false);
         markerOptions.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
         markerOptions2.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
         markerOptions3.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));

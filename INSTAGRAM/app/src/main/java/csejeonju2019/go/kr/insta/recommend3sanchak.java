@@ -99,7 +99,7 @@ public class recommend3sanchak extends AppCompatActivity
         mMap.addPolyline(new PolylineOptions().add(moo,namcheon).width(5).color(Color.RED));
         BitmapDrawable bitmapdraw=(BitmapDrawable)getResources().getDrawable(R.drawable.mappin_saram);
         Bitmap b=bitmapdraw.getBitmap();
-        Bitmap smallMarker = Bitmap.createScaledBitmap(b, 60, 60, false);
+        Bitmap smallMarker = Bitmap.createScaledBitmap(b, 75, 75, false);
         markerOptions.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
         markerOptions2.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
         markerOptions3.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));

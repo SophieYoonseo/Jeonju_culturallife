@@ -93,7 +93,7 @@ public class recommend6chosun extends AppCompatActivity
         mMap.addPolyline(new PolylineOptions().add(eemok,jaman).width(5).color(Color.RED));
         BitmapDrawable bitmapdraw=(BitmapDrawable)getResources().getDrawable(R.drawable.mappin_saram);
         Bitmap b=bitmapdraw.getBitmap();
-        Bitmap smallMarker = Bitmap.createScaledBitmap(b, 60, 60, false);
+        Bitmap smallMarker = Bitmap.createScaledBitmap(b, 75, 75, false);
         markerOptions.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
         markerOptions2.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
         markerOptions3.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
