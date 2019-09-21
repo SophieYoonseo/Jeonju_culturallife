@@ -1,14 +1,32 @@
 package kr.go.csejeonju2019;
 
 import android.util.Log;
+
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.kakao.auth.ISessionCallback;
 import com.kakao.network.ErrorResult;
 import com.kakao.usermgmt.UserManagement;
 import com.kakao.usermgmt.callback.MeResponseCallback;
+import com.kakao.usermgmt.response.model.User;
 import com.kakao.usermgmt.response.model.UserProfile;
 import com.kakao.util.exception.KakaoException;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+
 public class SessionCallback implements ISessionCallback {
+
+    //DB 변수 선언
+    private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+    private DatabaseReference databaseReference = firebaseDatabase.getReference();
+
+    //시간에 관한 변수 선언
+    Date mDate = new Date(System.currentTimeMillis());
+    String timestamp = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(mDate); //로그인 시간
 
     // 로그인에 성공한 상태
     @Override
@@ -57,6 +75,11 @@ public class SessionCallback implements ISessionCallback {
                 Log.e("Profile : ", thumnailPath + "");
                 Log.e("Profile : ", UUID + "");
                 Log.e("Profile : ", id + "");
+
+                //DB 넣기 시작!
+                DatabaseReference ref = databaseReference.child("accounts");
+                KakaoAccount kakaoAccount = new KakaoAccount(String.valueOf(id), timestamp,"kakao");
+                ref.push().setValue(kakaoAccount);
             }
 
             // 사용자 정보 요청 실패

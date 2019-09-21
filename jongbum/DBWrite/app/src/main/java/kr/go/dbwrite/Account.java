@@ -9,12 +9,8 @@ import java.util.Map;
 
 @IgnoreExtraProperties
 public class Account implements Serializable {
-    public String AccessToken, AccessTime, LoginType, AccessEmail;
+    public String AccessToken, AccessTime, LoginType;
 
-    public Account(String email, String typeKakao) {
-        this.AccessEmail = email;
-        this.LoginType = typeKakao;
-    }
 
     public Account(String token, String time, String type) {
         this.AccessToken = token;
