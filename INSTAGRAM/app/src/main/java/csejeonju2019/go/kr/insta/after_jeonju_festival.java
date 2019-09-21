@@ -70,7 +70,7 @@ public class after_jeonju_festival extends AppCompatActivity implements OnMapRea
         TextView text3=(TextView)findViewById(R.id.festival_explain);
         text3.setText("설명 : "+ f_explain);
         TextView phonetext=(TextView)findViewById(R.id.festival_phone);
-        phonetext.setText(f_telephone);
+        phonetext.setText("전화 번호 :  "+f_telephone);
        // TextView text10=(TextView)findViewById(R.id.festival_homepage);
         //text10.setText("홈페이지 : "+ f_homepage);
         //TextView text9=(TextView)findViewById(R.id.festival_tel);
