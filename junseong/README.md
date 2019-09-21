@@ -14,6 +14,10 @@
  - 공연문화정보는 위도 경도가없어 show_title이라는 static String 변수에 parsing 정보를 이벤트마다 담아서 이를 youtube관련하여 링크를 뜨게만들음 더정확한 search를위해 int index=show_title.indexOf("-");String show_subtitle=show_title.substring(0,index); 를이용하여 앞의타이틀만 검색되게하려하였으나 이렇게할경우 일부이벤트에서 튕기는현상이발생하여 그냥 show_Title로 진행 (09-17)
 - 일단 목표로 했던 세부사항들 완료(09-18) 이제 추천코스 시작할예정 
 - dependency 충돌을 막기위해 androidx로 refactoring 
+- 각 리스트 클릭시나오는 activity 디자인 추가 + 축제전화번호 이벤트추가+ 추천코스 전부구현( 더이쁘게 세부디자인 및 클릭이벤트는 해야할사항)(09-21)
+
+
+## 눈으로보는 현재구현내용 (클릭시 이벤트는 하나하나하면 길어서 생략) 
 ![view](./ing.gif)
 
 
@@ -40,7 +44,7 @@
    ![1착상](./trouble.JPG)
 
 ## 앞으로해야할일  
-- 디자인세부세부세부것들 꾸미기  및 기능아직 구현안한리스트들 기능구현하기 공유,페이지,전화 등등 
+- 추천정보 클릭시 event처리 
 
 
 
