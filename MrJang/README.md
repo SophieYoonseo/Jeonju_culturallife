@@ -2,7 +2,7 @@
 ### 오늘의개발
 1. kakao 계정의 고유 number ID를 받아와서 firebase 실시간 데이터베이스에 등록 성공
 <div>
-<img width="200" src="https://user-images.githubusercontent.com/40055999/65374867-a9fd5580-dcc9-11e9-839d-565a42bb9b2d.jpg">
+<img width="300" src="https://user-images.githubusercontent.com/40055999/65374867-a9fd5580-dcc9-11e9-839d-565a42bb9b2d.jpg">
 </div>
 
 ### 앞으로 해야할 일
