@@ -108,6 +108,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:background="@drawable/ic_share"
+                android:layout_marginRight="10dp"
                 />
 
             <Button
@@ -115,6 +116,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:background="@drawable/ic_telephone"
+                android:layout_marginRight="10dp"
                 />
         </LinearLayout>
 

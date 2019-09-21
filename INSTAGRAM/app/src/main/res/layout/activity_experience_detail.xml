@@ -106,13 +106,14 @@
             android:id="@+id/experience_phone_number"
             android:layout_width="45dp"
             android:layout_height="45dp"
-
+            android:layout_marginRight="10dp"
             android:background="@drawable/ic_telephone" />
 
         <Button
             android:id="@+id/experience_share"
             android:layout_width="45dp"
             android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
             android:background="@drawable/ic_share" />
     </LinearLayout>
 

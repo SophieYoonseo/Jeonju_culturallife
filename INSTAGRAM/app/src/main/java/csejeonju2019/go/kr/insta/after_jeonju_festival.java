@@ -29,6 +29,7 @@ public class after_jeonju_festival extends AppCompatActivity implements OnMapRea
     public String f_address;    //상세주소
     public String f_explain;    //설명
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +43,7 @@ public class after_jeonju_festival extends AppCompatActivity implements OnMapRea
         f_homepage=festival_list_activity.homepage;
         f_date=festival_list_activity.date;
         f_explain=festival_list_activity.explain;
+        f_telephone=festival_list_activity.tel;
         Button festivalshare=(Button)findViewById(R.id.festival_share);
         festivalshare.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -67,10 +69,19 @@ public class after_jeonju_festival extends AppCompatActivity implements OnMapRea
         text2.setText("상세주소 : "+ f_address);
         TextView text3=(TextView)findViewById(R.id.festival_explain);
         text3.setText("설명 : "+ f_explain);
+        TextView phonetext=(TextView)findViewById(R.id.festival_phone);
+        phonetext.setText(f_telephone);
        // TextView text10=(TextView)findViewById(R.id.festival_homepage);
         //text10.setText("홈페이지 : "+ f_homepage);
         //TextView text9=(TextView)findViewById(R.id.festival_tel);
         //text9.setText("연락처 : " + f_telephone);   축제관련전화번호 다 null이길래 주석처리로없앰(굿)
+        Button fetsivaltel=(Button)findViewById(R.id.festival_phonenum);
+        fetsivaltel.setOnClickListener(new Button.OnClickListener(){
+            public void onClick(View view){
+                Intent phonecall=new Intent(Intent.ACTION_VIEW, Uri.parse("tel:"+f_telephone));
+                startActivity(phonecall);
+            }
+        });
         Button buttonpage=(Button)findViewById(R.id.button_festival_page);
         buttonpage.setOnClickListener(new Button.OnClickListener(){
             public void onClick(View view){

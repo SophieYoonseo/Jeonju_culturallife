@@ -68,6 +68,7 @@
             android:layout_width="30dp"
             android:layout_height="match_parent"
             android:background="@drawable/ic_share"
+            android:layout_marginRight="10dp"
              />
     </LinearLayout>
 
