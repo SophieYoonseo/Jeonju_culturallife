@@ -1,6 +1,8 @@
 package csejeonju2019.go.kr.insta;
 
+import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +12,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
@@ -88,7 +91,15 @@ public class recommend6chosun extends AppCompatActivity
         mMap.addPolyline(new PolylineOptions().add(taezo,ohmok).width(5).color(Color.RED));
         mMap.addPolyline(new PolylineOptions().add(ohmok,eemok).width(5).color(Color.RED));
         mMap.addPolyline(new PolylineOptions().add(eemok,jaman).width(5).color(Color.RED));
-
+        BitmapDrawable bitmapdraw=(BitmapDrawable)getResources().getDrawable(R.drawable.mappin_saram);
+        Bitmap b=bitmapdraw.getBitmap();
+        Bitmap smallMarker = Bitmap.createScaledBitmap(b, 60, 60, false);
+        markerOptions.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        markerOptions2.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        markerOptions3.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        markerOptions4.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        markerOptions5.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        markerOptions6.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
         mMap.addMarker(markerOptions);
         mMap.addMarker(markerOptions2);
         mMap.addMarker(markerOptions3);
@@ -102,6 +113,6 @@ public class recommend6chosun extends AppCompatActivity
 
 
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(center, 16));//16배 줌가능
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(center, 14));//지도 시작시 애니메이션 효과
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(center, 15));//지도 시작시 애니메이션 효과
     }
 }

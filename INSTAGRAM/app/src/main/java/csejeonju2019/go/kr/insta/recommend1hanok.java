@@ -1,7 +1,9 @@
 package csejeonju2019.go.kr.insta;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,6 +18,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
@@ -100,7 +103,17 @@ public class recommend1hanok extends AppCompatActivity
         mMap.addPolyline(new PolylineOptions().add(boochae,eunhang).width(5).color(Color.GREEN));
         mMap.addPolyline(new PolylineOptions().add(eunhang,taezo).width(5).color(Color.GREEN));
         mMap.addPolyline(new PolylineOptions().add(taezo,ohmok).width(5).color(Color.GREEN));
-
+        BitmapDrawable bitmapdraw=(BitmapDrawable)getResources().getDrawable(R.drawable.mappin_saram);
+        Bitmap b=bitmapdraw.getBitmap();
+        Bitmap smallMarker = Bitmap.createScaledBitmap(b, 60, 60, false);
+        markerOptions.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        markerOptions2.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        markerOptions3.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        markerOptions4.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        markerOptions5.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        markerOptions6.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        markerOptions7.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        markerOptions8.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
         mMap.addMarker(markerOptions);
         mMap.addMarker(markerOptions2);
         mMap.addMarker(markerOptions3);
@@ -110,7 +123,7 @@ public class recommend1hanok extends AppCompatActivity
         mMap.addMarker(markerOptions7);
         mMap.addMarker(markerOptions8);
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(choi, 16));//16배 줌가능
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(choi, 14));//지도 시작시 애니메이션 효과
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(choi, 15));//지도 시작시 애니메이션 효과
 
 
     }

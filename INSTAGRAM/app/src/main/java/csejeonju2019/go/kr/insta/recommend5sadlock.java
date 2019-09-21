@@ -1,6 +1,8 @@
 package csejeonju2019.go.kr.insta;
 
+import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +12,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
@@ -141,7 +144,23 @@ public class recommend5sadlock extends AppCompatActivity
         mMap.addPolyline(new PolylineOptions().add(choi,kimchi).width(5).color(Color.RED));
         mMap.addPolyline(new PolylineOptions().add(kimchi,hanok).width(5).color(Color.RED));
 
-
+        BitmapDrawable bitmapdraw=(BitmapDrawable)getResources().getDrawable(R.drawable.mappin_saram);
+        Bitmap b=bitmapdraw.getBitmap();
+        Bitmap smallMarker = Bitmap.createScaledBitmap(b, 60, 60, false);
+        markerOptions.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        markerOptions2.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        markerOptions3.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        markerOptions4.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        markerOptions5.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        markerOptions6.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        markerOptions7.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        markerOptions8.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        markerOptions9.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        markerOptions10.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        markerOptions11.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        markerOptions12.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        markerOptions13.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        markerOptions14.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
 
 
         mMap.addMarker(markerOptions);
