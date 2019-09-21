@@ -44,6 +44,9 @@
         <activity android:name=".recommend1hanok"></activity>
         <activity android:name=".recommend2golmok"></activity>
         <activity android:name=".recommend3sanchak"></activity>
+        <activity android:name=".recommend4yeoksa"></activity>
+        <activity android:name=".recommend5sadlock"></activity>
+        <activity android:name=".recommend6chosun"></activity>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCYE_2SxAXlxLTI4xpx3Gk8PKN2xa0M5ts"/>

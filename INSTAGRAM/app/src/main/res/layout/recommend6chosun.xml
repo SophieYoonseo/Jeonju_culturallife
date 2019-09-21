@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".recommend5sadlock" >
+
+
+    <TextView
+        android:id="@+id/textView5"
+        style="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="조선 태조 이성계 역사탐방 투어코스(2시간 이상)"
+        android:textColor="@color/for_icon"
+        android:textSize="20sp" />
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_marginTop="10dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="490dp"
+        tools:context=".MapsActivity" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:text="자 같이 떠나볼까요?" />
+
+</LinearLayout>

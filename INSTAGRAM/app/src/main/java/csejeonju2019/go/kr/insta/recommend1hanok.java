@@ -18,7 +18,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
 
-public class recommend1hanok extends AppCompatActivity  ///향토문화 세부 사항
+public class recommend1hanok extends AppCompatActivity
         implements OnMapReadyCallback {
 
 
@@ -76,13 +76,13 @@ public class recommend1hanok extends AppCompatActivity  ///향토문화 세부 �
         MarkerOptions markerOptions8 = new MarkerOptions();
         markerOptions8.position(ohmok);
         markerOptions8.title("오목대");
-        mMap.addPolyline(new PolylineOptions().add(JJ,kyongki).width(5).color(Color.RED));
-        mMap.addPolyline(new PolylineOptions().add(kyongki,kyodong).width(5).color(Color.RED));
-        mMap.addPolyline(new PolylineOptions().add(kyodong,choi).width(5).color(Color.RED));
-        mMap.addPolyline(new PolylineOptions().add(choi,boochae).width(5).color(Color.RED));
-        mMap.addPolyline(new PolylineOptions().add(boochae,eunhang).width(5).color(Color.RED));
-        mMap.addPolyline(new PolylineOptions().add(eunhang,taezo).width(5).color(Color.RED));
-        mMap.addPolyline(new PolylineOptions().add(taezo,ohmok).width(5).color(Color.RED));
+        mMap.addPolyline(new PolylineOptions().add(JJ,kyongki).width(5).color(Color.GREEN));
+        mMap.addPolyline(new PolylineOptions().add(kyongki,kyodong).width(5).color(Color.GREEN));
+        mMap.addPolyline(new PolylineOptions().add(kyodong,choi).width(5).color(Color.GREEN));
+        mMap.addPolyline(new PolylineOptions().add(choi,boochae).width(5).color(Color.GREEN));
+        mMap.addPolyline(new PolylineOptions().add(boochae,eunhang).width(5).color(Color.GREEN));
+        mMap.addPolyline(new PolylineOptions().add(eunhang,taezo).width(5).color(Color.GREEN));
+        mMap.addPolyline(new PolylineOptions().add(taezo,ohmok).width(5).color(Color.GREEN));
 
         mMap.addMarker(markerOptions);
         mMap.addMarker(markerOptions2);

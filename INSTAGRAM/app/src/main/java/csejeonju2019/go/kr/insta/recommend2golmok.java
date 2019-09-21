@@ -13,7 +13,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
 
-public class recommend2golmok extends AppCompatActivity  ///향토문화 세부 사항
+public class recommend2golmok extends AppCompatActivity
         implements OnMapReadyCallback {
 
 

@@ -13,7 +13,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
 
-public class recommend3sanchak extends AppCompatActivity  ///향토문화 세부 사항
+public class recommend3sanchak extends AppCompatActivity
         implements OnMapReadyCallback {
 
 
@@ -84,9 +84,16 @@ public class recommend3sanchak extends AppCompatActivity  ///향토문화 세부
         mMap.addPolyline(new PolylineOptions().add(moo,namcheon).width(5).color(Color.RED));
 
         mMap.addMarker(markerOptions);
-
+        mMap.addMarker(markerOptions2);
+        mMap.addMarker(markerOptions3);
+        mMap.addMarker(markerOptions4);
+        mMap.addMarker(markerOptions5);
+        mMap.addMarker(markerOptions6);
+        mMap.addMarker(markerOptions7);
+        mMap.addMarker(markerOptions8);
+        mMap.addMarker(markerOptions9);
 
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(center, 16));//16배 줌가능
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(center, 16));//지도 시작시 애니메이션 효과
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(center, 14));//지도 시작시 애니메이션 효과
     }
 }
