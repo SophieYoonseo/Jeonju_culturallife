@@ -4,6 +4,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -12,6 +13,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
+import com.pm10.library.CircleIndicator;
 
 public class recommend6chosun extends AppCompatActivity
         implements OnMapReadyCallback {
@@ -28,6 +30,16 @@ public class recommend6chosun extends AppCompatActivity
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+        Adapter6 adapter=new Adapter6(this);
+        ViewPager viewPager=(ViewPager)findViewById(R.id.rec6);
+        viewPager.setAdapter(adapter);
+
+
+        viewPager.setCurrentItem(0);
+
+        CircleIndicator circleIndicator1=(CircleIndicator)findViewById(R.id.circle_indicator);
+
+        circleIndicator1.setupWithViewPager(viewPager);
     }
 
 
@@ -82,6 +94,7 @@ public class recommend6chosun extends AppCompatActivity
         mMap.addMarker(markerOptions3);
         mMap.addMarker(markerOptions4);
         mMap.addMarker(markerOptions5);
+        mMap.addMarker(markerOptions6);
         LatLng center=new LatLng(35.81474, 127.1526);
 
 
@@ -89,6 +102,6 @@ public class recommend6chosun extends AppCompatActivity
 
 
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(center, 16));//16배 줌가능
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(center, 15));//지도 시작시 애니메이션 효과
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(center, 14));//지도 시작시 애니메이션 효과
     }
 }

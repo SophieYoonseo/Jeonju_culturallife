@@ -4,6 +4,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -12,6 +13,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
+import com.pm10.library.CircleIndicator;
 
 public class recommend2golmok extends AppCompatActivity
         implements OnMapReadyCallback {
@@ -28,6 +30,16 @@ public class recommend2golmok extends AppCompatActivity
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+       Adapter2 adapter2=new Adapter2(this);
+        ViewPager viewPager=(ViewPager)findViewById(R.id.rec2);
+        viewPager.setAdapter(adapter2);
+
+
+        viewPager.setCurrentItem(0);
+
+        CircleIndicator circleIndicator1=(CircleIndicator)findViewById(R.id.circle_indicator);
+
+        circleIndicator1.setupWithViewPager(viewPager);
     }
 
 
@@ -127,6 +139,6 @@ public class recommend2golmok extends AppCompatActivity
         mMap.addMarker(markerOptions12);
         mMap.addMarker(markerOptions13);
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(eunhang, 16));//16배 줌가능
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(eunhang, 16));//지도 시작시 애니메이션 효과
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(eunhang, 14));//지도 시작시 애니메이션 효과
     }
 }

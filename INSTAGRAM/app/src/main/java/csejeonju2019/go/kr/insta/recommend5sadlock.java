@@ -4,6 +4,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -12,6 +13,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
+import com.pm10.library.CircleIndicator;
 
 public class recommend5sadlock extends AppCompatActivity
         implements OnMapReadyCallback {
@@ -28,6 +30,16 @@ public class recommend5sadlock extends AppCompatActivity
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+        Adapter5 adapter=new Adapter5(this);
+        ViewPager viewPager=(ViewPager)findViewById(R.id.rec5);
+        viewPager.setAdapter(adapter);
+
+
+        viewPager.setCurrentItem(0);
+
+        CircleIndicator circleIndicator1=(CircleIndicator)findViewById(R.id.circle_indicator);
+
+        circleIndicator1.setupWithViewPager(viewPager);
     }
 
 
@@ -124,7 +136,8 @@ public class recommend5sadlock extends AppCompatActivity
         mMap.addPolyline(new PolylineOptions().add(hyangkyokil,wanpan).width(5).color(Color.RED));
         mMap.addPolyline(new PolylineOptions().add(wanpan,ohmokgil).width(5).color(Color.RED));
         mMap.addPolyline(new PolylineOptions().add(ohmokgil,taezo).width(5).color(Color.RED));
-        mMap.addPolyline(new PolylineOptions().add(taezo,choi).width(5).color(Color.RED));
+        mMap.addPolyline(new PolylineOptions().add(taezo,doldam).width(5).color(Color.RED));
+        mMap.addPolyline(new PolylineOptions().add(doldam,choi).width(5).color(Color.RED));
         mMap.addPolyline(new PolylineOptions().add(choi,kimchi).width(5).color(Color.RED));
         mMap.addPolyline(new PolylineOptions().add(kimchi,hanok).width(5).color(Color.RED));
 
@@ -147,6 +160,6 @@ public class recommend5sadlock extends AppCompatActivity
 
 
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(hanok, 16));//16배 줌가능
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(hanok, 15));//지도 시작시 애니메이션 효과
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(hanok, 14));//지도 시작시 애니메이션 효과
     }
 }

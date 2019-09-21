@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".recommend3sanchak">
+    tools:context=".recommend1hanok">
 
 
     <TextView
@@ -14,12 +14,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginTop="10dp"
-        android:text="산책과 사색이 있는 코스(2~3시간)"
+        android:layout_marginTop="20dp"
+        android:text="역사의 숨결을 느끼는 코스(2~3시간)"
         android:textColor="@color/for_icon"
-        android:textSize="20sp" />
+        android:textSize="23sp" />
     <androidx.viewpager.widget.ViewPager
-        android:id="@+id/rec3"
+        android:id="@+id/rec4"
         android:layout_width="match_parent"
         android:layout_height="231dp" />
 
@@ -43,7 +43,6 @@
         android:layout_height="301dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"/>
-
 
 
 

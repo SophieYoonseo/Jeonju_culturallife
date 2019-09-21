@@ -31,8 +31,7 @@ public  class Frag5 extends Fragment{
         items.add("역사의 숨결을 느끼는 코스(2~3시간)");
         items.add("'사드락 사드락' 전주한옥마을 슬로투어 코스(3시간이상)");
         items.add("조선 태조 이성계 역사탐방 투어코스(2시간 이상)");
-        items.add("한옥마을 및 주변연계코스 ① (1박2일)");
-        items.add("한옥마을 및 주변연계코스 ② (1박2일)");
+
         CustomAdapter adapter = new CustomAdapter(getContext(), 0, items);
         listView.setAdapter(adapter);
 

@@ -2,9 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".recommend2golmok" >
+    tools:context=".recommend2golmok">
 
 
     <TextView
@@ -17,21 +18,33 @@
         android:text="골목과 체험이 있는 코스(체험시간 포함 2~3시간)"
         android:textColor="@color/for_icon"
         android:textSize="20sp" />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/rec2"
+        android:layout_width="match_parent"
+        android:layout_height="231dp" />
+
+    <com.pm10.library.CircleIndicator
+        android:id="@+id/circle_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        app:p_defaultColor="@color/gray"
+        app:p_gap="3dp"
+        app:p_radius="3dp"
+        app:p_selectedColor="@color/colorChecked"
+        app:p_strokeColor="@color/white"
+        app:p_strokeWidth="1dp" />
 
     <fragment
         android:id="@+id/map"
-        android:layout_marginTop="10dp"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="490dp"
-        tools:context=".MapsActivity" />
+        android:layout_height="301dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:textSize="25sp"
-        android:text="자 같이 떠나볼까요?" />
+
+
 
 </LinearLayout>

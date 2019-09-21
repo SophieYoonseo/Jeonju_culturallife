@@ -9,6 +9,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -17,10 +19,14 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
+import com.pm10.library.CircleIndicator;
 
 public class recommend1hanok extends AppCompatActivity
         implements OnMapReadyCallback {
-
+   FirstFragment fragment1=new FirstFragment();
+   SecondFragment fragment2=new SecondFragment();
+   ThirdFragment fragment3=new ThirdFragment();
+    Adapter adapter;
 
     private GoogleMap mMap;
 
@@ -33,6 +39,17 @@ public class recommend1hanok extends AppCompatActivity
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+        adapter=new Adapter(this);
+        ViewPager viewPager=(ViewPager)findViewById(R.id.rec1);
+        viewPager.setAdapter(adapter);
+
+
+        viewPager.setCurrentItem(0);
+
+        CircleIndicator circleIndicator1=(CircleIndicator)findViewById(R.id.circle_indicator);
+
+        circleIndicator1.setupWithViewPager(viewPager);
     }
 
 
@@ -93,7 +110,7 @@ public class recommend1hanok extends AppCompatActivity
         mMap.addMarker(markerOptions7);
         mMap.addMarker(markerOptions8);
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(choi, 16));//16배 줌가능
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(choi, 16));//지도 시작시 애니메이션 효과
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(choi, 14));//지도 시작시 애니메이션 효과
 
 
     }
