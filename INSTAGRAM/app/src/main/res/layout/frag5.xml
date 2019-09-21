@@ -1,14 +1,21 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginBottom="50dp">
+    android:orientation="horizontal">
 
     <ListView
-        android:layout_marginTop="15dp"
-        android:id="@+id/mainmenu"
-        android:layout_width="401dp"
-        android:layout_height="709dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="50dp"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_gravity="center_horizontal" />
 
-</FrameLayout>
+    <!--
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"/>
+    -->
+</LinearLayout>
+
+

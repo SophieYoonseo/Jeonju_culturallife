@@ -12,6 +12,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 public class culture_space extends Fragment {
+    /*
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activty_culture_space, container, false);
 
@@ -40,4 +41,6 @@ public class culture_space extends Fragment {
         });
         return view;
     }
+    
+     */
 }

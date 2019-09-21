@@ -26,7 +26,7 @@
         android:id="@+id/nature"
 
         android:icon="@drawable/ic_users_group"
-        android:title="사람들"/>
+        android:title="추천코스"/>
 
 </menu>
 

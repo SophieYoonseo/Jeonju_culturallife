@@ -24,7 +24,7 @@ public class after_experience extends AppCompatActivity //이거 버리는 클�
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        exp=Frag5.explain;
+        //exp=Frag5.explain;
         setContentView(R.layout.after_experience);
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
@@ -35,8 +35,8 @@ public class after_experience extends AppCompatActivity //이거 버리는 클�
     @Override
     public void onMapReady(final GoogleMap googleMap) {
 
-        loc1=Frag5.location1;
-        loc2=Frag5.location2;
+        //loc1=Frag5.location1;
+        //loc2=Frag5.location2;
 
         mMap = googleMap;
 

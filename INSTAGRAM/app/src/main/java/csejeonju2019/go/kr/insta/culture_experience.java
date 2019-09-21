@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 
 public class culture_experience extends Fragment {
-
+/*
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         View view=inflater.inflate(R.layout.activity_culture_experience,container,false);
@@ -23,6 +23,7 @@ public class culture_experience extends Fragment {
                 "천우희2",
                 "천우희3"
         };
+        /*
         ListView listView=(ListView)view.findViewById(R.id.mainmenu);
 
         ArrayAdapter<String> listViewAdapter=new ArrayAdapter<String>(
@@ -44,4 +45,6 @@ public class culture_experience extends Fragment {
         });
         return view;
     }
+
+         */
 }
