@@ -106,7 +106,10 @@ public class recommend1hanok extends AppCompatActivity
         BitmapDrawable bitmapdraw=(BitmapDrawable)getResources().getDrawable(R.drawable.mappin_saram);
         Bitmap b=bitmapdraw.getBitmap();
         Bitmap smallMarker = Bitmap.createScaledBitmap(b, 75, 75, false);
-        markerOptions.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        BitmapDrawable bitmapdraw2=(BitmapDrawable)getResources().getDrawable(R.drawable.mappinstart);
+        Bitmap b2=bitmapdraw2.getBitmap();
+        Bitmap smallMarker2 = Bitmap.createScaledBitmap(b2, 85, 85, false);
+        markerOptions.icon(BitmapDescriptorFactory.fromBitmap(smallMarker2));
         markerOptions2.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
         markerOptions3.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
         markerOptions4.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));

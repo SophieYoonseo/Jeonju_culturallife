@@ -94,12 +94,16 @@ public class recommend6chosun extends AppCompatActivity
         BitmapDrawable bitmapdraw=(BitmapDrawable)getResources().getDrawable(R.drawable.mappin_saram);
         Bitmap b=bitmapdraw.getBitmap();
         Bitmap smallMarker = Bitmap.createScaledBitmap(b, 75, 75, false);
-        markerOptions.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        BitmapDrawable bitmapdraw2=(BitmapDrawable)getResources().getDrawable(R.drawable.mappinstart);
+        Bitmap b2=bitmapdraw2.getBitmap();
+        Bitmap smallMarker2 = Bitmap.createScaledBitmap(b2, 80, 80, false);
+        markerOptions.icon(BitmapDescriptorFactory.fromBitmap(smallMarker2));
         markerOptions2.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
         markerOptions3.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
         markerOptions4.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
         markerOptions5.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
         markerOptions6.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+
         mMap.addMarker(markerOptions);
         mMap.addMarker(markerOptions2);
         mMap.addMarker(markerOptions3);

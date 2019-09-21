@@ -100,7 +100,10 @@ public class recommend3sanchak extends AppCompatActivity
         BitmapDrawable bitmapdraw=(BitmapDrawable)getResources().getDrawable(R.drawable.mappin_saram);
         Bitmap b=bitmapdraw.getBitmap();
         Bitmap smallMarker = Bitmap.createScaledBitmap(b, 75, 75, false);
-        markerOptions.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        BitmapDrawable bitmapdraw2=(BitmapDrawable)getResources().getDrawable(R.drawable.mappinstart);
+        Bitmap b2=bitmapdraw2.getBitmap();
+        Bitmap smallMarker2 = Bitmap.createScaledBitmap(b2, 80, 80, false);
+        markerOptions.icon(BitmapDescriptorFactory.fromBitmap(smallMarker2));
         markerOptions2.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
         markerOptions3.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
         markerOptions4.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
@@ -120,6 +123,6 @@ public class recommend3sanchak extends AppCompatActivity
         mMap.addMarker(markerOptions9);
 
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(center, 16));//16배 줌가능
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(center, 14));//지도 시작시 애니메이션 효과
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(center, 15));//지도 시작시 애니메이션 효과
     }
 }
