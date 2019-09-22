@@ -140,6 +140,7 @@ public class MainActivity extends AppCompatActivity {
         childUpdates.put("/accounts/" + key, accValues);
         //childUpdates.put("/user-posts/" + token + "/" + key, accValues);
         if(firstLogin) databaseReference.updateChildren(childUpdates);
+        firstLogin = false;
     }
 
     //구글 로그인 이후 핸들러
@@ -209,7 +210,7 @@ public class MainActivity extends AppCompatActivity {
         callback = new SessionCallback();
         Session.getCurrentSession().addCallback(callback);
         Session.getCurrentSession().checkAndImplicitOpen();
-
+        firstLogin = true;
     }
 
     //0916 MrJang : KAKAO DATABASE FUNCTION!
