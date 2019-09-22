@@ -27,13 +27,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Session session = Session.getCurrentSession();
-                session.addCallback(new SessionCallback());
-                session.open(AuthType.KAKAO_LOGIN_ALL, MainActivity.this);
-
             }
         });
 
+        kakaoLoginHandler();
 
 
 
