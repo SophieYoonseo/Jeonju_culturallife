@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         LoginButton button=(LoginButton)findViewById(R.id.btn_kakao_login);
         mContext = getApplicationContext();
 
-        button.setOnClickListener(new Button.OnClickListener(){
+        button.setOnClickListener(new LoginButton.OnClickListener(){
             @Override
             public void onClick(View v) {
 
