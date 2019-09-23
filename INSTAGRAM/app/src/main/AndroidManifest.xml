@@ -47,7 +47,10 @@
         <activity android:name=".recommend4yeoksa"></activity>
         <activity android:name=".recommend5sadlock"></activity>
         <activity android:name=".recommend6chosun"></activity>
-        <activity android:name=".signmain">
+        <activity android:name=".signmain"
+            android:theme="@style/Theme.Design.Light"
+            >
+
         </activity>
         <activity android:name=".NewPostActivity"></activity>
         <activity android:name=".SignInActivity"></activity>
