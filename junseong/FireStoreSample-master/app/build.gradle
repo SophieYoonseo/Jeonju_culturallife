@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 check.dependsOn 'assembleDebugAndroidTest'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 27
 
     defaultConfig {
         applicationId "csejeonju2019.go.kr.insta"
