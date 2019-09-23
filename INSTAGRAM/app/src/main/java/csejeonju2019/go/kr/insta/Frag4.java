@@ -13,7 +13,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class Frag4 extends Fragment implements OnMapReadyCallback
+public class Frag4 extends Fragment implements OnMapReadyCallback //안쓰는 fragment
 {
     private MapView mapView = null;
 
