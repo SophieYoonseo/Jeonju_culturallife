@@ -18,7 +18,7 @@
 - 추천코스 디자인 및 각각의 이벤트마다 adapter 구현및 부착 (viewpager + googleapi mMap.addPolyline(new PolylineOptions().add(loc,loc2).width(5).color(Color.rand));)이용 ) (09-21)
 - 추천코스 클릭이벤트 mappin change및 시작mappin만다르게 (09-22)
 - 안드로이드 게시판 sampleapp gradle 수정및 연동(firebase 09-23) 
-
+- firebase 연동한 게시판sample app refactoring 및 frag3에부착 (생각보다 오류엄청많아서 시간이좀오래걸렸음 09-24)
 ## 눈으로보는 현재구현내용 (클릭시 이벤트는 하나하나하면 길어서 생략) 
 ![view](./ing.gif)
 
