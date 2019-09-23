@@ -8,7 +8,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.1.4'
-        classpath 'com.google.gms:google-services:4.1.0'
+        classpath 'com.google.gms:google-services:4.2.0'    // 19.09.23.MRJANG : Firebase 연동하기위한 디펜던시
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -20,6 +20,8 @@ allprojects {
         mavenLocal()
         jcenter()
         google()
+        mavenCentral()    // 19.09.23.MRJANG :kakao를 위한
+        maven { url 'http://devrepo.kakao.com:8088/nexus/content/groups/public/' }    // 19.09.23.MRJANG :kakao를 위한
     }
 }
 

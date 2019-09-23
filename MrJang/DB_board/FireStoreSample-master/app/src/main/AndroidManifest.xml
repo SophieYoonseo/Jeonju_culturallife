@@ -2,12 +2,25 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="csejeonju2019.go.kr.insta">
 
+    <!-- 인터넷 사용 권한 -->
+    <!-- 19.09.23. MrJANG -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:name=".GlobalApplication">
+
+        <!-- 카카오톡 메타데이터 -->
+        <!-- 19.09.23. MrJANG -->
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="bdd78c00824055897d4749b90db84bfc" />
+
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
