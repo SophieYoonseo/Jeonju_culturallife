@@ -1,3 +1,0 @@
-# Referenced at C:\Jeonju_culturallife\junseong\FireStoreSample-master\app\build\intermediates\manifests\full\debug\AndroidManifest.xml:23
--keep class android.support.multidex.MultiDexApplication { <init>(...); }
-
