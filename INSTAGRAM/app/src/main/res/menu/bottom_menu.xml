@@ -25,7 +25,7 @@
     <item
         android:id="@+id/nature"
 
-        android:icon="@drawable/ic_users_group"
+        android:icon="@drawable/ic_directions_bike_black_24dp"
         android:title="추천코스"/>
 
 </menu>
