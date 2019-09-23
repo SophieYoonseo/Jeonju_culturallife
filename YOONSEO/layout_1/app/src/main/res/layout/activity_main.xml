@@ -11,7 +11,6 @@
     <com.ssomai.android.scalablelayout.ScalableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/main_textview"
         android:id="@+id/main_sl"
         android:background="@android:color/darker_gray"
         app:scale_base_width="600"
