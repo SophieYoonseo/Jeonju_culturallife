@@ -30,7 +30,7 @@ public class SecondFragment  extends Fragment {
         image2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse("https://namu.wiki/w/%EB%A9%9C%EB%A1%9C%EA%B0%80%20%EC%B2%B4%EC%A7%88"));
+                Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.bibimbapfest.com/kr/inner.php?sMenu=main"));
                 startActivity(intent);
             }
         });
