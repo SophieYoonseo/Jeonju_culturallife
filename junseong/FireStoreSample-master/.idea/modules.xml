@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FireStoreSample-master.iml" filepath="$PROJECT_DIR$/FireStoreSample-master.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FireStoreSample-master.iml" filepath="$PROJECT_DIR$/FireStoreSample-master.iml" group="FireStoreSample-master" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="FireStoreSample-master/app" />
     </modules>
   </component>
 </project>
