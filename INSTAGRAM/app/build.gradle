@@ -5,11 +5,12 @@ android {
     defaultConfig {
         applicationId "csejeonju2019.go.kr.insta"
         minSdkVersion 16
-        targetSdkVersion 28
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary=true
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -46,6 +47,21 @@ dependencies {
     implementation 'com.github.ybq:Android-SpinKit:1.4.0'
     implementation 'com.tuyenmonkey:mkloader:1.4.0'
 
+
+    implementation 'com.firebaseui:firebase-ui-database:4.1.0'
+
+    implementation 'com.google.firebase:firebase-core:16.0.3'
+    implementation 'com.google.firebase:firebase-auth:16.0.3'
+    implementation 'com.google.firebase:firebase-firestore:17.1.0'
+
+    // Needed to fix a dependency conflict with FirebaseUI'
+    implementation 'androidx.arch.core:core-runtime:2.0.0'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    androidTestImplementation 'androidx.test:rules:1.1.0'
+    androidTestImplementation 'androidx.test:runner:1.1.0'
+    implementation 'com.android.support:design:27.1.1'
 }
 apply plugin: 'com.google.gms.google-services'
 com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true

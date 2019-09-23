@@ -37,7 +37,7 @@ public class Frag3 extends Fragment
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getActivity(),MainActivity.class);
+                Intent intent=new Intent(getActivity(),Signmain.class);
                 startActivity(intent);
             }
         });
@@ -95,7 +95,6 @@ public class Frag3 extends Fragment
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        //액티비티가 처음 생성될 때 실행되는 함수
 
 
     }
