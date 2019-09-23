@@ -47,6 +47,13 @@
         <activity android:name=".recommend4yeoksa"></activity>
         <activity android:name=".recommend5sadlock"></activity>
         <activity android:name=".recommend6chosun"></activity>
+        <activity android:name=".signmain">
+        </activity>
+        <activity android:name=".NewPostActivity"></activity>
+        <activity android:name=".SignInActivity"></activity>
+        <activity android:name=".BaseActivity"></activity>
+        <activity android:name=".PostDetailActivity"></activity>
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCYE_2SxAXlxLTI4xpx3Gk8PKN2xa0M5ts"/>

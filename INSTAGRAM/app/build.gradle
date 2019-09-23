@@ -10,6 +10,7 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary=true
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -45,7 +46,16 @@ dependencies {
     implementation 'com.ssomai:android.scalablelayout:2.1.6'
     implementation 'com.github.ybq:Android-SpinKit:1.4.0'
     implementation 'com.tuyenmonkey:mkloader:1.4.0'
-
+    implementation 'com.google.firebase:firebase-firestore:17.1.0'
+    implementation 'com.firebaseui:firebase-ui-database:4.1.0'
+    implementation 'com.google.firebase:firebase-auth:11.8.0'
+    implementation 'com.google.firebase:firebase-database:11.8.0'
+    implementation 'com.google.firebase:firebase-storage:11.8.0'
+    implementation 'com.android.support:support-v4:27.1.0'
+    implementation 'com.firebaseui:firebase-ui-database:3.2.2'
+    implementation 'com.google.firebase:firebase-auth:16.0.2'
+    implementation 'com.google.firebase:firebase-database:16.0.1'
+    implementation 'com.firebaseui:firebase-ui-auth:4.1.0'
 }
 apply plugin: 'com.google.gms.google-services'
 com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true
