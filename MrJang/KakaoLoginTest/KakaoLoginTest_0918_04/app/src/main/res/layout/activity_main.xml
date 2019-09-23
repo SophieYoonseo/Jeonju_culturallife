@@ -10,13 +10,10 @@
 
     <ImageButton
         android:id="@+id/btn_custom_login"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="62dp"
-        android:text="카카오 로그인" />
-
-    <com.kakao.usermgmt.LoginButton
-        android:id="@+id/btn_kakao_login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_gravity="center"
+        android:background="@drawable/kakao_account_button_background"
+        android:src="@drawable/kakao_account_login_btn_medium_narrow" />
 
 </LinearLayout>
