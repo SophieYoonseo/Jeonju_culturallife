@@ -5,12 +5,13 @@ android {
     compileSdkVersion 27
 
     defaultConfig {
-        applicationId "com.google.firebase.quickstart.database"
+        applicationId "csejeonju2019.go.kr.insta"
         minSdkVersion 16
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+        multiDexEnabled true
     }
 
     buildTypes {

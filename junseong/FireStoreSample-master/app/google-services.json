@@ -1,0 +1,159 @@
+{
+  "project_info": {
+    "project_number": "72721536543",
+    "firebase_url": "https://myfirstfirebase-c4705.firebaseio.com",
+    "project_id": "myfirstfirebase-c4705",
+    "storage_bucket": "myfirstfirebase-c4705.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72721536543:android:8d3e426fbddbee7ad3672a",
+        "android_client_info": {
+          "package_name": "com.google.firebase.quickstart.database"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "72721536543-1vcbobff18n2671rih65aq0djn2peno0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVyGcZZPTylu2Deay8bOmq4dRPJz67RgU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "72721536543-fhhp2u0fiol83aemgqk9ud5rckfpjgfg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72721536543:android:f7032c86fba927bfd3672a",
+        "android_client_info": {
+          "package_name": "csejeonju2019.go.kr.insta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "72721536543-8n39emsl5gmbjmeruqvo9fgbrh89lgpk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "csejeonju2019.go.kr.insta",
+            "certificate_hash": "0ea3ebd58e323f22c2c0fa8efad543c678862f7f"
+          }
+        },
+        {
+          "client_id": "72721536543-1vcbobff18n2671rih65aq0djn2peno0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVyGcZZPTylu2Deay8bOmq4dRPJz67RgU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "72721536543-fhhp2u0fiol83aemgqk9ud5rckfpjgfg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72721536543:android:9d2135e5be8b35a2d3672a",
+        "android_client_info": {
+          "package_name": "kr.go.csejeonju2019"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "72721536543-mmbaj8lbkup44786jqhd9itsbmn4724i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.go.csejeonju2019",
+            "certificate_hash": "c92a594a6b17d24ef24728bfd310b1c0f99fa459"
+          }
+        },
+        {
+          "client_id": "72721536543-1vcbobff18n2671rih65aq0djn2peno0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVyGcZZPTylu2Deay8bOmq4dRPJz67RgU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "72721536543-fhhp2u0fiol83aemgqk9ud5rckfpjgfg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72721536543:android:6743c1370d6fe1d3d3672a",
+        "android_client_info": {
+          "package_name": "kr.go.dbwrite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "72721536543-37pmjhmk9u6uvf2aosab9uabmohd6ddc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.go.dbwrite",
+            "certificate_hash": "5b5bd5af6e6b888de140314a731e059e16fe3246"
+          }
+        },
+        {
+          "client_id": "72721536543-o9h7oek6cjejg08v86pst24er5rg9uui.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.go.dbwrite",
+            "certificate_hash": "19d5c8cb7a1f5975484e0d055143899a003826d9"
+          }
+        },
+        {
+          "client_id": "72721536543-1vcbobff18n2671rih65aq0djn2peno0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVyGcZZPTylu2Deay8bOmq4dRPJz67RgU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "72721536543-fhhp2u0fiol83aemgqk9ud5rckfpjgfg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
