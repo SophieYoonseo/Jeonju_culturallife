@@ -1,7 +1,7 @@
-package kr.go.csejeonju2019;
+package csejeonju2019.go.kr.insta;
+
 
 import android.util.Log;
-
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -9,14 +9,11 @@ import com.kakao.auth.ISessionCallback;
 import com.kakao.network.ErrorResult;
 import com.kakao.usermgmt.UserManagement;
 import com.kakao.usermgmt.callback.MeResponseCallback;
-import com.kakao.usermgmt.response.model.User;
 import com.kakao.usermgmt.response.model.UserProfile;
 import com.kakao.util.exception.KakaoException;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
 
 //19.09.23 MrJANG: for KAKAO
 public class SessionCallback implements ISessionCallback {
@@ -79,7 +76,7 @@ public class SessionCallback implements ISessionCallback {
 
                 //DB 넣기 시작!
                 DatabaseReference ref = databaseReference.child("accounts");
-                KakaoAccount kakaoAccount = new KakaoAccount(String.valueOf(id), timestamp,"kakao");
+                Account kakaoAccount = new Account(String.valueOf(id), timestamp,"kakao");
                 ref.push().setValue(kakaoAccount);
             }
 

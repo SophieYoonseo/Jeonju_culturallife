@@ -1,4 +1,4 @@
-package kr.go.csejeonju2019;
+package csejeonju2019.go.kr.insta;
 
 
 import android.content.Context;
