@@ -62,7 +62,6 @@ public abstract class PostListFragment extends Fragment {
         mAdapter = new PostAdapter(postsQuery);
         mRecycler.setLayoutManager(new LinearLayoutManager(getActivity()));
         mRecycler.setAdapter(mAdapter);
-
     }
 
     class PostAdapter extends FirestoreAdapter<PostViewHolder> {
