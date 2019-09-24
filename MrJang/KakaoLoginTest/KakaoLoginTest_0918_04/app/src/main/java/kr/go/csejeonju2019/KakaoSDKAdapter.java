@@ -6,6 +6,7 @@ import android.content.Context;
 import com.kakao.auth.ApprovalType;
 import com.kakao.auth.AuthType;
 import com.kakao.auth.IApplicationConfig;
+import com.kakao.auth.IPushConfig;
 import com.kakao.auth.ISessionConfig;
 import com.kakao.auth.KakaoAdapter;
 
@@ -54,6 +55,15 @@ public class KakaoSDKAdapter extends KakaoAdapter {
             }
         };
     }
+
+    @Override
+    public IPushConfig getPushConfig() {
+        return super.getPushConfig();
+    }
+    //출처: https://kwon8999.tistory.com/entry/안드로이드-SNS-로그인KaKao [Kwon's developer]
+
+
+
 
     // Application이 가지고 있는 정보를 얻기 위한 인터페이스 입니다.
     @Override

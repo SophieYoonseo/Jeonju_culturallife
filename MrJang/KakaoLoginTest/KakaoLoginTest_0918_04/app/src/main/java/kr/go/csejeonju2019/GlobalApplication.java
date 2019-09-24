@@ -10,6 +10,7 @@ public class GlobalApplication extends Application {
         if (instance == null) {
             throw new IllegalStateException("This Application does not inherit com.kakao.GlobalApplication");
         }
+
         return instance;
     }
 
@@ -17,7 +18,7 @@ public class GlobalApplication extends Application {
     public void onCreate() {
         super.onCreate();
         instance = this;
-
+        KakaoSDK.init(new KakaoSDKAdapter());
 
     }
 
