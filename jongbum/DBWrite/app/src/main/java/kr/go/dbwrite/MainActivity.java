@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
     OAuthLogin mOAuthLoginModule;
     OAuthLoginButton mOAuthLoginButton;
     Context mContext;
-    boolean firstLogin;
+    boolean firstLogin, loggedin;
     GoogleSignInClient mGoogleSignInClient;
     String key;
 
@@ -99,12 +99,11 @@ public class MainActivity extends AppCompatActivity {
         Account account = new Account(token, timestamp, type);
         Map<String, Object> accValues = account.toMap();
 
+        //DatabaseReference ref = firebaseDatabase.getReference().child("accounts");
         DatabaseReference ref = firebaseDatabase.getReference().child("accounts");
-        ref.addChildEventListener(new ChildEventListener() {
+        ref.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-
-                firstLogin = true;
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 Account current = dataSnapshot.getValue(Account.class);
                 if(token.equals(current.AccessToken)) {
                     //DatabaseReference updateRef = databaseReference.child("accounts");
@@ -116,21 +115,6 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-
-            }
-
-            @Override
-            public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
-
-            }
-
-            @Override
-            public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-
-            }
-
-            @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
 
             }
@@ -139,8 +123,8 @@ public class MainActivity extends AppCompatActivity {
         Map<String, Object> childUpdates = new HashMap<>();
         childUpdates.put("/accounts/" + key, accValues);
         //childUpdates.put("/user-posts/" + token + "/" + key, accValues);
-        if(firstLogin) databaseReference.updateChildren(childUpdates);
-        firstLogin = false;
+        if(firstLogin && !loggedin) databaseReference.updateChildren(childUpdates);
+        loggedin = true;
     }
 
     //구글 로그인 이후 핸들러
