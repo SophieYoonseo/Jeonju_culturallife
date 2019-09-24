@@ -44,6 +44,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "72721536543-8soi2p1fkle5blqe5snob455cmjp90jl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "csejeonju2019.go.kr.insta",
+            "certificate_hash": "d9b17f98dd7e72a17b33bcacbbc31a4c4f4a0326"
+          }
+        },
+        {
           "client_id": "72721536543-8n39emsl5gmbjmeruqvo9fgbrh89lgpk.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -80,6 +88,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "72721536543-vuhptn6anat7pnqqd4opvlrcjjnag19g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.go.csejeonju2019",
+            "certificate_hash": "d9b17f98dd7e72a17b33bcacbbc31a4c4f4a0326"
+          }
+        },
         {
           "client_id": "72721536543-mmbaj8lbkup44786jqhd9itsbmn4724i.apps.googleusercontent.com",
           "client_type": 1,
