@@ -21,6 +21,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.ApiException;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
@@ -99,31 +100,33 @@ public class MainActivity extends AppCompatActivity {
         Account account = new Account(token, timestamp, type);
         Map<String, Object> accValues = account.toMap();
 
-        //DatabaseReference ref = firebaseDatabase.getReference().child("accounts");
         DatabaseReference ref = firebaseDatabase.getReference().child("accounts");
         ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 Account current = dataSnapshot.getValue(Account.class);
                 if(token.equals(current.AccessToken)) {
-                    //DatabaseReference updateRef = databaseReference.child("accounts");
                     Toast.makeText(getApplicationContext(), "You've already logged in!\n" + token, Toast.LENGTH_LONG).show();
                     firstLogin = false;
-                    //Map<String, Object> accountUpdates = new Account(token, timestamp, current.LoginType).toMap();
-                    //updateRef.updateChildrenAsync()
                 }
             }
-
             @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
+            public void onCancelled(@NonNull DatabaseError databaseError) { }
         });
 
         Map<String, Object> childUpdates = new HashMap<>();
         childUpdates.put("/accounts/" + key, accValues);
-        //childUpdates.put("/user-posts/" + token + "/" + key, accValues);
-        if(firstLogin && !loggedin) databaseReference.updateChildren(childUpdates);
+        if(firstLogin && !loggedin) databaseReference.updateChildren(childUpdates).addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                //첫 로그인 성공 시
+                if(firstLogin) {
+                    firstLogin = false;
+                    Intent loginsuccess = new Intent(MainActivity.this, AfterActivity.class);
+                    startActivity(loginsuccess);
+                }
+            }
+        });
         loggedin = true;
     }
 
