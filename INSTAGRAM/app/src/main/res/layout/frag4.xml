@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <!-- Activity에서는 fragment로 구현해야되지만
     Fragment로 구현하기위해서는 MapView를 사용해야함-->
-    <com.google.android.gms.maps.MapView
-        android:id="@+id/map"
-        android:layout_width="380dp"
-        android:layout_height="570dp"
-        android:name="com.google.android.gms.maps.MapFragment" />
+    <ImageView
+        android:id="@+id/tree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/tree" />
 
-</RelativeLayout>
+
+</FrameLayout>
 
 

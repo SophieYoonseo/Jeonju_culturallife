@@ -21,5 +21,10 @@
 - BottomNavigationView, viewPager, circleIndicator 디자인(홈 화면)
 - 글씨크기 및 색감 조정
 
+### 2019년 9월 4째주
+- 홈화면 완료
+- 게시판 디자인
+- 추천코스 디자인
+
 ## 현재 진행상황
 ![view](./ing.gif)
