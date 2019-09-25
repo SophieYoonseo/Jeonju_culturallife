@@ -52,7 +52,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="scalingPercent" value="188" />
+                                                <entry key="scalingPercent" value="125" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -63,7 +63,8 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="foregroundImage" value="C:\Jeonju_culturalLife\app_icon.jpg" />
+                                      <entry key="backgroundColor" value="ffffff" />
+                                      <entry key="foregroundImage" value="C:\Jeonju_culturalLife\Jeonju_culturallife\INSTAGRAM\app\src\main\res\drawable\app_icon.png" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -85,6 +86,27 @@
                                           </PersistentState>
                                         </value>
                                       </entry>
+                                      <entry key="image">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="color" value="000000" />
+                                                <entry key="paddingPercent" value="10" />
+                                                <entry key="trimmed" value="true" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
+                                    </map>
+                                  </option>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="assetType" value="IMAGE" />
+                                      <entry key="cropped" value="true" />
+                                      <entry key="iconShape" value="NONE" />
+                                      <entry key="imageAsset" value="C:\Jeonju_culturalLife\Jeonju_culturallife\INSTAGRAM\app\src\main\res\drawable\app_icon.png" />
                                     </map>
                                   </option>
                                 </PersistentState>
