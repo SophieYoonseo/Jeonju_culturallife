@@ -21,7 +21,7 @@ import com.pm10.library.CircleIndicator;
 public class recommend3sanchak extends AppCompatActivity
         implements OnMapReadyCallback {
 
-
+///////
     private GoogleMap mMap;
 
     @Override
