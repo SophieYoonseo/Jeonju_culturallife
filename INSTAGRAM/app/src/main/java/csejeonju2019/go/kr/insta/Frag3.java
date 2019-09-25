@@ -33,6 +33,8 @@ public class Frag3 extends Fragment
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View layout = inflater.inflate(R.layout.frag3, container, false);
+        Intent intent=new Intent(getActivity(),SignInActivity.class);
+        startActivity(intent);
         Button button=(Button)layout.findViewById(R.id.button_share);
         button.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -98,7 +98,7 @@ public class experience_list_activitiy extends AppCompatActivity {
                         if(parser.getName().equals("tel")) item.inTel = true;
                         if(parser.getName().equals("homepage")) item.inUserHomepage = true;
                         if(parser.getName().equals("zipcode")) item.inZipCode = true;
-
+                        /*
                         if(parser.getName().equals("message")) {
                             // AlertDialog(오류) 메시지 발생
                             AlertDialog.Builder alert = new AlertDialog.Builder(this);
@@ -112,7 +112,7 @@ public class experience_list_activitiy extends AppCompatActivity {
                             alert.show();
                         }
                         break;
-
+*/
                     case XmlPullParser.TEXT:
                         //태그 내의 데이터 저장
                         if(item.inAddr) item.addr = parser.getText();
