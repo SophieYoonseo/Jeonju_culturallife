@@ -18,6 +18,8 @@ public class Adapter extends PagerAdapter {
             R.drawable.taezoro,
             R.drawable.ohmokdae
     };
+
+    //뀨
     String[] imagee={
             "전동성당",
             "경기전",

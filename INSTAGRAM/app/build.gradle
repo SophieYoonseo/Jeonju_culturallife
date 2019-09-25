@@ -54,7 +54,7 @@ dependencies {
     implementation 'com.firebaseui:firebase-ui-database:4.1.0'
     implementation 'com.firebaseui:firebase-ui-auth:4.1.0'
    implementation 'com.ssomai:android.scalablelayout:2.1.6'
-
+    implementation 'com.android.support:multidex:1.0.3'
 }
 apply plugin: 'com.google.gms.google-services'
 com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true
