@@ -51,6 +51,7 @@ public class show_list_activity extends AppCompatActivity {// 전주 공연
                 progressDlg.dismiss();
             }
         }.start();
+
         // 네트워크 API 지연으로 인한 ANR(Android not Responding) 방지
         StrictMode.enableDefaults();
         // 공연 정보 객체, 리스트
@@ -98,6 +99,7 @@ public class show_list_activity extends AppCompatActivity {// 전주 공연
                         if(parser.getName().equals("posx")) item.inPosx = true;
                         if(parser.getName().equals("posy")) item.inPosy = true;
                         if(parser.getName().equals("address")) item.inAddress = true;
+                        /*
                         if(parser.getName().equals("message")) {
                             // AlertDialog(오류) 메시지 발생
                             AlertDialog.Builder alert = new AlertDialog.Builder(this);
@@ -110,6 +112,8 @@ public class show_list_activity extends AppCompatActivity {// 전주 공연
                             alert.setMessage("파싱 에러");
                             alert.show();
                         }
+
+                         */
                         break;
 
                     case XmlPullParser.TEXT:
