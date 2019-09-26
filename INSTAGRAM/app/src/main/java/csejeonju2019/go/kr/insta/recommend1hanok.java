@@ -6,6 +6,8 @@ import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -50,16 +52,48 @@ public class recommend1hanok extends AppCompatActivity
 
 
         viewPager.setCurrentItem(0);
-        viewPager.setOnClickListener(new ViewPager.OnClickListener() {
+
+
+
+        /*
+        viewPager.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View v) {
-                if(viewPager.getCurrentItem()==R.drawable.jeondongsungdang)
-                {
-                    Intent homepage=new Intent(Intent.ACTION_VIEW, Uri.parse("http://m.naver.com"));
-                    startActivity(homepage);
-                }
+            public boolean onTouch(View v, MotionEvent event) {
+
+                Intent homepage=new Intent(Intent.ACTION_VIEW, Uri.parse("https://store.naver.com/attractions/detail?entry=plt&id=12942911&query=%EC%B2%9C%EC%A3%BC%EA%B5%90%EC%A0%84%EB%8F%99%EA%B5%90%ED%9A%8C"));
+                startActivity(homepage);
+                return false;
             }
         });
+
+
+
+         */
+
+        /*
+        viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+             if(position==0)
+             {
+
+                 Intent homepage=new Intent(Intent.ACTION_VIEW, Uri.parse("https://store.naver.com/attractions/detail?entry=plt&id=12942911&query=%EC%B2%9C%EC%A3%BC%EA%B5%90%EC%A0%84%EB%8F%99%EA%B5%90%ED%9A%8C"));
+                 startActivity(homepage);
+             }
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
+
+         */
         CircleIndicator circleIndicator1=(CircleIndicator)findViewById(R.id.circle_indicator);
 
         circleIndicator1.setupWithViewPager(viewPager);
