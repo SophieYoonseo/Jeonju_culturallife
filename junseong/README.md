@@ -46,7 +46,7 @@
 - https://romannurik.github.io/AndroidAssetStudio/index.html
 
 ## 기능들 구현및 fragment<->activty 구상이 안잡혀서 그린 매핑 . 
-   ![1착상](./trouble.JPG)
+   ![1착상](./trouble12.JPG)
 
 ## 앞으로해야할일  
 - 세부디자인
