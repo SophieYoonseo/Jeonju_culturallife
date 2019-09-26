@@ -3,11 +3,18 @@ package csejeonju2019.go.kr.insta;
 import androidx.annotation.NonNull;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.Manifest;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private BottomNavigationView bottomNavigationView;//바텀 네비게이션 뷰 (하단바)
@@ -27,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
 
 
 
@@ -113,4 +122,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+    private boolean checkPermissions() {
+        int permissionState = ActivityCompat.checkSelfPermission(this, Manifest.permission.INTERNET);
+        return permissionState == PackageManager.PERMISSION_GRANTED;
+    }
+
 }

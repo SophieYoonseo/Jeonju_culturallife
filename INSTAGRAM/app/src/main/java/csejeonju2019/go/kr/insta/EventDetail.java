@@ -26,9 +26,12 @@ public class EventDetail extends AppCompatActivity  implements OnMapReadyCallbac
    public double loc2_double;
    public static String exp_detail_address;
     private GoogleMap mMap;
+
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_experience_detail);
+        loc1_double=Double.parseDouble(loc1);
+        loc2_double = Double.parseDouble(loc2); //스트링을 더블로
         TextView title=(TextView)findViewById(R.id.experience_title);
         title.setText(exp_title);
         //Intent Extra Value 가져오기
@@ -65,13 +68,13 @@ public class EventDetail extends AppCompatActivity  implements OnMapReadyCallbac
                 startActivity(Intent.createChooser(intent, "공유합니다."));
             }
         });
+
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map2);
         mapFragment.getMapAsync(this);
     }
     public void onMapReady(final GoogleMap googleMap) {
-       loc1_double=Double.parseDouble(loc1);
-       loc2_double = Double.parseDouble(loc2); //스트링을 더블로
+
         mMap = googleMap;
         LatLng SEOUL = new LatLng(loc2_double, loc1_double);
 

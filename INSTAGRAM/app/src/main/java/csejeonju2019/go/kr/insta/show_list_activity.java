@@ -99,7 +99,7 @@ public class show_list_activity extends AppCompatActivity {// 전주 공연
                         if(parser.getName().equals("posx")) item.inPosx = true;
                         if(parser.getName().equals("posy")) item.inPosy = true;
                         if(parser.getName().equals("address")) item.inAddress = true;
-                        /*
+
                         if(parser.getName().equals("message")) {
                             // AlertDialog(오류) 메시지 발생
                             AlertDialog.Builder alert = new AlertDialog.Builder(this);
@@ -113,12 +113,12 @@ public class show_list_activity extends AppCompatActivity {// 전주 공연
                             alert.show();
                         }
 
-                         */
+
                         break;
 
                     case XmlPullParser.TEXT:
                         //태그 내의 데이터 저장
-                     //   if(item.inIndexNum) item.indexNum = parser.getText();
+                       if(item.inIndexNum) item.indexNum = parser.getText();
                         if(item.inStartDay) item.startDay = parser.getText();
                         if(item.inEndDay) item.endDay = parser.getText();
                         if(item.inETime) item.ETime = parser.getText();
