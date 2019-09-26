@@ -166,10 +166,11 @@ public class experience_list_activitiy extends AppCompatActivity {
                 }
             });
             //에러창없애기
+            alert.setMessage("뒤로 가기를 눌러 기존의창으로 이동해주세요 ");
+            alert.show();
             Intent intent = new Intent(getApplicationContext(), experience_error_list_activity.class);
             startActivity(intent);
-            alert.setMessage("파싱 에러");
-            alert.show();
+
 
         }
         //리스트뷰 구현을 위한 ArrayAdapter 이용

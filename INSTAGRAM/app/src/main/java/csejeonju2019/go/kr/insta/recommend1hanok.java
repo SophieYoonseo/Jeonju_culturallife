@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -44,12 +45,21 @@ public class recommend1hanok extends AppCompatActivity
         mapFragment.getMapAsync(this);
 
         adapter=new Adapter(this);
-        ViewPager viewPager=(ViewPager)findViewById(R.id.rec1);
+        final ViewPager viewPager=(ViewPager)findViewById(R.id.rec1);
         viewPager.setAdapter(adapter);
 
 
         viewPager.setCurrentItem(0);
-
+        viewPager.setOnClickListener(new ViewPager.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(viewPager.getCurrentItem()==R.drawable.jeondongsungdang)
+                {
+                    Intent homepage=new Intent(Intent.ACTION_VIEW, Uri.parse("http://m.naver.com"));
+                    startActivity(homepage);
+                }
+            }
+        });
         CircleIndicator circleIndicator1=(CircleIndicator)findViewById(R.id.circle_indicator);
 
         circleIndicator1.setupWithViewPager(viewPager);

@@ -1,6 +1,8 @@
 package csejeonju2019.go.kr.insta;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -44,16 +46,17 @@ public class Adapter extends PagerAdapter {
         return view == ((LinearLayout) object);
     }
     @Override
-    public Object instantiateItem(ViewGroup container, int position) {
+    public Object instantiateItem(ViewGroup container, final int position) {
         inflater = (LayoutInflater)context.getSystemService
                 (Context.LAYOUT_INFLATER_SERVICE);
         View v = inflater.inflate(R.layout.slider, container, false);
-        ImageView imageView = (ImageView)v.findViewById(R.id.imageView);
+        final ImageView imageView = (ImageView)v.findViewById(R.id.imageView);
         TextView textView = (TextView)v.findViewById(R.id.textView);
         imageView.setImageResource(images[position]);
         String text = imagee[position];
         textView.setText(text);
         container.addView(v);
+
         return v;
     }
     @Override
