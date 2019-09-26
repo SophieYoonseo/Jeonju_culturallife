@@ -19,6 +19,9 @@
 - 추천코스 클릭이벤트 mappin change및 시작mappin만다르게 (09-22)
 - 안드로이드 게시판 sampleapp gradle 수정및 연동(firebase 09-23) 
 - firebase 연동한 게시판sample app refactoring 및 frag3에부착 (생각보다 오류엄청많아서 시간이좀오래걸렸음 09-24)
+- 기종마다 비율이다르다는걸 앱출시1주일전에 알아서 이를수정(09-26)
+- frag5의 listview click event는 이상하게 이벤트는 받아지는데 넘어가지질않아서 frag5의 사진을 클릭해야 넘어가지게끔 구현함(09-26) 이점은 실력부족으로 이렇게 대체한것 
+
 ## 눈으로보는 현재구현내용 (클릭시 이벤트는 하나하나하면 길어서 생략) 
 ![view](./ing.gif)
 
