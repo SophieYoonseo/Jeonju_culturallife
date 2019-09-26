@@ -28,4 +28,4 @@
 - 추천코스 디자인
 
 ## 현재 진행상황
-![view](./ing.gif)
+![view](./inging.gif)
