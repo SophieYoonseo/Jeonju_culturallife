@@ -52,7 +52,7 @@
 - 세부디자인
 
 ### 진행상어려운점
-![view2](./trouble12.JPG)
+- https://coderanch.com/t/641798/detect-click-event-swipe-event
 
 
 
