@@ -31,6 +31,7 @@ public class experience_list_activitiy extends AppCompatActivity {
     public static double location2;
     public static String posx_double;
     public static String posy_double;
+    public String title;
     ProgressDialog progressDlg;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -110,6 +111,8 @@ public class experience_list_activitiy extends AppCompatActivity {
                             });
                             alert.setMessage("파싱 에러");
                             alert.show();
+                            Intent intent = new Intent(getApplicationContext(), experience_error_list_activity.class);
+                            startActivity(intent);
                         }
                         break;
 
@@ -162,8 +165,12 @@ public class experience_list_activitiy extends AppCompatActivity {
                     dialogInterface.dismiss();
                 }
             });
+            //에러창없애기
+            Intent intent = new Intent(getApplicationContext(), experience_error_list_activity.class);
+            startActivity(intent);
             alert.setMessage("파싱 에러");
             alert.show();
+
         }
         //리스트뷰 구현을 위한 ArrayAdapter 이용
         adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, Items);
