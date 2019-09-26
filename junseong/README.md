@@ -53,7 +53,7 @@
 
 ### 진행상어려운점
 - https://coderanch.com/t/641798/detect-click-event-swipe-event
-
+ ![view2](./trouble.JPG)
 
 
 
