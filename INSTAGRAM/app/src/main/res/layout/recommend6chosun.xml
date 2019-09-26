@@ -16,13 +16,23 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="31dp"
         android:gravity="center"
-        android:text="조선 태조 이성계 역사탐방 투어코스(2시간 이상)"
+        android:text="조선 태조 이성계 역사탐방 투어코스"
         android:textColor="@color/for_icon"
         android:textSize="23sp"
         app:layout_constraintBottom_toTopOf="@+id/rec6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="예상 소요시간 2시간 이상"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/rec6"
