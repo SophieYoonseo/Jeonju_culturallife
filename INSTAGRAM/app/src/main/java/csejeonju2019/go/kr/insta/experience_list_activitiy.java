@@ -52,7 +52,7 @@ public class experience_list_activitiy extends AppCompatActivity {
                     if(i==100)
                         progressDlg.dismiss();
                     try {
-                        Thread.sleep(20);
+                        Thread.sleep(12);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }

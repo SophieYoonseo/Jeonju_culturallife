@@ -16,7 +16,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="31dp"
         android:gravity="center"
-        android:text="한옥마을 단숨에 보는 코스(1~2시간)"
+        android:text="골목과 체험이 있는 코스(체험시간 포함 2~3시간)"
         android:textColor="@color/for_icon"
         android:textSize="23sp"
         app:layout_constraintBottom_toTopOf="@+id/rec2"
