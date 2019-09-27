@@ -4,7 +4,6 @@
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
-    <!-- 0928 MrJang Add : "android:name=".GlobalApplication" -->
     <application
         android:allowBackup="true"
         android:icon="@drawable/web_hi_res_512"
@@ -12,17 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light.NoActionBar"
-        android:largeHeap="true"
-        android:name=".KakaoGlobalApplication">
-
+        android:largeHeap="true">
         <meta-data android:name="com.samsung.android.icon_container.has_icon_container" android:value="true"/>
-
-        <!-- 0928 MrJang Add : kakao Meta Data -->
-        <meta-data
-            android:name="com.kakao.sdk.AppKey"
-            android:value="bdd78c00824055897d4749b90db84bfc" />
-
-
 
         <activity
             android:name=".SplashActivity"

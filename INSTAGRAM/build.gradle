@@ -5,6 +5,7 @@ buildscript {
     repositories {
         google()
         jcenter()
+
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.2.1'
@@ -19,11 +20,6 @@ allprojects {
     repositories {
         google()
         jcenter()
-
-        //0928 MrJang Add : for kakao
-        mavenCentral()
-        maven { url 'http://devrepo.kakao.com:8088/nexus/content/groups/public/' }
-
     }
 }
 

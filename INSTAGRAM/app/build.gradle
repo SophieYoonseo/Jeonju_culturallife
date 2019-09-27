@@ -5,7 +5,7 @@ android {
     defaultConfig {
         applicationId "csejeonju2019.go.kr.insta"
         minSdkVersion 16
-        targetSdkVersion 29
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -53,15 +53,8 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.firebaseui:firebase-ui-database:4.1.0'
     implementation 'com.firebaseui:firebase-ui-auth:4.1.0'
-    implementation 'com.ssomai:android.scalablelayout:2.1.6'
+   implementation 'com.ssomai:android.scalablelayout:2.1.6'
     implementation 'com.android.support:multidex:1.0.3'
-
-
-    // 0928 MrJang Add : for Kakao
-    implementation group: 'com.kakao.sdk', name: 'usermgmt', version: project.KAKAO_SDK_VERSION
-    implementation group: 'com.kakao.sdk', name: 'kakaolink', version: project.KAKAO_SDK_VERSION
-    implementation group: 'com.kakao.sdk', name: 'kakaotalk', version: project.KAKAO_SDK_VERSION
-    implementation group: 'com.kakao.sdk', name: 'push', version: project.KAKAO_SDK_VERSION
 }
 apply plugin: 'com.google.gms.google-services'
 com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true
