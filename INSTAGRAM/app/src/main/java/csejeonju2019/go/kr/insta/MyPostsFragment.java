@@ -11,6 +11,6 @@ public class MyPostsFragment extends PostListFragment {
     public Query getQuery(FirebaseFirestore databaseReference) {
         // All my posts
         return databaseReference.collection("posts").whereEqualTo("uid", getUid());
-        //해치웟나 
+        //해치웟나
     }
 }
