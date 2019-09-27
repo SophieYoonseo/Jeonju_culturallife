@@ -36,13 +36,6 @@
                     android:layout_marginRight="5dp"
                     android:background="?attr/selectableItemBackground"
                     android:src="@drawable/ic_toggle_star_outline_24" />
-                <TextView
-                    android:id="@+id/datanum"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:visibility="invisible"
-                    tools:text="1" />
 
                 <TextView
                     android:id="@+id/post_num_stars"

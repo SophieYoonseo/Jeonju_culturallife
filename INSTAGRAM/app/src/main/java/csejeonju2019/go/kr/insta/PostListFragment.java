@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
@@ -35,7 +36,8 @@ public abstract class PostListFragment extends Fragment {
                               Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
         View rootView = inflater.inflate(R.layout.fragment_all_posts, container, false);
-
+        String sort_column_name="date";
+        com.google.firebase.database.Query sortbydate= FirebaseDatabase.getInstance().getReference().child("id_list").orderByChild(sort_column_name);
         // [START create_database_reference]
         db = FirebaseFirestore.getInstance();
         // [END create_database_reference]
@@ -62,6 +64,8 @@ public abstract class PostListFragment extends Fragment {
         mAdapter = new PostAdapter(postsQuery);
         mRecycler.setLayoutManager(new LinearLayoutManager(getActivity()));
         mRecycler.setAdapter(mAdapter);
+        String sort_column_name="date";
+        com.google.firebase.database.Query sortbydate= FirebaseDatabase.getInstance().getReference().child("id_list").orderByChild(sort_column_name);
     }
 
     class PostAdapter extends FirestoreAdapter<PostViewHolder> {
@@ -72,6 +76,8 @@ public abstract class PostListFragment extends Fragment {
 
         @Override
         public PostViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+            String sort_column_name="date";
+            com.google.firebase.database.Query sortbydate= FirebaseDatabase.getInstance().getReference().child("id_list").orderByChild(sort_column_name);
             return new PostViewHolder(LayoutInflater.from(parent.getContext())
                     .inflate(R.layout.item_post, parent, false));
         }
@@ -80,7 +86,8 @@ public abstract class PostListFragment extends Fragment {
         public void onBindViewHolder(PostViewHolder viewHolder, int position) {
             DocumentSnapshot documentSnapshot = getSnapshot(position);
             Post post = documentSnapshot.toObject(Post.class);
-
+            String sort_column_name="date";
+            com.google.firebase.database.Query sortbydate= FirebaseDatabase.getInstance().getReference().child("id_list").orderByChild(sort_column_name);
             final String postKey = documentSnapshot.getId();
 
             // Set click listener for the whole post view
