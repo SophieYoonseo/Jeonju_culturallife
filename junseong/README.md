@@ -23,7 +23,7 @@
 - frag5의 listview click event는 이상하게 이벤트는 받아지는데 넘어가지질않아서 frag5의 사진을 클릭해야 넘어가지게끔 구현함(09-26) 이점은 실력부족으로 이렇게 대체한것 
 - frag5의 recommend 세부사항들 viewpager adpater에 clickevent구현 각 사진마다 그사진에따른 url로 이동이 가능해짐 (09-27) 
 - 기존 20millis-> 12millis (1.6배 속도 progressbar thread 속도개선) 
-
+- 게시판에 임의로 datanumㅇ라는 field를 만들어서 호출될때마다 +2 하게하였구 firebase query를통해 내림차순으로 recent post를 구현하였음(09-28) 
 ## 눈으로보는 현재구현내용 (클릭시 이벤트는 하나하나하면 길어서 생략) 
 ![view](./ing.gif)
 
