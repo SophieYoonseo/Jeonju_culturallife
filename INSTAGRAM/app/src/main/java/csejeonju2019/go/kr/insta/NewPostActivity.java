@@ -26,7 +26,7 @@ public class NewPostActivity extends BaseActivity {
     SimpleDateFormat dateFormat = new  SimpleDateFormat("yyyy-MM-dd HH:mm", java.util.Locale.getDefault());
     Date date = new Date();
     String strDate = dateFormat.format(date);
- int datanum=0;
+ public static int datanum;
 
 
 
@@ -41,6 +41,8 @@ public class NewPostActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        datanum++;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_post);
 
@@ -79,6 +81,7 @@ public class NewPostActivity extends BaseActivity {
 
         // Disable button so there are no multi-posts
         setEditingEnabled(false);
+        datanum++;
         Toast.makeText(this, "Posting...", Toast.LENGTH_SHORT).show();
 
         // [START single_value_read]
@@ -94,7 +97,7 @@ public class NewPostActivity extends BaseActivity {
                             "Error: could not fetch user.",
                             Toast.LENGTH_SHORT).show();
                 } else {
-                    datanum++;
+
                     writeNewPost(userId, user.username, title, body,datanum);
                 }
 

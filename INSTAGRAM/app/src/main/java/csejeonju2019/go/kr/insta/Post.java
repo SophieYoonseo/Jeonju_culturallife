@@ -13,7 +13,7 @@ public class Post {
     public String author;
     public String title;
     public String body;
-    public int datanum=0;
+    public  int datanum=NewPostActivity.datanum;
     public int starCount = 0;
     public List<String> stars = new ArrayList<String>();
 
