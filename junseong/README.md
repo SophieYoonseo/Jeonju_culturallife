@@ -21,6 +21,8 @@
 - firebase 연동한 게시판sample app refactoring 및 frag3에부착 (생각보다 오류엄청많아서 시간이좀오래걸렸음 09-24)
 - 기종마다 비율이다르다는걸 앱출시1주일전에 알아서 이를수정(09-26)
 - frag5의 listview click event는 이상하게 이벤트는 받아지는데 넘어가지질않아서 frag5의 사진을 클릭해야 넘어가지게끔 구현함(09-26) 이점은 실력부족으로 이렇게 대체한것 
+- frag5의 recommend 세부사항들 viewpager adpater에 clickevent구현 각 사진마다 그사진에따른 url로 이동이 가능해짐 (09-27) 
+- 기존 20millis-> 12millis (1.6배 속도 progressbar thread 속도개선) 
 
 ## 눈으로보는 현재구현내용 (클릭시 이벤트는 하나하나하면 길어서 생략) 
 ![view](./ing.gif)
