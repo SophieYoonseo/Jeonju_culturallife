@@ -63,7 +63,7 @@ public class SignInActivity extends BaseActivity implements View.OnClickListener
 
         //0928 MrJang Add : for kakao login
         mContext = getApplicationContext();
-        btn_custom_login = findViewById(R.id.btn_custom_login);
+        btn_custom_login = findViewById(R.id.btn_custom_kakao_login);
         btn_custom_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -10,6 +10,7 @@ import android.os.StrictMode;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -166,6 +167,7 @@ public class experience_list_activitiy extends AppCompatActivity {
                 }
             });
             //에러창없애기
+            //Log.e("파싱에러 ","aaaaaasdfdsfasfdsfsdfasdfsadf");
             alert.setMessage("뒤로 가기를 눌러 기존의창으로 이동해주세요 ");
             alert.show();
             Intent intent = new Intent(getApplicationContext(), experience_error_list_activity.class);
