@@ -1,5 +1,7 @@
 package csejeonju2019.go.kr.insta;
 
+import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -7,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -17,6 +20,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.kakao.auth.AuthType;
+import com.kakao.auth.Session;
 
 public class SignInActivity extends BaseActivity implements View.OnClickListener {
 
@@ -29,6 +34,12 @@ public class SignInActivity extends BaseActivity implements View.OnClickListener
     private EditText mPasswordField;
     private Button mSignInButton;
     private Button mSignUpButton;
+
+    //0928 MrJang Add : for kakao login
+    private Context mContext;
+    private ImageButton btn_custom_login;
+    private KakaoSessionCallback callback;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +58,26 @@ public class SignInActivity extends BaseActivity implements View.OnClickListener
         // Click listeners
         mSignInButton.setOnClickListener(this);
         mSignUpButton.setOnClickListener(this);
+
+
+
+        //0928 MrJang Add : for kakao login
+        mContext = getApplicationContext();
+        btn_custom_login = findViewById(R.id.btn_custom_login);
+        btn_custom_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Session session = Session.getCurrentSession();
+                session.addCallback(new KakaoSessionCallback());
+                session.open(AuthType.KAKAO_LOGIN_ALL, SignInActivity.this);
+
+            }
+        });
+
+
+
+
+
     }
 
     @Override
@@ -168,4 +199,24 @@ public class SignInActivity extends BaseActivity implements View.OnClickListener
             signUp();
         }
     }
+
+    //0928 MrJang Add : for kakao login
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Session.getCurrentSession().removeCallback(callback);
+
+    }
+
+    //0928 MrJang Add : for kakao login
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (Session.getCurrentSession().handleActivityResult(requestCode, resultCode, data)) {
+            return;
+        }
+
+        super.onActivityResult(requestCode, resultCode, data);
+    }
+
+
 }

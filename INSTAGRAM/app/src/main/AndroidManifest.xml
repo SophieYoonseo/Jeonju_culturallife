@@ -17,10 +17,7 @@
 
         <meta-data android:name="com.samsung.android.icon_container.has_icon_container" android:value="true"/>
 
-        <!-- 0928 MrJang Add : kakao Meta Data -->
-        <meta-data
-            android:name="com.kakao.sdk.AppKey"
-            android:value="bdd78c00824055897d4749b90db84bfc" />
+
 
 
 
@@ -66,6 +63,10 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCYE_2SxAXlxLTI4xpx3Gk8PKN2xa0M5ts"/>
+        <!-- 0928 MrJang Add : kakao Meta Data -->
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="bdd78c00824055897d4749b90db84bfc" />
 
 
 

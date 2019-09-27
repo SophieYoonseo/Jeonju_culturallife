@@ -51,18 +51,18 @@
 
     <LinearLayout
         android:id="@+id/layout_buttons"
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/layout_email_password"
         android:layout_centerHorizontal="true"
         android:orientation="vertical">
+
 
         <Button
             android:id="@+id/button_sign_in"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="로그인" />
-
 
         <Button
             android:id="@+id/button_sign_up"
@@ -72,5 +72,23 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/layout_buttons2"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_buttons"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <!-- 0928 MrJang Add : for kakao login -->
+        <ImageButton
+            android:id="@+id/btn_custom_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/kakao_account_button_background"
+            android:src="@drawable/kakao_account_login_btn_medium_narrow" />
+    </LinearLayout>
 
 </RelativeLayout>
