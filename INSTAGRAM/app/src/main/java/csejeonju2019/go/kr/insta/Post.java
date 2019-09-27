@@ -13,6 +13,7 @@ public class Post {
     public String author;
     public String title;
     public String body;
+    public int datanum=0;
     public int starCount = 0;
     public List<String> stars = new ArrayList<String>();
 
@@ -20,11 +21,12 @@ public class Post {
         // Default constructor required for calls to DataSnapshot.getValue(Post.class)
     }
 
-    public Post(String uid, String author, String title, String body) {
+    public Post(String uid, String author, String title, String body,int datanum) {
         this.uid = uid;
         this.author = author;
         this.title = title;
         this.body = body;
+        this.datanum=datanum;
     }
 
     // [START post_to_map]
@@ -36,6 +38,7 @@ public class Post {
         result.put("title", title);
         result.put("body", body);
         result.put("starCount", starCount);
+        result.put("datanum",datanum);
         //result.put("stars", stars);
 
         return result;

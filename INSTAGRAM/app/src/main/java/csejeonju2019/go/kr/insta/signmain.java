@@ -79,7 +79,9 @@ public class signmain extends BaseActivity {
             finish();
             FirebaseAuth.getInstance().signOut();
             return true;
-        } else {
+        }
+
+        else {
             return super.onOptionsItemSelected(item);
         }
     }

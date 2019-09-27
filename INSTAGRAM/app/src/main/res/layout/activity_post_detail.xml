@@ -62,5 +62,13 @@
             android:layout_below="@+id/comment_form"
             tools:listitem="@layout/item_comment" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_modify_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_mode_edit_black_24dp"/>
 
 </RelativeLayout>

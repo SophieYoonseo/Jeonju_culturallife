@@ -15,12 +15,22 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class NewPostActivity extends BaseActivity {
 
     private static final String TAG = "NewPostActivity";
     private static final String REQUIRED = "Required";
+    long now = System.currentTimeMillis();
+    SimpleDateFormat dateFormat = new  SimpleDateFormat("yyyy-MM-dd HH:mm", java.util.Locale.getDefault());
+    Date date = new Date();
+    String strDate = dateFormat.format(date);
+ int datanum=0;
 
-    // [START declare_database_ref]
+
+
+
     private DatabaseReference mDatabase;
     private FirebaseFirestore db;
     // [END declare_database_ref]
@@ -84,7 +94,8 @@ public class NewPostActivity extends BaseActivity {
                             "Error: could not fetch user.",
                             Toast.LENGTH_SHORT).show();
                 } else {
-                    writeNewPost(userId, user.username, title, body);
+                    datanum++;
+                    writeNewPost(userId, user.username, title, body,datanum);
                 }
 
                 // Finish this Activity, back to the stream
@@ -105,8 +116,8 @@ public class NewPostActivity extends BaseActivity {
     }
 
     // [START write_fan_out]
-    private void writeNewPost(String userId, String username, String title, String body) {
-        Post post = new Post(userId, username, title, body);
+    public void  writeNewPost(String userId, String username, String title, String body,int datanum) {
+        Post post = new Post(userId, username, title, body,datanum);
         db.collection("posts").add(post);
     }
     // [END write_fan_out]

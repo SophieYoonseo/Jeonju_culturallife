@@ -13,7 +13,7 @@ public class PostViewHolder extends RecyclerView.ViewHolder {
     public ImageView starView;
     public TextView numStarsView;
     public TextView bodyView;
-
+    public TextView date;
     public PostViewHolder(View itemView) {
         super(itemView);
 
@@ -22,6 +22,7 @@ public class PostViewHolder extends RecyclerView.ViewHolder {
         starView = itemView.findViewById(R.id.star);
         numStarsView = itemView.findViewById(R.id.post_num_stars);
         bodyView = itemView.findViewById(R.id.post_body);
+
     }
 
     public void bindToPost(Post post, View.OnClickListener starClickListener) {
