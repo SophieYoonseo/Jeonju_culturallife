@@ -27,13 +27,13 @@ public  class Frag5 extends Fragment{
         listView = (ListView)view.findViewById(R.id.listrecommand);
 
         ArrayList<String> items = new ArrayList<>();
-        items.add("한옥마을 단숨에 보는 코스");
-        items.add("골목과 체험이 있는 코스");
-        items.add("산책과 사색이 있는 코스");
-        items.add("역사의 숨결을 느끼는 코스");
-        items.add("'사드락 사드락' 전주한옥마을 슬로투어 코스");
-        items.add("조선 태조 이성계 역사탐방 투어코스");
-        items.add("전주 토박이의 추천루트");
+        items.add("한옥마을 단숨에 보는 코스(1~2시간)");
+        items.add("골목과 체험이 있는 코스(체험시간 포함 2~3시간)");
+        items.add("산책과 사색이 있는 코스(2~3시간)");
+        items.add("역사의 숨결을 느끼는 코스(2~3시간)");
+        items.add("'사드락 사드락' 전주한옥마을 슬로투어 코스(3시간이상)");
+        items.add("조선 태조 이성계 역사탐방 투어코스(2시간 이상)");
+
         CustomAdapter adapter = new CustomAdapter(getContext(), 0, items);
         listView.setAdapter(adapter);
 
@@ -138,22 +138,6 @@ public  class Frag5 extends Fragment{
                 });
                 //subitem.setText("경기전 → 어진박물관 → 태조로 → 오목대 → 이목대 → 자만벽화마을");
             }
-            /*
-            else if("전주 토박이의 추천루트".equals(items.get(position)))
-            {
-                imageView.setImageResource(R.drawable.tobakee);
-                imageView.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent=new Intent(getActivity(),recommend7tobak.class);
-                        startActivity(intent);
-                    }
-                });
-                //subitem.setText("경기전 → 어진박물관 → 태조로 → 오목대 → 이목대 → 자만벽화마을");
-            }
-
-             */
-
 
 
 
