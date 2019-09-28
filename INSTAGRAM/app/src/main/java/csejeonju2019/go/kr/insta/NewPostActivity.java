@@ -23,10 +23,16 @@ public class NewPostActivity extends BaseActivity {
     private static final String TAG = "NewPostActivity";
     private static final String REQUIRED = "Required";
     long now = System.currentTimeMillis();
-    SimpleDateFormat dateFormat = new  SimpleDateFormat("yyyy-MM-dd HH:mm", java.util.Locale.getDefault());
-    Date date = new Date();
-    String strDate = dateFormat.format(date);
- public static int datanum;
+
+    Date mDate=new Date(now);
+    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+
+    String getTime = sdf.format(mDate);
+
+  public static double datanum=Double.parseDouble(getTime);
+
+
+
 
 
 
@@ -42,7 +48,7 @@ public class NewPostActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        datanum++;
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_post);
 
@@ -81,7 +87,7 @@ public class NewPostActivity extends BaseActivity {
 
         // Disable button so there are no multi-posts
         setEditingEnabled(false);
-        datanum++;
+
         Toast.makeText(this, "Posting...", Toast.LENGTH_SHORT).show();
 
         // [START single_value_read]
@@ -119,7 +125,7 @@ public class NewPostActivity extends BaseActivity {
     }
 
     // [START write_fan_out]
-    public void  writeNewPost(String userId, String username, String title, String body,int datanum) {
+    public void  writeNewPost(String userId, String username, String title, String body,double datanum) {
         Post post = new Post(userId, username, title, body,datanum);
         db.collection("posts").add(post);
     }
