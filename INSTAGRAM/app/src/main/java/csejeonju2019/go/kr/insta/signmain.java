@@ -77,6 +77,7 @@ public class signmain extends BaseActivity {
         if (i == R.id.action_logout) {
             startActivity(new Intent(this, SignInActivity.class));
             finish();
+
             FirebaseAuth.getInstance().signOut();
             return true;
         }

@@ -2,6 +2,7 @@ package csejeonju2019.go.kr.insta;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageInstaller;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -70,8 +71,37 @@ public class SignInActivity extends BaseActivity implements View.OnClickListener
                 session.addCallback(new KakaoSessionCallback());
                 session.open(AuthType.KAKAO_LOGIN_ALL, SignInActivity.this);
 
+
+
+
+
+                /*
+
+        mAuth.signInWithEmailAndPassword(email, password)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        Log.d(TAG, "signIn:onComplete:" + task.isSuccessful());
+                        hideProgressDialog();
+
+                        if (task.isSuccessful()) {
+                            onAuthSuccess(task.getResult().getUser());
+                        } else {
+                            Toast.makeText(SignInActivity.this, "Sign In Failed",
+                                    Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+    }
+
+
+                 */
+
+
             }
         });
+
+
 
 
 
@@ -162,7 +192,7 @@ public class SignInActivity extends BaseActivity implements View.OnClickListener
         }
     }
 
-    private boolean validateForm() {
+    public boolean validateForm() {
         boolean result = true;
         if (TextUtils.isEmpty(mEmailField.getText().toString())) {
             mEmailField.setError("Required");
@@ -186,8 +216,6 @@ public class SignInActivity extends BaseActivity implements View.OnClickListener
         User user = new User(name, email);
         db.collection("users").document(userId).set(user);
 
-        //User user2 = new User("MrJangTest","12341234");
-        //db.collection("users").document(userId).set(user2);
     }
     // [END basic_write]
 
@@ -220,7 +248,7 @@ public class SignInActivity extends BaseActivity implements View.OnClickListener
     }
 
     //0928 MrJang Add : for kakao!
-    public void forKakaoStartActivity()
+    public void forKakaoGoToTheSignMainActivity()
     {
         startActivity(new Intent(SignInActivity.this, signmain.class));
         finish();
