@@ -1,5 +1,6 @@
 package csejeonju2019.go.kr.insta;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -55,7 +56,34 @@ public class PostDetailActivity extends BaseActivity implements View.OnClickList
         if (mPostKey == null) {
             throw new IllegalArgumentException("Must pass EXTRA_POST_KEY");
         }
+        findViewById(R.id.fab_modify_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+           /*
+           ValueEventListener postListener = new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                Log.e("getFirebaseDatabase", "key: " + dataSnapshot.getChildrenCount());
+                arrayData.clear();
+                arrayIndex.clear();
+                for (DataSnapshot postSnapshot: dataSnapshot.getChildren()) {
+                    String key = postSnapshot.getKey();
+                    FirebasePost get = postSnapshot.getValue(FirebasePost.class);
+                    String[] info = {get.id, get.name, String.valueOf(get.age), get.gender};
+                    String Result = setTextLength(info[0],10) + setTextLength(info[1],10) + setTextLength(info[2],10) + setTextLength(info[3],10);
+                    arrayData.add(Result);
+                    arrayIndex.add(key);
+                    Log.d("getFirebaseDatabase", "key: " + key);
+                    Log.d("getFirebaseDatabase", "info: " + info[0] + info[1] + info[2] + info[3]);
+                }
+                arrayAdapter.clear();
+                arrayAdapter.addAll(arrayData);
+                arrayAdapter.notifyDataSetChanged();
+            }
+            */
 
+            }
+        });
         // Initialize Database
         mPostReference = FirebaseFirestore.getInstance().collection("posts").document(mPostKey);
 
