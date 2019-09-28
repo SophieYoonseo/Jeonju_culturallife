@@ -36,7 +36,7 @@ public class Hyangji_Cultural_Heritage_list_activity extends AppCompatActivity {
                     if(i==100)
                         progressDlg.dismiss();
                     try {
-                        Thread.sleep(12);
+                        Thread.sleep(9);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
