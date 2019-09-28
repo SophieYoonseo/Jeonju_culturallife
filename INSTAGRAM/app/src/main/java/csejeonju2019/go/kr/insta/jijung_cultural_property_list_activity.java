@@ -53,7 +53,7 @@ public class jijung_cultural_property_list_activity extends AppCompatActivity {
                     if(i==100)
                         progressDlg.dismiss();
                     try {
-                        Thread.sleep(9);
+                        Thread.sleep(12);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }

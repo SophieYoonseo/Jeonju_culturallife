@@ -51,38 +51,40 @@ public class recommend7tobak extends AppCompatActivity
 
 
         mMap = googleMap;
-        LatLng kyongki = new LatLng(35.817717, 127.143995);
+        LatLng kyongki = new LatLng(35.81498, 127.14996);
 
         MarkerOptions markerOptions = new MarkerOptions();
         markerOptions.position(kyongki);
-        markerOptions.title("객리단길");
+        markerOptions.title("경기전");
 
-        LatLng uhzin = new LatLng(35.815522, 127.153430);
+        LatLng uhzin = new LatLng(35.8162, 127.1494);
 
         MarkerOptions markerOptions2 = new MarkerOptions();
         markerOptions2.position(uhzin);
-        markerOptions2.title("전주한옥마을");
+        markerOptions2.title("어진박물관");
 
-        LatLng taezo = new LatLng(35.812775, 127.147099);
+        LatLng taezo = new LatLng(35.81439, 127.15101);
 
         MarkerOptions markerOptions3 = new MarkerOptions();
         markerOptions3.position(taezo);
-        markerOptions3.title("남부시장");
+        markerOptions3.title("태조로");
 
 
-        LatLng ohmok = new LatLng(35.813642, 127.147582);
+        LatLng ohmok = new LatLng(35.81405, 127.1545);
 
         MarkerOptions markerOptions4 = new MarkerOptions();
         markerOptions4.position(ohmok);
-        markerOptions4.title("풍남문");
+        markerOptions4.title("오목대");
         LatLng eemok = new LatLng(35.81426, 127.15613);
 
         MarkerOptions markerOptions5 = new MarkerOptions();
         markerOptions5.position(eemok);
-        markerOptions5.title("한옥게스트하우스");
-        LatLng jaman = new LatLng(35.814904, 127.152107);
+        markerOptions5.title("이목대");
+        LatLng jaman = new LatLng(35.81421, 127.15721);
 
-
+        MarkerOptions markerOptions6 = new MarkerOptions();
+        markerOptions6.position(jaman);
+        markerOptions6.title("자만벽화마을");
 
         mMap.addPolyline(new PolylineOptions().add(kyongki,uhzin).width(5).color(Color.RED));
         mMap.addPolyline(new PolylineOptions().add(uhzin,taezo).width(5).color(Color.RED));
@@ -100,21 +102,21 @@ public class recommend7tobak extends AppCompatActivity
         markerOptions3.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
         markerOptions4.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
         markerOptions5.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
-
+        markerOptions6.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
 
         mMap.addMarker(markerOptions);
         mMap.addMarker(markerOptions2);
         mMap.addMarker(markerOptions3);
         mMap.addMarker(markerOptions4);
         mMap.addMarker(markerOptions5);
+        mMap.addMarker(markerOptions6);
+        LatLng center=new LatLng(35.81474, 127.1526);
 
 
 
 
 
-
-
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(kyongki, 16));//16배 줌가능
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(kyongki, 15));//지도 시작시 애니메이션 효과
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(center, 16));//16배 줌가능
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(center, 15));//지도 시작시 애니메이션 효과
     }
 }
