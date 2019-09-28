@@ -13,7 +13,7 @@ public class Post {
     public String author;
     public String title;
     public String body;
-    public  double datanum=NewPostActivity.datanum;
+    public  int datanum=NewPostActivity.datanum;
     public int starCount = 0;
     public List<String> stars = new ArrayList<String>();
 
@@ -21,7 +21,7 @@ public class Post {
         // Default constructor required for calls to DataSnapshot.getValue(Post.class)
     }
 
-    public Post(String uid, String author, String title, String body,double datanum) {
+    public Post(String uid, String author, String title, String body,int datanum) {
         this.uid = uid;
         this.author = author;
         this.title = title;
