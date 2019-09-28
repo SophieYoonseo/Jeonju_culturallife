@@ -80,7 +80,7 @@ public class recommend7tobak extends AppCompatActivity
         MarkerOptions markerOptions5 = new MarkerOptions();
         markerOptions5.position(eemok);
         markerOptions5.title("한옥게스트하우스");
-        LatLng jaman = new LatLng(35.814904, 127.152107);
+
 
 
 
@@ -88,7 +88,7 @@ public class recommend7tobak extends AppCompatActivity
         mMap.addPolyline(new PolylineOptions().add(uhzin,taezo).width(5).color(Color.RED));
         mMap.addPolyline(new PolylineOptions().add(taezo,ohmok).width(5).color(Color.RED));
         mMap.addPolyline(new PolylineOptions().add(ohmok,eemok).width(5).color(Color.RED));
-        mMap.addPolyline(new PolylineOptions().add(eemok,jaman).width(5).color(Color.RED));
+
         BitmapDrawable bitmapdraw=(BitmapDrawable)getResources().getDrawable(R.drawable.mappin_saram);
         Bitmap b=bitmapdraw.getBitmap();
         Bitmap smallMarker = Bitmap.createScaledBitmap(b, 75, 75, false);
@@ -115,6 +115,6 @@ public class recommend7tobak extends AppCompatActivity
 
 
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(kyongki, 16));//16배 줌가능
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(kyongki, 15));//지도 시작시 애니메이션 효과
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(kyongki, 14));//지도 시작시 애니메이션 효과
     }
 }

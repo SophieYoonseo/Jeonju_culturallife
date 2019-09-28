@@ -66,28 +66,24 @@ public class Adapter7 extends PagerAdapter {
             public void onClick(View v) {
                 if(position==0)
                 {
-                    Intent homepage=new Intent(Intent.ACTION_VIEW, Uri.parse("https://terms.naver.com/entry.nhn?docId=948171&cid=42865&categoryId=42865"));
+                    Intent homepage=new Intent(Intent.ACTION_VIEW, Uri.parse("https://m.blog.naver.com/PostView.nhn?blogId=windseeker7&logNo=221263550190&proxyReferer=https%3A%2F%2Fwww.google.com%2F"));
                     context.startActivity(homepage);
                 }
                 else  if(position==1)
                 {
-                    Intent homepage=new Intent(Intent.ACTION_VIEW, Uri.parse("https://store.naver.com/attractions/detail?entry=plt&id=19550901&query=%EC%96%B4%EC%A7%84%EB%B0%95%EB%AC%BC%EA%B4%80"));
+                    Intent homepage=new Intent(Intent.ACTION_VIEW, Uri.parse("https://store.naver.com/attractions/detail?entry=plt&id=13208779&query=%EC%A0%84%EC%A3%BC%20%ED%95%9C%EC%98%A5%EB%A7%88%EC%9D%84"));
                     context.startActivity(homepage);
                 }  else if(position==2)
                 {
-                    Intent homepage=new Intent(Intent.ACTION_VIEW, Uri.parse("http://blog.naver.com/PostView.nhn?blogId=bada3347&logNo=220796100043&categoryNo=0&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=postView"));
+                    Intent homepage=new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.jeonju.go.kr/index.9is?contentUid=9be517a74f72e96b014f82f9a7fb0e5a&subPath="));
                     context.startActivity(homepage);
                 } else if(position==3)
                 {
-                    Intent homepage=new Intent(Intent.ACTION_VIEW, Uri.parse("https://store.naver.com/attractions/detail?entry=plt&id=20103217&query=%EC%98%A4%EB%AA%A9%EB%8C%80"));
+                    Intent homepage=new Intent(Intent.ACTION_VIEW, Uri.parse("https://store.naver.com/attractions/detail?entry=plt&id=13562101&query=%ED%92%8D%EB%82%A8%EB%AC%B8"));
                     context.startActivity(homepage);
                 } else if(position==4)
                 {
-                    Intent homepage=new Intent(Intent.ACTION_VIEW, Uri.parse("https://store.naver.com/restaurants/detail?entry=plt&id=35904979&query=%EC%9D%B4%EB%AA%A9%EB%8C%80"));
-                    context.startActivity(homepage);
-                }else if(position==5)
-                {
-                    Intent homepage=new Intent(Intent.ACTION_VIEW, Uri.parse("https://store.naver.com/attractions/detail?entry=plt&id=36439466&query=%EC%9E%90%EB%A7%8C%EB%B2%BD%ED%99%94%EB%A7%88%EC%9D%84"));
+                    Intent homepage=new Intent(Intent.ACTION_VIEW, Uri.parse("https://m.blog.naver.com/PostView.nhn?blogId=sunlovebs&logNo=220924060549&proxyReferer=https%3A%2F%2Fwww.google.com%2F"));
                     context.startActivity(homepage);
                 }
             }
