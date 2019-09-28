@@ -29,9 +29,9 @@
 
 
 - DB_INSTA 라는 폴더명에 회원가입및 FIREBASE연동 그리고 DB활성화 
-
 ![FIEEBASE](./firebase.JPG)
-
+## 제가작성한 대부분의 기능구현및코드는 Mvp pattern을 적용합니다
+![view23](./mvp.JPG)
 
 ## code merge and design detail
 - 9월9일 ~ sophieyoonseo 합류 instagram 앱에 문화체험, 공연정보 xmlpullparser 합침.
