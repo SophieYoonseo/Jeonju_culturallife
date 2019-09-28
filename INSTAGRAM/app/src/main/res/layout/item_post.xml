@@ -2,6 +2,7 @@
 
 
     <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_margin="5dp"
@@ -35,7 +36,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="5dp"
                     android:background="?attr/selectableItemBackground"
-                    android:src="@drawable/ic_toggle_star_outline_24" />
+                    app:srcCompat="@drawable/ic_valentines_heart" />
 
                 <TextView
                     android:id="@+id/post_num_stars"
