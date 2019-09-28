@@ -49,7 +49,8 @@ minSdk = 16
 
 #### 개발 시 추가해야하는 라이브러리  :
 ##### 이모든건 module:app에서 일어납니다 (--> androidx로 이전하였습니다 )
-- 게시판은 firebase OSS 이용 (우리는 게시판 구현을 이 오픈소스를 사용하였다. https://github.com/firebase/quickstart-android)
+- 게시판은 firebase OSS 이용
+- We used this open source to implement bulletin boards. The sources are as follows. https://github.com/firebase/quickstart-android  
 ![gogglemap](./Etc/depen.JPG)
 
 
