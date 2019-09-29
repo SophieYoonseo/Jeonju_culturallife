@@ -1,5 +1,6 @@
 package csejeonju2019.go.kr.insta;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageInstaller;
@@ -206,10 +207,13 @@ public class SignInActivity extends BaseActivity implements View.OnClickListener
     }
 
     // [START basic_write]
-    public void writeNewUser(String userId, String name, String email) {
+    private void writeNewUser(String userId, String name, String email) {
         User user = new User(name, email);
-        db.collection("users").document(userId).set(user);
 
+<<<<<<< HEAD
+=======
+        db.collection("users").document(userId).set(user);
+>>>>>>> parent of da599128... kakao 로그인시, Cloud에 잘 등록됨
     }
     // [END basic_write]
 
@@ -241,6 +245,7 @@ public class SignInActivity extends BaseActivity implements View.OnClickListener
         super.onActivityResult(requestCode, resultCode, data);
     }
 
+<<<<<<< HEAD
 
     /*0929 MrJang Add : KakaoSessionCallback !
     *
@@ -343,4 +348,7 @@ public class SignInActivity extends BaseActivity implements View.OnClickListener
         });
     }
 
+=======
+
+>>>>>>> parent of da599128... kakao 로그인시, Cloud에 잘 등록됨
 }
