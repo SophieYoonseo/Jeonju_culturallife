@@ -17,7 +17,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
+import android.content.SharedPreferences;
 public class NewPostActivity extends BaseActivity {
 
     private static final String TAG = "NewPostActivity";
@@ -42,6 +42,7 @@ public class NewPostActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
+
         datanum++;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_post);
@@ -54,6 +55,8 @@ public class NewPostActivity extends BaseActivity {
         mTitleField = findViewById(R.id.field_title);
         mBodyField = findViewById(R.id.field_body);
         mSubmitButton = findViewById(R.id.fab_submit_post);
+
+
 
         mSubmitButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,12 +81,19 @@ public class NewPostActivity extends BaseActivity {
             mBodyField.setError(REQUIRED);
             return;
         }
+        SharedPreferences pref = getSharedPreferences("pref", MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
+
+        editor.putInt("key1", datanum);
+        editor.commit();
+
 
         // Disable button so there are no multi-posts
         setEditingEnabled(false);
         datanum++;
         Toast.makeText(this, "Posting...", Toast.LENGTH_SHORT).show();
-
+        final int nVal = pref.getInt("key1", 0);
+        datanum=nVal;
         // [START single_value_read]
         final String userId = getUid();
         DocumentReference docRef = db.collection("users").document(userId);
