@@ -167,7 +167,7 @@ public class show_list_activity extends AppCompatActivity {// 전주 공연
                     dialogInterface.dismiss();
                 }
             });
-            alert.setMessage("파싱 에러");
+            alert.setMessage("공연정보를 불러오는데 문제가있습니다.(일부 기기)");
             alert.show();
         }
         //리스트뷰 구현을 위한 ArrayAdapter 이용
