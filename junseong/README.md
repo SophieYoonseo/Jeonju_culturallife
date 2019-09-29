@@ -24,6 +24,7 @@
 - frag5의 recommend 세부사항들 viewpager adpater에 clickevent구현 각 사진마다 그사진에따른 url로 이동이 가능해짐 (09-27) 
 - 기존 20millis-> 12millis (1.6배 속도 progressbar thread 속도개선) 
 - 게시판에 임의로 datanumㅇ라는 field를 만들어서 호출될때마다 +2 하게하였구 firebase query를통해 내림차순으로 recent post를 구현하였음(09-28) 
+- 9월 28일날 구현한 정렬기능은 앱을껏다킬시에 datanum이 0으로초기화되어서 recentpost의 정렬이 꼬이는문제가있었음. 이에 stackoverflow에서 검색등을통해 key1string 에 datanum을 저장시키고 commit 후 submitpost를 호출할때마다 datanum을 ++ 한후 key1값에 저장되었던 value인 datanum을 불러들임 물론 final처리해서 변수를만든후 이값을 다시 datanum에 집어넣음  이렇게하면은 newpost를호출할때마다 datanum이 1개씩늘어나는것을 firestore를통해 확인하였고 정렬은 이 구현한 datanum을 query문을통해 내림차순으로 정렬하였다.(0930)
 ## 눈으로보는 현재구현내용 (클릭시 이벤트는 하나하나하면 길어서 생략) 
 ![view](./ing.gif)
 
