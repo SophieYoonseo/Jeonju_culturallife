@@ -59,8 +59,6 @@ public class SignInActivity extends BaseActivity implements View.OnClickListener
         mSignInButton.setOnClickListener(this);
         mSignUpButton.setOnClickListener(this);
 
-
-
         //0928 MrJang Add : for kakao login
         mContext = getApplicationContext();
         btn_custom_login = findViewById(R.id.btn_custom_kakao_login);
@@ -70,42 +68,8 @@ public class SignInActivity extends BaseActivity implements View.OnClickListener
                 Session session = Session.getCurrentSession();
                 session.addCallback(new KakaoSessionCallback());
                 session.open(AuthType.KAKAO_LOGIN_ALL, SignInActivity.this);
-
-
-
-
-
-                /*
-
-        mAuth.signInWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        Log.d(TAG, "signIn:onComplete:" + task.isSuccessful());
-                        hideProgressDialog();
-
-                        if (task.isSuccessful()) {
-                            onAuthSuccess(task.getResult().getUser());
-                        } else {
-                            Toast.makeText(SignInActivity.this, "Sign In Failed",
-                                    Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                });
-    }
-
-
-                 */
-
-
             }
         });
-
-
-
-
-
-
 
     }
 
