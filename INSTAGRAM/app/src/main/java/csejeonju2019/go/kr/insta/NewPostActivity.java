@@ -26,7 +26,8 @@ public class NewPostActivity extends BaseActivity {
     SimpleDateFormat dateFormat = new  SimpleDateFormat("yyyy-MM-dd HH:mm", java.util.Locale.getDefault());
     Date date = new Date();
     String strDate = dateFormat.format(date);
- public static int datanum;
+    public static int datanum;
+
 
 
 
@@ -41,8 +42,8 @@ public class NewPostActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-
+        SharedPreferences pref = getSharedPreferences("pref", MODE_PRIVATE);
+        datanum = pref.getInt("key1", datanum);
         datanum++;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_post);
@@ -64,6 +65,12 @@ public class NewPostActivity extends BaseActivity {
                 submitPost();
             }
         });
+        SharedPreferences.Editor editor = pref.edit();
+        editor.putInt("key1", datanum);
+        editor.commit();
+        editor.apply();
+
+
     }
 
     private void submitPost() {
@@ -81,19 +88,15 @@ public class NewPostActivity extends BaseActivity {
             mBodyField.setError(REQUIRED);
             return;
         }
-        SharedPreferences pref = getSharedPreferences("pref", MODE_PRIVATE);
-        SharedPreferences.Editor editor = pref.edit();
-
-        editor.putInt("key1", datanum);
-        editor.commit();
-
-
         // Disable button so there are no multi-posts
         setEditingEnabled(false);
         datanum++;
         Toast.makeText(this, "Posting...", Toast.LENGTH_SHORT).show();
-        final int nVal = pref.getInt("key1", 0);
-        datanum=nVal;
+        SharedPreferences pref = getSharedPreferences("pref", MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
+        editor.putInt("key1", datanum);
+        editor.commit();
+        editor.apply();
         // [START single_value_read]
         final String userId = getUid();
         DocumentReference docRef = db.collection("users").document(userId);
