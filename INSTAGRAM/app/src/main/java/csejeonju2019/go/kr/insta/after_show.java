@@ -118,15 +118,14 @@ public class after_show extends AppCompatActivity // 파싱에러뜰경우 여�
         festivalshare.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                String mySharedLink = content;
-                String mySubject = aftertitle+"내용을 공유합니다.";
-
+                String mySharedLink = aftertime+ content ;
+                String mySubject = aftertitle+"내용및 시간을 공유합니다.";
+                
                 Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_SEND);
                 intent.setType("text/plain");
                 intent.putExtra(Intent.EXTRA_SUBJECT, mySubject);
-                intent.putExtra(Intent.EXTRA_TEXT, mySharedLink);
-
+                intent.putExtra(Intent.EXTRA_TEXT, mySharedLink);;
                 startActivity(Intent.createChooser(intent, "공유합니다."));
             }
         });
