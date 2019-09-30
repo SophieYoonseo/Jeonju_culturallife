@@ -160,8 +160,7 @@ public class show_list_activity extends AppCompatActivity {// 전주 공연
                 // 다음 API 데이터 호출
                 parserEvent = parser.next();
             }
-            Intent intent = new Intent(getApplicationContext(), show_error_list_activity.class);
-            startActivity(intent);
+           
         }
         catch(Exception e) {
             // AlertDialog 메시지 발생
