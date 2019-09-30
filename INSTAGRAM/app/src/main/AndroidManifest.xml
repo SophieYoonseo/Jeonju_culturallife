@@ -53,6 +53,8 @@
         <activity android:name=".BaseActivity"></activity>
         <activity android:name=".PostDetailActivity"></activity>
         <activity android:name=".recommend7tobak"></activity>
+        <activity android:name=".after_show"></activity>
+        <activity android:name=".show_error_list_activity"></activity>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCYE_2SxAXlxLTI4xpx3Gk8PKN2xa0M5ts"/>

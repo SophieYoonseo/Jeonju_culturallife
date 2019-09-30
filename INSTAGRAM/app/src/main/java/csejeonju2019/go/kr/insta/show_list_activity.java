@@ -109,8 +109,11 @@ public class show_list_activity extends AppCompatActivity {// 전주 공연
                                     dialogInterface.dismiss();
                                 }
                             });
+
                             alert.setMessage("파싱 에러");
                             alert.show();
+                            Intent intent = new Intent(getApplicationContext(), show_error_list_activity.class);
+                            startActivity(intent);
                         }
 
 
@@ -157,6 +160,8 @@ public class show_list_activity extends AppCompatActivity {// 전주 공연
                 // 다음 API 데이터 호출
                 parserEvent = parser.next();
             }
+            Intent intent = new Intent(getApplicationContext(), show_error_list_activity.class);
+            startActivity(intent);
         }
         catch(Exception e) {
             // AlertDialog 메시지 발생
@@ -167,8 +172,10 @@ public class show_list_activity extends AppCompatActivity {// 전주 공연
                     dialogInterface.dismiss();
                 }
             });
-            alert.setMessage("공연정보를 불러오는데 문제가있습니다.(일부 기기)");
+            alert.setMessage("뒤로 가기를 눌러 기존의창으로 이동해주세요 ");
             alert.show();
+            Intent intent = new Intent(getApplicationContext(), show_error_list_activity.class);
+            startActivity(intent);
         }
         //리스트뷰 구현을 위한 ArrayAdapter 이용
         adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, Items);
