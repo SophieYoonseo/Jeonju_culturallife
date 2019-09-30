@@ -102,6 +102,7 @@ public class show_list_activity extends AppCompatActivity {// 전주 공연
 
                         if(parser.getName().equals("message")) {
                             // AlertDialog(오류) 메시지 발생
+
                             AlertDialog.Builder alert = new AlertDialog.Builder(this);
                             alert.setPositiveButton("확인", new DialogInterface.OnClickListener() {
                                 @Override
@@ -112,6 +113,8 @@ public class show_list_activity extends AppCompatActivity {// 전주 공연
 
                             alert.setMessage("파싱 에러");
                             alert.show();
+
+
                             Intent intent = new Intent(getApplicationContext(), show_error_list_activity.class);
                             startActivity(intent);
                         }
@@ -160,10 +163,11 @@ public class show_list_activity extends AppCompatActivity {// 전주 공연
                 // 다음 API 데이터 호출
                 parserEvent = parser.next();
             }
-           
+
         }
         catch(Exception e) {
             // AlertDialog 메시지 발생
+
             AlertDialog.Builder alert = new AlertDialog.Builder(this);
             alert.setPositiveButton("확인", new DialogInterface.OnClickListener() {
                 @Override
@@ -173,6 +177,8 @@ public class show_list_activity extends AppCompatActivity {// 전주 공연
             });
             alert.setMessage("뒤로 가기를 눌러 기존의창으로 이동해주세요 ");
             alert.show();
+
+
             Intent intent = new Intent(getApplicationContext(), show_error_list_activity.class);
             startActivity(intent);
         }
