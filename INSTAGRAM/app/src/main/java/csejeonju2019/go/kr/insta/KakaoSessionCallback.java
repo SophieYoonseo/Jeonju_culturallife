@@ -1,23 +1,14 @@
 package csejeonju2019.go.kr.insta;
 
-import android.content.Intent;
 import android.util.Log;
+
 import android.view.View;
 import android.widget.Toast;
 
 
-import androidx.annotation.NonNull;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.FirebaseFirestore;
 import com.kakao.auth.ISessionCallback;
 import com.kakao.network.ErrorResult;
 import com.kakao.usermgmt.UserManagement;
@@ -34,11 +25,14 @@ import java.util.Map;
 import static com.firebase.ui.auth.AuthUI.getApplicationContext;
 
 //19.09.23 MrJANG: for KAKAO
-public class KakaoSessionCallback extends BaseActivity implements ISessionCallback {
+
+public class KakaoSessionCallback implements ISessionCallback {
+
 
     //DB 변수 선언
     private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
     private DatabaseReference databaseReference = firebaseDatabase.getReference();
+
 
     private FirebaseAuth mAuth;
     private FirebaseFirestore db;
@@ -54,8 +48,6 @@ public class KakaoSessionCallback extends BaseActivity implements ISessionCallba
     long id;
     String stringID;
     String kakaoType;
-
-
 
 
 
@@ -100,6 +92,7 @@ public class KakaoSessionCallback extends BaseActivity implements ISessionCallba
             public void onSuccess(UserProfile userProfile) {
                 Log.e("SessionCallback :: ", "onSuccess");
 
+
                 nickname = userProfile.getNickname();
                 email = userProfile.getEmail();
                 profileImagePath = userProfile.getProfileImagePath();
@@ -109,6 +102,7 @@ public class KakaoSessionCallback extends BaseActivity implements ISessionCallba
                 stringID = String.valueOf(id);
                 kakaoType = "kakao";
 
+
                 Log.e("Profile : ", nickname + "");
                 Log.e("Profile : ", email + "");
                 Log.e("Profile : ", profileImagePath  + "");
@@ -116,44 +110,10 @@ public class KakaoSessionCallback extends BaseActivity implements ISessionCallba
                 Log.e("Profile : ", UUID + "");
                 Log.e("Profile : ", id + "");
 
-                //realtime에 DB 넣기 시작!
+                //DB 넣기 시작!
                 DatabaseReference ref = databaseReference.child("accounts");
-                final KakaoAccount kakaoAccount = new KakaoAccount(stringID, timestamp,kakaoType);
+                KakaoAccount kakaoAccount = new KakaoAccount(String.valueOf(id), timestamp,"kakao");
                 ref.push().setValue(kakaoAccount);
-
-                //cloud DB에 넣기 시작!
-                mAuth = FirebaseAuth.getInstance();
-                db = FirebaseFirestore.getInstance();
-                //mSignActivity = new SignInActivity();
-
-                // Write new user
-
-// Create a new user with a first and last name
-                Map<String, Object> user = new HashMap<>();
-                user.put("email", stringID+"@"+kakaoType);
-                user.put("username", nickname);
-
-// Add a new document with a generated ID
-                db.collection("users")
-                        .add(user)
-                        .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-                            @Override
-                            public void onSuccess(DocumentReference documentReference) {
-                                Log.d("sucess! firestore : ", "DocumentSnapshot added with ID: " + documentReference.getId());
-                                KakaoSessionCallback.isLoginKakao = true;
-
-                            }
-                        })
-                        .addOnFailureListener(new OnFailureListener() {
-                            @Override
-                            public void onFailure(@NonNull Exception e) {
-                                Log.w("failure firestore : ", "Error adding document", e);
-                            }
-                        });
-
-
-
-
 
             }
 

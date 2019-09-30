@@ -1,5 +1,6 @@
 package csejeonju2019.go.kr.insta;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageInstaller;
@@ -176,8 +177,9 @@ public class SignInActivity extends BaseActivity implements View.OnClickListener
     }
 
     // [START basic_write]
-    public void writeNewUser(String userId, String name, String email) {
+    private void writeNewUser(String userId, String name, String email) {
         User user = new User(name, email);
+
         db.collection("users").document(userId).set(user);
 
     }
@@ -211,17 +213,5 @@ public class SignInActivity extends BaseActivity implements View.OnClickListener
         super.onActivityResult(requestCode, resultCode, data);
     }
 
-    //0928 MrJang Add : for kakao!
-    public void forKakaoGoToTheSignMainActivity()
-    {
-        startActivity(new Intent(SignInActivity.this, signmain.class));
-        finish();
-    }
 
-    //0928 MrJang Add : for kakao!
-    public void forKakaoToastMessage()
-    {
-        Toast.makeText(SignInActivity.this, "Sign In Failed",
-                Toast.LENGTH_SHORT).show();
-    }
 }
