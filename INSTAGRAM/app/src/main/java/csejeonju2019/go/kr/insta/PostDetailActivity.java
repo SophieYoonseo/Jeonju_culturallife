@@ -15,7 +15,13 @@ import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.Query;
+
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.DocumentChange;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -25,6 +31,7 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.ListenerRegistration;
 import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QuerySnapshot;
+import com.google.firebase.storage.StorageReference;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,7 +45,7 @@ public class PostDetailActivity extends BaseActivity implements View.OnClickList
     private DocumentReference mPostReference;
     private String mPostKey;
     private CommentAdapter mAdapter;
-
+    FirebaseFirestore databaseReference;
     private TextView mAuthorView;
     private TextView mTitleView;
     private TextView mBodyView;
@@ -142,6 +149,12 @@ public class PostDetailActivity extends BaseActivity implements View.OnClickList
         int i = v.getId();
         if (i == R.id.button_post_comment) {
             postComment();
+        }
+        else if(i==R.id.fab_modify_button)
+        {
+
+            DatabaseReference dbNode = FirebaseDatabase.getInstance().getReference().getRoot().child("Post");
+            dbNode.setValue(null);
         }
     }
 
