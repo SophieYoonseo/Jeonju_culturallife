@@ -57,7 +57,14 @@ public class PostDetailActivity extends BaseActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post_detail);
-
+        Button removebutton=findViewById(R.id.fab_modify_button);
+        removebutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DatabaseReference dbNode = FirebaseDatabase.getInstance().getReference().getRoot().child("Post");
+                dbNode.setValue(null);
+            }
+        });
         // Get post key from intent
         mPostKey = getIntent().getStringExtra(EXTRA_POST_KEY);
         if (mPostKey == null) {
