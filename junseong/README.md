@@ -26,6 +26,8 @@
 - 게시판에 임의로 datanumㅇ라는 field를 만들어서 호출될때마다 +2 하게하였구 firebase query를통해 내림차순으로 recent post를 구현하였음(09-28) 
 - 9월 28일날 구현한 정렬기능은 앱을껏다킬시에 datanum이 0으로초기화되어서 recentpost의 정렬이 꼬이는문제가있었음. 이에 stackoverflow에서 검색등을통해 key1string 에 datanum을 저장시키고 commit 후 submitpost를 호출할때마다 datanum을 ++ 한후 key1값에 저장되었던 value인 datanum을 불러들임 물론 final처리해서 변수를만든후 이값을 다시 datanum에 집어넣음  이렇게하면은 newpost를호출할때마다 datanum이 1개씩늘어나는것을 firestore를통해 확인하였고 정렬은 이 구현한 datanum을 query문을통해 내림차순으로 정렬하였다.(0930 01:45)
 - 앞선정렬을 잠자고일어나서 테스트결과 다시 꼬이는현상이발생하였다. 아침에눈뜨자마자 별수를 다해보았으나 앱을 강제종료하거나 디바이스를 reboot할시 내가 정렬을 위해 저장하였던 변수가 0으로다시초기화되는현상발생 이를해결하는데는 간단히 내가놓친게있었지만 발견하기가어려웠다 암튼 해결하였다 이제 앱을껏다키거나 reboot , 및 강제종료를해도 게시판은정렬될것이다(09-30 09:50)
+- 파싱이 안되는 일부기기들을 위한 errorlist 및 이에클릭포지션에따른 처리 클래스들을만들음 (공연정보 및 문화체험) (10-01)
+
 ## 눈으로보는 현재구현내용 (클릭시 이벤트는 하나하나하면 길어서 생략) 
 ![view](./ing.gif)
 
@@ -53,12 +55,10 @@
    ![1착상](./trouble12.JPG)
 
 ## 앞으로해야할일  
-- 세부디자인
+- 세부디자인 및 게시글 수정,삭제기능 
 
 ### 진행상어려운점
-- https://coderanch.com/t/641798/detect-click-event-swipe-event
- ![view2](./trouble.JPG)
-
+- firebase 게시글 수정, 삭제는 중간고사를 끝나고 playstore에 릴리즈한버젼을 upate할예정  remove button을달아서 시도하여봣으나 detail클릭에서의 오류로인한 보류 . 
 
 
 
