@@ -34,6 +34,10 @@
 
 - DB_INSTA 라는 폴더명에 회원가입및 FIREBASE연동 그리고 DB활성화 
 ![FIEEBASE](./firebase.JPG)
+
+- 최근게시글의 정렬은 sharedpreference를통해 key1값을두어 private로 저장. 후에 datanum이라는 static변수를 받아 query문을통한 내림차순으로 정렬되게끔 구현하였습니다 (즉 정렬은 datanum이라는변수를통해서 이뤄집니다)
+
+![sort](./sort.JPG)
 ## 제가작성한 일부분의 기능구현및코드는 Mvp pattern을 적용합니다
 ![view23](./mvp.JPG)
 
