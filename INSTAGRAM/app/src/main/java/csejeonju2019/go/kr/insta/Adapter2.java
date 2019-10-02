@@ -27,6 +27,7 @@ public class Adapter2 extends PagerAdapter {
             R.drawable.soolmuseum,
             R.drawable.sorimoonhwakwan,
             R.drawable.kimchimoonhwa
+            
     };
     //오목대 → 태조로 → 전동성당 → 경기전 → 교동미술관 → 최명희문학관(체험) → 부채문화관(체험) → 은행로 → 태조로 → 전통한지원(체험) → 승광재 → 전통술박물관(체험) → 소리문화관(체험) → 전주김치문화관(체험)
     String[] imagee={
