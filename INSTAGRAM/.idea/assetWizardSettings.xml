@@ -63,8 +63,8 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="ffffff" />
-                                      <entry key="foregroundImage" value="C:\Jeonju_culturalLife\Jeonju_culturallife\INSTAGRAM\app\src\main\res\drawable\app_icon.png" />
+                                      <entry key="backgroundColor" value="fafafa" />
+                                      <entry key="foregroundImage" value="C:\Jeonju_culturallife\INSTAGRAM\app\src\main\res\drawable\app_icon.png" />
                                     </map>
                                   </option>
                                 </PersistentState>
