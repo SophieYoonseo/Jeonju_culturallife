@@ -10,7 +10,7 @@ public class MyPostsFragment extends PostListFragment {
     @Override
     public Query getQuery(FirebaseFirestore databaseReference) {
         // All my posts
-        return databaseReference.collection("posts").whereEqualTo("uid", getUid());
+        return databaseReference.collection("posts").whereEqualTo("uid", getUid()).orderBy("datanum", Query.Direction.DESCENDING);
         //해치웟나
     }
 }
