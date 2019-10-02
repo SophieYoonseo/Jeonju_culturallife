@@ -1,4 +1,11 @@
-## 전주 공공데이터 api를 파싱한 전주시민 및 관광객들을 위한 앱 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/SophieYoonseo/Jeonju_culturallife/blob/master/LICENSE.md)
+## 전주 공공데이터 api를 파싱한 전주시민 및 관광객들을 위한 앱
+
+## 각자 이름이 등록되어있는 폴더를 클릭하여 readme를읽어보면 역할을알수있습니다 
+## 제가한 모든역할은 junseong 폴더내의 readme에 기재되어 있습니다
+
+
+
+[![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/SophieYoonseo/Jeonju_culturallife/blob/master/LICENSE.md)
 ## Our team member
 <table id='team'>
  <tr>
@@ -33,28 +40,7 @@
  </tr>
 </table>
  
-## 주의 사항: 
- ### 항상 매우 귀찮더라도 push하기전에 fetch후 pull부터 합시당! 
-   
 
-### 패키지명 통일 csejeonju2019.go.kr
-
-minSdk = 16
-## 굳이 private 이 아닌 public으로 진행하는이유 
-- 꾸준히 발전되는 모습을 보이기위해
-- 오픈소스 생태계의 발전을 위해 
-- 더좋은 소프트웨어로 발전하기 위해 
-- 유지보수를 더 편하게 하기위해 
-
-
-#### 개발 시 추가해야하는 라이브러리  :
-##### 이모든건 module:app에서 일어납니다 (--> androidx로 이전하였습니다 )
-- 게시판은 firebase OSS 이용
-- We used this open source to implement bulletin boards. The sources are as follows. https://github.com/firebase/quickstart-android  
-![gogglemap](./Etc/depen.JPG)
-
-
-This project is licensed under the terms of the MIT license. See the ![LICENSE](LICENSE.md) file.
 
  
 
