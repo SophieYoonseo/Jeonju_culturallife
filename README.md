@@ -3,6 +3,8 @@
 ## 각자 이름이 등록되어있는 폴더를 클릭하여 readme를읽어보면 역할을알수있습니다 
 ## 제가한 모든역할은 junseong 폴더내의 readme에 기재되어 있습니다
 
+### local의 용량이 매우부족하여 프로젝트에 관련없는 폴더들을 삭제하였습니다 (10-04)
+
 
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/SophieYoonseo/Jeonju_culturallife/blob/master/LICENSE.md)
