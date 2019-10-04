@@ -1,7 +1,0 @@
-#Tue Sep 17 18:30:37 KST 2019
-base.0=C\:\\Jeonju_culturalLife\\Jeonju_culturallife\\YOONSEO\\BottomNavi_2\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
-path.1=classes.dex
-renamed.1=classes2.dex
-path.0=classes.dex
-renamed.0=classes.dex
-base.1=C\:\\Jeonju_culturalLife\\Jeonju_culturallife\\YOONSEO\\BottomNavi_2\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
