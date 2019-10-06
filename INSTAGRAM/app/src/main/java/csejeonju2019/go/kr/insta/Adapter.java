@@ -15,7 +15,7 @@ import androidx.viewpager.widget.PagerAdapter;
 public class Adapter extends PagerAdapter {
     private int[] images = {R.drawable.jeondongsungdang,
             R.drawable.kyeongkijeon,
-            R.drawable.kyodong,
+            R.drawable.kyodong,//
             R.drawable.choimeonghee,
             R.drawable.boochae,
             R.drawable.eungangro,
