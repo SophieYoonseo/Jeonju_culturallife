@@ -4,6 +4,9 @@
 ## 제가한 모든역할은 junseong 폴더내의 readme에 기재되어 있습니다
 
 ### local의 용량이 매우부족하여 프로젝트에 관련없는 폴더들을 삭제하였습니다 (10-04)
+## 마켓주소: '전주문화' - https://play.google.com/store/apps/details?id=csejeonju2019.go.kr.insta
+
+![store](./Etc/store.JPG)
 
 
 
