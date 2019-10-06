@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">DBWrite</string>
-
-    <!-- 0913 : MrJang Add! -->
-    <string name="kakao_app_key">bdd78c00824055897d4749b90db84bfc</string>
-</resources>

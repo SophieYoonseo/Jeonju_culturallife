@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">BottomNavigationView_1</string>
-
-    <string name="tab1">HOME</string>
-    <string name="tab2">SEARCH</string>
-    <string name="tab3">WRITE</string>
-</resources>

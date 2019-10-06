@@ -1,4 +1,0 @@
-#Tue Aug 13 17:25:00 KST 2019
-base.0=D\:\\Jeonju_CulturalLife\\Jeonju_culturallife\\Test_cultureExperience\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
-path.0=classes.dex
-renamed.0=classes.dex
