@@ -2,6 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
     android:layout_height="match_parent">
 
     <TextView
@@ -14,6 +18,7 @@
         android:text="TextView" />
 
     <ScrollView
+        android:background="@drawable/rounded"
         android:layout_width="match_parent"
         android:layout_height="265dp">
 
@@ -28,6 +33,7 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
@@ -36,6 +42,7 @@
                     />
 
                 <TextView
+                    android:layout_marginTop="5dp"
                     android:id="@+id/exp_address"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -54,18 +61,33 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="3"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="8"
                     android:text="전화번호: "
-                    android:textColor="@color/black"
-                    />
+                    android:textColor="@color/black" />
                 <TextView
+                    android:layout_marginTop="5dp"
                     android:id="@+id/exp_phone_num"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="6"
+                    android:layout_weight="2"
                     android:text="전화번호 들어갈칸"
                     android:textColor="@color/black"
                     />
+
+                <Button
+                    android:id="@+id/experience_share"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_share" />
+
+                <Button
+                    android:id="@+id/experience_phone_number"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_telephone" />
 
 
             </LinearLayout>
@@ -76,17 +98,21 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:layout_marginTop="5dp"
                     android:id="@+id/textView4"
-                    android:layout_width="100dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="상세 내용:"
+                    android:layout_weight="8"
+                    android:text="상세 내용: "
                     android:textColor="@color/black"
                     />
 
                 <TextView
+                    android:layout_marginTop="5dp"
                     android:id="@+id/result"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_weight="2"
                     android:text="result"
                     android:textColor="@color/black"
                     />
@@ -97,29 +123,10 @@
     </ScrollView>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:gravity="right"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/experience_phone_number"
-            android:layout_width="30dp"
-            android:layout_height="match_parent"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/ic_telephone" />
-
-        <Button
-            android:id="@+id/experience_share"
-            android:layout_width="30dp"
-            android:layout_height="match_parent"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/ic_share" />
-    </LinearLayout>
-
-    <LinearLayout
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/rounded"
         android:orientation="vertical">
 
         <fragment
@@ -127,7 +134,10 @@
             android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="40dp" />
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
     </LinearLayout>
 
 </LinearLayout>

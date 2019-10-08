@@ -4,6 +4,10 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
     tools:context=".after_jijung_clutural" >
 
     <TextView
@@ -17,6 +21,7 @@
         />
 
     <ScrollView
+        android:background="@drawable/rounded"
         android:layout_width="match_parent"
         android:layout_height="255dp">
 
@@ -25,62 +30,81 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_marginTop="5dp"
-
-                android:id="@+id/jijung_explain"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="15dp"
-                android:text="TextView"
-                android:textColor="@color/black"/>
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <TextView
-                android:layout_marginTop="5dp"
+                <TextView
+                    android:id="@+id/jijung_explain"
 
-                android:id="@+id/jijung_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView"
-                android:textColor="@color/black"/>
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <TextView
-                android:layout_marginTop="5dp"
+                <TextView
+                    android:id="@+id/jijung_number"
+                    android:layout_weight="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="TextView"
+                    android:textColor="@color/black" />
 
-                android:id="@+id/jijung_day"
+                <Button
+                    android:id="@+id/jijung_share"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_share" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView"
-                android:textColor="@color/black"/>
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <TextView
-                android:layout_marginTop="5dp"
+                <TextView
+                    android:id="@+id/jijung_day"
 
-                android:id="@+id/jijung_display"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="TextView"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView"
-                android:textColor="@color/black"/>
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/jijung_display"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="TextView"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
         </LinearLayout>
 
     </ScrollView>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:gravity="right"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/jijung_share"
-            android:layout_width="30dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/ic_share"
-            android:layout_marginRight="10dp"
-             />
-    </LinearLayout>
-
-    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -90,7 +114,10 @@
             android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
             tools:context=".MapsActivity" />
     </LinearLayout>
 

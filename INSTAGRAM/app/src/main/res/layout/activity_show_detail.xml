@@ -2,6 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
     android:layout_height="match_parent">
 
     <TextView
@@ -14,6 +18,7 @@
         android:textSize="20dp" />
 
     <ScrollView
+        android:background="@drawable/rounded"
         android:layout_width="match_parent"
         android:layout_height="210dp">
 
@@ -38,7 +43,7 @@
                     android:id="@+id/show_startday"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="8"
                     android:text="시작 날짜"
                     android:textColor="@color/black"/>
             </LinearLayout>
@@ -59,9 +64,30 @@
                     android:id="@+id/show_endday"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="9"
                     android:text="행사 종료날짜"
                     android:textColor="@color/black"/>
+
+                <Button
+                    android:id="@+id/show_share"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_share" />
+
+                <Button
+                    android:id="@+id/show_phonenum"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_telephone" />
+
+                <Button
+                    android:id="@+id/show_url"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_www" />
             </LinearLayout>
 
             <LinearLayout
@@ -206,38 +232,8 @@
     </ScrollView>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:gravity="right"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/show_share"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:background="@drawable/ic_share"
-            android:layout_marginRight="10dp"
-             />
-
-        <Button
-            android:id="@+id/show_phonenum"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:background="@drawable/ic_telephone"
-            android:layout_marginRight="10dp"
-             />
-
-        <Button
-            android:id="@+id/show_url"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:background="@drawable/ic_www"
-            android:layout_marginRight="10dp"
-             />
-
-    </LinearLayout>
-
-    <LinearLayout
+        android:background="@drawable/rounded"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -246,7 +242,10 @@
             android:id="@+id/webview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
             />
     </LinearLayout>
 

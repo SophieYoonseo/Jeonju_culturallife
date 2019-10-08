@@ -2,6 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
     android:layout_height="match_parent">
 
     <TextView
@@ -14,6 +18,7 @@
         android:text="TextView" />
 
     <ScrollView
+        android:background="@drawable/rounded"
         android:layout_width="match_parent"
         android:layout_height="265dp">
 
@@ -60,7 +65,7 @@
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="3"
+                    android:layout_weight="1"
                     android:text="전화번호: "
                     android:textColor="@color/black"
                     />
@@ -74,6 +79,20 @@
                     android:text="전화번호 들어갈칸"
                     android:textColor="@color/black"
                     />
+
+                <Button
+                    android:id="@+id/experience_share"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_share" />
+
+                <Button
+                    android:id="@+id/experience_phone_number"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_telephone" />
 
 
             </LinearLayout>
@@ -109,27 +128,8 @@
     </ScrollView>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:gravity="right"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/experience_phone_number"
-            android:layout_width="30dp"
-            android:layout_height="match_parent"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/ic_telephone" />
-
-        <Button
-            android:id="@+id/experience_share"
-            android:layout_width="30dp"
-            android:layout_height="match_parent"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/ic_share" />
-    </LinearLayout>
-
-    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -137,9 +137,13 @@
         <fragment
             android:id="@+id/map2"
             android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="40dp" />
+             />
     </LinearLayout>
 
 </LinearLayout>

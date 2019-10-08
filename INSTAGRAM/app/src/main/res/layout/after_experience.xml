@@ -25,34 +25,53 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_marginTop="5dp"
-
-                android:id="@+id/experience_address2"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView"
-                android:textColor="@color/black"/>
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
+                <TextView
+                    android:id="@+id/experience_address2"
 
-            <TextView
-                android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="TextView"
+                    android:textColor="@color/black" />
+            </LinearLayout>
 
-                android:id="@+id/experience_phone2"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView"
-                android:textSize="15dp"
-                android:textColor="@color/black"/>
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <TextView
-                android:layout_marginTop="5dp"
+                <TextView
+                    android:id="@+id/experience_phone2"
 
-                android:id="@+id/experience_exp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView"
-                android:textColor="@color/black"/>
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/experience_exp2"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="TextView"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+
         </LinearLayout>
 
     </ScrollView>
