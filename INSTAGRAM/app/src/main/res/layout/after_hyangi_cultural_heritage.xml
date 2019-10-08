@@ -32,6 +32,8 @@
             android:orientation="vertical">
 
             <TextView
+                android:layout_marginTop="5dp"
+
                 android:id="@+id/hyangi_address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -39,6 +41,8 @@
                 android:textColor="@color/black"/>
 
             <TextView
+                android:layout_marginTop="5dp"
+
                 android:id="@+id/hyangi_content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -47,15 +51,14 @@
                 android:textColor="@color/black"/>
 
             <TextView
+                android:layout_marginTop="5dp"
+
                 android:id="@+id/hyangi_explain"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView"
-                android:textColor="@color/black"/><![CDATA[
-            -->
+                android:textColor="@color/black"/>
 
-
-        ]]>
         </LinearLayout>
     </ScrollView>
 

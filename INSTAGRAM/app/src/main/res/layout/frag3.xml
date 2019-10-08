@@ -43,7 +43,7 @@
             android:layout_marginTop="84dp"
             android:layout_marginBottom="8dp"
             android:gravity="center"
-            android:text="문화전주 게시판"
+            android:text="전주문화 게시판"
             android:textSize="30dp"
             app:layout_constraintBottom_toTopOf="@+id/imageView6"
             app:layout_constraintEnd_toEndOf="parent"

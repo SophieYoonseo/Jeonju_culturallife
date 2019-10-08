@@ -26,6 +26,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:layout_marginTop="5dp"
                 android:id="@+id/festival_address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -33,6 +34,8 @@
                 android:textColor="@color/black"/>
 
             <TextView
+                android:layout_marginTop="5dp"
+
                 android:id="@+id/festival_date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -40,6 +43,8 @@
                 android:textSize="15dp"
                 android:textColor="@color/black"/>
             <TextView
+                android:layout_marginTop="5dp"
+
                 android:id="@+id/festival_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -48,6 +53,7 @@
                 android:textColor="@color/black"/>
 
             <TextView
+
                 android:id="@+id/festival_explain"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

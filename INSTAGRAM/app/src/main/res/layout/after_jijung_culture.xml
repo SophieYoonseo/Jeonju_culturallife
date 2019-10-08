@@ -26,6 +26,8 @@
             android:orientation="vertical">
 
             <TextView
+                android:layout_marginTop="5dp"
+
                 android:id="@+id/jijung_explain"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -34,6 +36,8 @@
                 android:textColor="@color/black"/>
 
             <TextView
+                android:layout_marginTop="5dp"
+
                 android:id="@+id/jijung_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -41,6 +45,8 @@
                 android:textColor="@color/black"/>
 
             <TextView
+                android:layout_marginTop="5dp"
+
                 android:id="@+id/jijung_day"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -48,6 +54,8 @@
                 android:textColor="@color/black"/>
 
             <TextView
+                android:layout_marginTop="5dp"
+
                 android:id="@+id/jijung_display"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

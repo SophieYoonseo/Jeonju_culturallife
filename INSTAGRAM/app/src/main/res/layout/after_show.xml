@@ -28,6 +28,8 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:layout_marginTop="5dp"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -35,6 +37,8 @@
                     android:textColor="@color/black"/>
 
                 <TextView
+                    android:layout_marginTop="5dp"
+
                     android:id="@+id/errorshow_startday"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -49,6 +53,8 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:layout_marginTop="5dp"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -56,6 +62,8 @@
                     android:textColor="@color/black"/>
 
                 <TextView
+                    android:layout_marginTop="5dp"
+
                     android:id="@+id/errorshow_endday"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -70,12 +78,16 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:layout_marginTop="5dp"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="세부시간 : "
                     android:textColor="@color/black"/>
 
                 <TextView
+                    android:layout_marginTop="5dp"
+
                     android:id="@+id/errorshow_sebutime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -89,12 +101,16 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:layout_marginTop="5dp"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="부서 이름 :   "
                     android:textColor="@color/black"/>
 
                 <TextView
+                    android:layout_marginTop="5dp"
+
                     android:id="@+id/errorshow_buseoname"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -108,12 +124,16 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:layout_marginTop="5dp"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="연령층 : "
                     android:textColor="@color/black"/>
 
                 <TextView
+                    android:layout_marginTop="5dp"
+
                     android:id="@+id/errorshow_age"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -127,12 +147,16 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:layout_marginTop="5dp"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="주관부서 연락처 : "
                     android:textColor="@color/black" />
 
                 <TextView
+                    android:layout_marginTop="5dp"
+
                     android:id="@+id/errorshow_phonenumber"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -146,12 +170,16 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:layout_marginTop="5dp"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="비용 : "
                     android:textColor="@color/black"/>
 
                 <TextView
+                    android:layout_marginTop="5dp"
+
                     android:id="@+id/errorshow_price"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -186,6 +214,8 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:layout_marginTop="5dp"
+
                     android:id="@+id/textView4"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
@@ -193,6 +223,8 @@
                     android:textColor="@color/black"/>
 
                 <TextView
+                    android:layout_marginTop="5dp"
+
                     android:id="@+id/errorresult_show"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

@@ -28,6 +28,8 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:layout_marginTop="5dp"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
@@ -36,6 +38,8 @@
                     />
 
                 <TextView
+                    android:layout_marginTop="5dp"
+
                     android:id="@+id/exp_address"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -52,6 +56,8 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:layout_marginTop="5dp"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
@@ -59,6 +65,8 @@
                     android:textColor="@color/black"
                     />
                 <TextView
+                    android:layout_marginTop="5dp"
+
                     android:id="@+id/exp_phone_num"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -76,6 +84,8 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:layout_marginTop="5dp"
+
                     android:id="@+id/textView4"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
@@ -84,6 +94,8 @@
                     />
 
                 <TextView
+                    android:layout_marginTop="5dp"
+
                     android:id="@+id/result"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

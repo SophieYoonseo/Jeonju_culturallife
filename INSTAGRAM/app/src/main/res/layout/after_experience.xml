@@ -26,6 +26,8 @@
             android:orientation="vertical">
 
             <TextView
+                android:layout_marginTop="5dp"
+
                 android:id="@+id/experience_address2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -34,6 +36,8 @@
 
 
             <TextView
+                android:layout_marginTop="5dp"
+
                 android:id="@+id/experience_phone2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -42,6 +46,8 @@
                 android:textColor="@color/black"/>
 
             <TextView
+                android:layout_marginTop="5dp"
+
                 android:id="@+id/experience_exp2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

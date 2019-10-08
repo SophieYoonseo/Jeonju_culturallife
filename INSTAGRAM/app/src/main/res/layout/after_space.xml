@@ -31,6 +31,8 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:layout_marginTop="5dp"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -38,6 +40,8 @@
                     android:textColor="@color/black"/>
 
                 <TextView
+                    android:layout_marginTop="5dp"
+
                     android:id="@+id/space_class"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -52,6 +56,8 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:layout_marginTop="5dp"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -59,6 +65,8 @@
                     android:textColor="@color/black"/>
 
                 <TextView
+                    android:layout_marginTop="5dp"
+
                     android:id="@+id/space_number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -73,6 +81,8 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:layout_marginTop="5dp"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -80,6 +90,8 @@
                     android:textColor="@color/black"/>
 
                 <TextView
+                    android:layout_marginTop="5dp"
+
                     android:id="@+id/space_explain"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
