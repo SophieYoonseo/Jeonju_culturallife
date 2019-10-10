@@ -55,8 +55,8 @@
                     android:id="@+id/jijung_number"
                     android:layout_weight="2"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
+                    android:layout_height="match_parent"
+
                     android:text="TextView"
                     android:textColor="@color/black" />
 

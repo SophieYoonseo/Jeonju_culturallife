@@ -61,20 +61,20 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_marginTop="5dp"
+
 
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="전화번호: "
                     android:textColor="@color/black"
                     />
                 <TextView
-                    android:layout_marginTop="5dp"
+
 
                     android:id="@+id/exp_phone_num"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="6"
                     android:text="전화번호 들어갈칸"
                     android:textColor="@color/black"

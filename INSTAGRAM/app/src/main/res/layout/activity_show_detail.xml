@@ -55,7 +55,7 @@
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="행사 종료일 : "
                     android:textColor="@color/black"/>
@@ -63,7 +63,7 @@
                 <TextView
                     android:id="@+id/show_endday"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="9"
                     android:text="행사 종료날짜"
                     android:textColor="@color/black"/>
