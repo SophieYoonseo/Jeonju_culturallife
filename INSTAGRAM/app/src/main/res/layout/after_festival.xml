@@ -19,11 +19,7 @@
         android:textColor="@color/for_icon"
         android:textSize="30dp"
         android:textStyle="bold" />
-    <ImageView
-        android:id="@+id/festivalimage"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        app:srcCompat="@drawable/amkak" />
+
 
     <ScrollView
         android:background="@drawable/rounded"

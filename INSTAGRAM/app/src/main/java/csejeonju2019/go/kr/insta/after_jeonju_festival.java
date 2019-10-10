@@ -46,6 +46,7 @@ public class after_jeonju_festival extends AppCompatActivity implements OnMapRea
         f_date=festival_list_activity.date;
         f_explain=festival_list_activity.explain;
         f_telephone=festival_list_activity.tel;
+        /*
         ImageView imageView=findViewById(R.id.festivalimage);
         if(f_title=="전주 한지 문화축제")
         {
@@ -63,6 +64,8 @@ public class after_jeonju_festival extends AppCompatActivity implements OnMapRea
         {
             imageView.setImageResource(R.drawable.yahang);
         }
+
+         */
         Button festivalshare=(Button)findViewById(R.id.festival_share);
         festivalshare.setOnClickListener(new View.OnClickListener(){
             @Override
