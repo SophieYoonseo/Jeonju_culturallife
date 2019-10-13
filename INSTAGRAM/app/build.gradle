@@ -6,8 +6,8 @@ android {
         applicationId "csejeonju2019.go.kr.insta"
         minSdkVersion 16
         targetSdkVersion 28
-        versionCode 8
-        versionName "8"
+        versionCode 10
+        versionName "10"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled true

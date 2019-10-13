@@ -54,9 +54,6 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.station:
                         setFrag(2);
                         break;
-                   // case R.id.black:
-                     //   setFrag(3);
-                       // break;
                     case R.id.nature:
                         setFrag(4);
                         break;
