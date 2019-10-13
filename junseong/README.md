@@ -60,11 +60,9 @@
    ![1착상](./trouble12.JPG)
 
 ## 앞으로해야할일  
-- 세부디자인 및 게시글 수정,삭제기능 
-
-### 진행상어려운점
-- firebase 게시글 수정, 삭제는 중간고사를 끝나고 playstore에 릴리즈한버젼을 upate할예정  remove button을달아서 시도하여봣으나 detail클릭에서의 오류로인한 보류 . 
-
-
+- 세부디자인 및 바텀네비게이션 일부기종에서는 matchparent하여도 width가꽉안참
+- https://stackoverflow.com/questions/41432902/bottomnavigationview-is-not-full-width/41433309#41433309
+.## 진행상어려운점
+- firebase 게시글 수정, 삭제는 중간고사를 끝나고 playstore에 릴리즈한버젼을 upate할예정  remove button을달아서 시도하여봣으나 detail클릭에서의 오류로인한 보류 .
 
 
