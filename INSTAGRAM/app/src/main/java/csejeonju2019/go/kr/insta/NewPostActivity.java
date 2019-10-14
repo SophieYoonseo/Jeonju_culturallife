@@ -135,6 +135,5 @@ public class NewPostActivity extends BaseActivity {
     public void  writeNewPost(String userId, String username, String title, String body,int datanum) {
         Post post = new Post(userId, username, title, body,datanum);
         db.collection("posts").add(post);
-    }
-    // [END write_fan_out]
+    }    // [END write_fan_out]
 }
