@@ -14,6 +14,6 @@ public class MyTopPostsFragment extends PostListFragment {
         String myUserId = getUid();
         // [END my_top_posts_query]
 
-        return databaseReference.collection("posts").whereEqualTo("uid", getUid()).orderBy("starCount", Query.Direction.DESCENDING);
+        return databaseReference.collection("posts").whereEqualTo("uid", getUid()).orderBy("starCount", Query.Direction.DESCENDING).orderBy("datanum", Query.Direction.DESCENDING);
     }
 }

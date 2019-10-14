@@ -1,2 +1,0 @@
-include ':app', ':naveridlogin_android_sdk_4.2.5'
-rootProject.name='DBWrite'

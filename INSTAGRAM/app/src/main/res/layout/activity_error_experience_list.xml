@@ -18,7 +18,6 @@
         android:id="@+id/mainmenu_error_experience"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center_horizontal"
-        />
+        android:layout_gravity="center_horizontal" />
 
 </FrameLayout>

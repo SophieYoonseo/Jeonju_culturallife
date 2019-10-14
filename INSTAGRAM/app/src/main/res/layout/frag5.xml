@@ -25,6 +25,8 @@
         android:id="@+id/listrecommand"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:dividerHeight="6dp"
+        android:divider="@color/white"
         tools:layout_editor_absoluteX="-58dp"
         tools:layout_editor_absoluteY="25dp" />
 

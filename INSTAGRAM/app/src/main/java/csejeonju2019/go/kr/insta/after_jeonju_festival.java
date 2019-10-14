@@ -1,12 +1,14 @@
 package csejeonju2019.go.kr.insta;
 
 import android.content.Intent;
+import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 
@@ -44,6 +46,26 @@ public class after_jeonju_festival extends AppCompatActivity implements OnMapRea
         f_date=festival_list_activity.date;
         f_explain=festival_list_activity.explain;
         f_telephone=festival_list_activity.tel;
+        /*
+        ImageView imageView=findViewById(R.id.festivalimage);
+        if(f_title=="전주 한지 문화축제")
+        {
+            imageView.setImageResource(R.drawable.hanji);
+        }else if(f_title=="전주 세계소리축제")
+        {
+            imageView.setImageResource(R.drawable.slide2);
+        }else if(f_title=="전주 대사습놀이")
+        {
+            imageView.setImageResource(R.drawable.sasup);
+        }else if(f_title=="전주 국제영화제")
+        {
+            imageView.setImageResource(R.drawable.jeonjumovie);
+        }else if(f_title=="전주 문화재야행")
+        {
+            imageView.setImageResource(R.drawable.yahang);
+        }
+
+         */
         Button festivalshare=(Button)findViewById(R.id.festival_share);
         festivalshare.setOnClickListener(new View.OnClickListener(){
             @Override
