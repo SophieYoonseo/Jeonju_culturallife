@@ -1,0 +1,4 @@
+#Mon Sep 09 21:10:59 KST 2019
+base.0=C\:\\Jeonju_culturalLife\\Jeonju_culturallife\\YOONSEO\\testapi_18\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
