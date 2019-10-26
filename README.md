@@ -2,8 +2,10 @@
 
 ## 이제 마켓에서 찾아보실수 있습니다
 ### 전주문화  - https://play.google.com/store/apps/details?id=csejeonju2019.go.kr.insta
-![badge](./Etc/badge.png)
 
+<a href = 'https://play.google.com/store/apps/details?id=csejeonju2019.go.kr.insta'>
+    <img src='./Etc/badge.png'>
+    
 ### 각자 이름 폴더의 readme와 본 App을 비교하여 팀원들의 contribute를 알수있습니다.
 
 
