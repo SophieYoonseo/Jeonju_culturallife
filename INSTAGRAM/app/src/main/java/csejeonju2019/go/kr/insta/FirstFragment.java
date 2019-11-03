@@ -27,7 +27,7 @@ public class FirstFragment extends Fragment  {
         image1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.naruculture.com"));
+                Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.sorifestival.com/"));
                 startActivity(intent);
             }
         });

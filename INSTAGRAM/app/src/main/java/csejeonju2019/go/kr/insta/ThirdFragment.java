@@ -31,7 +31,7 @@ public class ThirdFragment  extends Fragment {
         image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.jeonjunight.com/"));
+                Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.bibimbapfest.com/kr/inner.php?sMenu=main"));
                 startActivity(intent);
             }
         });
