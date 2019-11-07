@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.PagerAdapter;
@@ -49,6 +50,8 @@ public class recommend1hanok extends AppCompatActivity
         adapter=new Adapter(this);
         final ViewPager viewPager=(ViewPager)findViewById(R.id.rec1);
         viewPager.setAdapter(adapter);
+        Toast.makeText(this, "내가 토스트 (Toast) 입니다.", Toast.LENGTH_SHORT).show();
+
 
 
         viewPager.setCurrentItem(0);
