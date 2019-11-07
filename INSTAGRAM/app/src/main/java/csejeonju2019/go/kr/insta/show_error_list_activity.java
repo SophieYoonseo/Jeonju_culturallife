@@ -52,14 +52,15 @@ public class show_error_list_activity extends AppCompatActivity { //공연 파�
             }
         }.start();
         String[] errorshowname = {
+                "[전주한벽문화관 특별기획공연] 'MIRACLE KOREA : 한국 음악의 위상과 격",
                 "상설국악공연",
                 "졸탄쇼 위대한 쇼맨 -전주공연",
                 "연극 그남자그여자",
                 "국립무형유산원 문화가있는날 공연-잠비나이",
                 "전통연희극 히히낭락",
                 "[전주공연]연말엔 무조건 신나는 공연-고상한 찬호씨의 연애상담쇼(SHOW)",
-                "창작극회 164회 정기공연 '꿈'",
-                "고품격 국악콘서트"
+                "전주부채의 전승과 확산展-국가무형문화재 선자장 이수자 김대성 초대전",
+                "[전주공예품전시관] 락희_공예로 빛내다展"
         };
         ListView listView = (ListView) findViewById(R.id.mainmenu_error_show);
 
@@ -70,6 +71,23 @@ public class show_error_list_activity extends AppCompatActivity { //공연 파�
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if(position==0)
+                {
+                    title="[전주한벽문화관 특별기획공연] 'MIRACLE KOREA : 한국 음악의 위상과 격";
+                    start="2019-12-19 00:00:00.0";
+                    end="2019-12-19 23:59:59.0";
+                    time="19:30";
+                    damname="전주시 전주문화재단";
+                    age="전연령";
+                    tel = "";
+                    fee="30000원";
+                    address="전주한벽문화관";
+                    explain="전주한벽문화관 특별기획공연 '미라클 코리아-한국 음악의 위상과 격'이 다가오는 12월 19일에 찾아옵니다. 국내뿐만이 아니라 세계적으로 인정받는 우리나라 최고의 음악가들이 한자리에 모이는 이번 공연에는 피아노의 박종화, 첼로의 이정란, 소프라노 한경미, 국악그룹 바라지가 최고의 무대를 선보일 예정입니다. 많은 관심 바랍니다.일시: 2019.12.19.(목), 19:30 장소: 전주한벽문화관 한벽공연장관람료: 30,000원 (할인: 장애우 및 국가유공자·학생·20인 이상 단체 50%, 조기예매·예술인패스·전북도민·문화예술종사자 30%)만7세이상 관람 가능합니다.예매: http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=19016314";
+                    homepage ="http://www.jt.or.kr";
+                    youtube="전주한벽문화관 특별기획공연";
+                    Intent intent =new Intent(getApplicationContext(), after_show.class);
+                    startActivity(intent);
+                }
+                else if(position==1)
                 {
                     title="상설국악공연";
                     start="2019-11-30 00:00:00.0";
@@ -86,7 +104,7 @@ public class show_error_list_activity extends AppCompatActivity { //공연 파�
                     Intent intent =new Intent(getApplicationContext(), after_show.class);
                     startActivity(intent);
                 }
-                if(position==1)
+                else if(position==2)
                 {
                     title="졸탄쇼 위대한 쇼맨 -전주공연";
                     start="2019-11-29 00:00:00.0";
@@ -102,7 +120,7 @@ public class show_error_list_activity extends AppCompatActivity { //공연 파�
                     youtube="졸탄쇼 위대한 쇼맨";
                     Intent intent =new Intent(getApplicationContext(), after_show.class);
                     startActivity(intent);
-                }else if(position==2)
+                }else if(position==3)
                 {
                     title="연극 그남자그여자";
                     start="2019-11-29 00:00:00.0";
@@ -118,7 +136,7 @@ public class show_error_list_activity extends AppCompatActivity { //공연 파�
                     youtube="그남자 그여자";
                     Intent intent =new Intent(getApplicationContext(), after_show.class);
                     startActivity(intent);
-                }else if(position==3)
+                }else if(position==4)
                 {
                     title="국립무형유산원 문화가있는날 공연-잠비나이";
                     start="2019-11-27 00:00:00.0";
@@ -134,7 +152,7 @@ public class show_error_list_activity extends AppCompatActivity { //공연 파�
                     youtube="잠비나이 공연";
                     Intent intent =new Intent(getApplicationContext(), after_show.class);
                     startActivity(intent);
-                }else if(position==4)
+                }else if(position==5)
                 {
                     title="전통연희극 히히낭락";
                     start="2019-11-23 00:00:00.0";
@@ -150,7 +168,7 @@ public class show_error_list_activity extends AppCompatActivity { //공연 파�
                     youtube="히히낭락";
                     Intent intent =new Intent(getApplicationContext(), after_show.class);
                     startActivity(intent);
-                }else if(position==5)
+                }else if(position==6)
                 {
                     title="[전주공연]연말엔 무조건 신나는 공연-고상한 찬호씨의 연애상담쇼(SHOW)";
                     start="2019-11-15 00:00:00.0";
@@ -167,37 +185,37 @@ public class show_error_list_activity extends AppCompatActivity { //공연 파�
                     Intent intent =new Intent(getApplicationContext(), after_show.class);
                     startActivity(intent);
                 }
-                else if(position==6)
-                {
-                    title="창작극회 164회 정기공연 '꿈'";
-                    start="2019-11-05 00:00:00.0";
-                    end="2019-12-01 23:59:59.0";
-                    time="평일19시30분 주말15시";
-                    damname="창작극회,창작소극장";
-                    age="청소년";
-                    tel = "010-5033-7292";
-                    fee="15,000원";
-                    address="창작소극장";
-                    explain="✨기묘연극✨꿈 (nightmare)▪️날짜 : 11월5일-12월8일▪️시간 : 평일7:30, 주말3:00[월요일,11/14,27 공연없음]▪️장소 : 창작소극장“그에게 말하고싶다,깨어있는 것이 좋다고”?공연소개기묘한 이야기들이 시와 산문, 연극의 조합으로 독특하게 펼쳐지는 무대 ‼️관객들을 잡아끄는 웃음과 충격, 공포와 사색의 세계‼️?작품소개독일 현대문학에서 빼놓을 수 없는 ’방송극’의 장르로 탄생한 은 총 5개의 악몽으로 구성되어있다. “이 세계의 쾌적한 꿈은 아마 악한들이나 꿀 수 있을 것”이라고 말하면서 , 악몽의 형식을 빌어 현실을 적나라하게 고발한 이 작품은 당시 독일청취자들로부터 수천통에 달하는 항의편지와 전화를 하게끔한 문제작이었다.❤️작품줄거리첫번째 꿈은 암흑속의 이야기다. 어디로인지 끝없이 달려가는 기차의 화물칸에 아주 늙은 내외와 손자, 손자며느리, 아이가 갇혀있다. 외부와 차단된 이 공간은 희미하게 명암만 바뀔뿐 시계도 달력도 없다. 그들은 도대체 언제부터 어떤이유로 여기에 갇혀있으며 언제까지 이 기차가 달려갈 것인지 아무도 알지 못한다.두번째 꿈은 중국의 어느 도시, 여섯살 난 아이를 데리고 한 부부가 나타난다. 이 부부는 해마다 애를 낳는데 이 아이를 병든이들을 위하여 ‘인류에게 축복을 준 위대한 인간의 업적’이라 칭하며 치료재로 쓰도록 팔아넘긴다.세번째 꿈은 두 탐험가가 흑인들을 데리고 아프리카 탐험여행을 하고 있다. 식사를 할때마다 울려대는 북소리와 기분나쁜 웃음기를 띤채 곁을 맴도는 아프리카 요리사는 그들을 불안하게 만들고 무슨 이유에선가 이들은 자신의 이름과 탐험의 목적까지도 잊어버린채 아프리카 숲속 한 가운데 남게 된다.네번째 꿈은 딸의 신혼집에 찾아온 어머니가 끊임없이 들려오는 이상한 소리의 정체를 찾으려 하고 이 이상한 소리는 전세계의 파멸을 예고한다.▪️창작극회 164회 정기공연▪️▪️제작:박규현▪️작:귄터 아이히▪️연출:홍석찬 박규현 류가연▪️출연:이부열 국영숙 원숙 이종화 박종원 성민호 정광익 ▪️예술감독:조민철▪️무대디자인:류경호▪️기획:서진하 ▪️홍보:김정표 박광천 박동민▪️음향:송지희 ▪️조명:한상희▪️ 카카오톡 검색창에 \"창작극회\"를 검색하세요 !";
-                    homepage ="www.facebook.com/changjak01";
-                    youtube="정기공연 '꿈'";
-                    Intent intent =new Intent(getApplicationContext(), after_show.class);
-                    startActivity(intent);
-                }
                 else if(position==7)
                 {
-                    title="고품격 국악콘서트";
-                    start="2019-11-03 00:00:00.0";
-                    end="2019-11-03 23:59:59.0";
-                    time="13시";
-                    damname="전주 소리 문화관";
+                    title="전주부채의 전승과 확산展-국가무형문화재 선자장 이수자 김대성 초대전";
+                    start="2019-11-07 00:00:00.0";
+                    end="2019-11-19 23:59:59.0";
+                    time="10:00~18:00";
+                    damname="전주부채문화관";
                     age="전연령";
                     tel = "";
                     fee="무료";
-                    address="소리 문화관";
-                    explain="없음";
-                    homepage ="http://www.naver.com";
-                    youtube="고품격 국악콘서트";
+                    address="전주부채문화관";
+                    explain=" 2019 전주부채문화관 파일럿 프로그램 \u200B전시기간 : 2019년 11월 7일~11월 19일전시장소 : 전주부채문화관 지선실전시작품 : 국가무형문화재 선자장 김동식 이수자 김대성의 합죽선 작품 전시참여작가 : 김대성주최/주관 : 전주부채문화관";
+                    homepage ="https://blog.naver.com/jeonjufan";
+                    youtube="전주부채의 전승과 확산";
+                    Intent intent =new Intent(getApplicationContext(), after_show.class);
+                    startActivity(intent);
+                }
+                else if(position==8)
+                {
+                    title="[전주공예품전시관] 락희_공예로 빛내다展";
+                    start="2019-11-05 00:00:00.0";
+                    end="2019-11-10 23:59:59.0";
+                    time="10:00~18:00";
+                    damname="전주공예품전시관";
+                    age="전연령";
+                    tel = "010-6312-4250";
+                    fee="무료";
+                    address="전주시 완산구 태조로9";
+                    explain="\uFEFF ▪ 전 시 명 : 전주공예품전시관 기획전 락희_공예로 빛내다展 *전시상품 최대 30%할인▪ 전시일정 : 2019년 11월 5일(화) ~ 11월 10일(일) ▪ 참여작가: 고운한지공예, 다채, 이상희, 한깃▪ 관람시간 : 평일 10시~18시 (월요일 휴관) ▪ 전시장소 : 전주공예품전시관 전시 2관 (전주시 완산구 태조로 9)";
+                    homepage ="http://www.jeonjucraft.or.kr/2018/inner.php?sMenu=main";
+                    youtube="락희_공예로 빛내다";
                     Intent intent =new Intent(getApplicationContext(), after_show.class);
                     startActivity(intent);
                 }
