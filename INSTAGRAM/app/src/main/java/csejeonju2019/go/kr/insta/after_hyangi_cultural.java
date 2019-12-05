@@ -124,7 +124,7 @@ public class after_hyangi_cultural extends AppCompatActivity  ///향토문화 �
             public void onClick(View v) {
                 textToSpeech.setPitch(1.0f);
                 textToSpeech.setSpeechRate(1.0f);
-                textToSpeech.speak(text3.getText().toString(),TextToSpeech.QUEUE_ADD,null);
+                textToSpeech.speak(text3.getText().toString(),TextToSpeech.QUEUE_FLUSH,null);
                 textToSpeech.speak(text2.getText().toString(),TextToSpeech.QUEUE_ADD,null);
                 textToSpeech.speak(text9.getText().toString(),TextToSpeech.QUEUE_ADD,null);
                 textToSpeech.speak(text12.getText().toString(),TextToSpeech.QUEUE_ADD,null);

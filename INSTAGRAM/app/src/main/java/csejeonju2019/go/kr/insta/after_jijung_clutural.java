@@ -77,7 +77,7 @@ public class after_jijung_clutural extends AppCompatActivity
             public void onClick(View v) {
                 textToSpeech.setPitch(1.0f);
                 textToSpeech.setSpeechRate(1.0f);
-                textToSpeech.speak(text3.getText().toString(),TextToSpeech.QUEUE_ADD,null);
+                textToSpeech.speak(text3.getText().toString(),TextToSpeech.QUEUE_FLUSH,null);
                 textToSpeech.speak(text5.getText().toString(),TextToSpeech.QUEUE_ADD,null);
                 textToSpeech.speak(text2.getText().toString(),TextToSpeech.QUEUE_ADD,null);
                 textToSpeech.speak(text10.getText().toString(),TextToSpeech.QUEUE_ADD,null);
