@@ -1,11 +1,14 @@
 ## An android app that provides Jeonju cultural information by parsing Jeonju public data api for Jeonju citizens and tourists [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/SophieYoonseo/Jeonju_culturallife/blob/master/LICENSE.md)
 
-## You can now download it from the Google Play Store.
+### :sparkles: Leave Issue if you want to contribute to this project. We welcome your participation at any time.
+
+## You can now download it from the Google Play Store. Download it quickly using the link below.
 ### 전주문화  - https://play.google.com/store/apps/details?id=csejeonju2019.go.kr.insta
 
 <a href = 'https://play.google.com/store/apps/details?id=csejeonju2019.go.kr.insta'>
-    <img src='./Etc/badge.png'>
-    
+<img src='./Etc/badge.png'>
+
+
 ### 각자 이름 폴더의 readme와 본 App을 비교하여 팀원들의 contribution을 알 수 있습니다.
 
 
