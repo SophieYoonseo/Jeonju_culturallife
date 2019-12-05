@@ -70,6 +70,13 @@
                     android:textSize="15dp" />
 
                 <Button
+                    android:id="@+id/hyangi_tts"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_tts" />
+
+                <Button
                     android:id="@+id/hyangi_share"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
