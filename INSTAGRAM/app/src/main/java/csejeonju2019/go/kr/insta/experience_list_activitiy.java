@@ -46,11 +46,11 @@ public class experience_list_activitiy extends AppCompatActivity {
         progressDlg.setMax(100);
         progressDlg.setProgress(0);
         progressDlg.show();
-        new Thread(){
+        new Thread() {
             public void run() {
-                for(int i=0;i<=100;i++) {
+                for (int i = 0; i <= 100; i++) {
                     progressDlg.setProgress(i);
-                    if(i==100)
+                    if (i == 100)
                         progressDlg.dismiss();
                     try {
                         Thread.sleep(9);
@@ -63,12 +63,11 @@ public class experience_list_activitiy extends AppCompatActivity {
         }.start();
 
 
-
         StrictMode.enableDefaults();
         // 문화체험 정보 객체, 리스트
         PerformanceShowItem item = new PerformanceShowItem();
         Items = new ArrayList<PerformanceShowItem>();
-        try{
+        try {
             //API 접근 키
             URL mURL = new URL("http://openapi.jeonju.go.kr/rest/experience/getExperienceList?" +
                     "authApiKey=ro%2FXNFjTiuaWfUUOn939KiFkMvs0z915H%2BkR0Te9JF0NPfG4EjF9sAxR2%2B4%2FcqOzu9XlvQaZYyG0F4PniGNdsw%3D%3D");
@@ -81,26 +80,26 @@ public class experience_list_activitiy extends AppCompatActivity {
             int parserEvent = parser.getEventType();
             //XML 태그 확인
             //END_DOCUMENT = 1, END_TAG = 3, START_DOCUMENT = 0, START_TAG = 2, TEXT = 4
-            while(parserEvent != XmlPullParser.END_DOCUMENT) {
+            while (parserEvent != XmlPullParser.END_DOCUMENT) {
                 //if(parser.getName().equals(""))
                 switch (parserEvent) {
                     case XmlPullParser.START_TAG:
                         // 최하단 태그 존재 여부 확인
-                        if(parser.getName().equals("addr")) item.inAddr = true;
-                        if(parser.getName().equals("addrDtl")) item.inAddrDtl = true;
-                        if(parser.getName().equals("dataContent")) item.inDataContent = true;
-                        if(parser.getName().equals("dataSid")) item.inDataSid = true;
-                        if(parser.getName().equals("dataTitle")){
+                        if (parser.getName().equals("addr")) item.inAddr = true;
+                        if (parser.getName().equals("addrDtl")) item.inAddrDtl = true;
+                        if (parser.getName().equals("dataContent")) item.inDataContent = true;
+                        if (parser.getName().equals("dataSid")) item.inDataSid = true;
+                        if (parser.getName().equals("dataTitle")) {
                             item.inDataTitle = true;
                         }
-                        if(parser.getName().equals("fileCnt")) item.inFileCnt = true;
-                        if(parser.getName().equals("posx")) item.inPosx = true;
-                        if(parser.getName().equals("posy")) item.inPosy = true;
-                        if(parser.getName().equals("tel")) item.inTel = true;
-                        if(parser.getName().equals("homepage")) item.inUserHomepage = true;
-                        if(parser.getName().equals("zipcode")) item.inZipCode = true;
+                        if (parser.getName().equals("fileCnt")) item.inFileCnt = true;
+                        if (parser.getName().equals("posx")) item.inPosx = true;
+                        if (parser.getName().equals("posy")) item.inPosy = true;
+                        if (parser.getName().equals("tel")) item.inTel = true;
+                        if (parser.getName().equals("homepage")) item.inUserHomepage = true;
+                        if (parser.getName().equals("zipcode")) item.inZipCode = true;
 
-                        if(parser.getName().equals("message")) {
+                        if (parser.getName().equals("message")) {
                             // AlertDialog(오류) 메시지 발생
 
                             AlertDialog.Builder alert = new AlertDialog.Builder(this);
@@ -121,33 +120,33 @@ public class experience_list_activitiy extends AppCompatActivity {
 
                     case XmlPullParser.TEXT:
                         //태그 내의 데이터 저장
-                        if(item.inAddr) item.addr = parser.getText();
-                        if(item.inAddrDtl) item.addrDtl = parser.getText();
-                        if(item.inDataContent) item.dataContent = parser.getText();
-                        if(item.inDataSid) item.dataSid = parser.getText();
-                        if(item.inDataTitle){
+                        if (item.inAddr) item.addr = parser.getText();
+                        if (item.inAddrDtl) item.addrDtl = parser.getText();
+                        if (item.inDataContent) item.dataContent = parser.getText();
+                        if (item.inDataSid) item.dataSid = parser.getText();
+                        if (item.inDataTitle) {
                             item.dataTitle = parser.getText();
-                            exp_title=item.dataTitle;
+                            exp_title = item.dataTitle;
                         }
-                        if(item.inFileCnt) item.fileCnt = parser.getText();
-                        if(item.inPosx){
+                        if (item.inFileCnt) item.fileCnt = parser.getText();
+                        if (item.inPosx) {
                             item.posx = parser.getText();
-                            posx_double=item.posx;
+                            posx_double = item.posx;
                             //location1=Double.parseDouble(item.posx);//double 로 string 을 바꿔버렷
                         }
-                        if(item.inPosy){
+                        if (item.inPosy) {
                             item.posy = parser.getText();
                             //location2=Double.parseDouble(item.posy); //마찬가지로 string to double
-                            posy_double=item.posy;
+                            posy_double = item.posy;
                         }
-                        if(item.inTel) item.tel = parser.getText();
-                        if(item.inUserHomepage) item.userHomepage = parser.getText();
-                        if(item.inZipCode) item.zipCode = parser.getText();
+                        if (item.inTel) item.tel = parser.getText();
+                        if (item.inUserHomepage) item.userHomepage = parser.getText();
+                        if (item.inZipCode) item.zipCode = parser.getText();
                         item.clear();
                         break;
 
                     case XmlPullParser.END_TAG:
-                        if(parser.getName().equals("list")) {
+                        if (parser.getName().equals("list")) {
                             // "<list> </list>" 만날경우 실행
                             // 리스트 형태로 추가, 추후 데이터 필요 시 이용가능
                             Items.add(item);
@@ -158,8 +157,7 @@ public class experience_list_activitiy extends AppCompatActivity {
                 // 다음 API 데이터 호출
                 parserEvent = parser.next();
             }
-        }
-        catch(Exception e) {
+        } catch (Exception e) {
             // AlertDialog 메시지 발생
 
             AlertDialog.Builder alert = new AlertDialog.Builder(this);
@@ -194,16 +192,17 @@ public class experience_list_activitiy extends AppCompatActivity {
                 //세부사항을 Intent.extra로 EventDetail Activity로 전달
 
                 intent.putExtra("activity", Items.get(i));
-                EventDetail.exp_title=Items.get(i).dataTitle;
-                EventDetail.phone_num=Items.get(i).tel;
-                EventDetail.loc1=Items.get(i).posx;
-                EventDetail.loc2=Items.get(i).posy;
-                EventDetail.exp_detail_address=Items.get(i).addr+Items.get(i).addrDtl;
-                Toast.makeText(getApplicationContext(),EventDetail.exp_title, Toast.LENGTH_SHORT).show();
+                EventDetail.exp_title = Items.get(i).dataTitle;
+                EventDetail.phone_num = Items.get(i).tel;
+                EventDetail.loc1 = Items.get(i).posx;
+                EventDetail.loc2 = Items.get(i).posy;
+                EventDetail.exp_detail_address = Items.get(i).addr + Items.get(i).addrDtl;
+                Toast.makeText(getApplicationContext(), EventDetail.exp_title, Toast.LENGTH_SHORT).show();
                 startActivity(intent);
                 //데이터 삭제, 추가, 변경 시 항상 adapter.notifyDataSetChanged()호출로 displaydata 최신화
                 adapter.notifyDataSetChanged();
             }
         });
+
     }
 }

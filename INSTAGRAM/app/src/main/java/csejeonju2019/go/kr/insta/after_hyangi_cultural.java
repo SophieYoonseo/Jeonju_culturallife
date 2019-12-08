@@ -4,12 +4,12 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.speech.tts.TextToSpeech;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -17,6 +17,10 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+
+import android.speech.tts.TextToSpeech;
+import java.util.Locale;
+import static android.speech.tts.TextToSpeech.ERROR;
 
 public class after_hyangi_cultural extends AppCompatActivity  ///향토문화 세부 사항
         implements OnMapReadyCallback {
@@ -32,6 +36,8 @@ public class after_hyangi_cultural extends AppCompatActivity  ///향토문화 �
     public String number;//지정일자
     public String address; //상세주소
     public String detail;
+    public TextToSpeech textToSpeech;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,16 +55,16 @@ public class after_hyangi_cultural extends AppCompatActivity  ///향토문화 �
         //space_classification=space_list_acitivty.Facility_classification;
         //TextView text5=(TextView)findViewById(R.id.jijung_day);
         //text5.setText("문화재 지정 일자 : "+day);
-        TextView text2=(TextView)findViewById(R.id.hyangi_address);
+        final TextView text2=(TextView)findViewById(R.id.hyangi_address);
         text2.setText("상세주소 : "+address);
-        TextView text3=(TextView)findViewById(R.id.hyangi_title);
+        final TextView text3=(TextView)findViewById(R.id.hyangi_title);
         text3.setText(space_title);
         //TextView text10=(TextView)findViewById(R.id.jijung_number);
        // text10.setText("지정번호 : "+number);
-        TextView text9=(TextView)findViewById(R.id.hyangi_content);
+        final TextView text9=(TextView)findViewById(R.id.hyangi_content);
         text9.setText("내용 : " +detail);
         ImageView imageView=(ImageView)findViewById(R.id.hyangi_image);
-        TextView text12=(TextView)findViewById(R.id.hyangi_explain);
+        final TextView text12=(TextView)findViewById(R.id.hyangi_explain);
         text12.setText("설명 : "+ exp);
         if(space_title=="만경대 암각서")
         {
@@ -101,6 +107,31 @@ public class after_hyangi_cultural extends AppCompatActivity  ///향토문화 �
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map2);
         mapFragment.getMapAsync(this);
+
+        textToSpeech = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if(status != ERROR) {
+                    // 언어를 선택한다.
+                    textToSpeech.setLanguage(Locale.KOREAN);
+                }
+            }
+        });
+
+        Button button_tts= (Button)findViewById(R.id.hyangi_tts);
+        button_tts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                textToSpeech.setPitch(1.0f);
+                textToSpeech.setSpeechRate(1.0f);
+                textToSpeech.speak(text3.getText().toString(),TextToSpeech.QUEUE_FLUSH,null);
+                textToSpeech.speak(text2.getText().toString(),TextToSpeech.QUEUE_ADD,null);
+                textToSpeech.speak(text9.getText().toString(),TextToSpeech.QUEUE_ADD,null);
+                textToSpeech.speak(text12.getText().toString(),TextToSpeech.QUEUE_ADD,null);
+
+            }
+        });
+
     }
 
 

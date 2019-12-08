@@ -198,8 +198,8 @@
                           <map>
                             <entry key="assetSourceType" value="FILE" />
                             <entry key="autoMirrored" value="true" />
-                            <entry key="outputName" value="ic_likered" />
-                            <entry key="sourceFile" value="C:\likered.svg" />
+                            <entry key="outputName" value="ic_tts" />
+                            <entry key="sourceFile" value="C:\tts.svg" />
                           </map>
                         </option>
                       </PersistentState>

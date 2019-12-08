@@ -61,7 +61,12 @@
 
                     android:text="TextView"
                     android:textColor="@color/black" />
-
+                <Button
+                    android:id="@+id/jijung_tts"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_tts" />
                 <Button
                     android:id="@+id/jijung_share"
                     android:layout_width="25dp"
