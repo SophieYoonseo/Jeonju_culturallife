@@ -46,14 +46,27 @@
   </td>
  </tr>
 </table>
- 
-## 주의 사항: 
- ### 항상 매우 귀찮더라도 push하기전에 fetch후 pull부터 합시당! 
-   
 
-### 패키지명 통일 csejeonju2019.go.kr
+## 💻 Developer
+*   [SophieYoonseo](https://github.com/SophieYoonseo) - xml data 파싱, 세부디자인, TTS, 아이디어구상,앱 유지보수
+*   [saechimdaeki](https://github.com/saechimdaeki) -  게시판정렬,전체 디자인 및 코드,추천코스,버그수정,릴리즈관리 
+*   [ijin1322](https://github.com/ijin1322) -    게시판 수정삭제 ing , 네이버카카오 로그인 ing, 앱 피드백
+*   [jjongbumeee](https://github.com/jjongbumeee) - xml data 파싱, 게시판 수정삭제 ing,네이버카카오 로그인 ing, 앱 피드백
 
-minSdk = 16
+## 👀 Todo List
+* 게시판 수정삭제, 네이버카카오 로그인이 되어있지 않아 완성해야할 필요가 있음. 
+* 게시판 정렬이 현재 sharedpreference방식임 이를 바꿔볼 필요가 있음.
+* data parsing을 xml이아닌 gson 라이브러리를 이용해 나타낼 필요가 있음. 
+
+## 🤝 How to Contribute
+1.  Fork this repository
+2.  Create your feature branch (git checkout -b my-new-feature)
+3.  Commit your changes (git commit -am 'Add some feature')
+4.  Push to the branch (git push origin my-new-feature)
+5.  Create new Pull Request
+
+
+minSdk = 16 으로 진행합니다.
 ## 굳이 private 이 아닌 public으로 진행하는 이유 
 - 꾸준히 발전되는 모습을 보이기위해
 - 오픈소스 생태계의 발전을 위해 
