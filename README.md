@@ -48,10 +48,10 @@
 </table>
 
 ## 💻 Developer
-*   [SophieYoonseo](https://github.com/SophieYoonseo) - xml data 파싱, 세부디자인, TTS, 아이디어구상,앱 유지보수
-*   [saechimdaeki](https://github.com/saechimdaeki) -  게시판정렬,전체 디자인 및 코드,추천코스,버그수정,릴리즈관리 
+*   [SophieYoonseo](https://github.com/SophieYoonseo) - xml data 파싱, 세부디자인, TTS, 아이디어구상, 앱 유지보수
+*   [saechimdaeki](https://github.com/saechimdaeki) -  게시판정렬, 전체 디자인 및 코드, 추천코스, 버그수정, 릴리즈관리 
 *   [ijin1322](https://github.com/ijin1322) -    게시판 수정삭제 ing , 네이버카카오 로그인 ing, 앱 피드백
-*   [jjongbumeee](https://github.com/jjongbumeee) - xml data 파싱, 게시판 수정삭제 ing,네이버카카오 로그인 ing, 앱 피드백
+*   [jjongbumeee](https://github.com/jjongbumeee) - xml data 파싱, 게시판 수정삭제 ing, 네이버카카오 로그인 ing, 앱 피드백
 
 ## 👀 Todo List
 * 게시판 수정삭제, 네이버카카오 로그인이 되어있지 않아 완성해야할 필요가 있음. 
