@@ -29,12 +29,12 @@ public class MainActivity extends AppCompatActivity {
     private space_list_frag space_list_frag;    //문화공간
     public experience_list_frag experience; //문화체험
     public Show_list_frag show; //공연
-
+    private BackPressTwice backPressTwice;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        backPressTwice=new BackPressTwice(this);
 
 
 
@@ -67,6 +67,10 @@ public class MainActivity extends AppCompatActivity {
         frag4=new Frag4();
         frag5=new Frag5();
         setFrag(0); //첫화면지정
+    }
+    @Override
+    public void onBackPressed(){
+        backPressTwice.onBackPressed();
     }
     //프레그먼트 교체실행
     public void setFrag(int n){
